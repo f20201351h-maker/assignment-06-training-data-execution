@@ -1,0 +1,81 @@
+{
+ "config_version": "tdes-a6/1",
+ "seed": 1234,
+ "dataloader_version": "tdes-loader/2.0",
+ "tokenizer": {
+  "path": "inputs/a2/tokenizer.json",
+  "a2_sha256": "45aa8369f867472f8686b48025354fbfc0d9b53d6f7573d021aaaac815179dc4",
+  "tokenizer_id": "ff7f96354be799e2d7effb51dc6f89eefca399cc028d098d26cd04d361afa115"
+ },
+ "inputs_dir": "inputs",
+ "mixture_contract": "inputs/a5/mixture.yaml",
+ "demo_scale": {
+  "main_steps": 40,
+  "anneal_steps_min": 2,
+  "seq_len_divisor": 32,
+  "long_row_len": 1024,
+  "regular_positions_per_step": 2048,
+  "microbatch_positions": 1024,
+  "ramp_steps_min": 2,
+  "window_moves_steps_before_ramp": 1
+ },
+ "lanes": {
+  "web":          {"policy": "concat_chop",                   "row": "base"},
+  "code":         {"policy": "best_fit_whole_files",          "row": "base", "best_fit_window": 8},
+  "stem":         {"policy": "concat_chop",                   "row": "base"},
+  "indic":        {"policy": "concat_chop",                   "row": "base", "subpools": "difficulty_band"},
+  "reasoning":    {"policy": "whole_trace_next_fit",          "row": "base", "subpools": "length_band"},
+  "agentic":      {"policy": "structure_preserving_best_fit", "row": "long", "best_fit_window": 4},
+  "long_context": {"policy": "long_doc_best_fit",             "row": "long", "best_fit_window": 4}
+ },
+ "indic_difficulty_proxy": {
+  "note": "A5 B0-B5 ladder needs a classifier; at demo scale the band is a token-length proxy, stated as such",
+  "B0_B1_max_tokens": 20, "B2_B3_max_tokens": 45
+ },
+ "a5_difficulty_shares": {
+  "S1_foundation": {"B0_B1": 50, "B2_B3": 40, "B4_B5": 10},
+  "S2_broaden": {"B0_B1": 30, "B2_B3": 50, "B4_B5": 20},
+  "S3_reasoning_code": {"B0_B1": 15, "B2_B3": 50, "B4_B5": 35},
+  "S4_long_context": {"B0_B1": 10, "B2_B3": 45, "B4_B5": 45},
+  "anneal": {"B0_B1": 0, "B2_B3": 40, "B4_B5": 60}
+ },
+ "a5_reasoning_band_gates": {
+  "note": "A5 section 9: low+medium from S2, high joins in S3/S4, ultra never in the main run; anneal reads the reserve (high + some ultra)",
+  "S1_foundation": [], "S2_broaden": ["low", "medium"], "S3_reasoning_code": ["low", "medium", "high"],
+  "S4_long_context": ["low", "medium", "high"], "anneal": ["high", "ultra"],
+  "band_max_tokens": {"low": 63, "medium": 511, "high": 4095, "ultra": 32767}
+ },
+ "cleaning": {
+  "allowed_licenses": ["apache-2.0", "cc-by-4.0", "cc-by-sa-4.0", "psf-2.0", "cc0-1.0", "mit"],
+  "max_unk_rate": 0.01,
+  "fingerprint_ngram_words": 13,
+  "pii_redaction": true,
+  "exact_dedup": true
+ },
+ "opus": {
+  "selector_lanes_from": "A5 selector_keep",
+  "defer_band_factor": 0.5,
+  "max_deferrals": 2,
+  "max_deferred_per_lane": 6,
+  "proxy_version": "a2-heldout-en-proxy-v1/head-grad-cosine",
+  "proxy_row_len": 256
+ },
+ "model": {
+  "d_model": 64, "n_layers": 2, "n_heads": 4, "d_ff": 192, "tie_embeddings": true,
+  "lr": 0.003, "warmup_steps": 4, "weight_decay": 0.01, "betas": [0.9, 0.95], "grad_clip": 1.0, "init_seed": 7
+ },
+ "checkpoint_every": 7,
+ "crash": {"step": 31, "point": "during_ledger_append", "exit_code": 137},
+ "replay": {"from_checkpoint_step": 7, "to_step": 14},
+ "fork": {
+  "from_checkpoint_step": 14, "branch_id": "fork-s14-a5-h1-indic16", "steps": 8,
+  "reason": "A5 proxy hypothesis H1: the 16% Indic arm (web gives up 6 points) from the S2 checkpoint",
+  "mix_overrides": {"S2_broaden": {"indic": 16, "web": 49.5}, "S3_reasoning_code": {"indic": 16, "web": 36.5}}
+ },
+ "firewall_drills": {
+  "compile_time_misconfigured_sources": {"web": ["test", "validation"]},
+  "ingress_contaminated_document": {"benchmark_id": "gsm8k", "item_id": "test-0", "host_lane": "web"},
+  "candidate_injection_step": 3,
+  "direct_batch_injection_step": 5
+ }
+}

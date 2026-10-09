@@ -1,0 +1,5869 @@
+{
+ "band_substitutions": [
+  {
+   "band": "high",
+   "lane": "reasoning",
+   "pool": "main",
+   "served_by": "medium",
+   "step": 21
+  },
+  {
+   "band": "high",
+   "lane": "reasoning",
+   "pool": "main",
+   "served_by": "medium",
+   "step": 33
+  },
+  {
+   "band": "high",
+   "lane": "reasoning",
+   "pool": "main",
+   "served_by": "medium",
+   "step": 37
+  },
+  {
+   "band": "high",
+   "lane": "reasoning",
+   "pool": "reserve",
+   "served_by": "medium",
+   "step": 41
+  },
+  {
+   "band": "ultra",
+   "lane": "reasoning",
+   "pool": "reserve",
+   "served_by": "medium",
+   "step": 41
+  },
+  {
+   "band": "high",
+   "lane": "reasoning",
+   "pool": "reserve",
+   "served_by": "medium",
+   "step": 42
+  },
+  {
+   "band": "ultra",
+   "lane": "reasoning",
+   "pool": "reserve",
+   "served_by": "medium",
+   "step": 42
+  }
+ ],
+ "blocked_sources": [],
+ "format": "tdes-schedule/2",
+ "lanes": {
+  "agentic": {
+   "policy": "structure_preserving_best_fit",
+   "protected": true,
+   "row": "long",
+   "sources": {
+    "main": {
+     "all": [
+      "shd-agentic-220eb4ce3db5",
+      "shd-agentic-24bf45a717c4",
+      "shd-agentic-43271625644c",
+      "shd-agentic-df75c73799d0"
+     ]
+    },
+    "reserve": {
+     "all": [
+      "shd-agentic-06d4b7c14767",
+      "shd-agentic-61b1a9784022"
+     ]
+    }
+   }
+  },
+  "code": {
+   "policy": "best_fit_whole_files",
+   "protected": false,
+   "row": "base",
+   "sources": {
+    "main": {
+     "all": [
+      "shd-code-586a8e0d717f",
+      "shd-code-edac680fb95b",
+      "shd-code-f0938aa339ce"
+     ]
+    },
+    "reserve": {
+     "all": [
+      "shd-code-c11a9483f8e9"
+     ]
+    }
+   }
+  },
+  "indic": {
+   "policy": "concat_chop",
+   "protected": true,
+   "row": "base",
+   "sources": {
+    "main": {
+     "B0_B1": [
+      "shd-indic-97038a386ad4"
+     ],
+     "B2_B3": [
+      "shd-indic-1c5a3826c73b"
+     ],
+     "B4_B5": [
+      "shd-indic-86ba570dc85b"
+     ]
+    }
+   }
+  },
+  "long_context": {
+   "policy": "long_doc_best_fit",
+   "protected": false,
+   "row": "long",
+   "sources": {
+    "main": {
+     "all": [
+      "shd-long_context-16cccdfd6059",
+      "shd-long_context-2835c535b6c3",
+      "shd-long_context-4d0643b5d91d",
+      "shd-long_context-533b06d816b1",
+      "shd-long_context-74c69cc5e387",
+      "shd-long_context-7bf4c89db8b9",
+      "shd-long_context-8617208d87c7",
+      "shd-long_context-b2155b6acfc1",
+      "shd-long_context-c465094c973f",
+      "shd-long_context-c66a91ad6f5c",
+      "shd-long_context-d687a3293f24",
+      "shd-long_context-e0c14b4651c2",
+      "shd-long_context-e95fad95b1d1",
+      "shd-long_context-ff5ffc018b37"
+     ]
+    },
+    "reserve": {
+     "all": [
+      "shd-long_context-9b596a40ccaa",
+      "shd-long_context-a755cb72b8cc",
+      "shd-long_context-bb3d20871bca"
+     ]
+    }
+   }
+  },
+  "reasoning": {
+   "policy": "whole_trace_next_fit",
+   "protected": true,
+   "row": "base",
+   "sources": {
+    "main": {
+     "low": [
+      "shd-reasoning-d9fdc3c887e0"
+     ],
+     "medium": [
+      "shd-reasoning-4949ce592415"
+     ]
+    },
+    "reserve": {
+     "low": [
+      "shd-reasoning-84310c38ddc2"
+     ],
+     "medium": [
+      "shd-reasoning-03d31b38a6a3"
+     ]
+    }
+   }
+  },
+  "stem": {
+   "policy": "concat_chop",
+   "protected": false,
+   "row": "base",
+   "sources": {
+    "main": {
+     "all": [
+      "shd-stem-021245f96655",
+      "shd-stem-f6f3cda43690"
+     ]
+    },
+    "reserve": {
+     "all": [
+      "shd-stem-c9d881e4cbfb"
+     ]
+    }
+   }
+  },
+  "web": {
+   "policy": "concat_chop",
+   "protected": false,
+   "row": "base",
+   "sources": {
+    "main": {
+     "all": [
+      "shd-web-0eb0d92d2fd3",
+      "shd-web-2e6a742b2677",
+      "shd-web-5ebcd30893bc",
+      "shd-web-73f3f654d068",
+      "shd-web-9022de17bf9b",
+      "shd-web-913ef6376c2f",
+      "shd-web-a2ee8f28af06",
+      "shd-web-cbe3b83c7531",
+      "shd-web-cec4ee3ff604",
+      "shd-web-d2b45e38f797",
+      "shd-web-e61c83bd8d7d"
+     ]
+    },
+    "reserve": {
+     "all": [
+      "shd-web-0492845b3fc1"
+     ]
+    }
+   }
+  }
+ },
+ "overrides": {
+  "from_step": 15,
+  "mix": {
+   "S2_broaden": {
+    "indic": 16,
+    "web": 49.5
+   },
+   "S3_reasoning_code": {
+    "indic": 16,
+    "web": 36.5
+   }
+  }
+ },
+ "plan_sha256": "e26e8f4d71de7ded022d1d66b329a4f5403404231e92d5c237efb2c4ed1f0cc7",
+ "protected": [
+  "indic",
+  "reasoning",
+  "agentic"
+ ],
+ "scarcity": [
+  {
+   "action": "none",
+   "available_tokens": 21443,
+   "candidate_positions_upper_bound": 2048.0,
+   "lane": "agentic",
+   "max_passes": 4,
+   "passes_needed": 1,
+   "pool": "main",
+   "satisfiable": true,
+   "subpool": "all"
+  },
+  {
+   "action": "none",
+   "available_tokens": 8136,
+   "candidate_positions_upper_bound": 1024.0,
+   "lane": "agentic",
+   "max_passes": 4,
+   "passes_needed": 1,
+   "pool": "reserve",
+   "satisfiable": true,
+   "subpool": "all"
+  },
+  {
+   "action": "repeat",
+   "available_tokens": 14492,
+   "candidate_positions_upper_bound": 22272.0,
+   "lane": "code",
+   "max_passes": 4,
+   "passes_needed": 2,
+   "pool": "main",
+   "satisfiable": true,
+   "subpool": "all"
+  },
+  {
+   "action": "repeat",
+   "available_tokens": 713,
+   "candidate_positions_upper_bound": 1024.0,
+   "lane": "code",
+   "max_passes": 4,
+   "passes_needed": 2,
+   "pool": "reserve",
+   "satisfiable": true,
+   "subpool": "all"
+  },
+  {
+   "action": "repeat",
+   "available_tokens": 1945,
+   "candidate_positions_upper_bound": 2688.0,
+   "lane": "indic",
+   "max_passes": 4,
+   "passes_needed": 2,
+   "pool": "main",
+   "satisfiable": true,
+   "subpool": "B0_B1"
+  },
+  {
+   "action": "repeat",
+   "available_tokens": 3763,
+   "candidate_positions_upper_bound": 5888.0,
+   "lane": "indic",
+   "max_passes": 4,
+   "passes_needed": 2,
+   "pool": "main",
+   "satisfiable": true,
+   "subpool": "B2_B3"
+  },
+  {
+   "action": "none",
+   "available_tokens": 5384,
+   "candidate_positions_upper_bound": 3968.0,
+   "lane": "indic",
+   "max_passes": 4,
+   "passes_needed": 1,
+   "pool": "main",
+   "satisfiable": true,
+   "subpool": "B4_B5"
+  },
+  {
+   "action": "none",
+   "available_tokens": 80722,
+   "candidate_positions_upper_bound": 3072.0,
+   "lane": "long_context",
+   "max_passes": 4,
+   "passes_needed": 1,
+   "pool": "main",
+   "satisfiable": true,
+   "subpool": "all"
+  },
+  {
+   "action": "none",
+   "available_tokens": 14153,
+   "candidate_positions_upper_bound": 1024.0,
+   "lane": "long_context",
+   "max_passes": 4,
+   "passes_needed": 1,
+   "pool": "reserve",
+   "satisfiable": true,
+   "subpool": "all"
+  },
+  {
+   "action": "none",
+   "available_tokens": 1330,
+   "candidate_positions_upper_bound": 512.0,
+   "lane": "reasoning",
+   "max_passes": 4,
+   "passes_needed": 1,
+   "pool": "main",
+   "satisfiable": true,
+   "subpool": "low"
+  },
+  {
+   "action": "none",
+   "available_tokens": 3638,
+   "candidate_positions_upper_bound": 512.0,
+   "lane": "reasoning",
+   "max_passes": 4,
+   "passes_needed": 1,
+   "pool": "main",
+   "satisfiable": true,
+   "subpool": "medium"
+  },
+  {
+   "action": "none",
+   "available_tokens": 4569,
+   "candidate_positions_upper_bound": 512.0,
+   "lane": "reasoning",
+   "max_passes": 4,
+   "passes_needed": 1,
+   "pool": "reserve",
+   "satisfiable": true,
+   "subpool": "medium"
+  },
+  {
+   "action": "none",
+   "available_tokens": 9886,
+   "candidate_positions_upper_bound": 7424.0,
+   "lane": "stem",
+   "max_passes": 4,
+   "passes_needed": 1,
+   "pool": "main",
+   "satisfiable": true,
+   "subpool": "all"
+  },
+  {
+   "action": "none",
+   "available_tokens": 1309,
+   "candidate_positions_upper_bound": 256.0,
+   "lane": "stem",
+   "max_passes": 4,
+   "passes_needed": 1,
+   "pool": "reserve",
+   "satisfiable": true,
+   "subpool": "all"
+  },
+  {
+   "action": "repeat",
+   "available_tokens": 59103,
+   "candidate_positions_upper_bound": 99840.0,
+   "lane": "web",
+   "max_passes": 4,
+   "passes_needed": 2,
+   "pool": "main",
+   "satisfiable": true,
+   "subpool": "all"
+  },
+  {
+   "action": "none",
+   "available_tokens": 1378,
+   "candidate_positions_upper_bound": 1024.0,
+   "lane": "web",
+   "max_passes": 4,
+   "passes_needed": 1,
+   "pool": "reserve",
+   "satisfiable": true,
+   "subpool": "all"
+  }
+ ],
+ "schedule_sha256": "768116f0f4769df33bff2356f28d51e377aa4e9739e2ef3ad0fddab260de4f26",
+ "selector_bypass": [
+  "long_context"
+ ],
+ "selector_keep": {
+  "code": 1.0,
+  "stem": 1.0,
+  "web": 0.4
+ },
+ "stages": [
+  {
+   "a5_seq_len": 4096,
+   "a5_span": 0.2,
+   "mix": {
+    "agentic": 0.0,
+    "code": 14.0,
+    "indic": 10.0,
+    "long_context": 0.0,
+    "reasoning": 0.0,
+    "stem": 6.0,
+    "web": 70.0
+   },
+   "n_steps": 8,
+   "name": "S1_foundation",
+   "seq_len": 128,
+   "step_end": 8,
+   "step_start": 1
+  },
+  {
+   "a5_seq_len": 4096,
+   "a5_span": 0.3,
+   "mix": {
+    "agentic": 0.0,
+    "code": 26.0,
+    "indic": 10.0,
+    "long_context": 0.0,
+    "reasoning": 0.5,
+    "stem": 8.0,
+    "web": 55.5
+   },
+   "n_steps": 12,
+   "name": "S2_broaden",
+   "seq_len": 128,
+   "step_end": 20,
+   "step_start": 9
+  },
+  {
+   "a5_seq_len": 8192,
+   "a5_span": 0.3,
+   "mix": {
+    "agentic": 0.5,
+    "code": 34.0,
+    "indic": 10.0,
+    "long_context": 0.0,
+    "reasoning": 1.0,
+    "stem": 12.0,
+    "web": 42.5
+   },
+   "n_steps": 12,
+   "name": "S3_reasoning_code",
+   "seq_len": 256,
+   "step_end": 32,
+   "step_start": 21
+  },
+  {
+   "a5_seq_len": 8192,
+   "a5_span": 0.2,
+   "mix": {
+    "agentic": 1.5,
+    "code": 28.0,
+    "indic": 10.0,
+    "long_context": 18.0,
+    "reasoning": 2.0,
+    "stem": 9.0,
+    "web": 31.5
+   },
+   "n_steps": 8,
+   "name": "S4_long_context",
+   "seq_len": 256,
+   "step_end": 40,
+   "step_start": 33
+  },
+  {
+   "a5_seq_len": 8192,
+   "a5_span": null,
+   "mix": {
+    "agentic": 5.0,
+    "code": 23.0,
+    "indic": 20.0,
+    "long_context": 10.0,
+    "reasoning": 8.0,
+    "stem": 12.0,
+    "web": 22.0
+   },
+   "n_steps": 2,
+   "name": "anneal",
+   "seq_len": 256,
+   "step_end": 42,
+   "step_start": 41
+  }
+ ],
+ "steps": [
+  {
+   "base_window": 128,
+   "mix_pct": {
+    "agentic": 0.0,
+    "code": 14.0,
+    "indic": 10.0,
+    "long_context": 0.0,
+    "reasoning": 0.0,
+    "stem": 6.0,
+    "web": 70.0
+   },
+   "pools": {
+    "agentic": "main",
+    "code": "main",
+    "indic": "main",
+    "long_context": "main",
+    "reasoning": "main",
+    "stem": "main",
+    "web": "main"
+   },
+   "positions": 2048,
+   "quotas": {
+    "agentic": 0,
+    "code": 2,
+    "indic": 2,
+    "long_context": 0,
+    "reasoning": 0,
+    "stem": 1,
+    "web": 11
+   },
+   "ramp": null,
+   "regular_rows": 16,
+   "row_len": {
+    "agentic": 1024,
+    "code": 128,
+    "indic": 128,
+    "long_context": 1024,
+    "reasoning": 128,
+    "stem": 128,
+    "web": 128
+   },
+   "segment": "S1_foundation",
+   "segment_cum_floor_positions": {
+    "agentic": 0.0,
+    "indic": 204.8,
+    "reasoning": 0.0
+   },
+   "segment_cum_quota_positions": {
+    "agentic": 0,
+    "code": 256,
+    "indic": 256,
+    "long_context": 0,
+    "reasoning": 0,
+    "stem": 128,
+    "web": 1408
+   },
+   "segment_cum_target_positions": {
+    "agentic": 0.0,
+    "code": 286.72,
+    "indic": 204.8,
+    "long_context": 0.0,
+    "reasoning": 0.0,
+    "stem": 122.88,
+    "web": 1433.6
+   },
+   "segment_cum_total_positions": 2048,
+   "stage": "S1_foundation",
+   "stage_floor_pct": {
+    "agentic": 0.0,
+    "indic": 10.0,
+    "reasoning": 0.0
+   },
+   "step": 1,
+   "subpool_mix": {
+    "agentic": {
+     "all": 1.0
+    },
+    "code": {
+     "all": 1.0
+    },
+    "indic": {
+     "B0_B1": 0.5,
+     "B2_B3": 0.4,
+     "B4_B5": 0.1
+    },
+    "long_context": {
+     "all": 1.0
+    },
+    "reasoning": {},
+    "stem": {
+     "all": 1.0
+    },
+    "web": {
+     "all": 1.0
+    }
+   },
+   "subquotas": {
+    "agentic": {},
+    "code": {
+     "all": 2
+    },
+    "indic": {
+     "B0_B1": 1,
+     "B2_B3": 1
+    },
+    "long_context": {},
+    "reasoning": {},
+    "stem": {
+     "all": 1
+    },
+    "web": {
+     "all": 11
+    }
+   },
+   "target_positions": {
+    "agentic": 0.0,
+    "code": 286.72,
+    "indic": 204.8,
+    "long_context": 0.0,
+    "reasoning": 0.0,
+    "stem": 122.88,
+    "web": 1433.6
+   }
+  },
+  {
+   "base_window": 128,
+   "mix_pct": {
+    "agentic": 0.0,
+    "code": 14.0,
+    "indic": 10.0,
+    "long_context": 0.0,
+    "reasoning": 0.0,
+    "stem": 6.0,
+    "web": 70.0
+   },
+   "pools": {
+    "agentic": "main",
+    "code": "main",
+    "indic": "main",
+    "long_context": "main",
+    "reasoning": "main",
+    "stem": "main",
+    "web": "main"
+   },
+   "positions": 2048,
+   "quotas": {
+    "agentic": 0,
+    "code": 2,
+    "indic": 2,
+    "long_context": 0,
+    "reasoning": 0,
+    "stem": 1,
+    "web": 11
+   },
+   "ramp": null,
+   "regular_rows": 16,
+   "row_len": {
+    "agentic": 1024,
+    "code": 128,
+    "indic": 128,
+    "long_context": 1024,
+    "reasoning": 128,
+    "stem": 128,
+    "web": 128
+   },
+   "segment": "S1_foundation",
+   "segment_cum_floor_positions": {
+    "agentic": 0.0,
+    "indic": 409.6,
+    "reasoning": 0.0
+   },
+   "segment_cum_quota_positions": {
+    "agentic": 0,
+    "code": 512,
+    "indic": 512,
+    "long_context": 0,
+    "reasoning": 0,
+    "stem": 256,
+    "web": 2816
+   },
+   "segment_cum_target_positions": {
+    "agentic": 0.0,
+    "code": 573.44,
+    "indic": 409.6,
+    "long_context": 0.0,
+    "reasoning": 0.0,
+    "stem": 245.76,
+    "web": 2867.2
+   },
+   "segment_cum_total_positions": 4096,
+   "stage": "S1_foundation",
+   "stage_floor_pct": {
+    "agentic": 0.0,
+    "indic": 10.0,
+    "reasoning": 0.0
+   },
+   "step": 2,
+   "subpool_mix": {
+    "agentic": {
+     "all": 1.0
+    },
+    "code": {
+     "all": 1.0
+    },
+    "indic": {
+     "B0_B1": 0.5,
+     "B2_B3": 0.4,
+     "B4_B5": 0.1
+    },
+    "long_context": {
+     "all": 1.0
+    },
+    "reasoning": {},
+    "stem": {
+     "all": 1.0
+    },
+    "web": {
+     "all": 1.0
+    }
+   },
+   "subquotas": {
+    "agentic": {},
+    "code": {
+     "all": 2
+    },
+    "indic": {
+     "B0_B1": 1,
+     "B2_B3": 1
+    },
+    "long_context": {},
+    "reasoning": {},
+    "stem": {
+     "all": 1
+    },
+    "web": {
+     "all": 11
+    }
+   },
+   "target_positions": {
+    "agentic": 0.0,
+    "code": 286.72,
+    "indic": 204.8,
+    "long_context": 0.0,
+    "reasoning": 0.0,
+    "stem": 122.88,
+    "web": 1433.6
+   }
+  },
+  {
+   "base_window": 128,
+   "mix_pct": {
+    "agentic": 0.0,
+    "code": 14.0,
+    "indic": 10.0,
+    "long_context": 0.0,
+    "reasoning": 0.0,
+    "stem": 6.0,
+    "web": 70.0
+   },
+   "pools": {
+    "agentic": "main",
+    "code": "main",
+    "indic": "main",
+    "long_context": "main",
+    "reasoning": "main",
+    "stem": "main",
+    "web": "main"
+   },
+   "positions": 2048,
+   "quotas": {
+    "agentic": 0,
+    "code": 3,
+    "indic": 1,
+    "long_context": 0,
+    "reasoning": 0,
+    "stem": 1,
+    "web": 11
+   },
+   "ramp": null,
+   "regular_rows": 16,
+   "row_len": {
+    "agentic": 1024,
+    "code": 128,
+    "indic": 128,
+    "long_context": 1024,
+    "reasoning": 128,
+    "stem": 128,
+    "web": 128
+   },
+   "segment": "S1_foundation",
+   "segment_cum_floor_positions": {
+    "agentic": 0.0,
+    "indic": 614.4,
+    "reasoning": 0.0
+   },
+   "segment_cum_quota_positions": {
+    "agentic": 0,
+    "code": 896,
+    "indic": 640,
+    "long_context": 0,
+    "reasoning": 0,
+    "stem": 384,
+    "web": 4224
+   },
+   "segment_cum_target_positions": {
+    "agentic": 0.0,
+    "code": 860.16,
+    "indic": 614.4,
+    "long_context": 0.0,
+    "reasoning": 0.0,
+    "stem": 368.64,
+    "web": 4300.8
+   },
+   "segment_cum_total_positions": 6144,
+   "stage": "S1_foundation",
+   "stage_floor_pct": {
+    "agentic": 0.0,
+    "indic": 10.0,
+    "reasoning": 0.0
+   },
+   "step": 3,
+   "subpool_mix": {
+    "agentic": {
+     "all": 1.0
+    },
+    "code": {
+     "all": 1.0
+    },
+    "indic": {
+     "B0_B1": 0.5,
+     "B2_B3": 0.4,
+     "B4_B5": 0.1
+    },
+    "long_context": {
+     "all": 1.0
+    },
+    "reasoning": {},
+    "stem": {
+     "all": 1.0
+    },
+    "web": {
+     "all": 1.0
+    }
+   },
+   "subquotas": {
+    "agentic": {},
+    "code": {
+     "all": 3
+    },
+    "indic": {
+     "B0_B1": 1
+    },
+    "long_context": {},
+    "reasoning": {},
+    "stem": {
+     "all": 1
+    },
+    "web": {
+     "all": 11
+    }
+   },
+   "target_positions": {
+    "agentic": 0.0,
+    "code": 286.72,
+    "indic": 204.8,
+    "long_context": 0.0,
+    "reasoning": 0.0,
+    "stem": 122.88,
+    "web": 1433.6
+   }
+  },
+  {
+   "base_window": 128,
+   "mix_pct": {
+    "agentic": 0.0,
+    "code": 14.0,
+    "indic": 10.0,
+    "long_context": 0.0,
+    "reasoning": 0.0,
+    "stem": 6.0,
+    "web": 70.0
+   },
+   "pools": {
+    "agentic": "main",
+    "code": "main",
+    "indic": "main",
+    "long_context": "main",
+    "reasoning": "main",
+    "stem": "main",
+    "web": "main"
+   },
+   "positions": 2048,
+   "quotas": {
+    "agentic": 0,
+    "code": 2,
+    "indic": 2,
+    "long_context": 0,
+    "reasoning": 0,
+    "stem": 1,
+    "web": 11
+   },
+   "ramp": null,
+   "regular_rows": 16,
+   "row_len": {
+    "agentic": 1024,
+    "code": 128,
+    "indic": 128,
+    "long_context": 1024,
+    "reasoning": 128,
+    "stem": 128,
+    "web": 128
+   },
+   "segment": "S1_foundation",
+   "segment_cum_floor_positions": {
+    "agentic": 0.0,
+    "indic": 819.2,
+    "reasoning": 0.0
+   },
+   "segment_cum_quota_positions": {
+    "agentic": 0,
+    "code": 1152,
+    "indic": 896,
+    "long_context": 0,
+    "reasoning": 0,
+    "stem": 512,
+    "web": 5632
+   },
+   "segment_cum_target_positions": {
+    "agentic": 0.0,
+    "code": 1146.88,
+    "indic": 819.2,
+    "long_context": 0.0,
+    "reasoning": 0.0,
+    "stem": 491.52,
+    "web": 5734.4
+   },
+   "segment_cum_total_positions": 8192,
+   "stage": "S1_foundation",
+   "stage_floor_pct": {
+    "agentic": 0.0,
+    "indic": 10.0,
+    "reasoning": 0.0
+   },
+   "step": 4,
+   "subpool_mix": {
+    "agentic": {
+     "all": 1.0
+    },
+    "code": {
+     "all": 1.0
+    },
+    "indic": {
+     "B0_B1": 0.5,
+     "B2_B3": 0.4,
+     "B4_B5": 0.1
+    },
+    "long_context": {
+     "all": 1.0
+    },
+    "reasoning": {},
+    "stem": {
+     "all": 1.0
+    },
+    "web": {
+     "all": 1.0
+    }
+   },
+   "subquotas": {
+    "agentic": {},
+    "code": {
+     "all": 2
+    },
+    "indic": {
+     "B2_B3": 1,
+     "B4_B5": 1
+    },
+    "long_context": {},
+    "reasoning": {},
+    "stem": {
+     "all": 1
+    },
+    "web": {
+     "all": 11
+    }
+   },
+   "target_positions": {
+    "agentic": 0.0,
+    "code": 286.72,
+    "indic": 204.8,
+    "long_context": 0.0,
+    "reasoning": 0.0,
+    "stem": 122.88,
+    "web": 1433.6
+   }
+  },
+  {
+   "base_window": 128,
+   "mix_pct": {
+    "agentic": 0.0,
+    "code": 14.0,
+    "indic": 10.0,
+    "long_context": 0.0,
+    "reasoning": 0.0,
+    "stem": 6.0,
+    "web": 70.0
+   },
+   "pools": {
+    "agentic": "main",
+    "code": "main",
+    "indic": "main",
+    "long_context": "main",
+    "reasoning": "main",
+    "stem": "main",
+    "web": "main"
+   },
+   "positions": 2048,
+   "quotas": {
+    "agentic": 0,
+    "code": 2,
+    "indic": 1,
+    "long_context": 0,
+    "reasoning": 0,
+    "stem": 1,
+    "web": 12
+   },
+   "ramp": null,
+   "regular_rows": 16,
+   "row_len": {
+    "agentic": 1024,
+    "code": 128,
+    "indic": 128,
+    "long_context": 1024,
+    "reasoning": 128,
+    "stem": 128,
+    "web": 128
+   },
+   "segment": "S1_foundation",
+   "segment_cum_floor_positions": {
+    "agentic": 0.0,
+    "indic": 1024.0,
+    "reasoning": 0.0
+   },
+   "segment_cum_quota_positions": {
+    "agentic": 0,
+    "code": 1408,
+    "indic": 1024,
+    "long_context": 0,
+    "reasoning": 0,
+    "stem": 640,
+    "web": 7168
+   },
+   "segment_cum_target_positions": {
+    "agentic": 0.0,
+    "code": 1433.6,
+    "indic": 1024.0,
+    "long_context": 0.0,
+    "reasoning": 0.0,
+    "stem": 614.4,
+    "web": 7168.0
+   },
+   "segment_cum_total_positions": 10240,
+   "stage": "S1_foundation",
+   "stage_floor_pct": {
+    "agentic": 0.0,
+    "indic": 10.0,
+    "reasoning": 0.0
+   },
+   "step": 5,
+   "subpool_mix": {
+    "agentic": {
+     "all": 1.0
+    },
+    "code": {
+     "all": 1.0
+    },
+    "indic": {
+     "B0_B1": 0.5,
+     "B2_B3": 0.4,
+     "B4_B5": 0.1
+    },
+    "long_context": {
+     "all": 1.0
+    },
+    "reasoning": {},
+    "stem": {
+     "all": 1.0
+    },
+    "web": {
+     "all": 1.0
+    }
+   },
+   "subquotas": {
+    "agentic": {},
+    "code": {
+     "all": 2
+    },
+    "indic": {
+     "B0_B1": 1
+    },
+    "long_context": {},
+    "reasoning": {},
+    "stem": {
+     "all": 1
+    },
+    "web": {
+     "all": 12
+    }
+   },
+   "target_positions": {
+    "agentic": 0.0,
+    "code": 286.72,
+    "indic": 204.8,
+    "long_context": 0.0,
+    "reasoning": 0.0,
+    "stem": 122.88,
+    "web": 1433.6
+   }
+  },
+  {
+   "base_window": 128,
+   "mix_pct": {
+    "agentic": 0.0,
+    "code": 14.0,
+    "indic": 10.0,
+    "long_context": 0.0,
+    "reasoning": 0.0,
+    "stem": 6.0,
+    "web": 70.0
+   },
+   "pools": {
+    "agentic": "main",
+    "code": "main",
+    "indic": "main",
+    "long_context": "main",
+    "reasoning": "main",
+    "stem": "main",
+    "web": "main"
+   },
+   "positions": 2048,
+   "quotas": {
+    "agentic": 0,
+    "code": 2,
+    "indic": 2,
+    "long_context": 0,
+    "reasoning": 0,
+    "stem": 1,
+    "web": 11
+   },
+   "ramp": null,
+   "regular_rows": 16,
+   "row_len": {
+    "agentic": 1024,
+    "code": 128,
+    "indic": 128,
+    "long_context": 1024,
+    "reasoning": 128,
+    "stem": 128,
+    "web": 128
+   },
+   "segment": "S1_foundation",
+   "segment_cum_floor_positions": {
+    "agentic": 0.0,
+    "indic": 1228.8,
+    "reasoning": 0.0
+   },
+   "segment_cum_quota_positions": {
+    "agentic": 0,
+    "code": 1664,
+    "indic": 1280,
+    "long_context": 0,
+    "reasoning": 0,
+    "stem": 768,
+    "web": 8576
+   },
+   "segment_cum_target_positions": {
+    "agentic": 0.0,
+    "code": 1720.32,
+    "indic": 1228.8,
+    "long_context": 0.0,
+    "reasoning": 0.0,
+    "stem": 737.28,
+    "web": 8601.6
+   },
+   "segment_cum_total_positions": 12288,
+   "stage": "S1_foundation",
+   "stage_floor_pct": {
+    "agentic": 0.0,
+    "indic": 10.0,
+    "reasoning": 0.0
+   },
+   "step": 6,
+   "subpool_mix": {
+    "agentic": {
+     "all": 1.0
+    },
+    "code": {
+     "all": 1.0
+    },
+    "indic": {
+     "B0_B1": 0.5,
+     "B2_B3": 0.4,
+     "B4_B5": 0.1
+    },
+    "long_context": {
+     "all": 1.0
+    },
+    "reasoning": {},
+    "stem": {
+     "all": 1.0
+    },
+    "web": {
+     "all": 1.0
+    }
+   },
+   "subquotas": {
+    "agentic": {},
+    "code": {
+     "all": 2
+    },
+    "indic": {
+     "B0_B1": 1,
+     "B2_B3": 1
+    },
+    "long_context": {},
+    "reasoning": {},
+    "stem": {
+     "all": 1
+    },
+    "web": {
+     "all": 11
+    }
+   },
+   "target_positions": {
+    "agentic": 0.0,
+    "code": 286.72,
+    "indic": 204.8,
+    "long_context": 0.0,
+    "reasoning": 0.0,
+    "stem": 122.88,
+    "web": 1433.6
+   }
+  },
+  {
+   "base_window": 128,
+   "mix_pct": {
+    "agentic": 0.0,
+    "code": 14.0,
+    "indic": 10.0,
+    "long_context": 0.0,
+    "reasoning": 0.0,
+    "stem": 6.0,
+    "web": 70.0
+   },
+   "pools": {
+    "agentic": "main",
+    "code": "main",
+    "indic": "main",
+    "long_context": "main",
+    "reasoning": "main",
+    "stem": "main",
+    "web": "main"
+   },
+   "positions": 2048,
+   "quotas": {
+    "agentic": 0,
+    "code": 2,
+    "indic": 2,
+    "long_context": 0,
+    "reasoning": 0,
+    "stem": 1,
+    "web": 11
+   },
+   "ramp": null,
+   "regular_rows": 16,
+   "row_len": {
+    "agentic": 1024,
+    "code": 128,
+    "indic": 128,
+    "long_context": 1024,
+    "reasoning": 128,
+    "stem": 128,
+    "web": 128
+   },
+   "segment": "S1_foundation",
+   "segment_cum_floor_positions": {
+    "agentic": 0.0,
+    "indic": 1433.6,
+    "reasoning": 0.0
+   },
+   "segment_cum_quota_positions": {
+    "agentic": 0,
+    "code": 1920,
+    "indic": 1536,
+    "long_context": 0,
+    "reasoning": 0,
+    "stem": 896,
+    "web": 9984
+   },
+   "segment_cum_target_positions": {
+    "agentic": 0.0,
+    "code": 2007.04,
+    "indic": 1433.6,
+    "long_context": 0.0,
+    "reasoning": 0.0,
+    "stem": 860.16,
+    "web": 10035.2
+   },
+   "segment_cum_total_positions": 14336,
+   "stage": "S1_foundation",
+   "stage_floor_pct": {
+    "agentic": 0.0,
+    "indic": 10.0,
+    "reasoning": 0.0
+   },
+   "step": 7,
+   "subpool_mix": {
+    "agentic": {
+     "all": 1.0
+    },
+    "code": {
+     "all": 1.0
+    },
+    "indic": {
+     "B0_B1": 0.5,
+     "B2_B3": 0.4,
+     "B4_B5": 0.1
+    },
+    "long_context": {
+     "all": 1.0
+    },
+    "reasoning": {},
+    "stem": {
+     "all": 1.0
+    },
+    "web": {
+     "all": 1.0
+    }
+   },
+   "subquotas": {
+    "agentic": {},
+    "code": {
+     "all": 2
+    },
+    "indic": {
+     "B0_B1": 1,
+     "B2_B3": 1
+    },
+    "long_context": {},
+    "reasoning": {},
+    "stem": {
+     "all": 1
+    },
+    "web": {
+     "all": 11
+    }
+   },
+   "target_positions": {
+    "agentic": 0.0,
+    "code": 286.72,
+    "indic": 204.8,
+    "long_context": 0.0,
+    "reasoning": 0.0,
+    "stem": 122.88,
+    "web": 1433.6
+   }
+  },
+  {
+   "base_window": 128,
+   "mix_pct": {
+    "agentic": 0.0,
+    "code": 18.0,
+    "indic": 10.0,
+    "long_context": 0.0,
+    "reasoning": 0.166667,
+    "stem": 6.666667,
+    "web": 65.166667
+   },
+   "pools": {
+    "agentic": "main",
+    "code": "main",
+    "indic": "main",
+    "long_context": "main",
+    "reasoning": "main",
+    "stem": "main",
+    "web": "main"
+   },
+   "positions": 2048,
+   "quotas": {
+    "agentic": 0,
+    "code": 3,
+    "indic": 1,
+    "long_context": 0,
+    "reasoning": 0,
+    "stem": 1,
+    "web": 11
+   },
+   "ramp": {
+    "alpha": 0.333333,
+    "from": "S1_foundation",
+    "to": "S2_broaden"
+   },
+   "regular_rows": 16,
+   "row_len": {
+    "agentic": 1024,
+    "code": 128,
+    "indic": 128,
+    "long_context": 1024,
+    "reasoning": 128,
+    "stem": 128,
+    "web": 128
+   },
+   "segment": "S1_foundation",
+   "segment_cum_floor_positions": {
+    "agentic": 0.0,
+    "indic": 1638.4,
+    "reasoning": 0.0
+   },
+   "segment_cum_quota_positions": {
+    "agentic": 0,
+    "code": 2304,
+    "indic": 1664,
+    "long_context": 0,
+    "reasoning": 0,
+    "stem": 1024,
+    "web": 11392
+   },
+   "segment_cum_target_positions": {
+    "agentic": 0.0,
+    "code": 2375.68,
+    "indic": 1638.4,
+    "long_context": 0.0,
+    "reasoning": 3.413333,
+    "stem": 996.693333,
+    "web": 11369.813333
+   },
+   "segment_cum_total_positions": 16384,
+   "stage": "S1_foundation",
+   "stage_floor_pct": {
+    "agentic": 0.0,
+    "indic": 10.0,
+    "reasoning": 0.0
+   },
+   "step": 8,
+   "subpool_mix": {
+    "agentic": {},
+    "code": {
+     "all": 1.0
+    },
+    "indic": {
+     "B0_B1": 0.4333333333333333,
+     "B2_B3": 0.4333333333333333,
+     "B4_B5": 0.13333333333333333
+    },
+    "long_context": {},
+    "reasoning": {
+     "low": 0.5333333333333333,
+     "medium": 0.4666666666666667
+    },
+    "stem": {
+     "all": 1.0
+    },
+    "web": {
+     "all": 1.0
+    }
+   },
+   "subquotas": {
+    "agentic": {},
+    "code": {
+     "all": 3
+    },
+    "indic": {
+     "B0_B1": 1
+    },
+    "long_context": {},
+    "reasoning": {},
+    "stem": {
+     "all": 1
+    },
+    "web": {
+     "all": 11
+    }
+   },
+   "target_positions": {
+    "agentic": 0.0,
+    "code": 368.64,
+    "indic": 204.8,
+    "long_context": 0.0,
+    "reasoning": 3.413333,
+    "stem": 136.533333,
+    "web": 1334.613333
+   }
+  },
+  {
+   "base_window": 128,
+   "mix_pct": {
+    "agentic": 0.0,
+    "code": 22.0,
+    "indic": 10.0,
+    "long_context": 0.0,
+    "reasoning": 0.333333,
+    "stem": 7.333333,
+    "web": 60.333333
+   },
+   "pools": {
+    "agentic": "main",
+    "code": "main",
+    "indic": "main",
+    "long_context": "main",
+    "reasoning": "main",
+    "stem": "main",
+    "web": "main"
+   },
+   "positions": 2048,
+   "quotas": {
+    "agentic": 0,
+    "code": 3,
+    "indic": 2,
+    "long_context": 0,
+    "reasoning": 1,
+    "stem": 1,
+    "web": 9
+   },
+   "ramp": {
+    "alpha": 0.666667,
+    "from": "S1_foundation",
+    "to": "S2_broaden"
+   },
+   "regular_rows": 16,
+   "row_len": {
+    "agentic": 1024,
+    "code": 128,
+    "indic": 128,
+    "long_context": 1024,
+    "reasoning": 128,
+    "stem": 128,
+    "web": 128
+   },
+   "segment": "S2_broaden",
+   "segment_cum_floor_positions": {
+    "agentic": 0.0,
+    "indic": 204.8,
+    "reasoning": 10.24
+   },
+   "segment_cum_quota_positions": {
+    "agentic": 0,
+    "code": 384,
+    "indic": 256,
+    "long_context": 0,
+    "reasoning": 128,
+    "stem": 128,
+    "web": 1152
+   },
+   "segment_cum_target_positions": {
+    "agentic": 0.0,
+    "code": 450.56,
+    "indic": 204.8,
+    "long_context": 0.0,
+    "reasoning": 6.826667,
+    "stem": 150.186667,
+    "web": 1235.626667
+   },
+   "segment_cum_total_positions": 2048,
+   "stage": "S2_broaden",
+   "stage_floor_pct": {
+    "agentic": 0.0,
+    "indic": 10.0,
+    "reasoning": 0.5
+   },
+   "step": 9,
+   "subpool_mix": {
+    "agentic": {},
+    "code": {
+     "all": 1.0
+    },
+    "indic": {
+     "B0_B1": 0.3666666666666667,
+     "B2_B3": 0.4666666666666667,
+     "B4_B5": 0.16666666666666666
+    },
+    "long_context": {},
+    "reasoning": {
+     "low": 0.5333333333333333,
+     "medium": 0.4666666666666667
+    },
+    "stem": {
+     "all": 1.0
+    },
+    "web": {
+     "all": 1.0
+    }
+   },
+   "subquotas": {
+    "agentic": {},
+    "code": {
+     "all": 3
+    },
+    "indic": {
+     "B0_B1": 1,
+     "B2_B3": 1
+    },
+    "long_context": {},
+    "reasoning": {
+     "low": 1
+    },
+    "stem": {
+     "all": 1
+    },
+    "web": {
+     "all": 9
+    }
+   },
+   "target_positions": {
+    "agentic": 0.0,
+    "code": 450.56,
+    "indic": 204.8,
+    "long_context": 0.0,
+    "reasoning": 6.826667,
+    "stem": 150.186667,
+    "web": 1235.626667
+   }
+  },
+  {
+   "base_window": 128,
+   "mix_pct": {
+    "agentic": 0.0,
+    "code": 26.0,
+    "indic": 10.0,
+    "long_context": 0.0,
+    "reasoning": 0.5,
+    "stem": 8.0,
+    "web": 55.5
+   },
+   "pools": {
+    "agentic": "main",
+    "code": "main",
+    "indic": "main",
+    "long_context": "main",
+    "reasoning": "main",
+    "stem": "main",
+    "web": "main"
+   },
+   "positions": 2048,
+   "quotas": {
+    "agentic": 0,
+    "code": 4,
+    "indic": 2,
+    "long_context": 0,
+    "reasoning": 0,
+    "stem": 1,
+    "web": 9
+   },
+   "ramp": null,
+   "regular_rows": 16,
+   "row_len": {
+    "agentic": 1024,
+    "code": 128,
+    "indic": 128,
+    "long_context": 1024,
+    "reasoning": 128,
+    "stem": 128,
+    "web": 128
+   },
+   "segment": "S2_broaden",
+   "segment_cum_floor_positions": {
+    "agentic": 0.0,
+    "indic": 409.6,
+    "reasoning": 20.48
+   },
+   "segment_cum_quota_positions": {
+    "agentic": 0,
+    "code": 896,
+    "indic": 512,
+    "long_context": 0,
+    "reasoning": 128,
+    "stem": 256,
+    "web": 2304
+   },
+   "segment_cum_target_positions": {
+    "agentic": 0.0,
+    "code": 983.04,
+    "indic": 409.6,
+    "long_context": 0.0,
+    "reasoning": 17.066667,
+    "stem": 314.026667,
+    "web": 2372.266667
+   },
+   "segment_cum_total_positions": 4096,
+   "stage": "S2_broaden",
+   "stage_floor_pct": {
+    "agentic": 0.0,
+    "indic": 10.0,
+    "reasoning": 0.5
+   },
+   "step": 10,
+   "subpool_mix": {
+    "agentic": {
+     "all": 1.0
+    },
+    "code": {
+     "all": 1.0
+    },
+    "indic": {
+     "B0_B1": 0.3,
+     "B2_B3": 0.5,
+     "B4_B5": 0.2
+    },
+    "long_context": {
+     "all": 1.0
+    },
+    "reasoning": {
+     "low": 0.5333333333333333,
+     "medium": 0.4666666666666667
+    },
+    "stem": {
+     "all": 1.0
+    },
+    "web": {
+     "all": 1.0
+    }
+   },
+   "subquotas": {
+    "agentic": {},
+    "code": {
+     "all": 4
+    },
+    "indic": {
+     "B2_B3": 1,
+     "B4_B5": 1
+    },
+    "long_context": {},
+    "reasoning": {},
+    "stem": {
+     "all": 1
+    },
+    "web": {
+     "all": 9
+    }
+   },
+   "target_positions": {
+    "agentic": 0.0,
+    "code": 532.48,
+    "indic": 204.8,
+    "long_context": 0.0,
+    "reasoning": 10.24,
+    "stem": 163.84,
+    "web": 1136.64
+   }
+  },
+  {
+   "base_window": 128,
+   "mix_pct": {
+    "agentic": 0.0,
+    "code": 26.0,
+    "indic": 10.0,
+    "long_context": 0.0,
+    "reasoning": 0.5,
+    "stem": 8.0,
+    "web": 55.5
+   },
+   "pools": {
+    "agentic": "main",
+    "code": "main",
+    "indic": "main",
+    "long_context": "main",
+    "reasoning": "main",
+    "stem": "main",
+    "web": "main"
+   },
+   "positions": 2048,
+   "quotas": {
+    "agentic": 0,
+    "code": 5,
+    "indic": 1,
+    "long_context": 0,
+    "reasoning": 0,
+    "stem": 1,
+    "web": 9
+   },
+   "ramp": null,
+   "regular_rows": 16,
+   "row_len": {
+    "agentic": 1024,
+    "code": 128,
+    "indic": 128,
+    "long_context": 1024,
+    "reasoning": 128,
+    "stem": 128,
+    "web": 128
+   },
+   "segment": "S2_broaden",
+   "segment_cum_floor_positions": {
+    "agentic": 0.0,
+    "indic": 614.4,
+    "reasoning": 30.72
+   },
+   "segment_cum_quota_positions": {
+    "agentic": 0,
+    "code": 1536,
+    "indic": 640,
+    "long_context": 0,
+    "reasoning": 128,
+    "stem": 384,
+    "web": 3456
+   },
+   "segment_cum_target_positions": {
+    "agentic": 0.0,
+    "code": 1515.52,
+    "indic": 614.4,
+    "long_context": 0.0,
+    "reasoning": 27.306667,
+    "stem": 477.866667,
+    "web": 3508.906667
+   },
+   "segment_cum_total_positions": 6144,
+   "stage": "S2_broaden",
+   "stage_floor_pct": {
+    "agentic": 0.0,
+    "indic": 10.0,
+    "reasoning": 0.5
+   },
+   "step": 11,
+   "subpool_mix": {
+    "agentic": {
+     "all": 1.0
+    },
+    "code": {
+     "all": 1.0
+    },
+    "indic": {
+     "B0_B1": 0.3,
+     "B2_B3": 0.5,
+     "B4_B5": 0.2
+    },
+    "long_context": {
+     "all": 1.0
+    },
+    "reasoning": {
+     "low": 0.5333333333333333,
+     "medium": 0.4666666666666667
+    },
+    "stem": {
+     "all": 1.0
+    },
+    "web": {
+     "all": 1.0
+    }
+   },
+   "subquotas": {
+    "agentic": {},
+    "code": {
+     "all": 5
+    },
+    "indic": {
+     "B0_B1": 1
+    },
+    "long_context": {},
+    "reasoning": {},
+    "stem": {
+     "all": 1
+    },
+    "web": {
+     "all": 9
+    }
+   },
+   "target_positions": {
+    "agentic": 0.0,
+    "code": 532.48,
+    "indic": 204.8,
+    "long_context": 0.0,
+    "reasoning": 10.24,
+    "stem": 163.84,
+    "web": 1136.64
+   }
+  },
+  {
+   "base_window": 128,
+   "mix_pct": {
+    "agentic": 0.0,
+    "code": 26.0,
+    "indic": 10.0,
+    "long_context": 0.0,
+    "reasoning": 0.5,
+    "stem": 8.0,
+    "web": 55.5
+   },
+   "pools": {
+    "agentic": "main",
+    "code": "main",
+    "indic": "main",
+    "long_context": "main",
+    "reasoning": "main",
+    "stem": "main",
+    "web": "main"
+   },
+   "positions": 2048,
+   "quotas": {
+    "agentic": 0,
+    "code": 3,
+    "indic": 2,
+    "long_context": 0,
+    "reasoning": 0,
+    "stem": 2,
+    "web": 9
+   },
+   "ramp": null,
+   "regular_rows": 16,
+   "row_len": {
+    "agentic": 1024,
+    "code": 128,
+    "indic": 128,
+    "long_context": 1024,
+    "reasoning": 128,
+    "stem": 128,
+    "web": 128
+   },
+   "segment": "S2_broaden",
+   "segment_cum_floor_positions": {
+    "agentic": 0.0,
+    "indic": 819.2,
+    "reasoning": 40.96
+   },
+   "segment_cum_quota_positions": {
+    "agentic": 0,
+    "code": 1920,
+    "indic": 896,
+    "long_context": 0,
+    "reasoning": 128,
+    "stem": 640,
+    "web": 4608
+   },
+   "segment_cum_target_positions": {
+    "agentic": 0.0,
+    "code": 2048.0,
+    "indic": 819.2,
+    "long_context": 0.0,
+    "reasoning": 37.546667,
+    "stem": 641.706667,
+    "web": 4645.546667
+   },
+   "segment_cum_total_positions": 8192,
+   "stage": "S2_broaden",
+   "stage_floor_pct": {
+    "agentic": 0.0,
+    "indic": 10.0,
+    "reasoning": 0.5
+   },
+   "step": 12,
+   "subpool_mix": {
+    "agentic": {
+     "all": 1.0
+    },
+    "code": {
+     "all": 1.0
+    },
+    "indic": {
+     "B0_B1": 0.3,
+     "B2_B3": 0.5,
+     "B4_B5": 0.2
+    },
+    "long_context": {
+     "all": 1.0
+    },
+    "reasoning": {
+     "low": 0.5333333333333333,
+     "medium": 0.4666666666666667
+    },
+    "stem": {
+     "all": 1.0
+    },
+    "web": {
+     "all": 1.0
+    }
+   },
+   "subquotas": {
+    "agentic": {},
+    "code": {
+     "all": 3
+    },
+    "indic": {
+     "B2_B3": 2
+    },
+    "long_context": {},
+    "reasoning": {},
+    "stem": {
+     "all": 2
+    },
+    "web": {
+     "all": 9
+    }
+   },
+   "target_positions": {
+    "agentic": 0.0,
+    "code": 532.48,
+    "indic": 204.8,
+    "long_context": 0.0,
+    "reasoning": 10.24,
+    "stem": 163.84,
+    "web": 1136.64
+   }
+  },
+  {
+   "base_window": 128,
+   "mix_pct": {
+    "agentic": 0.0,
+    "code": 26.0,
+    "indic": 10.0,
+    "long_context": 0.0,
+    "reasoning": 0.5,
+    "stem": 8.0,
+    "web": 55.5
+   },
+   "pools": {
+    "agentic": "main",
+    "code": "main",
+    "indic": "main",
+    "long_context": "main",
+    "reasoning": "main",
+    "stem": "main",
+    "web": "main"
+   },
+   "positions": 2048,
+   "quotas": {
+    "agentic": 0,
+    "code": 5,
+    "indic": 1,
+    "long_context": 0,
+    "reasoning": 0,
+    "stem": 1,
+    "web": 9
+   },
+   "ramp": null,
+   "regular_rows": 16,
+   "row_len": {
+    "agentic": 1024,
+    "code": 128,
+    "indic": 128,
+    "long_context": 1024,
+    "reasoning": 128,
+    "stem": 128,
+    "web": 128
+   },
+   "segment": "S2_broaden",
+   "segment_cum_floor_positions": {
+    "agentic": 0.0,
+    "indic": 1024.0,
+    "reasoning": 51.2
+   },
+   "segment_cum_quota_positions": {
+    "agentic": 0,
+    "code": 2560,
+    "indic": 1024,
+    "long_context": 0,
+    "reasoning": 128,
+    "stem": 768,
+    "web": 5760
+   },
+   "segment_cum_target_positions": {
+    "agentic": 0.0,
+    "code": 2580.48,
+    "indic": 1024.0,
+    "long_context": 0.0,
+    "reasoning": 47.786667,
+    "stem": 805.546667,
+    "web": 5782.186667
+   },
+   "segment_cum_total_positions": 10240,
+   "stage": "S2_broaden",
+   "stage_floor_pct": {
+    "agentic": 0.0,
+    "indic": 10.0,
+    "reasoning": 0.5
+   },
+   "step": 13,
+   "subpool_mix": {
+    "agentic": {
+     "all": 1.0
+    },
+    "code": {
+     "all": 1.0
+    },
+    "indic": {
+     "B0_B1": 0.3,
+     "B2_B3": 0.5,
+     "B4_B5": 0.2
+    },
+    "long_context": {
+     "all": 1.0
+    },
+    "reasoning": {
+     "low": 0.5333333333333333,
+     "medium": 0.4666666666666667
+    },
+    "stem": {
+     "all": 1.0
+    },
+    "web": {
+     "all": 1.0
+    }
+   },
+   "subquotas": {
+    "agentic": {},
+    "code": {
+     "all": 5
+    },
+    "indic": {
+     "B0_B1": 1
+    },
+    "long_context": {},
+    "reasoning": {},
+    "stem": {
+     "all": 1
+    },
+    "web": {
+     "all": 9
+    }
+   },
+   "target_positions": {
+    "agentic": 0.0,
+    "code": 532.48,
+    "indic": 204.8,
+    "long_context": 0.0,
+    "reasoning": 10.24,
+    "stem": 163.84,
+    "web": 1136.64
+   }
+  },
+  {
+   "base_window": 128,
+   "mix_pct": {
+    "agentic": 0.0,
+    "code": 26.0,
+    "indic": 10.0,
+    "long_context": 0.0,
+    "reasoning": 0.5,
+    "stem": 8.0,
+    "web": 55.5
+   },
+   "pools": {
+    "agentic": "main",
+    "code": "main",
+    "indic": "main",
+    "long_context": "main",
+    "reasoning": "main",
+    "stem": "main",
+    "web": "main"
+   },
+   "positions": 2048,
+   "quotas": {
+    "agentic": 0,
+    "code": 4,
+    "indic": 2,
+    "long_context": 0,
+    "reasoning": 0,
+    "stem": 1,
+    "web": 9
+   },
+   "ramp": null,
+   "regular_rows": 16,
+   "row_len": {
+    "agentic": 1024,
+    "code": 128,
+    "indic": 128,
+    "long_context": 1024,
+    "reasoning": 128,
+    "stem": 128,
+    "web": 128
+   },
+   "segment": "S2_broaden",
+   "segment_cum_floor_positions": {
+    "agentic": 0.0,
+    "indic": 1228.8,
+    "reasoning": 61.44
+   },
+   "segment_cum_quota_positions": {
+    "agentic": 0,
+    "code": 3072,
+    "indic": 1280,
+    "long_context": 0,
+    "reasoning": 128,
+    "stem": 896,
+    "web": 6912
+   },
+   "segment_cum_target_positions": {
+    "agentic": 0.0,
+    "code": 3112.96,
+    "indic": 1228.8,
+    "long_context": 0.0,
+    "reasoning": 58.026667,
+    "stem": 969.386667,
+    "web": 6918.826667
+   },
+   "segment_cum_total_positions": 12288,
+   "stage": "S2_broaden",
+   "stage_floor_pct": {
+    "agentic": 0.0,
+    "indic": 10.0,
+    "reasoning": 0.5
+   },
+   "step": 14,
+   "subpool_mix": {
+    "agentic": {
+     "all": 1.0
+    },
+    "code": {
+     "all": 1.0
+    },
+    "indic": {
+     "B0_B1": 0.3,
+     "B2_B3": 0.5,
+     "B4_B5": 0.2
+    },
+    "long_context": {
+     "all": 1.0
+    },
+    "reasoning": {
+     "low": 0.5333333333333333,
+     "medium": 0.4666666666666667
+    },
+    "stem": {
+     "all": 1.0
+    },
+    "web": {
+     "all": 1.0
+    }
+   },
+   "subquotas": {
+    "agentic": {},
+    "code": {
+     "all": 4
+    },
+    "indic": {
+     "B2_B3": 1,
+     "B4_B5": 1
+    },
+    "long_context": {},
+    "reasoning": {},
+    "stem": {
+     "all": 1
+    },
+    "web": {
+     "all": 9
+    }
+   },
+   "target_positions": {
+    "agentic": 0.0,
+    "code": 532.48,
+    "indic": 204.8,
+    "long_context": 0.0,
+    "reasoning": 10.24,
+    "stem": 163.84,
+    "web": 1136.64
+   }
+  },
+  {
+   "base_window": 128,
+   "mix_pct": {
+    "agentic": 0.0,
+    "code": 26.0,
+    "indic": 16,
+    "long_context": 0.0,
+    "reasoning": 0.5,
+    "stem": 8.0,
+    "web": 49.5
+   },
+   "pools": {
+    "agentic": "main",
+    "code": "main",
+    "indic": "main",
+    "long_context": "main",
+    "reasoning": "main",
+    "stem": "main",
+    "web": "main"
+   },
+   "positions": 2048,
+   "quotas": {
+    "agentic": 0,
+    "code": 4,
+    "indic": 3,
+    "long_context": 0,
+    "reasoning": 1,
+    "stem": 1,
+    "web": 7
+   },
+   "ramp": null,
+   "regular_rows": 16,
+   "row_len": {
+    "agentic": 1024,
+    "code": 128,
+    "indic": 128,
+    "long_context": 1024,
+    "reasoning": 128,
+    "stem": 128,
+    "web": 128
+   },
+   "segment": "S2_broaden/fork",
+   "segment_cum_floor_positions": {
+    "agentic": 0.0,
+    "indic": 327.68,
+    "reasoning": 10.24
+   },
+   "segment_cum_quota_positions": {
+    "agentic": 0,
+    "code": 512,
+    "indic": 384,
+    "long_context": 0,
+    "reasoning": 128,
+    "stem": 128,
+    "web": 896
+   },
+   "segment_cum_target_positions": {
+    "agentic": 0.0,
+    "code": 532.48,
+    "indic": 327.68,
+    "long_context": 0.0,
+    "reasoning": 10.24,
+    "stem": 163.84,
+    "web": 1013.76
+   },
+   "segment_cum_total_positions": 2048,
+   "stage": "S2_broaden",
+   "stage_floor_pct": {
+    "agentic": 0.0,
+    "indic": 16,
+    "reasoning": 0.5
+   },
+   "step": 15,
+   "subpool_mix": {
+    "agentic": {
+     "all": 1.0
+    },
+    "code": {
+     "all": 1.0
+    },
+    "indic": {
+     "B0_B1": 0.3,
+     "B2_B3": 0.5,
+     "B4_B5": 0.2
+    },
+    "long_context": {
+     "all": 1.0
+    },
+    "reasoning": {
+     "low": 0.5333333333333333,
+     "medium": 0.4666666666666667
+    },
+    "stem": {
+     "all": 1.0
+    },
+    "web": {
+     "all": 1.0
+    }
+   },
+   "subquotas": {
+    "agentic": {},
+    "code": {
+     "all": 4
+    },
+    "indic": {
+     "B0_B1": 1,
+     "B2_B3": 1,
+     "B4_B5": 1
+    },
+    "long_context": {},
+    "reasoning": {
+     "low": 1
+    },
+    "stem": {
+     "all": 1
+    },
+    "web": {
+     "all": 7
+    }
+   },
+   "target_positions": {
+    "agentic": 0.0,
+    "code": 532.48,
+    "indic": 327.68,
+    "long_context": 0.0,
+    "reasoning": 10.24,
+    "stem": 163.84,
+    "web": 1013.76
+   }
+  },
+  {
+   "base_window": 128,
+   "mix_pct": {
+    "agentic": 0.0,
+    "code": 26.0,
+    "indic": 16,
+    "long_context": 0.0,
+    "reasoning": 0.5,
+    "stem": 8.0,
+    "web": 49.5
+   },
+   "pools": {
+    "agentic": "main",
+    "code": "main",
+    "indic": "main",
+    "long_context": "main",
+    "reasoning": "main",
+    "stem": "main",
+    "web": "main"
+   },
+   "positions": 2048,
+   "quotas": {
+    "agentic": 0,
+    "code": 4,
+    "indic": 3,
+    "long_context": 0,
+    "reasoning": 0,
+    "stem": 1,
+    "web": 8
+   },
+   "ramp": null,
+   "regular_rows": 16,
+   "row_len": {
+    "agentic": 1024,
+    "code": 128,
+    "indic": 128,
+    "long_context": 1024,
+    "reasoning": 128,
+    "stem": 128,
+    "web": 128
+   },
+   "segment": "S2_broaden/fork",
+   "segment_cum_floor_positions": {
+    "agentic": 0.0,
+    "indic": 655.36,
+    "reasoning": 20.48
+   },
+   "segment_cum_quota_positions": {
+    "agentic": 0,
+    "code": 1024,
+    "indic": 768,
+    "long_context": 0,
+    "reasoning": 128,
+    "stem": 256,
+    "web": 1920
+   },
+   "segment_cum_target_positions": {
+    "agentic": 0.0,
+    "code": 1064.96,
+    "indic": 655.36,
+    "long_context": 0.0,
+    "reasoning": 20.48,
+    "stem": 327.68,
+    "web": 2027.52
+   },
+   "segment_cum_total_positions": 4096,
+   "stage": "S2_broaden",
+   "stage_floor_pct": {
+    "agentic": 0.0,
+    "indic": 16,
+    "reasoning": 0.5
+   },
+   "step": 16,
+   "subpool_mix": {
+    "agentic": {
+     "all": 1.0
+    },
+    "code": {
+     "all": 1.0
+    },
+    "indic": {
+     "B0_B1": 0.3,
+     "B2_B3": 0.5,
+     "B4_B5": 0.2
+    },
+    "long_context": {
+     "all": 1.0
+    },
+    "reasoning": {
+     "low": 0.5333333333333333,
+     "medium": 0.4666666666666667
+    },
+    "stem": {
+     "all": 1.0
+    },
+    "web": {
+     "all": 1.0
+    }
+   },
+   "subquotas": {
+    "agentic": {},
+    "code": {
+     "all": 4
+    },
+    "indic": {
+     "B0_B1": 1,
+     "B2_B3": 2
+    },
+    "long_context": {},
+    "reasoning": {},
+    "stem": {
+     "all": 1
+    },
+    "web": {
+     "all": 8
+    }
+   },
+   "target_positions": {
+    "agentic": 0.0,
+    "code": 532.48,
+    "indic": 327.68,
+    "long_context": 0.0,
+    "reasoning": 10.24,
+    "stem": 163.84,
+    "web": 1013.76
+   }
+  },
+  {
+   "base_window": 128,
+   "mix_pct": {
+    "agentic": 0.0,
+    "code": 26.0,
+    "indic": 16,
+    "long_context": 0.0,
+    "reasoning": 0.5,
+    "stem": 8.0,
+    "web": 49.5
+   },
+   "pools": {
+    "agentic": "main",
+    "code": "main",
+    "indic": "main",
+    "long_context": "main",
+    "reasoning": "main",
+    "stem": "main",
+    "web": "main"
+   },
+   "positions": 2048,
+   "quotas": {
+    "agentic": 0,
+    "code": 4,
+    "indic": 2,
+    "long_context": 0,
+    "reasoning": 0,
+    "stem": 2,
+    "web": 8
+   },
+   "ramp": null,
+   "regular_rows": 16,
+   "row_len": {
+    "agentic": 1024,
+    "code": 128,
+    "indic": 128,
+    "long_context": 1024,
+    "reasoning": 128,
+    "stem": 128,
+    "web": 128
+   },
+   "segment": "S2_broaden/fork",
+   "segment_cum_floor_positions": {
+    "agentic": 0.0,
+    "indic": 983.04,
+    "reasoning": 30.72
+   },
+   "segment_cum_quota_positions": {
+    "agentic": 0,
+    "code": 1536,
+    "indic": 1024,
+    "long_context": 0,
+    "reasoning": 128,
+    "stem": 512,
+    "web": 2944
+   },
+   "segment_cum_target_positions": {
+    "agentic": 0.0,
+    "code": 1597.44,
+    "indic": 983.04,
+    "long_context": 0.0,
+    "reasoning": 30.72,
+    "stem": 491.52,
+    "web": 3041.28
+   },
+   "segment_cum_total_positions": 6144,
+   "stage": "S2_broaden",
+   "stage_floor_pct": {
+    "agentic": 0.0,
+    "indic": 16,
+    "reasoning": 0.5
+   },
+   "step": 17,
+   "subpool_mix": {
+    "agentic": {
+     "all": 1.0
+    },
+    "code": {
+     "all": 1.0
+    },
+    "indic": {
+     "B0_B1": 0.3,
+     "B2_B3": 0.5,
+     "B4_B5": 0.2
+    },
+    "long_context": {
+     "all": 1.0
+    },
+    "reasoning": {
+     "low": 0.5333333333333333,
+     "medium": 0.4666666666666667
+    },
+    "stem": {
+     "all": 1.0
+    },
+    "web": {
+     "all": 1.0
+    }
+   },
+   "subquotas": {
+    "agentic": {},
+    "code": {
+     "all": 4
+    },
+    "indic": {
+     "B2_B3": 1,
+     "B4_B5": 1
+    },
+    "long_context": {},
+    "reasoning": {},
+    "stem": {
+     "all": 2
+    },
+    "web": {
+     "all": 8
+    }
+   },
+   "target_positions": {
+    "agentic": 0.0,
+    "code": 532.48,
+    "indic": 327.68,
+    "long_context": 0.0,
+    "reasoning": 10.24,
+    "stem": 163.84,
+    "web": 1013.76
+   }
+  },
+  {
+   "base_window": 128,
+   "mix_pct": {
+    "agentic": 0.0,
+    "code": 26.0,
+    "indic": 16,
+    "long_context": 0.0,
+    "reasoning": 0.5,
+    "stem": 8.0,
+    "web": 49.5
+   },
+   "pools": {
+    "agentic": "main",
+    "code": "main",
+    "indic": "main",
+    "long_context": "main",
+    "reasoning": "main",
+    "stem": "main",
+    "web": "main"
+   },
+   "positions": 2048,
+   "quotas": {
+    "agentic": 0,
+    "code": 4,
+    "indic": 3,
+    "long_context": 0,
+    "reasoning": 0,
+    "stem": 1,
+    "web": 8
+   },
+   "ramp": null,
+   "regular_rows": 16,
+   "row_len": {
+    "agentic": 1024,
+    "code": 128,
+    "indic": 128,
+    "long_context": 1024,
+    "reasoning": 128,
+    "stem": 128,
+    "web": 128
+   },
+   "segment": "S2_broaden/fork",
+   "segment_cum_floor_positions": {
+    "agentic": 0.0,
+    "indic": 1310.72,
+    "reasoning": 40.96
+   },
+   "segment_cum_quota_positions": {
+    "agentic": 0,
+    "code": 2048,
+    "indic": 1408,
+    "long_context": 0,
+    "reasoning": 128,
+    "stem": 640,
+    "web": 3968
+   },
+   "segment_cum_target_positions": {
+    "agentic": 0.0,
+    "code": 2129.92,
+    "indic": 1310.72,
+    "long_context": 0.0,
+    "reasoning": 40.96,
+    "stem": 655.36,
+    "web": 4055.04
+   },
+   "segment_cum_total_positions": 8192,
+   "stage": "S2_broaden",
+   "stage_floor_pct": {
+    "agentic": 0.0,
+    "indic": 16,
+    "reasoning": 0.5
+   },
+   "step": 18,
+   "subpool_mix": {
+    "agentic": {
+     "all": 1.0
+    },
+    "code": {
+     "all": 1.0
+    },
+    "indic": {
+     "B0_B1": 0.3,
+     "B2_B3": 0.5,
+     "B4_B5": 0.2
+    },
+    "long_context": {
+     "all": 1.0
+    },
+    "reasoning": {
+     "low": 0.5333333333333333,
+     "medium": 0.4666666666666667
+    },
+    "stem": {
+     "all": 1.0
+    },
+    "web": {
+     "all": 1.0
+    }
+   },
+   "subquotas": {
+    "agentic": {},
+    "code": {
+     "all": 4
+    },
+    "indic": {
+     "B0_B1": 1,
+     "B2_B3": 2
+    },
+    "long_context": {},
+    "reasoning": {},
+    "stem": {
+     "all": 1
+    },
+    "web": {
+     "all": 8
+    }
+   },
+   "target_positions": {
+    "agentic": 0.0,
+    "code": 532.48,
+    "indic": 327.68,
+    "long_context": 0.0,
+    "reasoning": 10.24,
+    "stem": 163.84,
+    "web": 1013.76
+   }
+  },
+  {
+   "base_window": 256,
+   "mix_pct": {
+    "agentic": 0.0,
+    "code": 26.0,
+    "indic": 16,
+    "long_context": 0.0,
+    "reasoning": 0.5,
+    "stem": 8.0,
+    "web": 49.5
+   },
+   "pools": {
+    "agentic": "main",
+    "code": "main",
+    "indic": "main",
+    "long_context": "main",
+    "reasoning": "main",
+    "stem": "main",
+    "web": "main"
+   },
+   "positions": 2048,
+   "quotas": {
+    "agentic": 0,
+    "code": 2,
+    "indic": 1,
+    "long_context": 0,
+    "reasoning": 0,
+    "stem": 1,
+    "web": 4
+   },
+   "ramp": null,
+   "regular_rows": 8,
+   "row_len": {
+    "agentic": 1024,
+    "code": 256,
+    "indic": 256,
+    "long_context": 1024,
+    "reasoning": 256,
+    "stem": 256,
+    "web": 256
+   },
+   "segment": "S2_broaden/fork",
+   "segment_cum_floor_positions": {
+    "agentic": 0.0,
+    "indic": 1638.4,
+    "reasoning": 51.2
+   },
+   "segment_cum_quota_positions": {
+    "agentic": 0,
+    "code": 2560,
+    "indic": 1664,
+    "long_context": 0,
+    "reasoning": 128,
+    "stem": 896,
+    "web": 4992
+   },
+   "segment_cum_target_positions": {
+    "agentic": 0.0,
+    "code": 2662.4,
+    "indic": 1638.4,
+    "long_context": 0.0,
+    "reasoning": 51.2,
+    "stem": 819.2,
+    "web": 5068.8
+   },
+   "segment_cum_total_positions": 10240,
+   "stage": "S2_broaden",
+   "stage_floor_pct": {
+    "agentic": 0.0,
+    "indic": 16,
+    "reasoning": 0.5
+   },
+   "step": 19,
+   "subpool_mix": {
+    "agentic": {
+     "all": 1.0
+    },
+    "code": {
+     "all": 1.0
+    },
+    "indic": {
+     "B0_B1": 0.3,
+     "B2_B3": 0.5,
+     "B4_B5": 0.2
+    },
+    "long_context": {
+     "all": 1.0
+    },
+    "reasoning": {
+     "low": 0.5333333333333333,
+     "medium": 0.4666666666666667
+    },
+    "stem": {
+     "all": 1.0
+    },
+    "web": {
+     "all": 1.0
+    }
+   },
+   "subquotas": {
+    "agentic": {},
+    "code": {
+     "all": 2
+    },
+    "indic": {
+     "B0_B1": 1
+    },
+    "long_context": {},
+    "reasoning": {},
+    "stem": {
+     "all": 1
+    },
+    "web": {
+     "all": 4
+    }
+   },
+   "target_positions": {
+    "agentic": 0.0,
+    "code": 532.48,
+    "indic": 327.68,
+    "long_context": 0.0,
+    "reasoning": 10.24,
+    "stem": 163.84,
+    "web": 1013.76
+   }
+  },
+  {
+   "base_window": 256,
+   "mix_pct": {
+    "agentic": 0.166667,
+    "code": 28.666667,
+    "indic": 16.0,
+    "long_context": 0.0,
+    "reasoning": 0.666667,
+    "stem": 9.333333,
+    "web": 45.166667
+   },
+   "pools": {
+    "agentic": "main",
+    "code": "main",
+    "indic": "main",
+    "long_context": "main",
+    "reasoning": "main",
+    "stem": "main",
+    "web": "main"
+   },
+   "positions": 2048,
+   "quotas": {
+    "agentic": 0,
+    "code": 2,
+    "indic": 2,
+    "long_context": 0,
+    "reasoning": 0,
+    "stem": 0,
+    "web": 4
+   },
+   "ramp": {
+    "alpha": 0.333333,
+    "from": "S2_broaden",
+    "to": "S3_reasoning_code"
+   },
+   "regular_rows": 8,
+   "row_len": {
+    "agentic": 1024,
+    "code": 256,
+    "indic": 256,
+    "long_context": 1024,
+    "reasoning": 256,
+    "stem": 256,
+    "web": 256
+   },
+   "segment": "S2_broaden/fork",
+   "segment_cum_floor_positions": {
+    "agentic": 0.0,
+    "indic": 1966.08,
+    "reasoning": 61.44
+   },
+   "segment_cum_quota_positions": {
+    "agentic": 0,
+    "code": 3072,
+    "indic": 2176,
+    "long_context": 0,
+    "reasoning": 128,
+    "stem": 896,
+    "web": 6016
+   },
+   "segment_cum_target_positions": {
+    "agentic": 3.419032,
+    "code": 3250.473456,
+    "indic": 1966.627045,
+    "long_context": 0.0,
+    "reasoning": 64.876127,
+    "stem": 1010.665776,
+    "web": 5995.357596
+   },
+   "segment_cum_total_positions": 12288,
+   "stage": "S2_broaden",
+   "stage_floor_pct": {
+    "agentic": 0.0,
+    "indic": 16,
+    "reasoning": 0.5
+   },
+   "step": 20,
+   "subpool_mix": {
+    "agentic": {
+     "all": 1.0
+    },
+    "code": {
+     "all": 1.0
+    },
+    "indic": {
+     "B0_B1": 0.25000000000000006,
+     "B2_B3": 0.5,
+     "B4_B5": 0.25
+    },
+    "long_context": {},
+    "reasoning": {
+     "high": 0.10526315789473682,
+     "low": 0.47719298245614034,
+     "medium": 0.4175438596491228
+    },
+    "stem": {
+     "all": 1.0
+    },
+    "web": {
+     "all": 1.0
+    }
+   },
+   "subquotas": {
+    "agentic": {},
+    "code": {
+     "all": 2
+    },
+    "indic": {
+     "B2_B3": 1,
+     "B4_B5": 1
+    },
+    "long_context": {},
+    "reasoning": {},
+    "stem": {},
+    "web": {
+     "all": 4
+    }
+   },
+   "target_positions": {
+    "agentic": 3.419032,
+    "code": 588.073456,
+    "indic": 328.227045,
+    "long_context": 0.0,
+    "reasoning": 13.676127,
+    "stem": 191.465776,
+    "web": 926.557596
+   }
+  },
+  {
+   "base_window": 256,
+   "mix_pct": {
+    "agentic": 0.333333,
+    "code": 31.333333,
+    "indic": 16.0,
+    "long_context": 0.0,
+    "reasoning": 0.833333,
+    "stem": 10.666667,
+    "web": 40.833333
+   },
+   "pools": {
+    "agentic": "main",
+    "code": "main",
+    "indic": "main",
+    "long_context": "main",
+    "reasoning": "main",
+    "stem": "main",
+    "web": "main"
+   },
+   "positions": 3072,
+   "quotas": {
+    "agentic": 1,
+    "code": 2,
+    "indic": 2,
+    "long_context": 0,
+    "reasoning": 1,
+    "stem": 0,
+    "web": 3
+   },
+   "ramp": {
+    "alpha": 0.666667,
+    "from": "S2_broaden",
+    "to": "S3_reasoning_code"
+   },
+   "regular_rows": 8,
+   "row_len": {
+    "agentic": 1024,
+    "code": 256,
+    "indic": 256,
+    "long_context": 1024,
+    "reasoning": 256,
+    "stem": 256,
+    "web": 256
+   },
+   "segment": "S3_reasoning_code/fork",
+   "segment_cum_floor_positions": {
+    "agentic": 15.36,
+    "indic": 491.52,
+    "reasoning": 30.72
+   },
+   "segment_cum_quota_positions": {
+    "agentic": 1024,
+    "code": 512,
+    "indic": 512,
+    "long_context": 0,
+    "reasoning": 256,
+    "stem": 0,
+    "web": 768
+   },
+   "segment_cum_target_positions": {
+    "agentic": 6.849498,
+    "code": 643.852843,
+    "indic": 328.77592,
+    "long_context": 0.0,
+    "reasoning": 17.123746,
+    "stem": 219.183946,
+    "web": 839.063545
+   },
+   "segment_cum_total_positions": 3072,
+   "stage": "S3_reasoning_code",
+   "stage_floor_pct": {
+    "agentic": 0.5,
+    "indic": 16,
+    "reasoning": 1.0
+   },
+   "step": 21,
+   "subpool_mix": {
+    "agentic": {
+     "all": 1.0
+    },
+    "code": {
+     "all": 1.0
+    },
+    "indic": {
+     "B0_B1": 0.2,
+     "B2_B3": 0.49999999999999994,
+     "B4_B5": 0.3
+    },
+    "long_context": {},
+    "reasoning": {
+     "high": 0.16842105263157894,
+     "low": 0.44350877192982463,
+     "medium": 0.3880701754385965
+    },
+    "stem": {
+     "all": 1.0
+    },
+    "web": {
+     "all": 1.0
+    }
+   },
+   "subquotas": {
+    "agentic": {
+     "all": 1
+    },
+    "code": {
+     "all": 2
+    },
+    "indic": {
+     "B2_B3": 1,
+     "B4_B5": 1
+    },
+    "long_context": {},
+    "reasoning": {
+     "medium": 1
+    },
+    "stem": {},
+    "web": {
+     "all": 3
+    }
+   },
+   "target_positions": {
+    "agentic": 6.849498,
+    "code": 643.852843,
+    "indic": 328.77592,
+    "long_context": 0.0,
+    "reasoning": 17.123746,
+    "stem": 219.183946,
+    "web": 839.063545
+   }
+  },
+  {
+   "base_window": 256,
+   "mix_pct": {
+    "agentic": 0.5,
+    "code": 34.0,
+    "indic": 16,
+    "long_context": 0.0,
+    "reasoning": 1.0,
+    "stem": 12.0,
+    "web": 36.5
+   },
+   "pools": {
+    "agentic": "main",
+    "code": "main",
+    "indic": "main",
+    "long_context": "main",
+    "reasoning": "main",
+    "stem": "main",
+    "web": "main"
+   },
+   "positions": 2048,
+   "quotas": {
+    "agentic": 0,
+    "code": 3,
+    "indic": 2,
+    "long_context": 0,
+    "reasoning": 0,
+    "stem": 1,
+    "web": 2
+   },
+   "ramp": null,
+   "regular_rows": 8,
+   "row_len": {
+    "agentic": 1024,
+    "code": 256,
+    "indic": 256,
+    "long_context": 1024,
+    "reasoning": 256,
+    "stem": 256,
+    "web": 256
+   },
+   "segment": "S3_reasoning_code/fork",
+   "segment_cum_floor_positions": {
+    "agentic": 25.6,
+    "indic": 819.2,
+    "reasoning": 51.2
+   },
+   "segment_cum_quota_positions": {
+    "agentic": 1024,
+    "code": 1280,
+    "indic": 1024,
+    "long_context": 0,
+    "reasoning": 256,
+    "stem": 256,
+    "web": 1280
+   },
+   "segment_cum_target_positions": {
+    "agentic": 17.140956,
+    "code": 1343.671938,
+    "indic": 658.102553,
+    "long_context": 0.0,
+    "reasoning": 37.70666,
+    "stem": 466.178921,
+    "web": 1590.339927
+   },
+   "segment_cum_total_positions": 5120,
+   "stage": "S3_reasoning_code",
+   "stage_floor_pct": {
+    "agentic": 0.5,
+    "indic": 16,
+    "reasoning": 1.0
+   },
+   "step": 22,
+   "subpool_mix": {
+    "agentic": {
+     "all": 1.0
+    },
+    "code": {
+     "all": 1.0
+    },
+    "indic": {
+     "B0_B1": 0.15,
+     "B2_B3": 0.5,
+     "B4_B5": 0.35
+    },
+    "long_context": {
+     "all": 1.0
+    },
+    "reasoning": {
+     "high": 0.21052631578947367,
+     "low": 0.42105263157894735,
+     "medium": 0.3684210526315789
+    },
+    "stem": {
+     "all": 1.0
+    },
+    "web": {
+     "all": 1.0
+    }
+   },
+   "subquotas": {
+    "agentic": {},
+    "code": {
+     "all": 3
+    },
+    "indic": {
+     "B0_B1": 1,
+     "B2_B3": 1
+    },
+    "long_context": {},
+    "reasoning": {},
+    "stem": {
+     "all": 1
+    },
+    "web": {
+     "all": 2
+    }
+   },
+   "target_positions": {
+    "agentic": 10.291457,
+    "code": 699.819095,
+    "indic": 329.326633,
+    "long_context": 0.0,
+    "reasoning": 20.582915,
+    "stem": 246.994975,
+    "web": 751.276382
+   }
+  },
+  {
+   "base_window": 256,
+   "mix_pct": {
+    "agentic": 0.5,
+    "code": 34.0,
+    "indic": 16,
+    "long_context": 0.0,
+    "reasoning": 1.0,
+    "stem": 12.0,
+    "web": 36.5
+   },
+   "pools": {
+    "agentic": "main",
+    "code": "main",
+    "indic": "main",
+    "long_context": "main",
+    "reasoning": "main",
+    "stem": "main",
+    "web": "main"
+   },
+   "positions": 2048,
+   "quotas": {
+    "agentic": 0,
+    "code": 2,
+    "indic": 1,
+    "long_context": 0,
+    "reasoning": 0,
+    "stem": 1,
+    "web": 4
+   },
+   "ramp": null,
+   "regular_rows": 8,
+   "row_len": {
+    "agentic": 1024,
+    "code": 256,
+    "indic": 256,
+    "long_context": 1024,
+    "reasoning": 256,
+    "stem": 256,
+    "web": 256
+   },
+   "segment": "S3_reasoning_code/fork",
+   "segment_cum_floor_positions": {
+    "agentic": 35.84,
+    "indic": 1146.88,
+    "reasoning": 71.68
+   },
+   "segment_cum_quota_positions": {
+    "agentic": 1024,
+    "code": 1792,
+    "indic": 1280,
+    "long_context": 0,
+    "reasoning": 256,
+    "stem": 512,
+    "web": 2304
+   },
+   "segment_cum_target_positions": {
+    "agentic": 27.432413,
+    "code": 2043.491034,
+    "indic": 987.429186,
+    "long_context": 0.0,
+    "reasoning": 58.289575,
+    "stem": 713.173896,
+    "web": 2341.616309
+   },
+   "segment_cum_total_positions": 7168,
+   "stage": "S3_reasoning_code",
+   "stage_floor_pct": {
+    "agentic": 0.5,
+    "indic": 16,
+    "reasoning": 1.0
+   },
+   "step": 23,
+   "subpool_mix": {
+    "agentic": {
+     "all": 1.0
+    },
+    "code": {
+     "all": 1.0
+    },
+    "indic": {
+     "B0_B1": 0.15,
+     "B2_B3": 0.5,
+     "B4_B5": 0.35
+    },
+    "long_context": {
+     "all": 1.0
+    },
+    "reasoning": {
+     "high": 0.21052631578947367,
+     "low": 0.42105263157894735,
+     "medium": 0.3684210526315789
+    },
+    "stem": {
+     "all": 1.0
+    },
+    "web": {
+     "all": 1.0
+    }
+   },
+   "subquotas": {
+    "agentic": {},
+    "code": {
+     "all": 2
+    },
+    "indic": {
+     "B4_B5": 1
+    },
+    "long_context": {},
+    "reasoning": {},
+    "stem": {
+     "all": 1
+    },
+    "web": {
+     "all": 4
+    }
+   },
+   "target_positions": {
+    "agentic": 10.291457,
+    "code": 699.819095,
+    "indic": 329.326633,
+    "long_context": 0.0,
+    "reasoning": 20.582915,
+    "stem": 246.994975,
+    "web": 751.276382
+   }
+  },
+  {
+   "base_window": 256,
+   "mix_pct": {
+    "agentic": 0.5,
+    "code": 34.0,
+    "indic": 16,
+    "long_context": 0.0,
+    "reasoning": 1.0,
+    "stem": 12.0,
+    "web": 36.5
+   },
+   "pools": {
+    "agentic": "main",
+    "code": "main",
+    "indic": "main",
+    "long_context": "main",
+    "reasoning": "main",
+    "stem": "main",
+    "web": "main"
+   },
+   "positions": 2048,
+   "quotas": {
+    "agentic": 0,
+    "code": 3,
+    "indic": 1,
+    "long_context": 0,
+    "reasoning": 0,
+    "stem": 1,
+    "web": 3
+   },
+   "ramp": null,
+   "regular_rows": 8,
+   "row_len": {
+    "agentic": 1024,
+    "code": 256,
+    "indic": 256,
+    "long_context": 1024,
+    "reasoning": 256,
+    "stem": 256,
+    "web": 256
+   },
+   "segment": "S3_reasoning_code/fork",
+   "segment_cum_floor_positions": {
+    "agentic": 46.08,
+    "indic": 1474.56,
+    "reasoning": 92.16
+   },
+   "segment_cum_quota_positions": {
+    "agentic": 1024,
+    "code": 2560,
+    "indic": 1536,
+    "long_context": 0,
+    "reasoning": 256,
+    "stem": 768,
+    "web": 3072
+   },
+   "segment_cum_target_positions": {
+    "agentic": 37.72387,
+    "code": 2743.310129,
+    "indic": 1316.755819,
+    "long_context": 0.0,
+    "reasoning": 78.87249,
+    "stem": 960.168871,
+    "web": 3092.892691
+   },
+   "segment_cum_total_positions": 9216,
+   "stage": "S3_reasoning_code",
+   "stage_floor_pct": {
+    "agentic": 0.5,
+    "indic": 16,
+    "reasoning": 1.0
+   },
+   "step": 24,
+   "subpool_mix": {
+    "agentic": {
+     "all": 1.0
+    },
+    "code": {
+     "all": 1.0
+    },
+    "indic": {
+     "B0_B1": 0.15,
+     "B2_B3": 0.5,
+     "B4_B5": 0.35
+    },
+    "long_context": {
+     "all": 1.0
+    },
+    "reasoning": {
+     "high": 0.21052631578947367,
+     "low": 0.42105263157894735,
+     "medium": 0.3684210526315789
+    },
+    "stem": {
+     "all": 1.0
+    },
+    "web": {
+     "all": 1.0
+    }
+   },
+   "subquotas": {
+    "agentic": {},
+    "code": {
+     "all": 3
+    },
+    "indic": {
+     "B2_B3": 1
+    },
+    "long_context": {},
+    "reasoning": {},
+    "stem": {
+     "all": 1
+    },
+    "web": {
+     "all": 3
+    }
+   },
+   "target_positions": {
+    "agentic": 10.291457,
+    "code": 699.819095,
+    "indic": 329.326633,
+    "long_context": 0.0,
+    "reasoning": 20.582915,
+    "stem": 246.994975,
+    "web": 751.276382
+   }
+  },
+  {
+   "base_window": 256,
+   "mix_pct": {
+    "agentic": 0.5,
+    "code": 34.0,
+    "indic": 16,
+    "long_context": 0.0,
+    "reasoning": 1.0,
+    "stem": 12.0,
+    "web": 36.5
+   },
+   "pools": {
+    "agentic": "main",
+    "code": "main",
+    "indic": "main",
+    "long_context": "main",
+    "reasoning": "main",
+    "stem": "main",
+    "web": "main"
+   },
+   "positions": 2048,
+   "quotas": {
+    "agentic": 0,
+    "code": 3,
+    "indic": 2,
+    "long_context": 0,
+    "reasoning": 0,
+    "stem": 1,
+    "web": 2
+   },
+   "ramp": null,
+   "regular_rows": 8,
+   "row_len": {
+    "agentic": 1024,
+    "code": 256,
+    "indic": 256,
+    "long_context": 1024,
+    "reasoning": 256,
+    "stem": 256,
+    "web": 256
+   },
+   "segment": "S3_reasoning_code/fork",
+   "segment_cum_floor_positions": {
+    "agentic": 56.32,
+    "indic": 1802.24,
+    "reasoning": 112.64
+   },
+   "segment_cum_quota_positions": {
+    "agentic": 1024,
+    "code": 3328,
+    "indic": 2048,
+    "long_context": 0,
+    "reasoning": 256,
+    "stem": 1024,
+    "web": 3584
+   },
+   "segment_cum_target_positions": {
+    "agentic": 48.015327,
+    "code": 3443.129225,
+    "indic": 1646.082452,
+    "long_context": 0.0,
+    "reasoning": 99.455404,
+    "stem": 1207.163846,
+    "web": 3844.169073
+   },
+   "segment_cum_total_positions": 11264,
+   "stage": "S3_reasoning_code",
+   "stage_floor_pct": {
+    "agentic": 0.5,
+    "indic": 16,
+    "reasoning": 1.0
+   },
+   "step": 25,
+   "subpool_mix": {
+    "agentic": {
+     "all": 1.0
+    },
+    "code": {
+     "all": 1.0
+    },
+    "indic": {
+     "B0_B1": 0.15,
+     "B2_B3": 0.5,
+     "B4_B5": 0.35
+    },
+    "long_context": {
+     "all": 1.0
+    },
+    "reasoning": {
+     "high": 0.21052631578947367,
+     "low": 0.42105263157894735,
+     "medium": 0.3684210526315789
+    },
+    "stem": {
+     "all": 1.0
+    },
+    "web": {
+     "all": 1.0
+    }
+   },
+   "subquotas": {
+    "agentic": {},
+    "code": {
+     "all": 3
+    },
+    "indic": {
+     "B2_B3": 1,
+     "B4_B5": 1
+    },
+    "long_context": {},
+    "reasoning": {},
+    "stem": {
+     "all": 1
+    },
+    "web": {
+     "all": 2
+    }
+   },
+   "target_positions": {
+    "agentic": 10.291457,
+    "code": 699.819095,
+    "indic": 329.326633,
+    "long_context": 0.0,
+    "reasoning": 20.582915,
+    "stem": 246.994975,
+    "web": 751.276382
+   }
+  },
+  {
+   "base_window": 256,
+   "mix_pct": {
+    "agentic": 0.5,
+    "code": 34.0,
+    "indic": 16,
+    "long_context": 0.0,
+    "reasoning": 1.0,
+    "stem": 12.0,
+    "web": 36.5
+   },
+   "pools": {
+    "agentic": "main",
+    "code": "main",
+    "indic": "main",
+    "long_context": "main",
+    "reasoning": "main",
+    "stem": "main",
+    "web": "main"
+   },
+   "positions": 2048,
+   "quotas": {
+    "agentic": 0,
+    "code": 3,
+    "indic": 1,
+    "long_context": 0,
+    "reasoning": 0,
+    "stem": 1,
+    "web": 3
+   },
+   "ramp": null,
+   "regular_rows": 8,
+   "row_len": {
+    "agentic": 1024,
+    "code": 256,
+    "indic": 256,
+    "long_context": 1024,
+    "reasoning": 256,
+    "stem": 256,
+    "web": 256
+   },
+   "segment": "S3_reasoning_code/fork",
+   "segment_cum_floor_positions": {
+    "agentic": 66.56,
+    "indic": 2129.92,
+    "reasoning": 133.12
+   },
+   "segment_cum_quota_positions": {
+    "agentic": 1024,
+    "code": 4096,
+    "indic": 2304,
+    "long_context": 0,
+    "reasoning": 256,
+    "stem": 1280,
+    "web": 4352
+   },
+   "segment_cum_target_positions": {
+    "agentic": 58.306785,
+    "code": 4142.94832,
+    "indic": 1975.409086,
+    "long_context": 0.0,
+    "reasoning": 120.038319,
+    "stem": 1454.158821,
+    "web": 4595.445455
+   },
+   "segment_cum_total_positions": 13312,
+   "stage": "S3_reasoning_code",
+   "stage_floor_pct": {
+    "agentic": 0.5,
+    "indic": 16,
+    "reasoning": 1.0
+   },
+   "step": 26,
+   "subpool_mix": {
+    "agentic": {
+     "all": 1.0
+    },
+    "code": {
+     "all": 1.0
+    },
+    "indic": {
+     "B0_B1": 0.15,
+     "B2_B3": 0.5,
+     "B4_B5": 0.35
+    },
+    "long_context": {
+     "all": 1.0
+    },
+    "reasoning": {
+     "high": 0.21052631578947367,
+     "low": 0.42105263157894735,
+     "medium": 0.3684210526315789
+    },
+    "stem": {
+     "all": 1.0
+    },
+    "web": {
+     "all": 1.0
+    }
+   },
+   "subquotas": {
+    "agentic": {},
+    "code": {
+     "all": 3
+    },
+    "indic": {
+     "B2_B3": 1
+    },
+    "long_context": {},
+    "reasoning": {},
+    "stem": {
+     "all": 1
+    },
+    "web": {
+     "all": 3
+    }
+   },
+   "target_positions": {
+    "agentic": 10.291457,
+    "code": 699.819095,
+    "indic": 329.326633,
+    "long_context": 0.0,
+    "reasoning": 20.582915,
+    "stem": 246.994975,
+    "web": 751.276382
+   }
+  },
+  {
+   "base_window": 256,
+   "mix_pct": {
+    "agentic": 0.5,
+    "code": 34.0,
+    "indic": 16,
+    "long_context": 0.0,
+    "reasoning": 1.0,
+    "stem": 12.0,
+    "web": 36.5
+   },
+   "pools": {
+    "agentic": "main",
+    "code": "main",
+    "indic": "main",
+    "long_context": "main",
+    "reasoning": "main",
+    "stem": "main",
+    "web": "main"
+   },
+   "positions": 2048,
+   "quotas": {
+    "agentic": 0,
+    "code": 3,
+    "indic": 1,
+    "long_context": 0,
+    "reasoning": 0,
+    "stem": 1,
+    "web": 3
+   },
+   "ramp": null,
+   "regular_rows": 8,
+   "row_len": {
+    "agentic": 1024,
+    "code": 256,
+    "indic": 256,
+    "long_context": 1024,
+    "reasoning": 256,
+    "stem": 256,
+    "web": 256
+   },
+   "segment": "S3_reasoning_code/fork",
+   "segment_cum_floor_positions": {
+    "agentic": 76.8,
+    "indic": 2457.6,
+    "reasoning": 153.6
+   },
+   "segment_cum_quota_positions": {
+    "agentic": 1024,
+    "code": 4864,
+    "indic": 2560,
+    "long_context": 0,
+    "reasoning": 256,
+    "stem": 1536,
+    "web": 5120
+   },
+   "segment_cum_target_positions": {
+    "agentic": 68.598242,
+    "code": 4842.767416,
+    "indic": 2304.735719,
+    "long_context": 0.0,
+    "reasoning": 140.621233,
+    "stem": 1701.153796,
+    "web": 5346.721837
+   },
+   "segment_cum_total_positions": 15360,
+   "stage": "S3_reasoning_code",
+   "stage_floor_pct": {
+    "agentic": 0.5,
+    "indic": 16,
+    "reasoning": 1.0
+   },
+   "step": 27,
+   "subpool_mix": {
+    "agentic": {
+     "all": 1.0
+    },
+    "code": {
+     "all": 1.0
+    },
+    "indic": {
+     "B0_B1": 0.15,
+     "B2_B3": 0.5,
+     "B4_B5": 0.35
+    },
+    "long_context": {
+     "all": 1.0
+    },
+    "reasoning": {
+     "high": 0.21052631578947367,
+     "low": 0.42105263157894735,
+     "medium": 0.3684210526315789
+    },
+    "stem": {
+     "all": 1.0
+    },
+    "web": {
+     "all": 1.0
+    }
+   },
+   "subquotas": {
+    "agentic": {},
+    "code": {
+     "all": 3
+    },
+    "indic": {
+     "B0_B1": 1
+    },
+    "long_context": {},
+    "reasoning": {},
+    "stem": {
+     "all": 1
+    },
+    "web": {
+     "all": 3
+    }
+   },
+   "target_positions": {
+    "agentic": 10.291457,
+    "code": 699.819095,
+    "indic": 329.326633,
+    "long_context": 0.0,
+    "reasoning": 20.582915,
+    "stem": 246.994975,
+    "web": 751.276382
+   }
+  },
+  {
+   "base_window": 256,
+   "mix_pct": {
+    "agentic": 0.5,
+    "code": 34.0,
+    "indic": 16,
+    "long_context": 0.0,
+    "reasoning": 1.0,
+    "stem": 12.0,
+    "web": 36.5
+   },
+   "pools": {
+    "agentic": "main",
+    "code": "main",
+    "indic": "main",
+    "long_context": "main",
+    "reasoning": "main",
+    "stem": "main",
+    "web": "main"
+   },
+   "positions": 2048,
+   "quotas": {
+    "agentic": 0,
+    "code": 2,
+    "indic": 1,
+    "long_context": 0,
+    "reasoning": 0,
+    "stem": 1,
+    "web": 4
+   },
+   "ramp": null,
+   "regular_rows": 8,
+   "row_len": {
+    "agentic": 1024,
+    "code": 256,
+    "indic": 256,
+    "long_context": 1024,
+    "reasoning": 256,
+    "stem": 256,
+    "web": 256
+   },
+   "segment": "S3_reasoning_code/fork",
+   "segment_cum_floor_positions": {
+    "agentic": 87.04,
+    "indic": 2785.28,
+    "reasoning": 174.08
+   },
+   "segment_cum_quota_positions": {
+    "agentic": 1024,
+    "code": 5376,
+    "indic": 2816,
+    "long_context": 0,
+    "reasoning": 256,
+    "stem": 1792,
+    "web": 6144
+   },
+   "segment_cum_target_positions": {
+    "agentic": 78.889699,
+    "code": 5542.586511,
+    "indic": 2634.062352,
+    "long_context": 0.0,
+    "reasoning": 161.204148,
+    "stem": 1948.148771,
+    "web": 6097.998219
+   },
+   "segment_cum_total_positions": 17408,
+   "stage": "S3_reasoning_code",
+   "stage_floor_pct": {
+    "agentic": 0.5,
+    "indic": 16,
+    "reasoning": 1.0
+   },
+   "step": 28,
+   "subpool_mix": {
+    "agentic": {
+     "all": 1.0
+    },
+    "code": {
+     "all": 1.0
+    },
+    "indic": {
+     "B0_B1": 0.15,
+     "B2_B3": 0.5,
+     "B4_B5": 0.35
+    },
+    "long_context": {
+     "all": 1.0
+    },
+    "reasoning": {
+     "high": 0.21052631578947367,
+     "low": 0.42105263157894735,
+     "medium": 0.3684210526315789
+    },
+    "stem": {
+     "all": 1.0
+    },
+    "web": {
+     "all": 1.0
+    }
+   },
+   "subquotas": {
+    "agentic": {},
+    "code": {
+     "all": 2
+    },
+    "indic": {
+     "B4_B5": 1
+    },
+    "long_context": {},
+    "reasoning": {},
+    "stem": {
+     "all": 1
+    },
+    "web": {
+     "all": 4
+    }
+   },
+   "target_positions": {
+    "agentic": 10.291457,
+    "code": 699.819095,
+    "indic": 329.326633,
+    "long_context": 0.0,
+    "reasoning": 20.582915,
+    "stem": 246.994975,
+    "web": 751.276382
+   }
+  },
+  {
+   "base_window": 256,
+   "mix_pct": {
+    "agentic": 0.5,
+    "code": 34.0,
+    "indic": 16,
+    "long_context": 0.0,
+    "reasoning": 1.0,
+    "stem": 12.0,
+    "web": 36.5
+   },
+   "pools": {
+    "agentic": "main",
+    "code": "main",
+    "indic": "main",
+    "long_context": "main",
+    "reasoning": "main",
+    "stem": "main",
+    "web": "main"
+   },
+   "positions": 2048,
+   "quotas": {
+    "agentic": 0,
+    "code": 3,
+    "indic": 2,
+    "long_context": 0,
+    "reasoning": 0,
+    "stem": 1,
+    "web": 2
+   },
+   "ramp": null,
+   "regular_rows": 8,
+   "row_len": {
+    "agentic": 1024,
+    "code": 256,
+    "indic": 256,
+    "long_context": 1024,
+    "reasoning": 256,
+    "stem": 256,
+    "web": 256
+   },
+   "segment": "S3_reasoning_code/fork",
+   "segment_cum_floor_positions": {
+    "agentic": 97.28,
+    "indic": 3112.96,
+    "reasoning": 194.56
+   },
+   "segment_cum_quota_positions": {
+    "agentic": 1024,
+    "code": 6144,
+    "indic": 3328,
+    "long_context": 0,
+    "reasoning": 256,
+    "stem": 2048,
+    "web": 6656
+   },
+   "segment_cum_target_positions": {
+    "agentic": 89.181157,
+    "code": 6242.405607,
+    "indic": 2963.388985,
+    "long_context": 0.0,
+    "reasoning": 181.787062,
+    "stem": 2195.143745,
+    "web": 6849.2746
+   },
+   "segment_cum_total_positions": 19456,
+   "stage": "S3_reasoning_code",
+   "stage_floor_pct": {
+    "agentic": 0.5,
+    "indic": 16,
+    "reasoning": 1.0
+   },
+   "step": 29,
+   "subpool_mix": {
+    "agentic": {
+     "all": 1.0
+    },
+    "code": {
+     "all": 1.0
+    },
+    "indic": {
+     "B0_B1": 0.15,
+     "B2_B3": 0.5,
+     "B4_B5": 0.35
+    },
+    "long_context": {
+     "all": 1.0
+    },
+    "reasoning": {
+     "high": 0.21052631578947367,
+     "low": 0.42105263157894735,
+     "medium": 0.3684210526315789
+    },
+    "stem": {
+     "all": 1.0
+    },
+    "web": {
+     "all": 1.0
+    }
+   },
+   "subquotas": {
+    "agentic": {},
+    "code": {
+     "all": 3
+    },
+    "indic": {
+     "B2_B3": 2
+    },
+    "long_context": {},
+    "reasoning": {},
+    "stem": {
+     "all": 1
+    },
+    "web": {
+     "all": 2
+    }
+   },
+   "target_positions": {
+    "agentic": 10.291457,
+    "code": 699.819095,
+    "indic": 329.326633,
+    "long_context": 0.0,
+    "reasoning": 20.582915,
+    "stem": 246.994975,
+    "web": 751.276382
+   }
+  },
+  {
+   "base_window": 256,
+   "mix_pct": {
+    "agentic": 0.5,
+    "code": 34.0,
+    "indic": 16,
+    "long_context": 0.0,
+    "reasoning": 1.0,
+    "stem": 12.0,
+    "web": 36.5
+   },
+   "pools": {
+    "agentic": "main",
+    "code": "main",
+    "indic": "main",
+    "long_context": "main",
+    "reasoning": "main",
+    "stem": "main",
+    "web": "main"
+   },
+   "positions": 2048,
+   "quotas": {
+    "agentic": 0,
+    "code": 3,
+    "indic": 1,
+    "long_context": 0,
+    "reasoning": 0,
+    "stem": 1,
+    "web": 3
+   },
+   "ramp": null,
+   "regular_rows": 8,
+   "row_len": {
+    "agentic": 1024,
+    "code": 256,
+    "indic": 256,
+    "long_context": 1024,
+    "reasoning": 256,
+    "stem": 256,
+    "web": 256
+   },
+   "segment": "S3_reasoning_code/fork",
+   "segment_cum_floor_positions": {
+    "agentic": 107.52,
+    "indic": 3440.64,
+    "reasoning": 215.04
+   },
+   "segment_cum_quota_positions": {
+    "agentic": 1024,
+    "code": 6912,
+    "indic": 3584,
+    "long_context": 0,
+    "reasoning": 256,
+    "stem": 2304,
+    "web": 7424
+   },
+   "segment_cum_target_positions": {
+    "agentic": 99.472614,
+    "code": 6942.224702,
+    "indic": 3292.715618,
+    "long_context": 0.0,
+    "reasoning": 202.369977,
+    "stem": 2442.13872,
+    "web": 7600.550982
+   },
+   "segment_cum_total_positions": 21504,
+   "stage": "S3_reasoning_code",
+   "stage_floor_pct": {
+    "agentic": 0.5,
+    "indic": 16,
+    "reasoning": 1.0
+   },
+   "step": 30,
+   "subpool_mix": {
+    "agentic": {
+     "all": 1.0
+    },
+    "code": {
+     "all": 1.0
+    },
+    "indic": {
+     "B0_B1": 0.15,
+     "B2_B3": 0.5,
+     "B4_B5": 0.35
+    },
+    "long_context": {
+     "all": 1.0
+    },
+    "reasoning": {
+     "high": 0.21052631578947367,
+     "low": 0.42105263157894735,
+     "medium": 0.3684210526315789
+    },
+    "stem": {
+     "all": 1.0
+    },
+    "web": {
+     "all": 1.0
+    }
+   },
+   "subquotas": {
+    "agentic": {},
+    "code": {
+     "all": 3
+    },
+    "indic": {
+     "B4_B5": 1
+    },
+    "long_context": {},
+    "reasoning": {},
+    "stem": {
+     "all": 1
+    },
+    "web": {
+     "all": 3
+    }
+   },
+   "target_positions": {
+    "agentic": 10.291457,
+    "code": 699.819095,
+    "indic": 329.326633,
+    "long_context": 0.0,
+    "reasoning": 20.582915,
+    "stem": 246.994975,
+    "web": 751.276382
+   }
+  },
+  {
+   "base_window": 256,
+   "mix_pct": {
+    "agentic": 0.5,
+    "code": 34.0,
+    "indic": 16,
+    "long_context": 0.0,
+    "reasoning": 1.0,
+    "stem": 12.0,
+    "web": 36.5
+   },
+   "pools": {
+    "agentic": "main",
+    "code": "main",
+    "indic": "main",
+    "long_context": "main",
+    "reasoning": "main",
+    "stem": "main",
+    "web": "main"
+   },
+   "positions": 2048,
+   "quotas": {
+    "agentic": 0,
+    "code": 3,
+    "indic": 1,
+    "long_context": 0,
+    "reasoning": 0,
+    "stem": 1,
+    "web": 3
+   },
+   "ramp": null,
+   "regular_rows": 8,
+   "row_len": {
+    "agentic": 1024,
+    "code": 256,
+    "indic": 256,
+    "long_context": 1024,
+    "reasoning": 256,
+    "stem": 256,
+    "web": 256
+   },
+   "segment": "S3_reasoning_code/fork",
+   "segment_cum_floor_positions": {
+    "agentic": 117.76,
+    "indic": 3768.32,
+    "reasoning": 235.52
+   },
+   "segment_cum_quota_positions": {
+    "agentic": 1024,
+    "code": 7680,
+    "indic": 3840,
+    "long_context": 0,
+    "reasoning": 256,
+    "stem": 2560,
+    "web": 8192
+   },
+   "segment_cum_target_positions": {
+    "agentic": 109.764071,
+    "code": 7642.043798,
+    "indic": 3622.042251,
+    "long_context": 0.0,
+    "reasoning": 222.952892,
+    "stem": 2689.133695,
+    "web": 8351.827364
+   },
+   "segment_cum_total_positions": 23552,
+   "stage": "S3_reasoning_code",
+   "stage_floor_pct": {
+    "agentic": 0.5,
+    "indic": 16,
+    "reasoning": 1.0
+   },
+   "step": 31,
+   "subpool_mix": {
+    "agentic": {
+     "all": 1.0
+    },
+    "code": {
+     "all": 1.0
+    },
+    "indic": {
+     "B0_B1": 0.15,
+     "B2_B3": 0.5,
+     "B4_B5": 0.35
+    },
+    "long_context": {
+     "all": 1.0
+    },
+    "reasoning": {
+     "high": 0.21052631578947367,
+     "low": 0.42105263157894735,
+     "medium": 0.3684210526315789
+    },
+    "stem": {
+     "all": 1.0
+    },
+    "web": {
+     "all": 1.0
+    }
+   },
+   "subquotas": {
+    "agentic": {},
+    "code": {
+     "all": 3
+    },
+    "indic": {
+     "B2_B3": 1
+    },
+    "long_context": {},
+    "reasoning": {},
+    "stem": {
+     "all": 1
+    },
+    "web": {
+     "all": 3
+    }
+   },
+   "target_positions": {
+    "agentic": 10.291457,
+    "code": 699.819095,
+    "indic": 329.326633,
+    "long_context": 0.0,
+    "reasoning": 20.582915,
+    "stem": 246.994975,
+    "web": 751.276382
+   }
+  },
+  {
+   "base_window": 256,
+   "mix_pct": {
+    "agentic": 0.833333,
+    "code": 32.0,
+    "indic": 14.0,
+    "long_context": 6.0,
+    "reasoning": 1.333333,
+    "stem": 11.0,
+    "web": 34.833333
+   },
+   "pools": {
+    "agentic": "main",
+    "code": "main",
+    "indic": "main",
+    "long_context": "main",
+    "reasoning": "main",
+    "stem": "main",
+    "web": "main"
+   },
+   "positions": 2048,
+   "quotas": {
+    "agentic": 0,
+    "code": 2,
+    "indic": 1,
+    "long_context": 0,
+    "reasoning": 0,
+    "stem": 1,
+    "web": 4
+   },
+   "ramp": {
+    "alpha": 0.333333,
+    "from": "S3_reasoning_code",
+    "to": "S4_long_context"
+   },
+   "regular_rows": 8,
+   "row_len": {
+    "agentic": 1024,
+    "code": 256,
+    "indic": 256,
+    "long_context": 1024,
+    "reasoning": 256,
+    "stem": 256,
+    "web": 256
+   },
+   "segment": "S3_reasoning_code/fork",
+   "segment_cum_floor_positions": {
+    "agentic": 128.0,
+    "indic": 4096.0,
+    "reasoning": 256.0
+   },
+   "segment_cum_quota_positions": {
+    "agentic": 1024,
+    "code": 8192,
+    "indic": 4096,
+    "long_context": 0,
+    "reasoning": 256,
+    "stem": 2816,
+    "web": 9216
+   },
+   "segment_cum_target_positions": {
+    "agentic": 128.082497,
+    "code": 8345.471347,
+    "indic": 3929.791804,
+    "long_context": 131.892665,
+    "reasoning": 252.262373,
+    "stem": 2930.936915,
+    "web": 9117.537561
+   },
+   "segment_cum_total_positions": 25600,
+   "stage": "S3_reasoning_code",
+   "stage_floor_pct": {
+    "agentic": 0.5,
+    "indic": 16,
+    "reasoning": 1.0
+   },
+   "step": 32,
+   "subpool_mix": {
+    "agentic": {
+     "all": 1.0
+    },
+    "code": {
+     "all": 1.0
+    },
+    "indic": {
+     "B0_B1": 0.1380952380952381,
+     "B2_B3": 0.4880952380952381,
+     "B4_B5": 0.3738095238095238
+    },
+    "long_context": {
+     "all": 1.0
+    },
+    "reasoning": {
+     "high": 0.21052631578947367,
+     "low": 0.42105263157894735,
+     "medium": 0.3684210526315789
+    },
+    "stem": {
+     "all": 1.0
+    },
+    "web": {
+     "all": 1.0
+    }
+   },
+   "subquotas": {
+    "agentic": {},
+    "code": {
+     "all": 2
+    },
+    "indic": {
+     "B4_B5": 1
+    },
+    "long_context": {},
+    "reasoning": {},
+    "stem": {
+     "all": 1
+    },
+    "web": {
+     "all": 4
+    }
+   },
+   "target_positions": {
+    "agentic": 18.318426,
+    "code": 703.427549,
+    "indic": 307.749553,
+    "long_context": 131.892665,
+    "reasoning": 29.309481,
+    "stem": 241.80322,
+    "web": 765.710197
+   }
+  },
+  {
+   "base_window": 256,
+   "mix_pct": {
+    "agentic": 1.166667,
+    "code": 30.0,
+    "indic": 12.0,
+    "long_context": 12.0,
+    "reasoning": 1.666667,
+    "stem": 10.0,
+    "web": 33.166667
+   },
+   "pools": {
+    "agentic": "main",
+    "code": "main",
+    "indic": "main",
+    "long_context": "main",
+    "reasoning": "main",
+    "stem": "main",
+    "web": "main"
+   },
+   "positions": 3072,
+   "quotas": {
+    "agentic": 1,
+    "code": 2,
+    "indic": 2,
+    "long_context": 0,
+    "reasoning": 1,
+    "stem": 0,
+    "web": 3
+   },
+   "ramp": {
+    "alpha": 0.666667,
+    "from": "S3_reasoning_code",
+    "to": "S4_long_context"
+   },
+   "regular_rows": 8,
+   "row_len": {
+    "agentic": 1024,
+    "code": 256,
+    "indic": 256,
+    "long_context": 1024,
+    "reasoning": 256,
+    "stem": 256,
+    "web": 256
+   },
+   "segment": "S4_long_context/fork",
+   "segment_cum_floor_positions": {
+    "agentic": 46.08,
+    "indic": 307.2,
+    "reasoning": 61.44
+   },
+   "segment_cum_quota_positions": {
+    "agentic": 1024,
+    "code": 512,
+    "indic": 512,
+    "long_context": 0,
+    "reasoning": 256,
+    "stem": 0,
+    "web": 768
+   },
+   "segment_cum_target_positions": {
+    "agentic": 27.516315,
+    "code": 707.56238,
+    "indic": 283.024952,
+    "long_context": 283.024952,
+    "reasoning": 39.309021,
+    "stem": 235.854127,
+    "web": 782.24952
+   },
+   "segment_cum_total_positions": 3072,
+   "stage": "S4_long_context",
+   "stage_floor_pct": {
+    "agentic": 1.5,
+    "indic": 10.0,
+    "reasoning": 2.0
+   },
+   "step": 33,
+   "subpool_mix": {
+    "agentic": {
+     "all": 1.0
+    },
+    "code": {
+     "all": 1.0
+    },
+    "indic": {
+     "B0_B1": 0.12222222222222223,
+     "B2_B3": 0.47222222222222227,
+     "B4_B5": 0.4055555555555556
+    },
+    "long_context": {
+     "all": 1.0
+    },
+    "reasoning": {
+     "high": 0.2105263157894737,
+     "low": 0.4210526315789474,
+     "medium": 0.368421052631579
+    },
+    "stem": {
+     "all": 1.0
+    },
+    "web": {
+     "all": 1.0
+    }
+   },
+   "subquotas": {
+    "agentic": {
+     "all": 1
+    },
+    "code": {
+     "all": 2
+    },
+    "indic": {
+     "B2_B3": 1,
+     "B4_B5": 1
+    },
+    "long_context": {},
+    "reasoning": {
+     "medium": 1
+    },
+    "stem": {},
+    "web": {
+     "all": 3
+    }
+   },
+   "target_positions": {
+    "agentic": 27.516315,
+    "code": 707.56238,
+    "indic": 283.024952,
+    "long_context": 283.024952,
+    "reasoning": 39.309021,
+    "stem": 235.854127,
+    "web": 782.24952
+   }
+  },
+  {
+   "base_window": 256,
+   "mix_pct": {
+    "agentic": 1.5,
+    "code": 28.0,
+    "indic": 10.0,
+    "long_context": 18.0,
+    "reasoning": 2.0,
+    "stem": 9.0,
+    "web": 31.5
+   },
+   "pools": {
+    "agentic": "main",
+    "code": "main",
+    "indic": "main",
+    "long_context": "main",
+    "reasoning": "main",
+    "stem": "main",
+    "web": "main"
+   },
+   "positions": 3072,
+   "quotas": {
+    "agentic": 0,
+    "code": 3,
+    "indic": 1,
+    "long_context": 1,
+    "reasoning": 0,
+    "stem": 1,
+    "web": 3
+   },
+   "ramp": null,
+   "regular_rows": 8,
+   "row_len": {
+    "agentic": 1024,
+    "code": 256,
+    "indic": 256,
+    "long_context": 1024,
+    "reasoning": 256,
+    "stem": 256,
+    "web": 256
+   },
+   "segment": "S4_long_context/fork",
+   "segment_cum_floor_positions": {
+    "agentic": 92.16,
+    "indic": 614.4,
+    "reasoning": 122.88
+   },
+   "segment_cum_quota_positions": {
+    "agentic": 1024,
+    "code": 1280,
+    "indic": 768,
+    "long_context": 1024,
+    "reasoning": 256,
+    "stem": 256,
+    "web": 1536
+   },
+   "segment_cum_target_positions": {
+    "agentic": 65.677805,
+    "code": 1419.910206,
+    "indic": 537.43489,
+    "long_context": 740.96284,
+    "reasoning": 90.191009,
+    "stem": 464.823071,
+    "web": 1583.640825
+   },
+   "segment_cum_total_positions": 6144,
+   "stage": "S4_long_context",
+   "stage_floor_pct": {
+    "agentic": 1.5,
+    "indic": 10.0,
+    "reasoning": 2.0
+   },
+   "step": 34,
+   "subpool_mix": {
+    "agentic": {
+     "all": 1.0
+    },
+    "code": {
+     "all": 1.0
+    },
+    "indic": {
+     "B0_B1": 0.1,
+     "B2_B3": 0.45,
+     "B4_B5": 0.45
+    },
+    "long_context": {
+     "all": 1.0
+    },
+    "reasoning": {
+     "high": 0.21052631578947367,
+     "low": 0.42105263157894735,
+     "medium": 0.3684210526315789
+    },
+    "stem": {
+     "all": 1.0
+    },
+    "web": {
+     "all": 1.0
+    }
+   },
+   "subquotas": {
+    "agentic": {},
+    "code": {
+     "all": 3
+    },
+    "indic": {
+     "B2_B3": 1
+    },
+    "long_context": {
+     "all": 1
+    },
+    "reasoning": {},
+    "stem": {
+     "all": 1
+    },
+    "web": {
+     "all": 3
+    }
+   },
+   "target_positions": {
+    "agentic": 38.161491,
+    "code": 712.347826,
+    "indic": 254.409938,
+    "long_context": 457.937888,
+    "reasoning": 50.881988,
+    "stem": 228.968944,
+    "web": 801.391304
+   }
+  },
+  {
+   "base_window": 256,
+   "mix_pct": {
+    "agentic": 1.5,
+    "code": 28.0,
+    "indic": 10.0,
+    "long_context": 18.0,
+    "reasoning": 2.0,
+    "stem": 9.0,
+    "web": 31.5
+   },
+   "pools": {
+    "agentic": "main",
+    "code": "main",
+    "indic": "main",
+    "long_context": "main",
+    "reasoning": "main",
+    "stem": "main",
+    "web": "main"
+   },
+   "positions": 2048,
+   "quotas": {
+    "agentic": 0,
+    "code": 3,
+    "indic": 1,
+    "long_context": 0,
+    "reasoning": 0,
+    "stem": 1,
+    "web": 3
+   },
+   "ramp": null,
+   "regular_rows": 8,
+   "row_len": {
+    "agentic": 1024,
+    "code": 256,
+    "indic": 256,
+    "long_context": 1024,
+    "reasoning": 256,
+    "stem": 256,
+    "web": 256
+   },
+   "segment": "S4_long_context/fork",
+   "segment_cum_floor_positions": {
+    "agentic": 122.88,
+    "indic": 819.2,
+    "reasoning": 163.84
+   },
+   "segment_cum_quota_positions": {
+    "agentic": 1024,
+    "code": 2048,
+    "indic": 1024,
+    "long_context": 1024,
+    "reasoning": 256,
+    "stem": 512,
+    "web": 2304
+   },
+   "segment_cum_target_positions": {
+    "agentic": 103.839296,
+    "code": 2132.258032,
+    "indic": 791.844828,
+    "long_context": 1198.900728,
+    "reasoning": 141.072996,
+    "stem": 693.792015,
+    "web": 2385.032129
+   },
+   "segment_cum_total_positions": 8192,
+   "stage": "S4_long_context",
+   "stage_floor_pct": {
+    "agentic": 1.5,
+    "indic": 10.0,
+    "reasoning": 2.0
+   },
+   "step": 35,
+   "subpool_mix": {
+    "agentic": {
+     "all": 1.0
+    },
+    "code": {
+     "all": 1.0
+    },
+    "indic": {
+     "B0_B1": 0.1,
+     "B2_B3": 0.45,
+     "B4_B5": 0.45
+    },
+    "long_context": {
+     "all": 1.0
+    },
+    "reasoning": {
+     "high": 0.21052631578947367,
+     "low": 0.42105263157894735,
+     "medium": 0.3684210526315789
+    },
+    "stem": {
+     "all": 1.0
+    },
+    "web": {
+     "all": 1.0
+    }
+   },
+   "subquotas": {
+    "agentic": {},
+    "code": {
+     "all": 3
+    },
+    "indic": {
+     "B4_B5": 1
+    },
+    "long_context": {},
+    "reasoning": {},
+    "stem": {
+     "all": 1
+    },
+    "web": {
+     "all": 3
+    }
+   },
+   "target_positions": {
+    "agentic": 38.161491,
+    "code": 712.347826,
+    "indic": 254.409938,
+    "long_context": 457.937888,
+    "reasoning": 50.881988,
+    "stem": 228.968944,
+    "web": 801.391304
+   }
+  },
+  {
+   "base_window": 256,
+   "mix_pct": {
+    "agentic": 1.5,
+    "code": 28.0,
+    "indic": 10.0,
+    "long_context": 18.0,
+    "reasoning": 2.0,
+    "stem": 9.0,
+    "web": 31.5
+   },
+   "pools": {
+    "agentic": "main",
+    "code": "main",
+    "indic": "main",
+    "long_context": "main",
+    "reasoning": "main",
+    "stem": "main",
+    "web": "main"
+   },
+   "positions": 3072,
+   "quotas": {
+    "agentic": 0,
+    "code": 3,
+    "indic": 1,
+    "long_context": 1,
+    "reasoning": 0,
+    "stem": 1,
+    "web": 3
+   },
+   "ramp": null,
+   "regular_rows": 8,
+   "row_len": {
+    "agentic": 1024,
+    "code": 256,
+    "indic": 256,
+    "long_context": 1024,
+    "reasoning": 256,
+    "stem": 256,
+    "web": 256
+   },
+   "segment": "S4_long_context/fork",
+   "segment_cum_floor_positions": {
+    "agentic": 168.96,
+    "indic": 1126.4,
+    "reasoning": 225.28
+   },
+   "segment_cum_quota_positions": {
+    "agentic": 1024,
+    "code": 2816,
+    "indic": 1280,
+    "long_context": 2048,
+    "reasoning": 256,
+    "stem": 768,
+    "web": 3072
+   },
+   "segment_cum_target_positions": {
+    "agentic": 142.000787,
+    "code": 2844.605858,
+    "indic": 1046.254766,
+    "long_context": 1656.838617,
+    "reasoning": 191.954984,
+    "stem": 922.760959,
+    "web": 3186.423433
+   },
+   "segment_cum_total_positions": 11264,
+   "stage": "S4_long_context",
+   "stage_floor_pct": {
+    "agentic": 1.5,
+    "indic": 10.0,
+    "reasoning": 2.0
+   },
+   "step": 36,
+   "subpool_mix": {
+    "agentic": {
+     "all": 1.0
+    },
+    "code": {
+     "all": 1.0
+    },
+    "indic": {
+     "B0_B1": 0.1,
+     "B2_B3": 0.45,
+     "B4_B5": 0.45
+    },
+    "long_context": {
+     "all": 1.0
+    },
+    "reasoning": {
+     "high": 0.21052631578947367,
+     "low": 0.42105263157894735,
+     "medium": 0.3684210526315789
+    },
+    "stem": {
+     "all": 1.0
+    },
+    "web": {
+     "all": 1.0
+    }
+   },
+   "subquotas": {
+    "agentic": {},
+    "code": {
+     "all": 3
+    },
+    "indic": {
+     "B0_B1": 1
+    },
+    "long_context": {
+     "all": 1
+    },
+    "reasoning": {},
+    "stem": {
+     "all": 1
+    },
+    "web": {
+     "all": 3
+    }
+   },
+   "target_positions": {
+    "agentic": 38.161491,
+    "code": 712.347826,
+    "indic": 254.409938,
+    "long_context": 457.937888,
+    "reasoning": 50.881988,
+    "stem": 228.968944,
+    "web": 801.391304
+   }
+  },
+  {
+   "base_window": 256,
+   "mix_pct": {
+    "agentic": 1.5,
+    "code": 28.0,
+    "indic": 10.0,
+    "long_context": 18.0,
+    "reasoning": 2.0,
+    "stem": 9.0,
+    "web": 31.5
+   },
+   "pools": {
+    "agentic": "main",
+    "code": "main",
+    "indic": "main",
+    "long_context": "main",
+    "reasoning": "main",
+    "stem": "main",
+    "web": "main"
+   },
+   "positions": 2048,
+   "quotas": {
+    "agentic": 0,
+    "code": 2,
+    "indic": 1,
+    "long_context": 0,
+    "reasoning": 1,
+    "stem": 1,
+    "web": 3
+   },
+   "ramp": null,
+   "regular_rows": 8,
+   "row_len": {
+    "agentic": 1024,
+    "code": 256,
+    "indic": 256,
+    "long_context": 1024,
+    "reasoning": 256,
+    "stem": 256,
+    "web": 256
+   },
+   "segment": "S4_long_context/fork",
+   "segment_cum_floor_positions": {
+    "agentic": 199.68,
+    "indic": 1331.2,
+    "reasoning": 266.24
+   },
+   "segment_cum_quota_positions": {
+    "agentic": 1024,
+    "code": 3328,
+    "indic": 1536,
+    "long_context": 2048,
+    "reasoning": 512,
+    "stem": 1024,
+    "web": 3840
+   },
+   "segment_cum_target_positions": {
+    "agentic": 180.162278,
+    "code": 3556.953684,
+    "indic": 1300.664704,
+    "long_context": 2114.776505,
+    "reasoning": 242.836971,
+    "stem": 1151.729903,
+    "web": 3987.814738
+   },
+   "segment_cum_total_positions": 13312,
+   "stage": "S4_long_context",
+   "stage_floor_pct": {
+    "agentic": 1.5,
+    "indic": 10.0,
+    "reasoning": 2.0
+   },
+   "step": 37,
+   "subpool_mix": {
+    "agentic": {
+     "all": 1.0
+    },
+    "code": {
+     "all": 1.0
+    },
+    "indic": {
+     "B0_B1": 0.1,
+     "B2_B3": 0.45,
+     "B4_B5": 0.45
+    },
+    "long_context": {
+     "all": 1.0
+    },
+    "reasoning": {
+     "high": 0.21052631578947367,
+     "low": 0.42105263157894735,
+     "medium": 0.3684210526315789
+    },
+    "stem": {
+     "all": 1.0
+    },
+    "web": {
+     "all": 1.0
+    }
+   },
+   "subquotas": {
+    "agentic": {},
+    "code": {
+     "all": 2
+    },
+    "indic": {
+     "B2_B3": 1
+    },
+    "long_context": {},
+    "reasoning": {
+     "low": 1
+    },
+    "stem": {
+     "all": 1
+    },
+    "web": {
+     "all": 3
+    }
+   },
+   "target_positions": {
+    "agentic": 38.161491,
+    "code": 712.347826,
+    "indic": 254.409938,
+    "long_context": 457.937888,
+    "reasoning": 50.881988,
+    "stem": 228.968944,
+    "web": 801.391304
+   }
+  },
+  {
+   "base_window": 256,
+   "mix_pct": {
+    "agentic": 1.5,
+    "code": 28.0,
+    "indic": 10.0,
+    "long_context": 18.0,
+    "reasoning": 2.0,
+    "stem": 9.0,
+    "web": 31.5
+   },
+   "pools": {
+    "agentic": "main",
+    "code": "main",
+    "indic": "main",
+    "long_context": "main",
+    "reasoning": "main",
+    "stem": "main",
+    "web": "main"
+   },
+   "positions": 3072,
+   "quotas": {
+    "agentic": 0,
+    "code": 3,
+    "indic": 1,
+    "long_context": 1,
+    "reasoning": 0,
+    "stem": 1,
+    "web": 3
+   },
+   "ramp": null,
+   "regular_rows": 8,
+   "row_len": {
+    "agentic": 1024,
+    "code": 256,
+    "indic": 256,
+    "long_context": 1024,
+    "reasoning": 256,
+    "stem": 256,
+    "web": 256
+   },
+   "segment": "S4_long_context/fork",
+   "segment_cum_floor_positions": {
+    "agentic": 245.76,
+    "indic": 1638.4,
+    "reasoning": 327.68
+   },
+   "segment_cum_quota_positions": {
+    "agentic": 1024,
+    "code": 4096,
+    "indic": 1792,
+    "long_context": 3072,
+    "reasoning": 512,
+    "stem": 1280,
+    "web": 4608
+   },
+   "segment_cum_target_positions": {
+    "agentic": 218.323768,
+    "code": 4269.30151,
+    "indic": 1555.074641,
+    "long_context": 2572.714393,
+    "reasoning": 293.718959,
+    "stem": 1380.698847,
+    "web": 4789.206042
+   },
+   "segment_cum_total_positions": 16384,
+   "stage": "S4_long_context",
+   "stage_floor_pct": {
+    "agentic": 1.5,
+    "indic": 10.0,
+    "reasoning": 2.0
+   },
+   "step": 38,
+   "subpool_mix": {
+    "agentic": {
+     "all": 1.0
+    },
+    "code": {
+     "all": 1.0
+    },
+    "indic": {
+     "B0_B1": 0.1,
+     "B2_B3": 0.45,
+     "B4_B5": 0.45
+    },
+    "long_context": {
+     "all": 1.0
+    },
+    "reasoning": {
+     "high": 0.21052631578947367,
+     "low": 0.42105263157894735,
+     "medium": 0.3684210526315789
+    },
+    "stem": {
+     "all": 1.0
+    },
+    "web": {
+     "all": 1.0
+    }
+   },
+   "subquotas": {
+    "agentic": {},
+    "code": {
+     "all": 3
+    },
+    "indic": {
+     "B4_B5": 1
+    },
+    "long_context": {
+     "all": 1
+    },
+    "reasoning": {},
+    "stem": {
+     "all": 1
+    },
+    "web": {
+     "all": 3
+    }
+   },
+   "target_positions": {
+    "agentic": 38.161491,
+    "code": 712.347826,
+    "indic": 254.409938,
+    "long_context": 457.937888,
+    "reasoning": 50.881988,
+    "stem": 228.968944,
+    "web": 801.391304
+   }
+  },
+  {
+   "base_window": 256,
+   "mix_pct": {
+    "agentic": 1.5,
+    "code": 28.0,
+    "indic": 10.0,
+    "long_context": 18.0,
+    "reasoning": 2.0,
+    "stem": 9.0,
+    "web": 31.5
+   },
+   "pools": {
+    "agentic": "main",
+    "code": "main",
+    "indic": "main",
+    "long_context": "main",
+    "reasoning": "main",
+    "stem": "main",
+    "web": "main"
+   },
+   "positions": 2048,
+   "quotas": {
+    "agentic": 0,
+    "code": 3,
+    "indic": 1,
+    "long_context": 0,
+    "reasoning": 0,
+    "stem": 1,
+    "web": 3
+   },
+   "ramp": null,
+   "regular_rows": 8,
+   "row_len": {
+    "agentic": 1024,
+    "code": 256,
+    "indic": 256,
+    "long_context": 1024,
+    "reasoning": 256,
+    "stem": 256,
+    "web": 256
+   },
+   "segment": "S4_long_context/fork",
+   "segment_cum_floor_positions": {
+    "agentic": 276.48,
+    "indic": 1843.2,
+    "reasoning": 368.64
+   },
+   "segment_cum_quota_positions": {
+    "agentic": 1024,
+    "code": 4864,
+    "indic": 2048,
+    "long_context": 3072,
+    "reasoning": 512,
+    "stem": 1536,
+    "web": 5376
+   },
+   "segment_cum_target_positions": {
+    "agentic": 256.485259,
+    "code": 4981.649337,
+    "indic": 1809.484579,
+    "long_context": 3030.652281,
+    "reasoning": 344.600947,
+    "stem": 1609.667791,
+    "web": 5590.597346
+   },
+   "segment_cum_total_positions": 18432,
+   "stage": "S4_long_context",
+   "stage_floor_pct": {
+    "agentic": 1.5,
+    "indic": 10.0,
+    "reasoning": 2.0
+   },
+   "step": 39,
+   "subpool_mix": {
+    "agentic": {
+     "all": 1.0
+    },
+    "code": {
+     "all": 1.0
+    },
+    "indic": {
+     "B0_B1": 0.1,
+     "B2_B3": 0.45,
+     "B4_B5": 0.45
+    },
+    "long_context": {
+     "all": 1.0
+    },
+    "reasoning": {
+     "high": 0.21052631578947367,
+     "low": 0.42105263157894735,
+     "medium": 0.3684210526315789
+    },
+    "stem": {
+     "all": 1.0
+    },
+    "web": {
+     "all": 1.0
+    }
+   },
+   "subquotas": {
+    "agentic": {},
+    "code": {
+     "all": 3
+    },
+    "indic": {
+     "B2_B3": 1
+    },
+    "long_context": {},
+    "reasoning": {},
+    "stem": {
+     "all": 1
+    },
+    "web": {
+     "all": 3
+    }
+   },
+   "target_positions": {
+    "agentic": 38.161491,
+    "code": 712.347826,
+    "indic": 254.409938,
+    "long_context": 457.937888,
+    "reasoning": 50.881988,
+    "stem": 228.968944,
+    "web": 801.391304
+   }
+  },
+  {
+   "base_window": 256,
+   "mix_pct": {
+    "agentic": 2.666667,
+    "code": 26.333333,
+    "indic": 13.333333,
+    "long_context": 15.333333,
+    "reasoning": 4.0,
+    "stem": 10.0,
+    "web": 28.333333
+   },
+   "pools": {
+    "agentic": "main",
+    "code": "main",
+    "indic": "main",
+    "long_context": "main",
+    "reasoning": "main",
+    "stem": "main",
+    "web": "main"
+   },
+   "positions": 2048,
+   "quotas": {
+    "agentic": 0,
+    "code": 3,
+    "indic": 0,
+    "long_context": 0,
+    "reasoning": 0,
+    "stem": 1,
+    "web": 4
+   },
+   "ramp": {
+    "alpha": 0.333333,
+    "from": "S4_long_context",
+    "to": "anneal"
+   },
+   "regular_rows": 8,
+   "row_len": {
+    "agentic": 1024,
+    "code": 256,
+    "indic": 256,
+    "long_context": 1024,
+    "reasoning": 256,
+    "stem": 256,
+    "web": 256
+   },
+   "segment": "S4_long_context/fork",
+   "segment_cum_floor_positions": {
+    "agentic": 307.2,
+    "indic": 2048.0,
+    "reasoning": 409.6
+   },
+   "segment_cum_quota_positions": {
+    "agentic": 1024,
+    "code": 5632,
+    "indic": 2048,
+    "long_context": 3072,
+    "reasoning": 512,
+    "stem": 1792,
+    "web": 6400
+   },
+   "segment_cum_target_positions": {
+    "agentic": 323.086885,
+    "code": 5639.340393,
+    "indic": 2142.492709,
+    "long_context": 3413.611631,
+    "reasoning": 444.503386,
+    "stem": 1859.423889,
+    "web": 6298.239623
+   },
+   "segment_cum_total_positions": 20480,
+   "stage": "S4_long_context",
+   "stage_floor_pct": {
+    "agentic": 1.5,
+    "indic": 10.0,
+    "reasoning": 2.0
+   },
+   "step": 40,
+   "subpool_mix": {
+    "agentic": {
+     "all": 1.0
+    },
+    "code": {
+     "all": 1.0
+    },
+    "indic": {
+     "B0_B1": 0.05000000000000002,
+     "B2_B3": 0.425,
+     "B4_B5": 0.525
+    },
+    "long_context": {
+     "all": 1.0
+    },
+    "reasoning": {
+     "high": 0.6035087719298246,
+     "low": 0.14035087719298248,
+     "medium": 0.12280701754385966,
+     "ultra": 0.13333333333333333
+    },
+    "stem": {
+     "all": 1.0
+    },
+    "web": {
+     "all": 1.0
+    }
+   },
+   "subquotas": {
+    "agentic": {},
+    "code": {
+     "all": 3
+    },
+    "indic": {},
+    "long_context": {},
+    "reasoning": {},
+    "stem": {
+     "all": 1
+    },
+    "web": {
+     "all": 4
+    }
+   },
+   "target_positions": {
+    "agentic": 66.601626,
+    "code": 657.691057,
+    "indic": 333.00813,
+    "long_context": 382.95935,
+    "reasoning": 99.902439,
+    "stem": 249.756098,
+    "web": 707.642276
+   }
+  },
+  {
+   "base_window": 256,
+   "mix_pct": {
+    "agentic": 3.833333,
+    "code": 24.666667,
+    "indic": 16.666667,
+    "long_context": 12.666667,
+    "reasoning": 6.0,
+    "stem": 11.0,
+    "web": 25.166667
+   },
+   "pools": {
+    "agentic": "reserve",
+    "code": "reserve",
+    "indic": "main",
+    "long_context": "reserve",
+    "reasoning": "reserve",
+    "stem": "reserve",
+    "web": "reserve"
+   },
+   "positions": 3072,
+   "quotas": {
+    "agentic": 1,
+    "code": 2,
+    "indic": 3,
+    "long_context": 0,
+    "reasoning": 1,
+    "stem": 0,
+    "web": 2
+   },
+   "ramp": {
+    "alpha": 0.666667,
+    "from": "S4_long_context",
+    "to": "anneal"
+   },
+   "regular_rows": 8,
+   "row_len": {
+    "agentic": 1024,
+    "code": 256,
+    "indic": 256,
+    "long_context": 1024,
+    "reasoning": 256,
+    "stem": 256,
+    "web": 256
+   },
+   "segment": "anneal/fork",
+   "segment_cum_floor_positions": {
+    "agentic": 153.6,
+    "indic": 614.4,
+    "reasoning": 245.76
+   },
+   "segment_cum_quota_positions": {
+    "agentic": 1024,
+    "code": 512,
+    "indic": 768,
+    "long_context": 0,
+    "reasoning": 256,
+    "stem": 0,
+    "web": 512
+   },
+   "segment_cum_target_positions": {
+    "agentic": 94.01996,
+    "code": 604.998004,
+    "indic": 408.782435,
+    "long_context": 310.674651,
+    "reasoning": 147.161677,
+    "stem": 269.796407,
+    "web": 617.261477
+   },
+   "segment_cum_total_positions": 3072,
+   "stage": "anneal",
+   "stage_floor_pct": {
+    "agentic": 5.0,
+    "indic": 20.0,
+    "reasoning": 8.0
+   },
+   "step": 41,
+   "subpool_mix": {
+    "agentic": {
+     "all": 1.0
+    },
+    "code": {
+     "all": 1.0
+    },
+    "indic": {
+     "B0_B1": 0.020000000000000007,
+     "B2_B3": 0.41,
+     "B4_B5": 0.5700000000000001
+    },
+    "long_context": {
+     "all": 1.0
+    },
+    "reasoning": {
+     "high": 0.7345029239766082,
+     "low": 0.046783625730994156,
+     "medium": 0.04093567251461989,
+     "ultra": 0.17777777777777778
+    },
+    "stem": {
+     "all": 1.0
+    },
+    "web": {
+     "all": 1.0
+    }
+   },
+   "subquotas": {
+    "agentic": {
+     "all": 1
+    },
+    "code": {
+     "all": 2
+    },
+    "indic": {
+     "B2_B3": 1,
+     "B4_B5": 2
+    },
+    "long_context": {},
+    "reasoning": {
+     "medium": 1
+    },
+    "stem": {},
+    "web": {
+     "all": 2
+    }
+   },
+   "target_positions": {
+    "agentic": 94.01996,
+    "code": 604.998004,
+    "indic": 408.782435,
+    "long_context": 310.674651,
+    "reasoning": 147.161677,
+    "stem": 269.796407,
+    "web": 617.261477
+   }
+  },
+  {
+   "base_window": 256,
+   "mix_pct": {
+    "agentic": 5.0,
+    "code": 23.0,
+    "indic": 20.0,
+    "long_context": 10.0,
+    "reasoning": 8.0,
+    "stem": 12.0,
+    "web": 22.0
+   },
+   "pools": {
+    "agentic": "reserve",
+    "code": "reserve",
+    "indic": "main",
+    "long_context": "reserve",
+    "reasoning": "reserve",
+    "stem": "reserve",
+    "web": "reserve"
+   },
+   "positions": 3072,
+   "quotas": {
+    "agentic": 0,
+    "code": 2,
+    "indic": 2,
+    "long_context": 1,
+    "reasoning": 1,
+    "stem": 1,
+    "web": 2
+   },
+   "ramp": null,
+   "regular_rows": 8,
+   "row_len": {
+    "agentic": 1024,
+    "code": 256,
+    "indic": 256,
+    "long_context": 1024,
+    "reasoning": 256,
+    "stem": 256,
+    "web": 256
+   },
+   "segment": "anneal/fork",
+   "segment_cum_floor_positions": {
+    "agentic": 307.2,
+    "indic": 1228.8,
+    "reasoning": 491.52
+   },
+   "segment_cum_quota_positions": {
+    "agentic": 1024,
+    "code": 1024,
+    "indic": 1280,
+    "long_context": 1024,
+    "reasoning": 512,
+    "stem": 256,
+    "web": 1024
+   },
+   "segment_cum_target_positions": {
+    "agentic": 214.490548,
+    "code": 1159.16271,
+    "indic": 890.664788,
+    "long_context": 551.615827,
+    "reasoning": 339.914618,
+    "stem": 558.925819,
+    "web": 1147.332065
+   },
+   "segment_cum_total_positions": 6144,
+   "stage": "anneal",
+   "stage_floor_pct": {
+    "agentic": 5.0,
+    "indic": 20.0,
+    "reasoning": 8.0
+   },
+   "step": 42,
+   "subpool_mix": {
+    "agentic": {
+     "all": 1.0
+    },
+    "code": {
+     "all": 1.0
+    },
+    "indic": {
+     "B0_B1": 0.0,
+     "B2_B3": 0.4,
+     "B4_B5": 0.6
+    },
+    "long_context": {
+     "all": 1.0
+    },
+    "reasoning": {
+     "high": 0.8,
+     "ultra": 0.2
+    },
+    "stem": {
+     "all": 1.0
+    },
+    "web": {
+     "all": 1.0
+    }
+   },
+   "subquotas": {
+    "agentic": {},
+    "code": {
+     "all": 2
+    },
+    "indic": {
+     "B2_B3": 1,
+     "B4_B5": 1
+    },
+    "long_context": {
+     "all": 1
+    },
+    "reasoning": {
+     "medium": 1
+    },
+    "stem": {
+     "all": 1
+    },
+    "web": {
+     "all": 2
+    }
+   },
+   "target_positions": {
+    "agentic": 120.470588,
+    "code": 554.164706,
+    "indic": 481.882353,
+    "long_context": 240.941176,
+    "reasoning": 192.752941,
+    "stem": 289.129412,
+    "web": 530.070588
+   }
+  }
+ ],
+ "total_steps": 42
+}

@@ -1,0 +1,47 @@
+{
+ "common_history": {
+  "batch_ids_digest": "3bbdd013e24ecb4b45e1e55472a9815b345bb37d5dac3a56052c30926d798110",
+  "steps": [
+   1,
+   14
+  ]
+ },
+ "first_fork_step": 15,
+ "fork_branch_id": "fork-s14-a5-h1-indic16",
+ "fork_schedule_sha256": "768116f0f4769df33bff2356f28d51e377aa4e9739e2ef3ad0fddab260de4f26",
+ "inherited": {
+  "dataloader_state_sha256": "3e1b276fea686c3d3e3c2d26ff0d60b7d949593d4615025ec8ab4dfa35483c27",
+  "model_sha256": "602d8c118818517efa91d92eea4d03d8a5376b7c163a9e1ec92d42090ed03d2d",
+  "optimizer_sha256": "21a575ecb9a3aa5c0763e94637a66c1d19ed06da67fe657e1869570ee6d39357",
+  "scheduler_last_epoch": 14
+ },
+ "last_fork_step": 22,
+ "mix_overrides": {
+  "from_step": 15,
+  "mix": {
+   "S2_broaden": {
+    "indic": 16,
+    "web": 49.5
+   },
+   "S3_reasoning_code": {
+    "indic": 16,
+    "web": 36.5
+   }
+  }
+ },
+ "parent_branch_id": "main",
+ "parent_checkpoint_id": "main@s00014",
+ "parent_checkpoint_meta": {
+  "dataloader_state_sha256": "3e1b276fea686c3d3e3c2d26ff0d60b7d949593d4615025ec8ab4dfa35483c27",
+  "model_sha256": "602d8c118818517efa91d92eea4d03d8a5376b7c163a9e1ec92d42090ed03d2d",
+  "optimizer_sha256": "21a575ecb9a3aa5c0763e94637a66c1d19ed06da67fe657e1869570ee6d39357"
+ },
+ "parent_checkpoint_step": 14,
+ "parent_declared_next_batch": "bat-s00015-2a370230bcd8",
+ "parent_ledger_file_sha256_at_fork": "4fc8cd47a73baffdb2c186bbf79fcd4cda0dcbbce8be6e6b4ca14c12875e7f6e",
+ "parent_ledger_head_hash": "a3eb07bcf08d6e558dd739a6fa657f4878f59057c30662d667020cc232553a0c",
+ "parent_ledger_offset": 14,
+ "parent_run_id": "run-42eaa5adc22e",
+ "parent_schedule_sha256": "7e47c8c70aa4ace85eed8196b509b5d8a4b4d60f429c20ca7f8d60d8c2652478",
+ "reason": "A5 proxy hypothesis H1: the 16% Indic arm (web gives up 6 points) from the S2 checkpoint"
+}

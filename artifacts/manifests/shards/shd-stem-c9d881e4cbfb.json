@@ -1,0 +1,87 @@
+{
+ "a2_tokenizer_sha256": "45aa8369f867472f8686b48025354fbfc0d9b53d6f7573d021aaaac815179dc4",
+ "a4_admitted": false,
+ "a5_tier": [
+  "n/a"
+ ],
+ "capability_lane": "stem",
+ "cleaning_lineage": [
+  "8695c30a1e2160b644e3db725aae9c3be94005ad5d113f504dde0c1da0b36985"
+ ],
+ "contamination_status": "clean",
+ "content_hash": "c9d881e4cbfbb92d48fb117796dc5132ace78c6b0618ec1c74013cf3e6fc7d57",
+ "created_by": "tdes.build",
+ "dedup_status": "exact_dedup_passed",
+ "doc_index": [
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "6e9886d69e3cef1592ff873c5e5adb28fa0144391735ca75a13488f8900b8882",
+   "doc_id": "wiki-639",
+   "language": "en",
+   "length": 675,
+   "license": "cc-by-sa-4.0",
+   "n_trainable_tokens": 675,
+   "offset": 0,
+   "pii_status": "clean",
+   "script": "Latn",
+   "source_id": "a2/wikimedia-20231101-en"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "4b5d1633652a689919379b928d0776713e9d2f875b392730fcb24b9ea5763966",
+   "doc_id": "wiki-791",
+   "language": "en",
+   "length": 634,
+   "license": "cc-by-sa-4.0",
+   "n_trainable_tokens": 634,
+   "offset": 675,
+   "pii_status": "clean",
+   "script": "Latn",
+   "source_id": "a2/wikimedia-20231101-en"
+  }
+ ],
+ "document_ids": [
+  "wiki-639",
+  "wiki-791"
+ ],
+ "eval_overlap_status": "none",
+ "files": {
+  "loss_eligible.bin": {
+   "dtype": "u1",
+   "sha256": "af745af8c572dd1fed71950f7cb7b9252cb7c3e64d4a3dc37283fb656b56610d"
+  },
+  "tokens.bin": {
+   "dtype": "<u2",
+   "sha256": "c455c6a62422ff7e72b56e9dd40914c75c99eafdc37c7413172d9801af01be18"
+  }
+ },
+ "format": "tdes-shard/2",
+ "lane": "stem",
+ "languages": [
+  "en"
+ ],
+ "licenses": [
+  "cc-by-sa-4.0"
+ ],
+ "n_docs": 2,
+ "never_train": false,
+ "parent_shard_ids": [],
+ "pii_status": "clean",
+ "pool": "reserve",
+ "provenance": [
+  "a2:wikipedia"
+ ],
+ "scripts": [
+  "Latn"
+ ],
+ "shard_id": "shd-stem-c9d881e4cbfb",
+ "source_ids": [
+  "a2/wikimedia-20231101-en"
+ ],
+ "split": "train",
+ "subpool": "all",
+ "token_count": 1309,
+ "tokenizer_id": "ff7f96354be799e2d7effb51dc6f89eefca399cc028d098d26cd04d361afa115",
+ "trainable_token_count": 1309,
+ "transform_id": "8695c30a1e2160b644e3db725aae9c3be94005ad5d113f504dde0c1da0b36985"
+}

@@ -1,0 +1,216 @@
+{
+ "a2_tokenizer_sha256": "45aa8369f867472f8686b48025354fbfc0d9b53d6f7573d021aaaac815179dc4",
+ "a4_admitted": true,
+ "a5_tier": [
+  "agentic_oneshot"
+ ],
+ "capability_lane": "agentic",
+ "cleaning_lineage": [
+  "9380bdf11961086dea012c9bc9575f7abe711c0b4e7e77adcfcc407025d71c9a",
+  "8695c30a1e2160b644e3db725aae9c3be94005ad5d113f504dde0c1da0b36985"
+ ],
+ "contamination_status": "clean",
+ "content_hash": "61b1a9784022b39138c179aac0e89bfa72b00e3e30e6f25da7cab0f233c3d3b2",
+ "created_by": "tdes.build",
+ "dedup_status": "exact_dedup_passed",
+ "doc_index": [
+  {
+   "a4_record_id": "d_2a65bd5544e4709b",
+   "doc_content_sha256": "ed7f051c5076c4a16986db9086528d21d4d0ef506b53a06eeeeb3fbe5f544af5",
+   "doc_id": "glaive-d_2a65bd5544e4709b",
+   "language": "en",
+   "length": 662,
+   "license": "apache-2.0",
+   "n_trainable_tokens": 270,
+   "offset": 0,
+   "pii_status": "clean",
+   "script": "Latn",
+   "source_id": "a4/glaive"
+  },
+  {
+   "a4_record_id": "d_380b5ecbd55a56da",
+   "doc_content_sha256": "03af0c08621939a2ded7642fa3c6df162ad9fcda6880e60efad82cc551e08a68",
+   "doc_id": "glaive-d_380b5ecbd55a56da",
+   "language": "en",
+   "length": 600,
+   "license": "apache-2.0",
+   "n_trainable_tokens": 120,
+   "offset": 662,
+   "pii_status": "clean",
+   "script": "Latn",
+   "source_id": "a4/glaive"
+  },
+  {
+   "a4_record_id": "d_51742f1439da84bd",
+   "doc_content_sha256": "29422403d91d16a40800b159eb30933395b013bd3f00e676033ef8ed7814ba36",
+   "doc_id": "glaive-d_51742f1439da84bd",
+   "language": "en",
+   "length": 304,
+   "license": "apache-2.0",
+   "n_trainable_tokens": 92,
+   "offset": 1262,
+   "pii_status": "clean",
+   "script": "Latn",
+   "source_id": "a4/glaive"
+  },
+  {
+   "a4_record_id": "d_5f3abf62354ba650",
+   "doc_content_sha256": "ff576f55eda8eccd362b8db73e32c305196fe34a6098baee8c5dc286f2018e40",
+   "doc_id": "glaive-d_5f3abf62354ba650",
+   "language": "en",
+   "length": 591,
+   "license": "apache-2.0",
+   "n_trainable_tokens": 230,
+   "offset": 1566,
+   "pii_status": "clean",
+   "script": "Latn",
+   "source_id": "a4/glaive"
+  },
+  {
+   "a4_record_id": "d_6a725faddd8ee24e",
+   "doc_content_sha256": "31ef19cd209a7ae18bc5752e868f1d55a3b9fb99d479f6264045347f354055e8",
+   "doc_id": "glaive-d_6a725faddd8ee24e",
+   "language": "en",
+   "length": 653,
+   "license": "apache-2.0",
+   "n_trainable_tokens": 229,
+   "offset": 2157,
+   "pii_status": "clean",
+   "script": "Latn",
+   "source_id": "a4/glaive"
+  },
+  {
+   "a4_record_id": "d_6d9a3c6e4ef1a15f",
+   "doc_content_sha256": "80f47523b6b5858d0279edba0c4b581290ee5e17147a7259ad01d489335e8327",
+   "doc_id": "glaive-d_6d9a3c6e4ef1a15f",
+   "language": "en",
+   "length": 470,
+   "license": "apache-2.0",
+   "n_trainable_tokens": 146,
+   "offset": 2810,
+   "pii_status": "clean",
+   "script": "Latn",
+   "source_id": "a4/glaive"
+  },
+  {
+   "a4_record_id": "d_7b335702c114113c",
+   "doc_content_sha256": "0a0ef458172f8076399f3525e53b514da380be721f3b398e4c8d8d5a50ee2171",
+   "doc_id": "glaive-d_7b335702c114113c",
+   "language": "en",
+   "length": 573,
+   "license": "apache-2.0",
+   "n_trainable_tokens": 94,
+   "offset": 3280,
+   "pii_status": "clean",
+   "script": "Latn",
+   "source_id": "a4/glaive"
+  },
+  {
+   "a4_record_id": "d_7ef76a6e05971eac",
+   "doc_content_sha256": "51d5530f8d900a9c6efbcb16cd1c3adff74a9460706c9323ad34f26919443292",
+   "doc_id": "glaive-d_7ef76a6e05971eac",
+   "language": "en",
+   "length": 637,
+   "license": "apache-2.0",
+   "n_trainable_tokens": 125,
+   "offset": 3853,
+   "pii_status": "clean",
+   "script": "Latn",
+   "source_id": "a4/glaive"
+  },
+  {
+   "a4_record_id": "d_a95a7bc5fb0d22c8",
+   "doc_content_sha256": "b0abb6a899c490fe408f20b7aa43331ddeaa0f8e96b94355b5f267c0bff303f9",
+   "doc_id": "glaive-d_a95a7bc5fb0d22c8",
+   "language": "en",
+   "length": 325,
+   "license": "apache-2.0",
+   "n_trainable_tokens": 94,
+   "offset": 4490,
+   "pii_status": "clean",
+   "script": "Latn",
+   "source_id": "a4/glaive"
+  },
+  {
+   "a4_record_id": "d_abb0bded48420961",
+   "doc_content_sha256": "1bf481982222e13c16220e9c750f91c06267a7e5a6887907ccf2d70c478db508",
+   "doc_id": "glaive-d_abb0bded48420961",
+   "language": "en",
+   "length": 368,
+   "license": "apache-2.0",
+   "n_trainable_tokens": 96,
+   "offset": 4815,
+   "pii_status": "redacted",
+   "script": "Latn",
+   "source_id": "a4/glaive"
+  },
+  {
+   "a4_record_id": "d_ad01a760b4755bfa",
+   "doc_content_sha256": "9d1859a069a8a9249c87dfa040389c46514b717da2006138cc9b59675b5d0a27",
+   "doc_id": "glaive-d_ad01a760b4755bfa",
+   "language": "en",
+   "length": 565,
+   "license": "apache-2.0",
+   "n_trainable_tokens": 229,
+   "offset": 5183,
+   "pii_status": "clean",
+   "script": "Latn",
+   "source_id": "a4/glaive"
+  }
+ ],
+ "document_ids": [
+  "glaive-d_2a65bd5544e4709b",
+  "glaive-d_380b5ecbd55a56da",
+  "glaive-d_51742f1439da84bd",
+  "glaive-d_5f3abf62354ba650",
+  "glaive-d_6a725faddd8ee24e",
+  "glaive-d_6d9a3c6e4ef1a15f",
+  "glaive-d_7b335702c114113c",
+  "glaive-d_7ef76a6e05971eac",
+  "glaive-d_a95a7bc5fb0d22c8",
+  "glaive-d_abb0bded48420961",
+  "glaive-d_ad01a760b4755bfa"
+ ],
+ "eval_overlap_status": "none",
+ "files": {
+  "loss_eligible.bin": {
+   "dtype": "u1",
+   "sha256": "d00526f8b91e2186466386f69ee8d4d90e711a2cb7cbc8526de61972c42765e2"
+  },
+  "tokens.bin": {
+   "dtype": "<u2",
+   "sha256": "6d4244909828aa833511463f35218fdac8dd59d81eda71e05fc03aa66360c0b6"
+  }
+ },
+ "format": "tdes-shard/2",
+ "lane": "agentic",
+ "languages": [
+  "en"
+ ],
+ "licenses": [
+  "apache-2.0"
+ ],
+ "n_docs": 11,
+ "never_train": false,
+ "parent_shard_ids": [
+  "shard_68191df5e149"
+ ],
+ "pii_status": "redacted",
+ "pool": "reserve",
+ "provenance": [
+  "a4:glaive"
+ ],
+ "scripts": [
+  "Latn"
+ ],
+ "shard_id": "shd-agentic-61b1a9784022",
+ "source_ids": [
+  "a4/glaive"
+ ],
+ "split": "train",
+ "subpool": "all",
+ "token_count": 5748,
+ "tokenizer_id": "ff7f96354be799e2d7effb51dc6f89eefca399cc028d098d26cd04d361afa115",
+ "trainable_token_count": 1725,
+ "transform_id": "8695c30a1e2160b644e3db725aae9c3be94005ad5d113f504dde0c1da0b36985"
+}

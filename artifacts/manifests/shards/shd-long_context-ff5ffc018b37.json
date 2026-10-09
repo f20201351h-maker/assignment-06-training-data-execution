@@ -1,0 +1,257 @@
+{
+ "a2_tokenizer_sha256": "45aa8369f867472f8686b48025354fbfc0d9b53d6f7573d021aaaac815179dc4",
+ "a4_admitted": false,
+ "a5_tier": [
+  "repo_or_long_file"
+ ],
+ "capability_lane": "long_context",
+ "cleaning_lineage": [
+  "8695c30a1e2160b644e3db725aae9c3be94005ad5d113f504dde0c1da0b36985"
+ ],
+ "contamination_status": "clean",
+ "content_hash": "ff5ffc018b370e13ec3ffc22993ba234aa4802f03fdeb8d3ca5b122cc5081521",
+ "created_by": "tdes.build",
+ "dedup_status": "exact_dedup_passed",
+ "doc_index": [
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "a03ffdc9d8ff53d7b8c0dd9e96f38fa613f39aebde6f950f24081d7f9909e965",
+   "doc_id": "py-shutil.copy2",
+   "language": "python",
+   "length": 617,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 617,
+   "offset": 0,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/shutil.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "457e499e8dedb2a1c1de8d82d6af11cfb47504085f1698a784bf46d559d9d833",
+   "doc_id": "py-shutil.copyfileobj",
+   "language": "python",
+   "length": 145,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 145,
+   "offset": 617,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/shutil.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "f4b423258e78572948c8c799ba5e0b7daf17b05f5589c4ba3e13aed1c5d11167",
+   "doc_id": "py-shutil.get_terminal_size",
+   "language": "python",
+   "length": 594,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 594,
+   "offset": 762,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/shutil.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "d00f51f84a2095f23fe13260a3803830f301bef1de7139d039194c9035b6f3e7",
+   "doc_id": "py-shutil.ignore_patterns",
+   "language": "python",
+   "length": 158,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 158,
+   "offset": 1356,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/shutil.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "a305098c28c1ffc24e48913746e46158126bc976c899cfdc322df8fff058bf40",
+   "doc_id": "py-shutil.make_archive",
+   "language": "python",
+   "length": 978,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 978,
+   "offset": 1514,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/shutil.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "a8accbefcde29911712f5f17548982b9525e4c3c5cb94666ae123981f7cb1652",
+   "doc_id": "py-shutil.rmtree",
+   "language": "python",
+   "length": 618,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 618,
+   "offset": 2492,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/shutil.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "46064e5580530120fef558efd6bdd5d2c801414742aec9b03bdbbcbf86e58791",
+   "doc_id": "py-stat.filemode",
+   "language": "python",
+   "length": 201,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 201,
+   "offset": 3110,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/stat.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "4a148b592d435442c4f3a1db4ef57e48f20e6af186cd5071f1f78f4dce8e1a54",
+   "doc_id": "py-statistics._convert",
+   "language": "python",
+   "length": 206,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 206,
+   "offset": 3311,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/statistics.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "814308f5016d8c5e188c32fa1bd97f015b03e705e773f5eb95d9991a02ec2154",
+   "doc_id": "py-statistics._decimal_sqrt_of_frac",
+   "language": "python",
+   "length": 400,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 400,
+   "offset": 3517,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/statistics.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "74a611d586431b71373d3a86760b736a5adb6e673499c29be40c271c4eba180f",
+   "doc_id": "py-statistics._exact_ratio",
+   "language": "python",
+   "length": 264,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 264,
+   "offset": 3917,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/statistics.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "f8b4cbc007423b87b47186ca2e636a94b3922beaa31caaaf445adb69e72678e0",
+   "doc_id": "py-statistics._float_sqrt_of_frac",
+   "language": "python",
+   "length": 271,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 271,
+   "offset": 4181,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/statistics.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "23e4ac63576fc25ce9fa262dd33b2afc34f93f344631dcbc0e1b3d250aff6b04",
+   "doc_id": "py-statistics._integer_sqrt_of_frac_rto",
+   "language": "python",
+   "length": 147,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 147,
+   "offset": 4452,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/statistics.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "1222c24bcfc880f848df04f888d40e1b243c165115041e445e4d7db151be47ba",
+   "doc_id": "py-statistics._mean_stdev",
+   "language": "python",
+   "length": 200,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 200,
+   "offset": 4599,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/statistics.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "bffc3230a58d617e5b5d40ec576620f7e9152396cd07cc5275864a443c6af62e",
+   "doc_id": "py-statistics._rank",
+   "language": "python",
+   "length": 829,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 829,
+   "offset": 4799,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/statistics.py"
+  }
+ ],
+ "document_ids": [
+  "py-shutil.copy2",
+  "py-shutil.copyfileobj",
+  "py-shutil.get_terminal_size",
+  "py-shutil.ignore_patterns",
+  "py-shutil.make_archive",
+  "py-shutil.rmtree",
+  "py-stat.filemode",
+  "py-statistics._convert",
+  "py-statistics._decimal_sqrt_of_frac",
+  "py-statistics._exact_ratio",
+  "py-statistics._float_sqrt_of_frac",
+  "py-statistics._integer_sqrt_of_frac_rto",
+  "py-statistics._mean_stdev",
+  "py-statistics._rank"
+ ],
+ "eval_overlap_status": "none",
+ "files": {
+  "loss_eligible.bin": {
+   "dtype": "u1",
+   "sha256": "a7da663f153ea8bfdd2dda4762245f1659448b01e75af5855632bf7960734931"
+  },
+  "tokens.bin": {
+   "dtype": "<u2",
+   "sha256": "390737ae5c9498527efad502b93cedc4adaf6bbde36ac1b909c43ba5138b3f75"
+  }
+ },
+ "format": "tdes-shard/2",
+ "lane": "long_context",
+ "languages": [
+  "python"
+ ],
+ "licenses": [
+  "psf-2.0"
+ ],
+ "n_docs": 14,
+ "never_train": false,
+ "parent_shard_ids": [],
+ "pii_status": "exempt_public_source_code",
+ "pool": "main",
+ "provenance": [
+  "fixture:stdlib"
+ ],
+ "scripts": [
+  "Latn"
+ ],
+ "shard_id": "shd-long_context-ff5ffc018b37",
+ "source_ids": [
+  "cpython-lib/shutil.py",
+  "cpython-lib/stat.py",
+  "cpython-lib/statistics.py"
+ ],
+ "split": "train",
+ "subpool": "all",
+ "token_count": 5628,
+ "tokenizer_id": "ff7f96354be799e2d7effb51dc6f89eefca399cc028d098d26cd04d361afa115",
+ "trainable_token_count": 5628,
+ "transform_id": "8695c30a1e2160b644e3db725aae9c3be94005ad5d113f504dde0c1da0b36985"
+}

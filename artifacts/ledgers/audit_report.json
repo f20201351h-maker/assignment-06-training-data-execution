@@ -1,0 +1,1101 @@
+{
+ "q1_data_behind_each_checkpoint": [
+  {
+   "checkpoint_id": "main@s00007",
+   "ledger_offset": 7,
+   "loss_tokens_by_lane": {
+    "code": 1783,
+    "indic": 1450,
+    "stem": 888,
+    "web": 9895
+   },
+   "n_documents": 121,
+   "steps": [
+    1,
+    7
+   ],
+   "tokens_by_shard": {
+    "shd-code-586a8e0d717f": 1006,
+    "shd-code-edac680fb95b": 187,
+    "shd-code-f0938aa339ce": 614,
+    "shd-indic-1c5a3826c73b": 640,
+    "shd-indic-86ba570dc85b": 128,
+    "shd-indic-97038a386ad4": 768,
+    "shd-stem-021245f96655": 660,
+    "shd-stem-f6f3cda43690": 236,
+    "shd-web-0eb0d92d2fd3": 442,
+    "shd-web-2e6a742b2677": 898,
+    "shd-web-73f3f654d068": 1090,
+    "shd-web-9022de17bf9b": 924,
+    "shd-web-913ef6376c2f": 1226,
+    "shd-web-a2ee8f28af06": 1952,
+    "shd-web-cbe3b83c7531": 1025,
+    "shd-web-cec4ee3ff604": 1113,
+    "shd-web-d2b45e38f797": 1055,
+    "shd-web-e61c83bd8d7d": 259
+   }
+  },
+  {
+   "checkpoint_id": "main@s00014",
+   "ledger_offset": 14,
+   "loss_tokens_by_lane": {
+    "code": 5012,
+    "indic": 2786,
+    "reasoning": 93,
+    "stem": 1903,
+    "web": 18145
+   },
+   "n_documents": 247,
+   "steps": [
+    1,
+    14
+   ],
+   "tokens_by_shard": {
+    "shd-code-586a8e0d717f": 2238,
+    "shd-code-edac680fb95b": 378,
+    "shd-code-f0938aa339ce": 2471,
+    "shd-indic-1c5a3826c73b": 1280,
+    "shd-indic-86ba570dc85b": 384,
+    "shd-indic-97038a386ad4": 1280,
+    "shd-reasoning-d9fdc3c887e0": 95,
+    "shd-stem-021245f96655": 660,
+    "shd-stem-f6f3cda43690": 1260,
+    "shd-web-0eb0d92d2fd3": 442,
+    "shd-web-2e6a742b2677": 3068,
+    "shd-web-5ebcd30893bc": 732,
+    "shd-web-73f3f654d068": 1090,
+    "shd-web-9022de17bf9b": 2209,
+    "shd-web-913ef6376c2f": 1738,
+    "shd-web-a2ee8f28af06": 1952,
+    "shd-web-cbe3b83c7531": 1693,
+    "shd-web-cec4ee3ff604": 2607,
+    "shd-web-d2b45e38f797": 2179,
+    "shd-web-e61c83bd8d7d": 594
+   }
+  },
+  {
+   "checkpoint_id": "main@s00021",
+   "ledger_offset": 21,
+   "loss_tokens_by_lane": {
+    "agentic": 296,
+    "code": 8489,
+    "indic": 4509,
+    "reasoning": 326,
+    "stem": 2918,
+    "web": 25642
+   },
+   "n_documents": 376,
+   "steps": [
+    1,
+    21
+   ],
+   "tokens_by_shard": {
+    "shd-agentic-43271625644c": 900,
+    "shd-code-586a8e0d717f": 3586,
+    "shd-code-edac680fb95b": 1151,
+    "shd-code-f0938aa339ce": 3879,
+    "shd-indic-1c5a3826c73b": 2176,
+    "shd-indic-86ba570dc85b": 1024,
+    "shd-indic-97038a386ad4": 1536,
+    "shd-reasoning-4949ce592415": 235,
+    "shd-reasoning-d9fdc3c887e0": 95,
+    "shd-stem-021245f96655": 1293,
+    "shd-stem-f6f3cda43690": 1651,
+    "shd-web-0eb0d92d2fd3": 1451,
+    "shd-web-2e6a742b2677": 4436,
+    "shd-web-5ebcd30893bc": 2464,
+    "shd-web-73f3f654d068": 1745,
+    "shd-web-9022de17bf9b": 2471,
+    "shd-web-913ef6376c2f": 1785,
+    "shd-web-a2ee8f28af06": 2717,
+    "shd-web-cbe3b83c7531": 1693,
+    "shd-web-cec4ee3ff604": 3255,
+    "shd-web-d2b45e38f797": 2819,
+    "shd-web-e61c83bd8d7d": 1020
+   }
+  },
+  {
+   "checkpoint_id": "main@s00028",
+   "ledger_offset": 28,
+   "loss_tokens_by_lane": {
+    "agentic": 296,
+    "code": 13093,
+    "indic": 5735,
+    "reasoning": 326,
+    "stem": 4700,
+    "web": 32013
+   },
+   "n_documents": 501,
+   "steps": [
+    1,
+    28
+   ],
+   "tokens_by_shard": {
+    "shd-agentic-43271625644c": 900,
+    "shd-code-586a8e0d717f": 5377,
+    "shd-code-edac680fb95b": 2462,
+    "shd-code-f0938aa339ce": 5451,
+    "shd-indic-1c5a3826c73b": 2944,
+    "shd-indic-86ba570dc85b": 1280,
+    "shd-indic-97038a386ad4": 1792,
+    "shd-reasoning-4949ce592415": 235,
+    "shd-reasoning-d9fdc3c887e0": 95,
+    "shd-stem-021245f96655": 1563,
+    "shd-stem-f6f3cda43690": 3173,
+    "shd-web-0eb0d92d2fd3": 1707,
+    "shd-web-2e6a742b2677": 4436,
+    "shd-web-5ebcd30893bc": 2720,
+    "shd-web-73f3f654d068": 3273,
+    "shd-web-9022de17bf9b": 2471,
+    "shd-web-913ef6376c2f": 3300,
+    "shd-web-a2ee8f28af06": 2973,
+    "shd-web-cbe3b83c7531": 2392,
+    "shd-web-cec4ee3ff604": 4535,
+    "shd-web-d2b45e38f797": 3429,
+    "shd-web-e61c83bd8d7d": 1020
+   }
+  },
+  {
+   "checkpoint_id": "main@s00035",
+   "ledger_offset": 35,
+   "loss_tokens_by_lane": {
+    "agentic": 499,
+    "code": 17957,
+    "indic": 7469,
+    "long_context": 686,
+    "reasoning": 553,
+    "stem": 6227,
+    "web": 37618
+   },
+   "n_documents": 576,
+   "steps": [
+    1,
+    35
+   ],
+   "tokens_by_shard": {
+    "shd-agentic-43271625644c": 1687,
+    "shd-code-586a8e0d717f": 7591,
+    "shd-code-edac680fb95b": 3191,
+    "shd-code-f0938aa339ce": 7449,
+    "shd-indic-1c5a3826c73b": 3712,
+    "shd-indic-86ba570dc85b": 2048,
+    "shd-indic-97038a386ad4": 2048,
+    "shd-long_context-16cccdfd6059": 163,
+    "shd-long_context-c465094c973f": 180,
+    "shd-long_context-ff5ffc018b37": 347,
+    "shd-reasoning-4949ce592415": 464,
+    "shd-reasoning-d9fdc3c887e0": 95,
+    "shd-stem-021245f96655": 2382,
+    "shd-stem-f6f3cda43690": 3890,
+    "shd-web-0eb0d92d2fd3": 2098,
+    "shd-web-2e6a742b2677": 5412,
+    "shd-web-5ebcd30893bc": 4604,
+    "shd-web-73f3f654d068": 3273,
+    "shd-web-9022de17bf9b": 2471,
+    "shd-web-913ef6376c2f": 3300,
+    "shd-web-a2ee8f28af06": 3706,
+    "shd-web-cbe3b83c7531": 2392,
+    "shd-web-cec4ee3ff604": 5523,
+    "shd-web-d2b45e38f797": 3429,
+    "shd-web-e61c83bd8d7d": 1680
+   }
+  },
+  {
+   "checkpoint_id": "main@s00042",
+   "ledger_offset": 42,
+   "loss_tokens_by_lane": {
+    "agentic": 824,
+    "code": 22302,
+    "indic": 9699,
+    "long_context": 3641,
+    "reasoning": 1257,
+    "stem": 7755,
+    "web": 42714
+   },
+   "n_documents": 623,
+   "steps": [
+    1,
+    42
+   ],
+   "tokens_by_shard": {
+    "shd-agentic-06d4b7c14767": 305,
+    "shd-agentic-43271625644c": 1687,
+    "shd-agentic-61b1a9784022": 653,
+    "shd-code-586a8e0d717f": 9197,
+    "shd-code-c11a9483f8e9": 946,
+    "shd-code-edac680fb95b": 3919,
+    "shd-code-f0938aa339ce": 8576,
+    "shd-indic-1c5a3826c73b": 4736,
+    "shd-indic-86ba570dc85b": 3072,
+    "shd-indic-97038a386ad4": 2304,
+    "shd-long_context-16cccdfd6059": 163,
+    "shd-long_context-4d0643b5d91d": 345,
+    "shd-long_context-533b06d816b1": 358,
+    "shd-long_context-9b596a40ccaa": 540,
+    "shd-long_context-a755cb72b8cc": 481,
+    "shd-long_context-c465094c973f": 553,
+    "shd-long_context-e95fad95b1d1": 865,
+    "shd-long_context-ff5ffc018b37": 347,
+    "shd-reasoning-03d31b38a6a3": 473,
+    "shd-reasoning-4949ce592415": 464,
+    "shd-reasoning-d9fdc3c887e0": 335,
+    "shd-stem-021245f96655": 3074,
+    "shd-stem-c9d881e4cbfb": 256,
+    "shd-stem-f6f3cda43690": 4478,
+    "shd-web-0492845b3fc1": 1024,
+    "shd-web-0eb0d92d2fd3": 2098,
+    "shd-web-2e6a742b2677": 6576,
+    "shd-web-5ebcd30893bc": 4958,
+    "shd-web-73f3f654d068": 3529,
+    "shd-web-9022de17bf9b": 2471,
+    "shd-web-913ef6376c2f": 3300,
+    "shd-web-a2ee8f28af06": 4736,
+    "shd-web-cbe3b83c7531": 2736,
+    "shd-web-cec4ee3ff604": 5523,
+    "shd-web-d2b45e38f797": 4377,
+    "shd-web-e61c83bd8d7d": 1680
+   }
+  }
+ ],
+ "q2_token_window": {
+  "loss_tokens_by_lane": {
+   "agentic": 203,
+   "code": 4864,
+   "indic": 1734,
+   "long_context": 686,
+   "reasoning": 227,
+   "stem": 1527,
+   "web": 5605
+  },
+  "n_documents": 144,
+  "steps": [
+   29,
+   35
+  ],
+  "token_window": [
+   58368,
+   74752
+  ],
+  "tokens_by_shard": {
+   "shd-agentic-43271625644c": 787,
+   "shd-code-586a8e0d717f": 2214,
+   "shd-code-edac680fb95b": 729,
+   "shd-code-f0938aa339ce": 1998,
+   "shd-indic-1c5a3826c73b": 768,
+   "shd-indic-86ba570dc85b": 768,
+   "shd-indic-97038a386ad4": 256,
+   "shd-long_context-16cccdfd6059": 163,
+   "shd-long_context-c465094c973f": 180,
+   "shd-long_context-ff5ffc018b37": 347,
+   "shd-reasoning-4949ce592415": 229,
+   "shd-stem-021245f96655": 819,
+   "shd-stem-f6f3cda43690": 717,
+   "shd-web-0eb0d92d2fd3": 391,
+   "shd-web-2e6a742b2677": 976,
+   "shd-web-5ebcd30893bc": 1884,
+   "shd-web-a2ee8f28af06": 733,
+   "shd-web-cec4ee3ff604": 988,
+   "shd-web-e61c83bd8d7d": 660
+  }
+ },
+ "q3_largest_loss_increase": {
+  "loss_increase": 0.4662014669205288,
+  "preceding_accepted_opus_decisions": [
+   {
+    "decision_id": "opus-main-s00031-001",
+    "lane": "web",
+    "opus_score": 0.3536306321620941,
+    "reason": "opus_selected",
+    "shard_ids": [
+     "shd-web-2e6a742b2677"
+    ],
+    "step": 31
+   },
+   {
+    "decision_id": "opus-main-s00031-002",
+    "lane": "web",
+    "opus_score": 0.3430551290512085,
+    "reason": "opus_selected",
+    "shard_ids": [
+     "shd-web-2e6a742b2677"
+    ],
+    "step": 31
+   },
+   {
+    "decision_id": "opus-main-s00031-003",
+    "lane": "web",
+    "opus_score": 0.33824169635772705,
+    "reason": "opus_selected",
+    "shard_ids": [
+     "shd-web-2e6a742b2677"
+    ],
+    "step": 31
+   },
+   {
+    "decision_id": "opus-main-s00031-004",
+    "lane": "web",
+    "opus_score": 0.27480238676071167,
+    "reason": "opus_selected",
+    "shard_ids": [
+     "shd-web-e61c83bd8d7d"
+    ],
+    "step": 31
+   },
+   {
+    "decision_id": "opus-main-s00031-011",
+    "lane": "code",
+    "opus_score": -0.20684954524040222,
+    "reason": "keep_1.0_static_filter_only",
+    "shard_ids": [
+     "shd-code-f0938aa339ce"
+    ],
+    "step": 31
+   },
+   {
+    "decision_id": "opus-main-s00031-012",
+    "lane": "code",
+    "opus_score": -0.23709167540073395,
+    "reason": "keep_1.0_static_filter_only",
+    "shard_ids": [
+     "shd-code-586a8e0d717f",
+     "shd-code-edac680fb95b",
+     "shd-code-f0938aa339ce"
+    ],
+    "step": 31
+   },
+   {
+    "decision_id": "opus-main-s00031-013",
+    "lane": "stem",
+    "opus_score": 0.10187102109193802,
+    "reason": "keep_1.0_static_filter_only",
+    "shard_ids": [
+     "shd-stem-f6f3cda43690"
+    ],
+    "step": 31
+   },
+   {
+    "decision_id": "opus-main-s00031-014",
+    "lane": "indic",
+    "opus_score": -0.040840063244104385,
+    "reason": "protected_floor_override",
+    "shard_ids": [
+     "shd-indic-97038a386ad4"
+    ],
+    "step": 31
+   },
+   {
+    "decision_id": "opus-main-s00032-001",
+    "lane": "web",
+    "opus_score": 0.2768715023994446,
+    "reason": "opus_selected",
+    "shard_ids": [
+     "shd-web-a2ee8f28af06"
+    ],
+    "step": 32
+   },
+   {
+    "decision_id": "opus-main-s00032-002",
+    "lane": "web",
+    "opus_score": 0.2655283510684967,
+    "reason": "opus_selected",
+    "shard_ids": [
+     "shd-web-2e6a742b2677",
+     "shd-web-a2ee8f28af06"
+    ],
+    "step": 32
+   },
+   {
+    "decision_id": "opus-main-s00032-003",
+    "lane": "web",
+    "opus_score": 0.2490231692790985,
+    "reason": "opus_selected",
+    "shard_ids": [
+     "shd-web-5ebcd30893bc",
+     "shd-web-a2ee8f28af06"
+    ],
+    "step": 32
+   },
+   {
+    "decision_id": "opus-main-s00032-009",
+    "lane": "code",
+    "opus_score": -0.18113867938518524,
+    "reason": "keep_1.0_static_filter_only",
+    "shard_ids": [
+     "shd-code-f0938aa339ce"
+    ],
+    "step": 32
+   },
+   {
+    "decision_id": "opus-main-s00032-010",
+    "lane": "code",
+    "opus_score": -0.1904732882976532,
+    "reason": "keep_1.0_static_filter_only",
+    "shard_ids": [
+     "shd-code-586a8e0d717f",
+     "shd-code-f0938aa339ce"
+    ],
+    "step": 32
+   },
+   {
+    "decision_id": "opus-main-s00032-011",
+    "lane": "code",
+    "opus_score": -0.19577564299106598,
+    "reason": "keep_1.0_static_filter_only",
+    "shard_ids": [
+     "shd-code-edac680fb95b",
+     "shd-code-f0938aa339ce"
+    ],
+    "step": 32
+   },
+   {
+    "decision_id": "opus-main-s00032-012",
+    "lane": "code",
+    "opus_score": -0.26583772897720337,
+    "reason": "keep_1.0_static_filter_only",
+    "shard_ids": [
+     "shd-code-586a8e0d717f",
+     "shd-code-f0938aa339ce"
+    ],
+    "step": 32
+   },
+   {
+    "decision_id": "opus-main-s00032-013",
+    "lane": "stem",
+    "opus_score": 0.18295428156852722,
+    "reason": "keep_1.0_static_filter_only",
+    "shard_ids": [
+     "shd-stem-021245f96655",
+     "shd-stem-f6f3cda43690"
+    ],
+    "step": 32
+   },
+   {
+    "decision_id": "opus-main-s00033-001",
+    "lane": "web",
+    "opus_score": 0.26923421025276184,
+    "reason": "opus_selected",
+    "shard_ids": [
+     "shd-web-5ebcd30893bc"
+    ],
+    "step": 33
+   },
+   {
+    "decision_id": "opus-main-s00033-002",
+    "lane": "web",
+    "opus_score": 0.24622516334056854,
+    "reason": "opus_selected",
+    "shard_ids": [
+     "shd-web-5ebcd30893bc"
+    ],
+    "step": 33
+   },
+   {
+    "decision_id": "opus-main-s00033-003",
+    "lane": "web",
+    "opus_score": 0.22439834475517273,
+    "reason": "opus_selected",
+    "shard_ids": [
+     "shd-web-a2ee8f28af06"
+    ],
+    "step": 33
+   },
+   {
+    "decision_id": "opus-main-s00033-009",
+    "lane": "code",
+    "opus_score": -0.23795373737812042,
+    "reason": "keep_1.0_static_filter_only",
+    "shard_ids": [
+     "shd-code-586a8e0d717f"
+    ],
+    "step": 33
+   },
+   {
+    "decision_id": "opus-main-s00033-010",
+    "lane": "code",
+    "opus_score": -0.32927215099334717,
+    "reason": "keep_1.0_static_filter_only",
+    "shard_ids": [
+     "shd-code-586a8e0d717f",
+     "shd-code-edac680fb95b",
+     "shd-code-f0938aa339ce"
+    ],
+    "step": 33
+   },
+   {
+    "decision_id": "opus-main-s00033-011",
+    "lane": "indic",
+    "opus_score": 0.05473048612475395,
+    "reason": "protected_floor_override",
+    "shard_ids": [
+     "shd-indic-1c5a3826c73b"
+    ],
+    "step": 33
+   },
+   {
+    "decision_id": "opus-main-s00033-012",
+    "lane": "indic",
+    "opus_score": 0.009395424276590347,
+    "reason": "protected_floor_override",
+    "shard_ids": [
+     "shd-indic-86ba570dc85b"
+    ],
+    "step": 33
+   },
+   {
+    "decision_id": "opus-main-s00033-013",
+    "lane": "reasoning",
+    "opus_score": 0.028836818411946297,
+    "reason": "protected_floor_override",
+    "shard_ids": [
+     "shd-reasoning-4949ce592415"
+    ],
+    "step": 33
+   },
+   {
+    "decision_id": "opus-main-s00033-014",
+    "lane": "agentic",
+    "opus_score": -0.08391614258289337,
+    "reason": "protected_floor_override",
+    "shard_ids": [
+     "shd-agentic-43271625644c"
+    ],
+    "step": 33
+   }
+  ],
+  "stage": "S4_long_context",
+  "step": 33
+ },
+ "q4_opus_review_queue": {
+  "candidates_considered": 764,
+  "candidates_never_trained": 277,
+  "candidates_trained": 487,
+  "decisions_by_lane": {
+   "agentic": {
+    "accepted:protected_floor_override": 2,
+    "accepted:selector_off_anneal": 1
+   },
+   "code": {
+    "accepted:keep_1.0_static_filter_only": 118,
+    "accepted:selector_off_anneal": 4
+   },
+   "indic": {
+    "accepted:protected_floor_override": 49,
+    "accepted:selector_off_anneal": 5
+   },
+   "long_context": {
+    "accepted:selector_bypass_long_context": 3,
+    "accepted:selector_off_anneal": 1
+   },
+   "reasoning": {
+    "accepted:protected_floor_override": 4,
+    "accepted:selector_off_anneal": 2
+   },
+   "stem": {
+    "accepted:keep_1.0_static_filter_only": 40,
+    "accepted:selector_off_anneal": 1
+   },
+   "web": {
+    "accepted:opus_selected": 253,
+    "accepted:selector_off_anneal": 4,
+    "deferred:marginal_utility": 126,
+    "rejected:defer_expired": 16,
+    "rejected:eval_firewall": 2,
+    "rejected:low_proxy_utility": 253,
+    "rejected:stage_mismatch": 6
+   }
+  },
+  "deferred_then_accepted": 41,
+  "note": "every scored candidate keeps its spans in opus_decisions.jsonl, so rejected clean data can be reconsidered for the anneal or a later model"
+ },
+ "q5_protected_floor_rescues": {
+  "by_lane": {
+   "agentic": 2,
+   "code": 0,
+   "indic": 49,
+   "long_context": 0,
+   "reasoning": 4,
+   "stem": 0,
+   "web": 0
+  },
+  "mean_token_loss_other_rows": 7.20644672000749,
+  "mean_token_loss_overridden_rows": 8.166242970466712,
+  "override_decisions": 55,
+  "reading": "rows OPUS would have rejected but the floor kept; a higher loss here means the English proxy is undervaluing data the model has not learned yet (the proxy-bias signal)"
+ },
+ "q6_shard_report_card": "ledgers/learning_shards.json",
+ "q7_eval_firewall_trace": {
+  "blocked_events": [
+   {
+    "action": "source_removed_from_lane",
+    "attempt": "lane web/main/all requested shd-benchmark-5a2ce9bc71ff",
+    "event": "blocked",
+    "gate": "mixture_compiler",
+    "lane": "web",
+    "reasons": [
+     "registered_eval_shard:test",
+     "no_train_permission:split=test",
+     "content_hash_in_eval_registry"
+    ],
+    "shard_id": "shd-benchmark-5a2ce9bc71ff",
+    "step": 0
+   },
+   {
+    "action": "source_removed_from_lane",
+    "attempt": "lane web/main/all requested shd-validation-4d60a3515bb6",
+    "event": "blocked",
+    "gate": "mixture_compiler",
+    "lane": "web",
+    "reasons": [
+     "registered_eval_shard:validation",
+     "no_train_permission:split=validation",
+     "content_hash_in_eval_registry"
+    ],
+    "shard_id": "shd-validation-4d60a3515bb6",
+    "step": 0
+   },
+   {
+    "action": "candidate_dropped_before_scoring",
+    "attempt": "DRILL:misconfigured test injection",
+    "branch": "main",
+    "candidate_id": "cand-7f4aac3c3cd69748",
+    "event": "blocked",
+    "gate": "candidate_gate",
+    "reasons": [
+     "shd-benchmark-5a2ce9bc71ff:registered_eval_shard:test",
+     "shd-benchmark-5a2ce9bc71ff:no_train_permission:split=test",
+     "shd-benchmark-5a2ce9bc71ff:content_hash_in_eval_registry",
+     "test-gsm8k-test-0:eval_fingerprint_overlap:54"
+    ],
+    "span_ids": [
+     "shd-benchmark-5a2ce9bc71ff:test-gsm8k-test-0:0-128"
+    ],
+    "step": 3
+   },
+   {
+    "action": "candidate_dropped_before_scoring",
+    "attempt": "DRILL:misconfigured validation injection",
+    "branch": "main",
+    "candidate_id": "cand-ab87f9671e10b0cc",
+    "event": "blocked",
+    "gate": "candidate_gate",
+    "reasons": [
+     "shd-validation-4d60a3515bb6:registered_eval_shard:validation",
+     "shd-validation-4d60a3515bb6:no_train_permission:split=validation",
+     "shd-validation-4d60a3515bb6:content_hash_in_eval_registry",
+     "validation-en-00:eval_fingerprint_overlap:30"
+    ],
+    "span_ids": [
+     "shd-validation-4d60a3515bb6:validation-en-00:0-85"
+    ],
+    "step": 3
+   },
+   {
+    "action": "batch_rejected_before_optimizer_step",
+    "attempt": "loss-bearing batch contained registered eval data",
+    "branch": "main",
+    "event": "blocked",
+    "gate": "batch_gate",
+    "reasons": [
+     {
+      "lane": "web",
+      "row": 15,
+      "violations": [
+       "shd-validation-4d60a3515bb6:registered_eval_shard:validation",
+       "shd-validation-4d60a3515bb6:no_train_permission:split=validation",
+       "shd-validation-4d60a3515bb6:content_hash_in_eval_registry",
+       "validation-en-00:eval_fingerprint_overlap:30"
+      ]
+     }
+    ],
+    "step": 5
+   }
+  ],
+  "eval_reads": [
+   {
+    "branch": "main",
+    "event": "proxy_read",
+    "grad_enabled": false,
+    "purpose": "opus_proxy_direction",
+    "shard_id": "shd-proxy-cd9fc5ec585c",
+    "step": 1
+   },
+   {
+    "branch": "main",
+    "event": "proxy_read",
+    "grad_enabled": false,
+    "purpose": "opus_proxy_direction",
+    "shard_id": "shd-proxy-cd9fc5ec585c",
+    "step": 2
+   },
+   {
+    "branch": "main",
+    "event": "proxy_read",
+    "grad_enabled": false,
+    "purpose": "opus_proxy_direction",
+    "shard_id": "shd-proxy-cd9fc5ec585c",
+    "step": 3
+   },
+   {
+    "branch": "main",
+    "event": "proxy_read",
+    "grad_enabled": false,
+    "purpose": "opus_proxy_direction",
+    "shard_id": "shd-proxy-cd9fc5ec585c",
+    "step": 4
+   },
+   {
+    "branch": "main",
+    "event": "proxy_read",
+    "grad_enabled": false,
+    "purpose": "opus_proxy_direction",
+    "shard_id": "shd-proxy-cd9fc5ec585c",
+    "step": 5
+   },
+   {
+    "branch": "main",
+    "event": "proxy_read",
+    "grad_enabled": false,
+    "purpose": "opus_proxy_direction",
+    "shard_id": "shd-proxy-cd9fc5ec585c",
+    "step": 6
+   },
+   {
+    "branch": "main",
+    "event": "proxy_read",
+    "grad_enabled": false,
+    "purpose": "opus_proxy_direction",
+    "shard_id": "shd-proxy-cd9fc5ec585c",
+    "step": 7
+   },
+   {
+    "branch": "main",
+    "event": "eval_read",
+    "grad_enabled": false,
+    "purpose": "checkpoint_validation_loss",
+    "shard_id": "shd-validation-4d60a3515bb6",
+    "step": 7
+   },
+   {
+    "branch": "main",
+    "event": "proxy_read",
+    "grad_enabled": false,
+    "purpose": "opus_proxy_direction",
+    "shard_id": "shd-proxy-cd9fc5ec585c",
+    "step": 8
+   },
+   {
+    "branch": "main",
+    "event": "proxy_read",
+    "grad_enabled": false,
+    "purpose": "opus_proxy_direction",
+    "shard_id": "shd-proxy-cd9fc5ec585c",
+    "step": 9
+   },
+   {
+    "branch": "main",
+    "event": "proxy_read",
+    "grad_enabled": false,
+    "purpose": "opus_proxy_direction",
+    "shard_id": "shd-proxy-cd9fc5ec585c",
+    "step": 10
+   },
+   {
+    "branch": "main",
+    "event": "proxy_read",
+    "grad_enabled": false,
+    "purpose": "opus_proxy_direction",
+    "shard_id": "shd-proxy-cd9fc5ec585c",
+    "step": 11
+   },
+   {
+    "branch": "main",
+    "event": "proxy_read",
+    "grad_enabled": false,
+    "purpose": "opus_proxy_direction",
+    "shard_id": "shd-proxy-cd9fc5ec585c",
+    "step": 12
+   },
+   {
+    "branch": "main",
+    "event": "proxy_read",
+    "grad_enabled": false,
+    "purpose": "opus_proxy_direction",
+    "shard_id": "shd-proxy-cd9fc5ec585c",
+    "step": 13
+   },
+   {
+    "branch": "main",
+    "event": "proxy_read",
+    "grad_enabled": false,
+    "purpose": "opus_proxy_direction",
+    "shard_id": "shd-proxy-cd9fc5ec585c",
+    "step": 14
+   },
+   {
+    "branch": "main",
+    "event": "eval_read",
+    "grad_enabled": false,
+    "purpose": "checkpoint_validation_loss",
+    "shard_id": "shd-validation-4d60a3515bb6",
+    "step": 14
+   },
+   {
+    "branch": "main",
+    "event": "proxy_read",
+    "grad_enabled": false,
+    "purpose": "opus_proxy_direction",
+    "shard_id": "shd-proxy-cd9fc5ec585c",
+    "step": 15
+   },
+   {
+    "branch": "main",
+    "event": "proxy_read",
+    "grad_enabled": false,
+    "purpose": "opus_proxy_direction",
+    "shard_id": "shd-proxy-cd9fc5ec585c",
+    "step": 16
+   },
+   {
+    "branch": "main",
+    "event": "proxy_read",
+    "grad_enabled": false,
+    "purpose": "opus_proxy_direction",
+    "shard_id": "shd-proxy-cd9fc5ec585c",
+    "step": 17
+   },
+   {
+    "branch": "main",
+    "event": "proxy_read",
+    "grad_enabled": false,
+    "purpose": "opus_proxy_direction",
+    "shard_id": "shd-proxy-cd9fc5ec585c",
+    "step": 18
+   },
+   {
+    "branch": "main",
+    "event": "proxy_read",
+    "grad_enabled": false,
+    "purpose": "opus_proxy_direction",
+    "shard_id": "shd-proxy-cd9fc5ec585c",
+    "step": 19
+   },
+   {
+    "branch": "main",
+    "event": "proxy_read",
+    "grad_enabled": false,
+    "purpose": "opus_proxy_direction",
+    "shard_id": "shd-proxy-cd9fc5ec585c",
+    "step": 20
+   },
+   {
+    "branch": "main",
+    "event": "proxy_read",
+    "grad_enabled": false,
+    "purpose": "opus_proxy_direction",
+    "shard_id": "shd-proxy-cd9fc5ec585c",
+    "step": 21
+   },
+   {
+    "branch": "main",
+    "event": "eval_read",
+    "grad_enabled": false,
+    "purpose": "checkpoint_validation_loss",
+    "shard_id": "shd-validation-4d60a3515bb6",
+    "step": 21
+   },
+   {
+    "branch": "main",
+    "event": "proxy_read",
+    "grad_enabled": false,
+    "purpose": "opus_proxy_direction",
+    "shard_id": "shd-proxy-cd9fc5ec585c",
+    "step": 22
+   },
+   {
+    "branch": "main",
+    "event": "proxy_read",
+    "grad_enabled": false,
+    "purpose": "opus_proxy_direction",
+    "shard_id": "shd-proxy-cd9fc5ec585c",
+    "step": 23
+   },
+   {
+    "branch": "main",
+    "event": "proxy_read",
+    "grad_enabled": false,
+    "purpose": "opus_proxy_direction",
+    "shard_id": "shd-proxy-cd9fc5ec585c",
+    "step": 24
+   },
+   {
+    "branch": "main",
+    "event": "proxy_read",
+    "grad_enabled": false,
+    "purpose": "opus_proxy_direction",
+    "shard_id": "shd-proxy-cd9fc5ec585c",
+    "step": 25
+   },
+   {
+    "branch": "main",
+    "event": "proxy_read",
+    "grad_enabled": false,
+    "purpose": "opus_proxy_direction",
+    "shard_id": "shd-proxy-cd9fc5ec585c",
+    "step": 26
+   },
+   {
+    "branch": "main",
+    "event": "proxy_read",
+    "grad_enabled": false,
+    "purpose": "opus_proxy_direction",
+    "shard_id": "shd-proxy-cd9fc5ec585c",
+    "step": 27
+   },
+   {
+    "branch": "main",
+    "event": "proxy_read",
+    "grad_enabled": false,
+    "purpose": "opus_proxy_direction",
+    "shard_id": "shd-proxy-cd9fc5ec585c",
+    "step": 28
+   },
+   {
+    "branch": "main",
+    "event": "eval_read",
+    "grad_enabled": false,
+    "purpose": "checkpoint_validation_loss",
+    "shard_id": "shd-validation-4d60a3515bb6",
+    "step": 28
+   },
+   {
+    "branch": "main",
+    "event": "proxy_read",
+    "grad_enabled": false,
+    "purpose": "opus_proxy_direction",
+    "shard_id": "shd-proxy-cd9fc5ec585c",
+    "step": 29
+   },
+   {
+    "branch": "main",
+    "event": "proxy_read",
+    "grad_enabled": false,
+    "purpose": "opus_proxy_direction",
+    "shard_id": "shd-proxy-cd9fc5ec585c",
+    "step": 30
+   },
+   {
+    "branch": "main",
+    "event": "proxy_read",
+    "grad_enabled": false,
+    "purpose": "opus_proxy_direction",
+    "shard_id": "shd-proxy-cd9fc5ec585c",
+    "step": 31
+   },
+   {
+    "branch": "main",
+    "event": "proxy_read",
+    "grad_enabled": false,
+    "purpose": "opus_proxy_direction",
+    "shard_id": "shd-proxy-cd9fc5ec585c",
+    "step": 32
+   },
+   {
+    "branch": "main",
+    "event": "proxy_read",
+    "grad_enabled": false,
+    "purpose": "opus_proxy_direction",
+    "shard_id": "shd-proxy-cd9fc5ec585c",
+    "step": 33
+   },
+   {
+    "branch": "main",
+    "event": "proxy_read",
+    "grad_enabled": false,
+    "purpose": "opus_proxy_direction",
+    "shard_id": "shd-proxy-cd9fc5ec585c",
+    "step": 34
+   },
+   {
+    "branch": "main",
+    "event": "proxy_read",
+    "grad_enabled": false,
+    "purpose": "opus_proxy_direction",
+    "shard_id": "shd-proxy-cd9fc5ec585c",
+    "step": 35
+   },
+   {
+    "branch": "main",
+    "event": "eval_read",
+    "grad_enabled": false,
+    "purpose": "checkpoint_validation_loss",
+    "shard_id": "shd-validation-4d60a3515bb6",
+    "step": 35
+   },
+   {
+    "branch": "main",
+    "event": "proxy_read",
+    "grad_enabled": false,
+    "purpose": "opus_proxy_direction",
+    "shard_id": "shd-proxy-cd9fc5ec585c",
+    "step": 36
+   },
+   {
+    "branch": "main",
+    "event": "proxy_read",
+    "grad_enabled": false,
+    "purpose": "opus_proxy_direction",
+    "shard_id": "shd-proxy-cd9fc5ec585c",
+    "step": 37
+   },
+   {
+    "branch": "main",
+    "event": "proxy_read",
+    "grad_enabled": false,
+    "purpose": "opus_proxy_direction",
+    "shard_id": "shd-proxy-cd9fc5ec585c",
+    "step": 38
+   },
+   {
+    "branch": "main",
+    "event": "proxy_read",
+    "grad_enabled": false,
+    "purpose": "opus_proxy_direction",
+    "shard_id": "shd-proxy-cd9fc5ec585c",
+    "step": 39
+   },
+   {
+    "branch": "main",
+    "event": "proxy_read",
+    "grad_enabled": false,
+    "purpose": "opus_proxy_direction",
+    "shard_id": "shd-proxy-cd9fc5ec585c",
+    "step": 40
+   },
+   {
+    "branch": "main",
+    "event": "proxy_read",
+    "grad_enabled": false,
+    "purpose": "opus_proxy_direction",
+    "shard_id": "shd-proxy-cd9fc5ec585c",
+    "step": 41
+   },
+   {
+    "branch": "main",
+    "event": "proxy_read",
+    "grad_enabled": false,
+    "purpose": "opus_proxy_direction",
+    "shard_id": "shd-proxy-cd9fc5ec585c",
+    "step": 42
+   },
+   {
+    "branch": "main",
+    "event": "eval_read",
+    "grad_enabled": false,
+    "purpose": "checkpoint_validation_loss",
+    "shard_id": "shd-validation-4d60a3515bb6",
+    "step": 42
+   }
+  ]
+ },
+ "source": "ledgers/main/consumption_ledger.jsonl (hash chain verified on read)"
+}

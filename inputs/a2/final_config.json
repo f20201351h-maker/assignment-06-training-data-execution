@@ -1,0 +1,80 @@
+{
+ "langs": [
+  "en",
+  "hi",
+  "te",
+  "ur"
+ ],
+ "config": {
+  "vocab_size": 10000,
+  "norm": "nfc",
+  "pretok": "ms",
+  "akshara": true,
+  "akshara_min": 3000,
+  "byte_fallback": false,
+  "alpha_min": 30,
+  "ext_words": 600000,
+  "min_frequency": 0
+ },
+ "weights": {
+  "en.eval": 317.51551148811956,
+  "en.train": 1.0583850382937319,
+  "hi.eval": 206.92056917563218,
+  "hi.train": 0.6897352305854406,
+  "te.eval": 612.7999043147778,
+  "te.train": 2.042666347715926,
+  "ur.eval": 201.18598289671212,
+  "ur.train": 0.6706199429890404
+ },
+ "eval_w": 300,
+ "ext_w": 1,
+ "source_run": "D-ft7-030",
+ "source_stage": "C-akfew",
+ "source_tokenizer_sha256": "a57359ee0003233119997a52c203fba7eb823619d93929a3bcd7c8a87bed10b0",
+ "selection": "lowest spread among all runs of the selected recipe (C-akfew balancing + fine-tuning chains D-ft1..8)",
+ "composition": {
+  "special": 1,
+  "characters": 365,
+  "akshara": 1406,
+  "learned": 8228
+ },
+ "heldout": {
+  "en": {
+   "fertility": 2.0846681541176864,
+   "words": 60058,
+   "tokens": 125201,
+   "akshara_violations": 0,
+   "unk": 72
+  },
+  "hi": {
+   "fertility": 1.9826915468811817,
+   "words": 60664,
+   "tokens": 120278,
+   "akshara_violations": 4544,
+   "unk": 18
+  },
+  "te": {
+   "fertility": 2.740176890917268,
+   "words": 60037,
+   "tokens": 164512,
+   "akshara_violations": 12884,
+   "unk": 168
+  },
+  "ur": {
+   "fertility": 1.9283084150715806,
+   "words": 63006,
+   "tokens": 121495,
+   "akshara_violations": 136,
+   "unk": 99
+  }
+ },
+ "training_result": {
+  "en": 1.4814941740918437,
+  "hi": 1.4817393428606327,
+  "te": 1.481451284141867,
+  "ur": 1.4819277108433735
+ },
+ "training_spread": 0.0004764267015064938,
+ "tokenizer_sha256": "45aa8369f867472f8686b48025354fbfc0d9b53d6f7573d021aaaac815179dc4",
+ "compact_sha256": "a57359ee0003233119997a52c203fba7eb823619d93929a3bcd7c8a87bed10b0"
+}

@@ -1,0 +1,170 @@
+{
+  "corpus_id": "corpus_8437cab97b01e8b8",
+  "shards": [
+    {
+      "shard_id": "shard_68191df5e149",
+      "source": "https://huggingface.co/datasets/glaiveai/glaive-function-calling-v2",
+      "source_revision": "e7f4b6456019f5d8bcb991ef0dd67d8ff23221ac",
+      "source_file": "glaive-function-calling-v2.json",
+      "source_file_sha256": "e9b5d671812b5ca2fbd7b625a37d5c99a19576c37252cdc806defe256aea6dad",
+      "license": "apache-2.0",
+      "terms_note": "Card is empty; generating model unknown.",
+      "contributor": "ERA V5 student (Assignment 4)",
+      "upstream_contributor": "Glaive AI (synthetic generation; generator model not stated on card)",
+      "cleaning_scripts": [
+        {
+          "name": "src/s4clean/classifier.py",
+          "sha256": "9676323f76220a706927d6c3354ce5e54feb8116a4733a8230c4bdba4e42e1b3"
+        },
+        {
+          "name": "src/s4clean/decontam.py",
+          "sha256": "750cf9d6ab3fbe6c294a3515b215be9267233490e685983d4c47c2af0b67c9f5"
+        },
+        {
+          "name": "src/s4clean/dedup.py",
+          "sha256": "04233a4d2f4d98393a7849b3ba0e428205744fa08085f664eff441d2509ea2a4"
+        },
+        {
+          "name": "src/s4clean/fasthash.py",
+          "sha256": "7dadbfa18686a4e101e3205eb46dcd7a7bac97f918e3b833f475e131c93988a7"
+        },
+        {
+          "name": "src/s4clean/formats.py",
+          "sha256": "b982ac68798c840afaa0f8fabae14e4dda6b0d9301fcf295d23ba45721060ee5"
+        },
+        {
+          "name": "src/s4clean/langid.py",
+          "sha256": "1d1ac2fc9e4a103eabebb246272c50c2e5fe527baab05b604cac9b546c5374b1"
+        },
+        {
+          "name": "src/s4clean/manifest.py",
+          "sha256": "e5702bac5d6caa1968531e472bf13d2e8bf2e89379d872c2a2eb3b1bdd1942aa"
+        },
+        {
+          "name": "src/s4clean/normalize.py",
+          "sha256": "22d4d8b0d22ba3039d2adb9eb656dcc91c0b2e70d82a60517e48fb6cb86a66a4"
+        },
+        {
+          "name": "src/s4clean/pii.py",
+          "sha256": "820934d71cc955d0307528d35786bdfb4b85925d26779c3872e393ddfdc5b41e"
+        },
+        {
+          "name": "src/s4clean/pipeline.py",
+          "sha256": "65be621416fa731dde5848f7a57caa9b3d967858385bac95085a8781369de737"
+        },
+        {
+          "name": "src/s4clean/quality.py",
+          "sha256": "00e95ffe7120f187da2c746d02016994093677a687aa319a37ebf15ce3eab871"
+        },
+        {
+          "name": "src/s4clean/tokens.py",
+          "sha256": "31810d49a22aae8b5b1195bc0e250ef0b6c2b8cfa1aaf41bb40c3c5dfb83f51c"
+        },
+        {
+          "name": "scripts/run_pipeline.py",
+          "sha256": "819ea551534772b7703ad2d49adf52f8972486d33337388b4d4ea75ba425dc20"
+        }
+      ],
+      "config_sha256": "215872c539ea5722ea3426bace2c5a37d2af8c6bb6f7a9f70e81e253a24f431b",
+      "content_sha256": "68191df5e14970109d00f921214b199e6b4fdf6acb3a7a77baa637f70cc7da5f",
+      "docs": 73539,
+      "token_count": 40616770,
+      "tokenizer": "Qwen/Qwen3-0.6B@c1899de289a04d12100db370d81485cdf75e47ca",
+      "languages": {
+        "en": 0.9998,
+        "und": 0.0002
+      },
+      "status": "clean",
+      "problems": []
+    },
+    {
+      "shard_id": "shard_6aefac17acda",
+      "source": "https://huggingface.co/datasets/ai4bharat/indic-align",
+      "source_revision": "032b6a9070e7f85f1a38e0506419f4590a20455a",
+      "source_file": "indicalign-instruct/anudesh/anudesh1.parquet",
+      "source_file_sha256": "153bb2773a8b29c9e43445a0c99529bc6dd8d0a2f9a9b2c9ae7237d827738c16",
+      "license": "cc-by-4.0",
+      "terms_note": "CC-BY-4.0 needs attribution. Responses are Llama-2-70B-Chat outputs; the Llama 2 licence restricts using outputs to improve other LLMs.",
+      "contributor": "ERA V5 student (Assignment 4)",
+      "upstream_contributor": "AI4Bharat (crowd-sourced prompts; responses from Llama-2-70B-Chat per card)",
+      "cleaning_scripts": [
+        {
+          "name": "src/s4clean/classifier.py",
+          "sha256": "9676323f76220a706927d6c3354ce5e54feb8116a4733a8230c4bdba4e42e1b3"
+        },
+        {
+          "name": "src/s4clean/decontam.py",
+          "sha256": "750cf9d6ab3fbe6c294a3515b215be9267233490e685983d4c47c2af0b67c9f5"
+        },
+        {
+          "name": "src/s4clean/dedup.py",
+          "sha256": "04233a4d2f4d98393a7849b3ba0e428205744fa08085f664eff441d2509ea2a4"
+        },
+        {
+          "name": "src/s4clean/fasthash.py",
+          "sha256": "7dadbfa18686a4e101e3205eb46dcd7a7bac97f918e3b833f475e131c93988a7"
+        },
+        {
+          "name": "src/s4clean/formats.py",
+          "sha256": "b982ac68798c840afaa0f8fabae14e4dda6b0d9301fcf295d23ba45721060ee5"
+        },
+        {
+          "name": "src/s4clean/langid.py",
+          "sha256": "1d1ac2fc9e4a103eabebb246272c50c2e5fe527baab05b604cac9b546c5374b1"
+        },
+        {
+          "name": "src/s4clean/manifest.py",
+          "sha256": "e5702bac5d6caa1968531e472bf13d2e8bf2e89379d872c2a2eb3b1bdd1942aa"
+        },
+        {
+          "name": "src/s4clean/normalize.py",
+          "sha256": "22d4d8b0d22ba3039d2adb9eb656dcc91c0b2e70d82a60517e48fb6cb86a66a4"
+        },
+        {
+          "name": "src/s4clean/pii.py",
+          "sha256": "820934d71cc955d0307528d35786bdfb4b85925d26779c3872e393ddfdc5b41e"
+        },
+        {
+          "name": "src/s4clean/pipeline.py",
+          "sha256": "65be621416fa731dde5848f7a57caa9b3d967858385bac95085a8781369de737"
+        },
+        {
+          "name": "src/s4clean/quality.py",
+          "sha256": "00e95ffe7120f187da2c746d02016994093677a687aa319a37ebf15ce3eab871"
+        },
+        {
+          "name": "src/s4clean/tokens.py",
+          "sha256": "31810d49a22aae8b5b1195bc0e250ef0b6c2b8cfa1aaf41bb40c3c5dfb83f51c"
+        },
+        {
+          "name": "scripts/run_pipeline.py",
+          "sha256": "819ea551534772b7703ad2d49adf52f8972486d33337388b4d4ea75ba425dc20"
+        }
+      ],
+      "config_sha256": "215872c539ea5722ea3426bace2c5a37d2af8c6bb6f7a9f70e81e253a24f431b",
+      "content_sha256": "6aefac17acda92f5d26070980805d08fe5d8e555b457a1f26525a213cd693a98",
+      "docs": 35819,
+      "token_count": 35898527,
+      "tokenizer": "Qwen/Qwen3-0.6B@c1899de289a04d12100db370d81485cdf75e47ca",
+      "languages": {
+        "hi": 0.3713,
+        "en": 0.1739,
+        "mr": 0.1461,
+        "te": 0.1079,
+        "ta": 0.0653,
+        "bn": 0.0625,
+        "kn": 0.0525,
+        "und": 0.0083,
+        "mixed": 0.0068,
+        "ml": 0.0029,
+        "gu": 0.0013,
+        "or": 0.0008,
+        "pa": 0.0003,
+        "ne": 0.0001,
+        "ur": 0.0
+      },
+      "status": "clean",
+      "problems": []
+    }
+  ]
+}

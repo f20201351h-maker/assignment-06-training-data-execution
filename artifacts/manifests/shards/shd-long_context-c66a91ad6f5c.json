@@ -1,0 +1,299 @@
+{
+ "a2_tokenizer_sha256": "45aa8369f867472f8686b48025354fbfc0d9b53d6f7573d021aaaac815179dc4",
+ "a4_admitted": false,
+ "a5_tier": [
+  "repo_or_long_file"
+ ],
+ "capability_lane": "long_context",
+ "cleaning_lineage": [
+  "8695c30a1e2160b644e3db725aae9c3be94005ad5d113f504dde0c1da0b36985"
+ ],
+ "contamination_status": "clean",
+ "content_hash": "c66a91ad6f5c41274fefba3ef5b8cbe37f6641e8b76fdc5d16915b5106ac0417",
+ "created_by": "tdes.build",
+ "dedup_status": "exact_dedup_passed",
+ "doc_index": [
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "bf2e69b76814a2616a76bacc28a5ea05aff4ccd3820ed53ad23c01f195c34288",
+   "doc_id": "py-functools._find_impl",
+   "language": "python",
+   "length": 326,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 326,
+   "offset": 0,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/functools.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "295447e0202b3318bafd644f867b836b213434e58d98130a30ff30c1bc7337eb",
+   "doc_id": "py-functools._make_key",
+   "language": "python",
+   "length": 437,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 437,
+   "offset": 326,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/functools.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "5be2a7ec3179bdc1f31067a173fcaa20873f404832d041f166b619911d0b6a5e",
+   "doc_id": "py-functools._partial_new",
+   "language": "python",
+   "length": 721,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 721,
+   "offset": 763,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/functools.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "d00796d2c66c3216fd1efd7aa2b037013d0e23da73d93af3197d80f77ba46072",
+   "doc_id": "py-functools._partial_prepare_merger",
+   "language": "python",
+   "length": 141,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 141,
+   "offset": 1484,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/functools.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "b130e63c3d28c4e64c44547aedfb903511f2da8ace67f82d637e83b269b99a8b",
+   "doc_id": "py-functools._partial_repr",
+   "language": "python",
+   "length": 153,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 153,
+   "offset": 1625,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/functools.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "8d0dc4cb27feeea52539a96d366ecced15c42009be576919e133a0552e4bcc39",
+   "doc_id": "py-functools._unwrap_partialmethod",
+   "language": "python",
+   "length": 147,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 147,
+   "offset": 1778,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/functools.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "389f6b18a361eb4bfbd0cc7cfc298f6a89f9f1bf9e04bea38f0b3de881fa7b81",
+   "doc_id": "py-functools._warn_python_reduce_kwargs",
+   "language": "python",
+   "length": 228,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 228,
+   "offset": 1925,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/functools.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "02af7f6a9b93dc04b6a5d193d576c0c3f8cce2c4f0c01f99315dff28b830b3fa",
+   "doc_id": "py-functools.cmp_to_key",
+   "language": "python",
+   "length": 256,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 256,
+   "offset": 2153,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/functools.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "262e6355535216798187e58c6d03f143fc2236332c37b7ede08c3e19d3357c49",
+   "doc_id": "py-functools.lru_cache",
+   "language": "python",
+   "length": 805,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 805,
+   "offset": 2409,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/functools.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "51fdd3e5c82ad52072672b2dac84ab43c6cd4962a9c63e66721ec14d31a0ab67",
+   "doc_id": "py-functools.reduce",
+   "language": "python",
+   "length": 315,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 315,
+   "offset": 3214,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/functools.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "9173df2c8f6427270f72e718426266680591bc36ba1636ffa2ca1108b37dd1fa",
+   "doc_id": "py-functools.update_wrapper",
+   "language": "python",
+   "length": 434,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 434,
+   "offset": 3529,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/functools.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "f89d485a1b51fe64f3e2dc947c8c1919ab363740f2074bda87b4612b69483afc",
+   "doc_id": "py-functools.wraps",
+   "language": "python",
+   "length": 227,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 227,
+   "offset": 3963,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/functools.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "26d82fb098cda4bc738e2ee9ec7679e79946d056922c2842900f5a78f4c37aad",
+   "doc_id": "py-genericpath._check_arg_types",
+   "language": "python",
+   "length": 200,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 200,
+   "offset": 4190,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/genericpath.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "4f28c795b0f6e99bac04ec6d1295abd0bf5d36645cb6af3bc491b25afa3971c1",
+   "doc_id": "py-genericpath._splitext",
+   "language": "python",
+   "length": 288,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 288,
+   "offset": 4390,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/genericpath.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "ec2887a92ce0a926417bbb0968b746e6f54505a17a6133e3ecf676ae8e3b9150",
+   "doc_id": "py-genericpath.commonprefix",
+   "language": "python",
+   "length": 244,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 244,
+   "offset": 4678,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/genericpath.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "e4baa6dfe3da36f54fda85eb63f9fa1200243c07d0197353e8f0c2307edb5301",
+   "doc_id": "py-gettext._as_int2",
+   "language": "python",
+   "length": 172,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 172,
+   "offset": 4922,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/gettext.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "46af1ce5120735952aed42324797a9e25ff39dcf494128d1a1b90ab4345f1c8c",
+   "doc_id": "py-gettext._expand_lang",
+   "language": "python",
+   "length": 501,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 501,
+   "offset": 5094,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/gettext.py"
+  }
+ ],
+ "document_ids": [
+  "py-functools._find_impl",
+  "py-functools._make_key",
+  "py-functools._partial_new",
+  "py-functools._partial_prepare_merger",
+  "py-functools._partial_repr",
+  "py-functools._unwrap_partialmethod",
+  "py-functools._warn_python_reduce_kwargs",
+  "py-functools.cmp_to_key",
+  "py-functools.lru_cache",
+  "py-functools.reduce",
+  "py-functools.update_wrapper",
+  "py-functools.wraps",
+  "py-genericpath._check_arg_types",
+  "py-genericpath._splitext",
+  "py-genericpath.commonprefix",
+  "py-gettext._as_int2",
+  "py-gettext._expand_lang"
+ ],
+ "eval_overlap_status": "none",
+ "files": {
+  "loss_eligible.bin": {
+   "dtype": "u1",
+   "sha256": "aabe4cb1584285e702096a7c8b1e3b03bc499cb74c82076cc6cc333b0464eec6"
+  },
+  "tokens.bin": {
+   "dtype": "<u2",
+   "sha256": "b4dba5e18d62b41d3aa7657d664a28dd137f343832fb93c6007680b82f6808f6"
+  }
+ },
+ "format": "tdes-shard/2",
+ "lane": "long_context",
+ "languages": [
+  "python"
+ ],
+ "licenses": [
+  "psf-2.0"
+ ],
+ "n_docs": 17,
+ "never_train": false,
+ "parent_shard_ids": [],
+ "pii_status": "exempt_public_source_code",
+ "pool": "main",
+ "provenance": [
+  "fixture:stdlib"
+ ],
+ "scripts": [
+  "Latn"
+ ],
+ "shard_id": "shd-long_context-c66a91ad6f5c",
+ "source_ids": [
+  "cpython-lib/functools.py",
+  "cpython-lib/genericpath.py",
+  "cpython-lib/gettext.py"
+ ],
+ "split": "train",
+ "subpool": "all",
+ "token_count": 5595,
+ "tokenizer_id": "ff7f96354be799e2d7effb51dc6f89eefca399cc028d098d26cd04d361afa115",
+ "trainable_token_count": 5595,
+ "transform_id": "8695c30a1e2160b644e3db725aae9c3be94005ad5d113f504dde0c1da0b36985"
+}

@@ -1,0 +1,119 @@
+{
+ "chain_errors": [],
+ "checkpoints_on_disk": [
+  "step_00007",
+  "step_00014",
+  "step_00021",
+  "step_00028"
+ ],
+ "child_exit_code": 137,
+ "committed_ledger_records": 30,
+ "committed_steps": [
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30
+ ],
+ "configured_crash_step": 31,
+ "crash_point": "during_ledger_append",
+ "expected_exit_code": 137,
+ "expected_next_batch_declared_by_checkpoint": {
+  "batch_hash": "f4755740a8d70844d693f7a70783bad9456807ce49ae957155623fd3f4d1810e",
+  "batch_id": "bat-s00029-38e71de9eec7",
+  "batch_loss_mask_hash": "3f5290ca6273c85ef1437043b3aea0160005697701df393de993ecc0db5699da",
+  "row_hashes": [
+   "b6217b85817120bbf254a3327e64d31819915c5b46f6d51c6b6e1b6ed9102cb5",
+   "3110adbc4a5dddd1e0505b3f9d78c7fcacb8aa5c2ed4e7422658be3cf8c15e0c",
+   "358b32a69a564741a92275450f7b93629d03e37ee67bd28e08e3ca9ac28450cf",
+   "4e3a43509cbf6f3fd81bc005ce072efd8cc07923e23284342de427c9e5a29bab",
+   "343b4f95e2870b138f50c6b94270c64e78b840603f65a1f965623b0e2be945b2",
+   "3240c874d19b1eccb2ab6b9daf6543811f5b2f00cbea02645cab611ca98c125e",
+   "973f08bf8955886a0b6669ac0c374897906b55ceffbbb2dd28894767ed41c176",
+   "d2717a135add72bd95f610967c5638c612eb1da359efd29ba93b16a0e65faf8a"
+  ],
+  "sample_ids": [
+   "smp-86954859fbb24f63",
+   "smp-98a0f8f0be73c03e",
+   "smp-7ab29df7335e4171",
+   "smp-31a5f7e041f59b7e",
+   "smp-fb71b4324f9ce9a8",
+   "smp-2238762f58121d1f",
+   "smp-152dfc00454072a7",
+   "smp-35958174e4e5dceb"
+  ],
+  "span_ids": [
+   [
+    "shd-web-5ebcd30893bc:wiki-734:377-633"
+   ],
+   [
+    "shd-web-5ebcd30893bc:wiki-734:889-1145"
+   ],
+   [
+    "shd-web-5ebcd30893bc:wiki-734:121-377"
+   ],
+   [
+    "shd-code-f0938aa339ce:py-shutil._get_uid:0-111",
+    "shd-code-f0938aa339ce:py-stat.S_ISFIFO:0-66",
+    "shd-code-586a8e0d717f:py-glob._listdir:0-63"
+   ],
+   [
+    "shd-code-586a8e0d717f:py-heapq.heappushpop_max:0-94",
+    "shd-code-f0938aa339ce:py-shlex._print_tokens:0-48",
+    "shd-code-f0938aa339ce:py-stat.S_ISWHT:0-41",
+    "shd-code-f0938aa339ce:py-posixpath._get_sep:0-39",
+    "shd-code-f0938aa339ce:py-operator.contains:0-29"
+   ],
+   [
+    "shd-code-586a8e0d717f:py-heapq.heapify_max:0-82",
+    "shd-code-f0938aa339ce:py-operator.call:0-59",
+    "shd-code-edac680fb95b:py-urllib.parse._encode_result:0-54",
+    "shd-code-f0938aa339ce:py-locale.atof:0-50"
+   ],
+   [
+    "shd-stem-021245f96655:wiki-674:270-526"
+   ],
+   [
+    "shd-indic-86ba570dc85b:anudesh-d_13f1ec95df9f256a:2-50",
+    "shd-indic-86ba570dc85b:anudesh-d_dd3c12ac7d6f8395:0-93",
+    "shd-indic-86ba570dc85b:anudesh-d_6172bfddfa932050:0-52",
+    "shd-indic-86ba570dc85b:anudesh-d_b727695fed4b12fd:0-63"
+   ]
+  ],
+  "step": 29
+ },
+ "expected_next_step": 29,
+ "latest_checkpoint": "main@s00028",
+ "latest_checkpoint_ledger_offset": 28,
+ "steps_committed_after_latest_checkpoint": [
+  29,
+  30
+ ],
+ "torn_tail_bytes": 6260,
+ "torn_tail_preview": "{\"a2_tokenizer_sha256\": \"45aa8369f867472f8686b48025354fbfc0d9b53d6f7573d021aaaac815179dc4\", \"attempt\": 1, \"attention_pol"
+}

@@ -1,0 +1,102 @@
+2026-10-09 05:29:18.571 [pid 27588] demo started: python 3.14.4, torch 2.14.0+cpu, tokenizers 0.23.1, Windows-11-10.0.26200-SP0; artifacts -> artifacts/
+2026-10-09 05:29:21.263 [pid 4740] [PASS] tokenizer_hash_verified | A2 tokenizer.json sha256 45aa8369f867472f == A2-published == pinned; adapter tokenizer_id ff7f96354be799e2; vocab 10000+7 control tokens
+2026-10-09 05:29:23.417 [pid 4740] documents: 1168 training candidates, 1073 admitted, 96 dropped by the A6 ingress gate ({'a2_tokenizer_coverage': 92, 'exact_duplicate_of': 3, 'eval_contamination': 1})
+2026-10-09 05:29:23.417 [pid 4740] ingress gate: eval-contaminated drill document wiki-12-DRILL-contaminated dropped -> ['eval_contamination:71_shared_word_ngrams']
+2026-10-09 05:29:23.418 [pid 4740] shards created: 52 immutable shards, 239449 tokens; {'proxy/proxy/eval': 1, 'test/benchmark/eval': 1, 'train/agentic/main': 4, 'train/agentic/reserve': 2, 'train/code/main': 3, 'train/code/reserve': 1, 'train/indic/main': 3, 'train/long_context/main': 14, 'train/long_context/reserve': 3, 'train/reasoning/main': 2, 'train/reasoning/reserve': 2, 'train/stem/main': 2, 'train/stem/reserve': 1, 'train/web/main': 11, 'train/web/reserve': 1, 'validation/validation/eval': 1}
+2026-10-09 05:29:25.862 [pid 4740] [PASS] shard_build_deterministic | second independent build: registry a4d475fe5b1a582a == a4d475fe5b1a582a
+2026-10-09 05:29:25.971 [pid 4740] [PASS] shard_immutability_enforced | shd-agentic-06d4b7c14767 exists with different bytes; shards are immutable
+2026-10-09 05:29:25.972 [pid 4740] [PASS] tampered_shard_rejected | content hash mismatch for shd-agentic-06d4b7c14767
+2026-10-09 05:29:25.972 [pid 4740] [PASS] tokenizer_mismatch_rejected | registry tokenizer id differs from the pinned tokenizer
+2026-10-09 05:29:26.764 [pid 4740] manifests validated: 52/52 shards valid (content hash recomputed, files re-hashed, documents re-encoded with A2, admission gate)
+2026-10-09 05:29:26.765 [pid 4740] [PASS] manifests_validated
+2026-10-09 05:29:26.792 [pid 4740] evaluation data blocked: the mixture compiler was handed a misconfigured web source list {'web': ['test', 'validation']}; 2 shard(s) removed: shd-benchmark-5a2ce9bc71ff (registered_eval_shard:test, no_train_permission:split=test, content_hash_in_eval_registry); shd-validation-4d60a3515bb6 (registered_eval_shard:validation, no_train_permission:split=validation, content_hash_in_eval_registry)
+2026-10-09 05:29:26.792 [pid 4740] [PASS] eval_shard_blocked | ingress drill dropped; compiler blocked 2; eval registry 58a8c2dd3cd178e7
+2026-10-09 05:29:26.798 [pid 4740] mixture compiled: A5 mixture.yaml (5b8dccaaff55) -> 42 steps, stages {'S1_foundation': 8, 'S2_broaden': 12, 'S3_reasoning_code': 12, 'S4_long_context': 8, 'anneal': 2}, ramp 2 steps, schedule 7e47c8c70aa4ace8; passes needed agentic/main/all:1, agentic/reserve/all:1, code/main/all:2, code/reserve/all:2, indic/main/B0_B1:2, indic/main/B2_B3:2, indic/main/B4_B5:1, long_context/main/all:1, long_context/reserve/all:1, reasoning/main/low:1, reasoning/main/medium:1, reasoning/reserve/medium:1, stem/main/all:1, stem/reserve/all:1, web/main/all:2, web/reserve/all:1; band substitutions 7
+2026-10-09 05:29:27.137 [pid 27588] run_id run-42eaa5adc22e
+2026-10-09 05:29:31.841 [pid 26748] [main] training started (fresh, run_id=run-42eaa5adc22e, attempt 1, crash armed at step 31)
+2026-10-09 05:29:32.674 [pid 26748] [main] batches packed: step 1 bat-s00001-9e72d65b67de 16 rows in 2 microbatches; best_fit_whole_files@128: 2 rows util 0.922 loss-tok 234, concat_chop@128: 14 rows util 1.000 loss-tok 1766
+2026-10-09 05:29:32.674 [pid 26748] [main] OPUS decisions recorded: step 1 33 candidates {'accepted': 14, 'deferred': 6, 'rejected': 11, 'accepted/protected_floor_override': 2}; web cutoff 0.4034
+2026-10-09 05:29:32.675 [pid 26748] [main] step 1 S1_foundation bat-s00001-9e72d65b67de loss 9.2137 lanes {'code': 2, 'indic': 2, 'stem': 1, 'web': 11}
+2026-10-09 05:29:34.082 [pid 26748] [main] evaluation data blocked at the candidate gate, step 3: DRILL:misconfigured test injection -> shd-benchmark-5a2ce9bc71ff:registered_eval_shard:test, shd-benchmark-5a2ce9bc71ff:no_train_permission:split=test
+2026-10-09 05:29:34.082 [pid 26748] [main] evaluation data blocked at the candidate gate, step 3: DRILL:misconfigured validation injection -> shd-validation-4d60a3515bb6:registered_eval_shard:validation, shd-validation-4d60a3515bb6:no_train_permission:split=validation
+2026-10-09 05:29:35.900 [pid 26748] [main] firewall drill step 5: a validation row placed directly into the loss-bearing batch -> blocked
+2026-10-09 05:29:39.020 [pid 26748] [main] checkpoint saved: main@s00007 ledger_offset=7 head=7d7d6f7aa1444121 model=a0ab99cacec733b6 next_batch=bat-s00008-c8fc6b86ea27 val_loss={'en': 8.158, 'hi': 8.962, 'te': 9.239, 'ur': 9.485}
+2026-10-09 05:29:39.020 [pid 26748] [PASS] checkpoint_saved | main@s00007 reloaded into fresh objects; model/optimizer/dataloader hashes and ledger binding re-verified
+2026-10-09 05:29:39.021 [pid 26748] [main] step 7 S1_foundation bat-s00007-15d811bf3b47 loss 8.3682 lanes {'code': 2, 'indic': 2, 'stem': 1, 'web': 11}
+2026-10-09 05:29:46.159 [pid 26748] [main] checkpoint saved: main@s00014 ledger_offset=14 head=a3eb07bcf08d6e55 model=602d8c118818517e next_batch=bat-s00015-2a370230bcd8 val_loss={'en': 7.249, 'hi': 9.078, 'te': 9.644, 'ur': 10.32}
+2026-10-09 05:29:46.160 [pid 26748] [PASS] checkpoint_saved | main@s00014 reloaded into fresh objects; model/optimizer/dataloader hashes and ledger binding re-verified
+2026-10-09 05:29:46.162 [pid 26748] [main] step 14 S2_broaden bat-s00014-c53340a92aa2 loss 7.4250 lanes {'code': 4, 'indic': 2, 'stem': 1, 'web': 9}
+2026-10-09 05:29:53.387 [pid 26748] [main] checkpoint saved: main@s00021 ledger_offset=21 head=f587a4029bd954ac model=a669614e08cf9e16 next_batch=bat-s00022-79a360fdcba8 val_loss={'en': 6.953, 'hi': 9.5, 'te': 10.18, 'ur': 11.055}
+2026-10-09 05:29:53.388 [pid 26748] [PASS] checkpoint_saved | main@s00021 reloaded into fresh objects; model/optimizer/dataloader hashes and ledger binding re-verified
+2026-10-09 05:29:53.389 [pid 26748] [main] step 21 S3_reasoning_code bat-s00021-1be7dc79eadf loss 7.1591 lanes {'agentic': 1, 'code': 2, 'indic': 2, 'reasoning': 1, 'web': 3}
+2026-10-09 05:30:00.220 [pid 26748] [main] checkpoint saved: main@s00028 ledger_offset=28 head=d6c93b84f35ba2d5 model=c5762d226baebe7b next_batch=bat-s00029-38e71de9eec7 val_loss={'en': 6.972, 'hi': 8.936, 'te': 9.435, 'ur': 9.122}
+2026-10-09 05:30:00.220 [pid 26748] [PASS] checkpoint_saved | main@s00028 reloaded into fresh objects; model/optimizer/dataloader hashes and ledger binding re-verified
+2026-10-09 05:30:00.221 [pid 26748] [main] step 28 S3_reasoning_code bat-s00028-b76ad4545770 loss 6.9362 lanes {'code': 2, 'indic': 1, 'stem': 1, 'web': 4}
+2026-10-09 05:30:02.745 [pid 26748] [main] crash injection: step 31 trained in memory; writing 6260 of 12521 bytes of its ledger record, then os._exit(137) (last durable checkpoint main@s00028, committed ledger offset 30)
+2026-10-09 05:30:02.925 [pid 27588] crash simulated: the training process died with exit code 137 during step 31; ledger has 30 committed records + 6260 torn bytes; latest checkpoint main@s00028 (ledger offset 28) says the next batch must be bat-s00029-38e71de9eec7
+2026-10-09 05:30:08.106 [pid 10840] [main] run resumed in a new process from main@s00028 at ledger offset 28; orphaned steps [29, 30] moved to crash_forensics; torn tail 6260 bytes
+2026-10-09 05:30:08.929 [pid 10840] [PASS] resume_next_batch_matched | step 29: checkpoint main@s00028 declared bat-s00029-38e71de9eec7 / f4755740a8d70844; the dead process had written bat-s00029-38e71de9eec7; resumed batch bat-s00029-38e71de9eec7 / f4755740a8d70844 (8 samples, ids/spans/row hashes compared)
+2026-10-09 05:30:09.836 [pid 10840] [main] batches packed: step 30 bat-s00030-cf58a71aad1c 8 rows in 2 microbatches; best_fit_whole_files@256: 3 rows util 0.986 loss-tok 743, concat_chop@256: 5 rows util 1.000 loss-tok 1265
+2026-10-09 05:30:09.837 [pid 10840] [main] OPUS decisions recorded: step 30 13 candidates {'accepted': 7, 'deferred': 2, 'rejected': 3, 'accepted/protected_floor_override': 1}; web cutoff 0.2609
+2026-10-09 05:30:09.837 [pid 10840] [main] step 30 S3_reasoning_code bat-s00030-cf58a71aad1c loss 6.7981 lanes {'code': 3, 'indic': 1, 'stem': 1, 'web': 3}
+2026-10-09 05:30:17.557 [pid 10840] [main] checkpoint saved: main@s00035 ledger_offset=35 head=f406d2313a62a271 model=1952a9a46389b7bc next_batch=bat-s00036-faa31a6f658b val_loss={'en': 6.939, 'hi': 8.602, 'te': 9.063, 'ur': 9.793}
+2026-10-09 05:30:17.557 [pid 10840] [PASS] checkpoint_saved | main@s00035 reloaded into fresh objects; model/optimizer/dataloader hashes and ledger binding re-verified
+2026-10-09 05:30:17.560 [pid 10840] [main] step 35 S4_long_context bat-s00035-490586ba1967 loss 6.6625 lanes {'code': 3, 'indic': 1, 'stem': 1, 'web': 3}
+2026-10-09 05:30:28.071 [pid 10840] [main] checkpoint saved: main@s00042 ledger_offset=42 head=a5a87e8420af0889 model=01ee88132f7fd499 next_batch=None val_loss={'en': 6.994, 'hi': 8.423, 'te': 8.791, 'ur': 9.453}
+2026-10-09 05:30:28.071 [pid 10840] [PASS] checkpoint_saved | main@s00042 reloaded into fresh objects; model/optimizer/dataloader hashes and ledger binding re-verified
+2026-10-09 05:30:28.073 [pid 10840] [main] step 42 anneal bat-s00042-c9312b8cb39e loss 6.7466 lanes {'code': 2, 'indic': 2, 'long_context': 1, 'reasoning': 1, 'stem': 1, 'web': 2}
+2026-10-09 05:30:28.779 [pid 27588] reference run: same config, uninterrupted, separate run root (control for resume and determinism)
+2026-10-09 05:30:34.545 [pid 5652] [reference-uninterrupted] training started (fresh, run_id=run-42eaa5adc22e-reference, attempt 1)
+2026-10-09 05:30:35.652 [pid 5652] [reference-uninterrupted] batches packed: step 1 bat-s00001-9e72d65b67de 16 rows in 2 microbatches; best_fit_whole_files@128: 2 rows util 0.922 loss-tok 234, concat_chop@128: 14 rows util 1.000 loss-tok 1766
+2026-10-09 05:30:35.653 [pid 5652] [reference-uninterrupted] OPUS decisions recorded: step 1 33 candidates {'accepted': 14, 'deferred': 6, 'rejected': 11, 'accepted/protected_floor_override': 2}; web cutoff 0.4034
+2026-10-09 05:30:35.653 [pid 5652] [reference-uninterrupted] step 1 S1_foundation bat-s00001-9e72d65b67de loss 9.2137 lanes {'code': 2, 'indic': 2, 'stem': 1, 'web': 11}
+2026-10-09 05:30:37.052 [pid 5652] [reference-uninterrupted] evaluation data blocked at the candidate gate, step 3: DRILL:misconfigured test injection -> shd-benchmark-5a2ce9bc71ff:registered_eval_shard:test, shd-benchmark-5a2ce9bc71ff:no_train_permission:split=test
+2026-10-09 05:30:37.052 [pid 5652] [reference-uninterrupted] evaluation data blocked at the candidate gate, step 3: DRILL:misconfigured validation injection -> shd-validation-4d60a3515bb6:registered_eval_shard:validation, shd-validation-4d60a3515bb6:no_train_permission:split=validation
+2026-10-09 05:30:39.413 [pid 5652] [reference-uninterrupted] firewall drill step 5: a validation row placed directly into the loss-bearing batch -> blocked
+2026-10-09 05:30:42.978 [pid 5652] [reference-uninterrupted] checkpoint saved: reference-uninterrupted@s00007 ledger_offset=7 head=0ceae59a043890fc model=a0ab99cacec733b6 next_batch=bat-s00008-c8fc6b86ea27 val_loss={'en': 8.158, 'hi': 8.962, 'te': 9.239, 'ur': 9.485}
+2026-10-09 05:30:42.979 [pid 5652] [PASS] checkpoint_saved | reference-uninterrupted@s00007 reloaded into fresh objects; model/optimizer/dataloader hashes and ledger binding re-verified
+2026-10-09 05:30:42.980 [pid 5652] [reference-uninterrupted] step 7 S1_foundation bat-s00007-15d811bf3b47 loss 8.3682 lanes {'code': 2, 'indic': 2, 'stem': 1, 'web': 11}
+2026-10-09 05:30:50.565 [pid 5652] [reference-uninterrupted] checkpoint saved: reference-uninterrupted@s00014 ledger_offset=14 head=14131ec1b0c2820d model=602d8c118818517e next_batch=bat-s00015-2a370230bcd8 val_loss={'en': 7.249, 'hi': 9.078, 'te': 9.644, 'ur': 10.32}
+2026-10-09 05:30:50.566 [pid 5652] [PASS] checkpoint_saved | reference-uninterrupted@s00014 reloaded into fresh objects; model/optimizer/dataloader hashes and ledger binding re-verified
+2026-10-09 05:30:50.567 [pid 5652] [reference-uninterrupted] step 14 S2_broaden bat-s00014-c53340a92aa2 loss 7.4250 lanes {'code': 4, 'indic': 2, 'stem': 1, 'web': 9}
+2026-10-09 05:30:59.487 [pid 5652] [reference-uninterrupted] checkpoint saved: reference-uninterrupted@s00021 ledger_offset=21 head=4e7fccc818a741a2 model=a669614e08cf9e16 next_batch=bat-s00022-79a360fdcba8 val_loss={'en': 6.953, 'hi': 9.5, 'te': 10.18, 'ur': 11.055}
+2026-10-09 05:30:59.487 [pid 5652] [PASS] checkpoint_saved | reference-uninterrupted@s00021 reloaded into fresh objects; model/optimizer/dataloader hashes and ledger binding re-verified
+2026-10-09 05:30:59.489 [pid 5652] [reference-uninterrupted] step 21 S3_reasoning_code bat-s00021-1be7dc79eadf loss 7.1591 lanes {'agentic': 1, 'code': 2, 'indic': 2, 'reasoning': 1, 'web': 3}
+2026-10-09 05:31:07.413 [pid 5652] [reference-uninterrupted] checkpoint saved: reference-uninterrupted@s00028 ledger_offset=28 head=0d6cf5d7949538c7 model=c5762d226baebe7b next_batch=bat-s00029-38e71de9eec7 val_loss={'en': 6.972, 'hi': 8.936, 'te': 9.435, 'ur': 9.122}
+2026-10-09 05:31:07.414 [pid 5652] [PASS] checkpoint_saved | reference-uninterrupted@s00028 reloaded into fresh objects; model/optimizer/dataloader hashes and ledger binding re-verified
+2026-10-09 05:31:07.416 [pid 5652] [reference-uninterrupted] step 28 S3_reasoning_code bat-s00028-b76ad4545770 loss 6.9362 lanes {'code': 2, 'indic': 1, 'stem': 1, 'web': 4}
+2026-10-09 05:31:18.174 [pid 5652] [reference-uninterrupted] checkpoint saved: reference-uninterrupted@s00035 ledger_offset=35 head=55b117fa5dbcf45b model=1952a9a46389b7bc next_batch=bat-s00036-faa31a6f658b val_loss={'en': 6.939, 'hi': 8.602, 'te': 9.063, 'ur': 9.793}
+2026-10-09 05:31:18.174 [pid 5652] [PASS] checkpoint_saved | reference-uninterrupted@s00035 reloaded into fresh objects; model/optimizer/dataloader hashes and ledger binding re-verified
+2026-10-09 05:31:18.176 [pid 5652] [reference-uninterrupted] step 35 S4_long_context bat-s00035-490586ba1967 loss 6.6625 lanes {'code': 3, 'indic': 1, 'stem': 1, 'web': 3}
+2026-10-09 05:31:27.388 [pid 5652] [reference-uninterrupted] checkpoint saved: reference-uninterrupted@s00042 ledger_offset=42 head=ec539ab9860c36a7 model=01ee88132f7fd499 next_batch=None val_loss={'en': 6.994, 'hi': 8.423, 'te': 8.791, 'ur': 9.453}
+2026-10-09 05:31:27.388 [pid 5652] [PASS] checkpoint_saved | reference-uninterrupted@s00042 reloaded into fresh objects; model/optimizer/dataloader hashes and ledger binding re-verified
+2026-10-09 05:31:27.390 [pid 5652] [reference-uninterrupted] step 42 anneal bat-s00042-c9312b8cb39e loss 6.7466 lanes {'code': 2, 'indic': 2, 'long_context': 1, 'reasoning': 1, 'stem': 1, 'web': 2}
+2026-10-09 05:31:34.719 [pid 15552] [replay] restored main@s00007 (ledger offset 7); replaying historical steps 8..14 from the main ledger
+2026-10-09 05:31:41.648 [pid 15552] historical stream replayed: steps 8..14 rebuilt from the ledger; batch id + spans + hashes matched 7/7; token losses bitwise 7/7; stream fingerprint 1c168a1bbdbde860 == 1c168a1bbdbde860: True; final model == main@s00014: True; independent re-plan agrees: True
+2026-10-09 05:31:41.649 [pid 15552] [PASS] replay_hash_matched | 7 steps, replay ledger head 6333f7dc5d0248b0
+2026-10-09 05:31:47.247 [pid 1908] [fork-s14-a5-h1-indic16] branch forked from main@s00014 (parent ledger offset 14, head a3eb07bcf08d6e55); new data branch: A5 proxy hypothesis H1: the 16% Indic arm (web gives up 6 points) from the S2 checkpoint
+2026-10-09 05:31:48.137 [pid 1908] [fork-s14-a5-h1-indic16] batches packed: step 15 bat-s00015-8ccd2f03ddc2 16 rows in 2 microbatches; best_fit_whole_files@128: 4 rows util 0.980 loss-tok 495, concat_chop@128: 11 rows util 1.000 loss-tok 1378, whole_trace_next_fit@128: 1 rows util 0.758 loss-tok 95
+2026-10-09 05:31:48.137 [pid 1908] [fork-s14-a5-h1-indic16] OPUS decisions recorded: step 15 27 candidates {'accepted': 12, 'deferred': 3, 'rejected': 8, 'accepted/protected_floor_override': 4}; web cutoff 0.3148
+2026-10-09 05:31:48.138 [pid 1908] [fork-s14-a5-h1-indic16] step 15 S2_broaden bat-s00015-8ccd2f03ddc2 loss 7.3715 lanes {'indic': 3, 'reasoning': 1, 'web': 7, 'code': 4, 'stem': 1}
+2026-10-09 05:31:54.671 [pid 1908] [fork-s14-a5-h1-indic16] checkpoint saved: fork-s14-a5-h1-indic16@s00021 ledger_offset=21 head=d5f0e5032db1133f model=f8f81c70cd1f92fe next_batch=bat-s00022-bb20ede5d6b8 val_loss={'en': 6.971, 'hi': 9.298, 'te': 9.805, 'ur': 10.079}
+2026-10-09 05:31:54.671 [pid 1908] [PASS] checkpoint_saved | fork-s14-a5-h1-indic16@s00021 reloaded into fresh objects; model/optimizer/dataloader hashes and ledger binding re-verified
+2026-10-09 05:31:54.673 [pid 1908] [fork-s14-a5-h1-indic16] step 21 S3_reasoning_code bat-s00021-4fc211116ffe loss 7.0918 lanes {'agentic': 1, 'indic': 2, 'reasoning': 1, 'web': 3, 'code': 2}
+2026-10-09 05:31:55.502 [pid 1908] [fork-s14-a5-h1-indic16] step 22 S3_reasoning_code bat-s00022-bb20ede5d6b8 loss 6.8980 lanes {'indic': 2, 'web': 2, 'code': 3, 'stem': 1}
+2026-10-09 05:31:56.528 [pid 8916] audit completed: 6 checkpoints traced to their data; token window 58368-74752 (steps 29-35) touched 19 shards; largest loss increase at step 33; 277 considered-but-untrained candidates kept for review; 55 floor rescues (mean loss 8.166 vs 7.206); 36 shard report cards
+2026-10-09 05:31:59.619 [pid 27048] performance measured: packing utilization 0.9780, loss-bearing fraction 0.9464, useful loss-bearing tokens/s 2024.9 (end to end 1765.7), raw positions/s 2139.5, OPUS acceptance 0.552
+2026-10-09 05:32:05.184 [pid 18196] [PASS] R01 Frozen tokenizer and content hashes | 9/9 checks
+2026-10-09 05:32:05.184 [pid 18196] [PASS] R10 Immutable tokenized shards with manifests | 8/8 checks
+2026-10-09 05:32:05.185 [pid 18196] [PASS] R02 Evaluation and validation firewalls | 9/9 checks
+2026-10-09 05:32:05.185 [pid 18196] [PASS] R03 Packing policies, loss masks, attention masks and position ids | 6/6 checks
+2026-10-09 05:32:05.185 [pid 18196] [PASS] R04 Curriculum stages, lane weights and protected floors | 10/10 checks
+2026-10-09 05:32:05.186 [pid 18196] [PASS] R05 OPUS acceptance, rejection, deferral and protected-floor override | 6/6 checks
+2026-10-09 05:32:05.186 [pid 18196] [PASS] R06 Crash recovery without skipped or repeated batches | 7/7 checks
+2026-10-09 05:32:05.186 [pid 18196] [PASS] R07 Replay of the same historical data stream | 5/5 checks
+2026-10-09 05:32:05.187 [pid 18196] [PASS] R08 Training consumption and learning ledgers, token-level loss | 6/6 checks
+2026-10-09 05:32:05.187 [pid 18196] [PASS] R11 Consumption ledger integrity | 2/2 checks
+2026-10-09 05:32:05.188 [pid 18196] [PASS] R12 Checkpoints tied to ledger offsets | 2/2 checks
+2026-10-09 05:32:05.188 [pid 18196] [PASS] R13 Forking from an earlier checkpoint | 4/4 checks
+2026-10-09 05:32:05.188 [pid 18196] [PASS] R09 Packing utilization and useful loss-bearing tokens per second | 4/4 checks
+2026-10-09 05:32:05.189 [pid 18196] [PASS] R14 Upstream A2 / A4 / A5 contracts reconciled | 4/4 checks
+2026-10-09 05:32:05.189 [pid 18196] [PASS] R15 End-to-end execution | 3/3 checks
+2026-10-09 05:32:05.190 [pid 18196] evidence written: evidence.json, evidence.md; overall PASS

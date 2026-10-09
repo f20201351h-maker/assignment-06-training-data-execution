@@ -1,0 +1,176 @@
+{
+ "a2_tokenizer_sha256": "45aa8369f867472f8686b48025354fbfc0d9b53d6f7573d021aaaac815179dc4",
+ "a4_admitted": false,
+ "a5_tier": [
+  "complete_document",
+  "repo_or_long_file"
+ ],
+ "capability_lane": "long_context",
+ "cleaning_lineage": [
+  "8695c30a1e2160b644e3db725aae9c3be94005ad5d113f504dde0c1da0b36985"
+ ],
+ "contamination_status": "clean",
+ "content_hash": "d687a3293f2480d35164c67197bd3eead8151c5d1ab0f145c7de7bc296f62d84",
+ "created_by": "tdes.build",
+ "dedup_status": "exact_dedup_passed",
+ "doc_index": [
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "1d20598b74b982d81b5d05fdf95f797a722dd65d720b49456ce5100054a2391e",
+   "doc_id": "py-uuid.uuid6",
+   "language": "python",
+   "length": 724,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 724,
+   "offset": 0,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/uuid.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "67b57f8c2b9aa8f098b029cc5b12c42813c684dd8fe6a6401832766c0514242a",
+   "doc_id": "py-uuid.uuid8",
+   "language": "python",
+   "length": 366,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 366,
+   "offset": 724,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/uuid.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "9a27079777bffd7a02ae342c75c4d803bbe34b10c0a90c74ecabbcc684d69149",
+   "doc_id": "wiki-330",
+   "language": "en",
+   "length": 896,
+   "license": "cc-by-sa-4.0",
+   "n_trainable_tokens": 896,
+   "offset": 1090,
+   "pii_status": "clean",
+   "script": "Latn",
+   "source_id": "a2/wikimedia-20231101-en"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "64e044d04cd6f12a89a26da9131592fc9e282f1201fc6cafbe032cb536ad64d5",
+   "doc_id": "wiki-642",
+   "language": "en",
+   "length": 506,
+   "license": "cc-by-sa-4.0",
+   "n_trainable_tokens": 506,
+   "offset": 1986,
+   "pii_status": "clean",
+   "script": "Latn",
+   "source_id": "a2/wikimedia-20231101-en"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "fdead9209e9f9d701975957159c473948606864b3181268ac32fb2383216779b",
+   "doc_id": "wiki-708",
+   "language": "en",
+   "length": 771,
+   "license": "cc-by-sa-4.0",
+   "n_trainable_tokens": 771,
+   "offset": 2492,
+   "pii_status": "clean",
+   "script": "Latn",
+   "source_id": "a2/wikimedia-20231101-en"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "403413a83a275b8f8ffbcecbc3b32438ad4ff95db816ce1aac6408e05cb550cb",
+   "doc_id": "wiki-710",
+   "language": "en",
+   "length": 574,
+   "license": "cc-by-sa-4.0",
+   "n_trainable_tokens": 574,
+   "offset": 3263,
+   "pii_status": "clean",
+   "script": "Latn",
+   "source_id": "a2/wikimedia-20231101-en"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "c48c04ba2cc71549b4848dc0dba289e64c7d936c816316aa25260ad181e6b455",
+   "doc_id": "wiki-788",
+   "language": "en",
+   "length": 856,
+   "license": "cc-by-sa-4.0",
+   "n_trainable_tokens": 856,
+   "offset": 3837,
+   "pii_status": "clean",
+   "script": "Latn",
+   "source_id": "a2/wikimedia-20231101-en"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "649e707b5da30ace260111d431e875bab812dd7e3500e0b4ae70d716b01a19ba",
+   "doc_id": "wiki-794",
+   "language": "en",
+   "length": 763,
+   "license": "cc-by-sa-4.0",
+   "n_trainable_tokens": 763,
+   "offset": 4693,
+   "pii_status": "clean",
+   "script": "Latn",
+   "source_id": "a2/wikimedia-20231101-en"
+  }
+ ],
+ "document_ids": [
+  "py-uuid.uuid6",
+  "py-uuid.uuid8",
+  "wiki-330",
+  "wiki-642",
+  "wiki-708",
+  "wiki-710",
+  "wiki-788",
+  "wiki-794"
+ ],
+ "eval_overlap_status": "none",
+ "files": {
+  "loss_eligible.bin": {
+   "dtype": "u1",
+   "sha256": "cec250ac62e31a26d43d66a9b60d68d3ba1895714db564a20a7819af24ccdaa3"
+  },
+  "tokens.bin": {
+   "dtype": "<u2",
+   "sha256": "47dffb1137f4aad25b71acf413997e07cbfecf992043f720f360dab266422c1b"
+  }
+ },
+ "format": "tdes-shard/2",
+ "lane": "long_context",
+ "languages": [
+  "en",
+  "python"
+ ],
+ "licenses": [
+  "cc-by-sa-4.0",
+  "psf-2.0"
+ ],
+ "n_docs": 8,
+ "never_train": false,
+ "parent_shard_ids": [],
+ "pii_status": "clean (exempt public source code inside)",
+ "pool": "main",
+ "provenance": [
+  "a2:wikipedia",
+  "fixture:stdlib"
+ ],
+ "scripts": [
+  "Latn"
+ ],
+ "shard_id": "shd-long_context-d687a3293f24",
+ "source_ids": [
+  "a2/wikimedia-20231101-en",
+  "cpython-lib/uuid.py"
+ ],
+ "split": "train",
+ "subpool": "all",
+ "token_count": 5456,
+ "tokenizer_id": "ff7f96354be799e2d7effb51dc6f89eefca399cc028d098d26cd04d361afa115",
+ "trainable_token_count": 5456,
+ "transform_id": "8695c30a1e2160b644e3db725aae9c3be94005ad5d113f504dde0c1da0b36985"
+}

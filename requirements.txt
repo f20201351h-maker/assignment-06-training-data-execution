@@ -1,0 +1,7 @@
+# tested with Python 3.14.4, torch 2.14.0+cpu, numpy 2.4.4, tokenizers 0.23.1, PyYAML 6.0.3, pytest 9 (CPU only)
+numpy>=1.24
+torch>=2.1
+tokenizers>=0.20
+pyyaml>=6
+pytest>=7
+# tools/prepare_inputs.py (development only, not needed to run the demo) also uses pandas + pyarrow

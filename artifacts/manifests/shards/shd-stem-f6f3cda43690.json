@@ -1,0 +1,185 @@
+{
+ "a2_tokenizer_sha256": "45aa8369f867472f8686b48025354fbfc0d9b53d6f7573d021aaaac815179dc4",
+ "a4_admitted": false,
+ "a5_tier": [
+  "n/a"
+ ],
+ "capability_lane": "stem",
+ "cleaning_lineage": [
+  "8695c30a1e2160b644e3db725aae9c3be94005ad5d113f504dde0c1da0b36985"
+ ],
+ "contamination_status": "clean",
+ "content_hash": "f6f3cda43690649ae4d8c1b6652d219f34d3647bc6738359c5ec04544f6a64da",
+ "created_by": "tdes.build",
+ "dedup_status": "exact_dedup_passed",
+ "doc_index": [
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "3f67ad49729d6341e3db07c1df6778d4c94449801f81b655308b6ba7b674b56f",
+   "doc_id": "wiki-334",
+   "language": "en",
+   "length": 533,
+   "license": "cc-by-sa-4.0",
+   "n_trainable_tokens": 533,
+   "offset": 0,
+   "pii_status": "clean",
+   "script": "Latn",
+   "source_id": "a2/wikimedia-20231101-en"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "311788c54de3706aec20ae5a3e49fe7f78ff3a713a89355a8005186be89a4814",
+   "doc_id": "wiki-572",
+   "language": "en",
+   "length": 699,
+   "license": "cc-by-sa-4.0",
+   "n_trainable_tokens": 699,
+   "offset": 533,
+   "pii_status": "clean",
+   "script": "Latn",
+   "source_id": "a2/wikimedia-20231101-en"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "8b57d8bb4d8d08896a639836e761f927258ad5ba152b28a2d1c947d94b12bec7",
+   "doc_id": "wiki-580",
+   "language": "en",
+   "length": 597,
+   "license": "cc-by-sa-4.0",
+   "n_trainable_tokens": 597,
+   "offset": 1232,
+   "pii_status": "clean",
+   "script": "Latn",
+   "source_id": "a2/wikimedia-20231101-en"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "9d40068a0f3e226175a7162de53d0d2aee8059e75532f9d553e84f27c2b1b062",
+   "doc_id": "wiki-612",
+   "language": "en",
+   "length": 636,
+   "license": "cc-by-sa-4.0",
+   "n_trainable_tokens": 636,
+   "offset": 1829,
+   "pii_status": "clean",
+   "script": "Latn",
+   "source_id": "a2/wikimedia-20231101-en"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "8a2fd4bcbeb9e01e8dcb7dd181f251a4e53cfec5db3e5cbda5e50b5425501671",
+   "doc_id": "wiki-621",
+   "language": "en",
+   "length": 663,
+   "license": "cc-by-sa-4.0",
+   "n_trainable_tokens": 663,
+   "offset": 2465,
+   "pii_status": "clean",
+   "script": "Latn",
+   "source_id": "a2/wikimedia-20231101-en"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "cbd4e106804a99809440f56d528ab9781fda3a41b6e387766c2f66b3fb396929",
+   "doc_id": "wiki-633",
+   "language": "en",
+   "length": 458,
+   "license": "cc-by-sa-4.0",
+   "n_trainable_tokens": 458,
+   "offset": 3128,
+   "pii_status": "clean",
+   "script": "Latn",
+   "source_id": "a2/wikimedia-20231101-en"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "a6814d9435f8006bfeeaf810bce12d6169d3635f36aba2a1ec742053a4f3bbde",
+   "doc_id": "wiki-634",
+   "language": "en",
+   "length": 589,
+   "license": "cc-by-sa-4.0",
+   "n_trainable_tokens": 589,
+   "offset": 3586,
+   "pii_status": "clean",
+   "script": "Latn",
+   "source_id": "a2/wikimedia-20231101-en"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "ae9f4fce59e65ad2c1c18cf1574fef9049f8b8dcc99e11357b26d94ff920ed5b",
+   "doc_id": "wiki-655",
+   "language": "en",
+   "length": 642,
+   "license": "cc-by-sa-4.0",
+   "n_trainable_tokens": 642,
+   "offset": 4175,
+   "pii_status": "clean",
+   "script": "Latn",
+   "source_id": "a2/wikimedia-20231101-en"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "4da9beb0e3d03bdd602e6ed4026857c6c89585ff2faf6b6018564497fc650c2b",
+   "doc_id": "wiki-656",
+   "language": "en",
+   "length": 678,
+   "license": "cc-by-sa-4.0",
+   "n_trainable_tokens": 678,
+   "offset": 4817,
+   "pii_status": "clean",
+   "script": "Latn",
+   "source_id": "a2/wikimedia-20231101-en"
+  }
+ ],
+ "document_ids": [
+  "wiki-334",
+  "wiki-572",
+  "wiki-580",
+  "wiki-612",
+  "wiki-621",
+  "wiki-633",
+  "wiki-634",
+  "wiki-655",
+  "wiki-656"
+ ],
+ "eval_overlap_status": "none",
+ "files": {
+  "loss_eligible.bin": {
+   "dtype": "u1",
+   "sha256": "e162584197caca0bc7fa679e1d793f1064763cd20322811c9ac1bac412a13d68"
+  },
+  "tokens.bin": {
+   "dtype": "<u2",
+   "sha256": "e324792290e3a76dc4dbf4349b9e7e8d8c19d70383c7f58cd2073e0365f5d2d8"
+  }
+ },
+ "format": "tdes-shard/2",
+ "lane": "stem",
+ "languages": [
+  "en"
+ ],
+ "licenses": [
+  "cc-by-sa-4.0"
+ ],
+ "n_docs": 9,
+ "never_train": false,
+ "parent_shard_ids": [],
+ "pii_status": "clean",
+ "pool": "main",
+ "provenance": [
+  "a2:wikipedia"
+ ],
+ "scripts": [
+  "Latn"
+ ],
+ "shard_id": "shd-stem-f6f3cda43690",
+ "source_ids": [
+  "a2/wikimedia-20231101-en"
+ ],
+ "split": "train",
+ "subpool": "all",
+ "token_count": 5495,
+ "tokenizer_id": "ff7f96354be799e2d7effb51dc6f89eefca399cc028d098d26cd04d361afa115",
+ "trainable_token_count": 5495,
+ "transform_id": "8695c30a1e2160b644e3db725aae9c3be94005ad5d113f504dde0c1da0b36985"
+}

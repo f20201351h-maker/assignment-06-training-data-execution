@@ -1,0 +1,432 @@
+{
+ "entries": [
+  {
+   "artifact": "inputs/a2/tokenizer.json",
+   "check": "vendored file sha256 == hash A2 published in final_config.json == pinned in config",
+   "consumer": "tdes.tokenizer.A2Tokenizer (every shard and ledger record carries tokenizer_id)",
+   "identity": "45aa8369f867472f8686b48025354fbfc0d9b53d6f7573d021aaaac815179dc4",
+   "result": true,
+   "upstream": "A2"
+  },
+  {
+   "artifact": "special tokens",
+   "check": "A2 defines EOS/PAD/role tokens",
+   "consumer": "tdes.tokenizer.render_document",
+   "discrepancy": "A2 ships only <unk> ({'special': 1, 'characters': 365, 'akshara': 1406, 'learned': 8228}); packing needs EOS, PAD and role markers",
+   "identity": "ff7f96354be799e2d7effb51dc6f89eefca399cc028d098d26cd04d361afa115",
+   "resolution": "control-token block appended after the A2 vocabulary (ids 10000+), never produced from text; it is part of tokenizer_id",
+   "result": false,
+   "upstream": "A2"
+  },
+  {
+   "artifact": "normalizer",
+   "check": "A2 normalisation preserves newlines/indentation",
+   "consumer": "code lane",
+   "discrepancy": "A2 collapses every whitespace run to one space (built for prose fertility), so code loses line breaks and indentation",
+   "resolution": "kept A2's mapping unchanged (changing it would be a different tokenizer); code structure is preserved by whole-function packing; flagged for a code-aware A2 revision",
+   "result": false,
+   "upstream": "A2"
+  },
+  {
+   "artifact": "language coverage",
+   "check": "every A4-admitted Indic language is encodable by A2 (unk rate <= max_unk_rate)",
+   "consumer": "tdes.corpus.admit",
+   "discrepancy": "A4 admitted 15 languages; A2 was trained for en/hi/te/ur",
+   "observed_rejections_by_language_script": {
+    "bn/Beng": 6,
+    "en/Latn": 1,
+    "kn/Knda": 6,
+    "mr/Deva": 38,
+    "python/Latn": 36,
+    "ta/Taml": 5
+   },
+   "resolution": "A6 ingress gate drops documents above the unk threshold and logs them",
+   "result": false,
+   "upstream": "A2 x A4"
+  },
+  {
+   "artifact": "inputs/a4/manifest.json",
+   "check": "vendored A4 records are recorded as parent shards with A4 cleaning lineage",
+   "consumer": "manifests/shards/*.json (parent_shard_ids, cleaning_lineage)",
+   "identity": {
+    "anudesh": "shard_6aefac17acda",
+    "glaive": "shard_68191df5e149"
+   },
+   "imported_contract": {
+    "anudesh": {
+     "a4_tokenizer": "Qwen/Qwen3-0.6B@c1899de289a04d12100db370d81485cdf75e47ca",
+     "license": "cc-by-4.0",
+     "status": "clean",
+     "terms_note": "CC-BY-4.0 needs attribution. Responses are Llama-2-70B-Chat outputs; the Llama 2 licence restricts using outputs to improve other LLMs."
+    },
+    "glaive": {
+     "a4_tokenizer": "Qwen/Qwen3-0.6B@c1899de289a04d12100db370d81485cdf75e47ca",
+     "license": "apache-2.0",
+     "status": "clean",
+     "terms_note": "Card is empty; generating model unknown."
+    }
+   },
+   "result": true,
+   "upstream": "A4"
+  },
+  {
+   "artifact": "Anudesh licence",
+   "check": "no Llama-2-generated response is vendored",
+   "consumer": "indic lane",
+   "discrepancy": "A4 notes the Anudesh responses are Llama-2-70B-Chat outputs whose licence restricts training other models; A4 did not publish them",
+   "resolution": "only the human-written user prompts (CC-BY-4.0) are vendored; they form the Indic lane",
+   "result": true,
+   "upstream": "A4"
+  },
+  {
+   "a6_indic_tokens_A2": 11092,
+   "artifact": "token counts",
+   "check": "A4 token counts are in A2 units",
+   "consumer": "manifests, scarcity check",
+   "discrepancy": "A4 counted with Qwen/Qwen3-0.6B; A6 recounts every document with A2",
+   "resolution": "manifests and the schedule use A2 token counts only",
+   "result": false,
+   "upstream": "A4"
+  },
+  {
+   "artifact": "lane supply",
+   "check": "A4 supplies every A5 lane",
+   "consumer": "tdes.corpus",
+   "discrepancy": "A4 cleaned two SFT shards (Glaive, Anudesh); A5 needs web, code, stem, reasoning, long-context too",
+   "lanes_supplied_by": {
+    "agentic": [
+     "a4:glaive"
+    ],
+    "code": [
+     "fixture:stdlib"
+    ],
+    "indic": [
+     "a4:anudesh"
+    ],
+    "long_context": [
+     "a2:wikipedia",
+     "fixture:stdlib"
+    ],
+    "reasoning": [
+     "fixture:reasoning"
+    ],
+    "stem": [
+     "a2:wikipedia"
+    ],
+    "web": [
+     "a2:wikipedia"
+    ]
+   },
+   "resolution": "A2 Wikipedia text (web, stem, long-context), CPython stdlib functions (code) and generated traces (reasoning), each labelled in its manifest provenance; they pass the A6 ingress gate but are marked a4_admitted=false",
+   "result": false,
+   "upstream": "A4 x A5"
+  },
+  {
+   "artifact": "inputs/a5/mixture.yaml",
+   "check": "stage mixes sum to 100 and the plan compiles",
+   "consumer": "tdes.schedule.compile_quotas",
+   "identity": "5b8dccaaff55dd6c4608f36943fe70f259b04267493dd280aabe79f71b2a9b3e",
+   "imported_contract": {
+    "max_passes": 4,
+    "protected": [
+     "indic",
+     "reasoning",
+     "agentic"
+    ],
+    "selector_keep": {
+     "code": 1.0,
+     "stem": 1.0,
+     "web": 0.4
+    },
+    "stages": {
+     "S1_foundation": {
+      "agentic": 0.0,
+      "code": 14.0,
+      "indic": 10.0,
+      "long_context": 0.0,
+      "reasoning": 0.0,
+      "stem": 6.0,
+      "web": 70.0
+     },
+     "S2_broaden": {
+      "agentic": 0.0,
+      "code": 26.0,
+      "indic": 10.0,
+      "long_context": 0.0,
+      "reasoning": 0.5,
+      "stem": 8.0,
+      "web": 55.5
+     },
+     "S3_reasoning_code": {
+      "agentic": 0.5,
+      "code": 34.0,
+      "indic": 10.0,
+      "long_context": 0.0,
+      "reasoning": 1.0,
+      "stem": 12.0,
+      "web": 42.5
+     },
+     "S4_long_context": {
+      "agentic": 1.5,
+      "code": 28.0,
+      "indic": 10.0,
+      "long_context": 18.0,
+      "reasoning": 2.0,
+      "stem": 9.0,
+      "web": 31.5
+     },
+     "anneal": {
+      "agentic": 5.0,
+      "code": 23.0,
+      "indic": 20.0,
+      "long_context": 10.0,
+      "reasoning": 8.0,
+      "stem": 12.0,
+      "web": 22.0
+     }
+    }
+   },
+   "result": true,
+   "scaling": {
+    "agentic_rows": "A5 notes trajectories do not fit the base window; at demo scale agentic rows use the long-row microbatch (whole trajectories, never split)",
+    "anneal_share_of_steps_used": 0.047619047619047616,
+    "anneal_share_of_trained_planned": 0.030303030303030304,
+    "anneal_steps_exact": 1.25,
+    "anneal_steps_used": 2,
+    "long_row_len": "A5 32768-token long-context batches / 32 = 1024",
+    "ramp_steps_exact": 0.3125,
+    "ramp_steps_used": 2,
+    "seq_len_divisor": 32,
+    "stage_steps": {
+     "S1_foundation": 8,
+     "S2_broaden": 12,
+     "S3_reasoning_code": 12,
+     "S4_long_context": 8,
+     "anneal": 2
+    }
+   },
+   "upstream": "A5"
+  },
+  {
+   "a5_main_tier_tokens_B": {
+    "A_verified_native": 160,
+    "B_unverified_native": 88,
+    "C_translated": 116,
+    "D_synthetic": 20
+   },
+   "a6_supply_by_tier": {
+    "-": 739,
+    "D_synthetic": 334
+   },
+   "artifact": "Indic tiers",
+   "check": "A4 supplies A5 Indic tiers A/B/C/D",
+   "consumer": "indic lane",
+   "discrepancy": "A5 plans 41.7% Tier A verified native; A4 supplied only Anudesh, which A5 classes as Tier D",
+   "resolution": "the lane keeps its protected 10% share (A5: Indic is fixed by the floor) and is served from Tier D; the tier split is reported, not faked",
+   "result": false,
+   "upstream": "A5 x A4"
+  },
+  {
+   "a5_pools": {
+    "agentic_multistep": {
+     "kind": "estimate",
+     "note": "other multi-step trajectories; order-of-magnitude estimate from row counts",
+     "reserve": 0,
+     "unique": 10
+    },
+    "agentic_oneshot": {
+     "kind": "verified",
+     "note": "Glaive, xLAM, ToolACE, Hermes, ToolBench function-calling sets",
+     "reserve": 0.25,
+     "unique": 0.25
+    },
+    "agentic_tierA": {
+     "kind": "estimate",
+     "note": "executed and outcome-verified trajectories; plausible range 1-3B",
+     "reserve": 2,
+     "unique": 2
+    }
+   },
+   "a6_supply": {
+    "-": 1021,
+    "agentic_multistep": 36,
+    "agentic_oneshot": 16
+   },
+   "artifact": "agentic tiers",
+   "check": "agentic Tier A (executed, verified) exists",
+   "consumer": "agentic lane",
+   "resolution": "main run uses Glaive conversations with >=2 tool calls (multistep pool); the anneal uses the one-shot Glaive pool, which A5 reserves in full",
+   "result": false,
+   "upstream": "A5 x A4"
+  },
+  {
+   "artifact": "reasoning length bands",
+   "check": "every gated band has supply",
+   "consumer": "tdes.schedule.compile_schedule",
+   "resolution": "a band without supply is served by the nearest band that has it, and each substitution is listed",
+   "result": false,
+   "substitutions": [
+    {
+     "band": "high",
+     "lane": "reasoning",
+     "pool": "main",
+     "served_by": "medium",
+     "step": 21
+    },
+    {
+     "band": "high",
+     "lane": "reasoning",
+     "pool": "main",
+     "served_by": "medium",
+     "step": 33
+    },
+    {
+     "band": "high",
+     "lane": "reasoning",
+     "pool": "main",
+     "served_by": "medium",
+     "step": 37
+    },
+    {
+     "band": "high",
+     "lane": "reasoning",
+     "pool": "reserve",
+     "served_by": "medium",
+     "step": 41
+    },
+    {
+     "band": "ultra",
+     "lane": "reasoning",
+     "pool": "reserve",
+     "served_by": "medium",
+     "step": 41
+    },
+    {
+     "band": "high",
+     "lane": "reasoning",
+     "pool": "reserve",
+     "served_by": "medium",
+     "step": 42
+    },
+    {
+     "band": "ultra",
+     "lane": "reasoning",
+     "pool": "reserve",
+     "served_by": "medium",
+     "step": 42
+    }
+   ],
+   "upstream": "A5"
+  }
+ ],
+ "format": "tdes-upstream-contracts/1",
+ "reserve_sizing": {
+  "code": {
+   "a5_reserve_fraction": 0.03561290322580645,
+   "anneal_demand_positions": 1024,
+   "docs_in_lane": 228,
+   "raised_to_respect_max_passes": false,
+   "reserve_docs_by_fraction": 9,
+   "reserve_docs_used": 9,
+   "reserve_tokens": 713
+  },
+  "long_context": {
+   "a5_reserve_fraction": 0.12,
+   "anneal_demand_positions": 1024,
+   "docs_in_lane": 260,
+   "raised_to_respect_max_passes": false,
+   "reserve_docs_by_fraction": 32,
+   "reserve_docs_used": 32,
+   "reserve_tokens": 14153
+  },
+  "reasoning": {
+   "a5_reserve_fraction": 0.5714285714285714,
+   "anneal_demand_positions": 512,
+   "docs_in_lane": 138,
+   "raised_to_respect_max_passes": false,
+   "reserve_docs_by_fraction": 79,
+   "reserve_docs_used": 79,
+   "reserve_tokens": 6484
+  },
+  "stem": {
+   "a5_reserve_fraction": 0.09863013698630137,
+   "anneal_demand_positions": 256,
+   "docs_in_lane": 18,
+   "raised_to_respect_max_passes": false,
+   "reserve_docs_by_fraction": 2,
+   "reserve_docs_used": 2,
+   "reserve_tokens": 1309
+  },
+  "web": {
+   "a5_reserve_fraction": 0.00528,
+   "anneal_demand_positions": 1024,
+   "docs_in_lane": 43,
+   "raised_to_respect_max_passes": false,
+   "reserve_docs_by_fraction": 1,
+   "reserve_docs_used": 1,
+   "reserve_tokens": 1378
+  }
+ },
+ "vendored_inputs": {
+  "a2/final_config.json": {
+   "licence": "see upstream",
+   "sha256": "292e35e540906c17fffd17a55497bc6748bae06cdf764babd886a18e867cad39",
+   "source": "india-bpe-tokenizer/tokenizer/final_config.json"
+  },
+  "a2/tokenizer.json": {
+   "licence": "see upstream",
+   "sha256": "45aa8369f867472f8686b48025354fbfc0d9b53d6f7573d021aaaac815179dc4",
+   "source": "india-bpe-tokenizer/tokenizer/tokenizer.json"
+  },
+  "a4/manifest.json": {
+   "licence": "see upstream",
+   "sha256": "34d18b52a255d33460c721719187002d3fd656a069969fb709b128f06dce4709",
+   "source": "chat-data-cleaning/artifacts/manifest.json"
+  },
+  "a4/sources.json": {
+   "licence": "see upstream",
+   "sha256": "dad8371ba2bcdbc728061c195c1d653769e48f6397d74f92a1c5b03f2441b7aa",
+   "source": "chat-data-cleaning/artifacts/sources.json"
+  },
+  "a5/mixture.yaml": {
+   "licence": "see upstream",
+   "sha256": "5b8dccaaff55dd6c4608f36943fe70f259b04267493dd280aabe79f71b2a9b3e",
+   "source": "pretraining-data-mixture/mixture.yaml"
+  },
+  "corpus/agentic_glaive.jsonl": {
+   "licence": "apache-2.0",
+   "sha256": "a86641367468c2c2c70131b22a8c1c4aed964e95fa73b74b75d79db59de5e321",
+   "source": "chat-data-cleaning/data/clean/glaive.jsonl (A4 shard_68191df5e149)"
+  },
+  "corpus/code_stdlib.jsonl": {
+   "licence": "psf-2.0",
+   "sha256": "0bcc12f579f878a18723398bf10628d2fc2636ddd96258dcd25e444ea64a36c2",
+   "source": "CPython 3.14.4 Lib/ (operator, urllib.parse, genericpath, functools, gettext, stat, shutil, calendar, glob, locale, base64, heapq, posixpath, tempfile, uuid, pprint, linecache, tokenize, colorsys, bisect, textwrap, fnmatch, statistics, shlex, string, html, difflib, quopri)"
+  },
+  "corpus/indic_anudesh_prompts.jsonl": {
+   "licence": "cc-by-4.0 (AI4Bharat indic-align; attribution required)",
+   "sha256": "f8abf50509a8e31901efb6c862223a9d65ea512eba05ff50b6fbab413ee00726",
+   "source": "chat-data-cleaning/data/clean/anudesh.jsonl (A4 shard_6aefac17acda)"
+  },
+  "corpus/reasoning_synthetic.jsonl": {
+   "licence": "cc0-1.0 (self-generated fixture)",
+   "sha256": "97f1a16a5ab547c96305a7b821182c2c6ed97d24d919a428bca2e18ba8b7f933",
+   "source": "tools/prepare_inputs.py generator (hash-seeded)"
+  },
+  "corpus/wikipedia_en.jsonl": {
+   "licence": "cc-by-sa-4.0",
+   "sha256": "3ef5ecf731819239846d4271bd95629bd65318dcbe832a62c7999ca4494fd060",
+   "source": "india-bpe-tokenizer/data/raw/external/en.train.jsonl.gz (HF wikimedia/wikipedia 20231101.en, as fetched by A2)"
+  },
+  "eval/heldout.jsonl": {
+   "licence": "cc-by-sa-4.0",
+   "sha256": "a68ccd5c3ee4e8f76c304086f031499903c2fdf2c7eb163b52edf078e6725573",
+   "source": "india-bpe-tokenizer/data/raw/external/{en,hi,te,ur}.heldout.jsonl.gz (A2 held-out text)"
+  },
+  "eval/test_items.jsonl": {
+   "licence": "mit",
+   "sha256": "91591b1b688628c3998b6a0e5783bc0ca4dc4b290f695190f243958910458a1f",
+   "source": "chat-data-cleaning/data/eval/* (the eval sets A4 decontaminated against)"
+  }
+ }
+}

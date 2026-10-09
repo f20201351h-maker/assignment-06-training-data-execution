@@ -1,0 +1,100 @@
+{
+ "attempt": 1,
+ "branch": "main",
+ "checkpoint_id": "main@s00021",
+ "dataloader_state_sha256": "178a57267b6e0a7e9573f7874eafac036ac381d0f954eff2dbb89670d0740243",
+ "files": {
+  "model.pt": "c9a7d9d4cd35b4b9edb5d6b8f860e12e74672fbea9574c76829441a42c3f0064",
+  "optimizer.pt": "1e230f778d01702b9f808c291c46cb9b20f89680fb0eb4e90cbb3165a47a2625",
+  "state.json": "5fc5cb79adaed1faeb61e0449a20b86dd3b2363bf939d02263375c30b7f04505"
+ },
+ "ledger_head_hash": "f587a4029bd954ac4bca02ccbd1f10c4b9b0d180f73622b894c5ffceae5253c0",
+ "ledger_offset": 21,
+ "model_sha256": "a669614e08cf9e169449651e8dd15fbc5cb29850889ed9bcecf7e8cdfcb19c86",
+ "next_batch": {
+  "batch_hash": "b266f8e72271c0cefa9cc38f41a3a98a8ce06fd109e127936e04f630a92dd030",
+  "batch_id": "bat-s00022-79a360fdcba8",
+  "batch_loss_mask_hash": "6bddc33901e737881b721bbe5a612ff32876adf19ae6cd3532d9a838abc33316",
+  "row_hashes": [
+   "edffe9af14550549c608f8e1252e1263827e7d52ab8ca39cc93fc1c0b10c6962",
+   "571e37f4e17f39098d06a3be032cc3f8d548d6beef96133253d6eeaf8f7380d7",
+   "adecf2e7b32af0927d1e24dec3259714ec92aef881a3bde63dc44469129cbe80",
+   "0565302f3dfdc293f86efaefb17b88c9dea91f6cfa80df1f1ae1bb793b0eb747",
+   "bc90ede8d6fb22dc0f164d5b945a05c9ada2192c7ffabada6186d5d7701fb17e",
+   "74a22b55ae0ce00994139fbee37c59149e350d1b682be6b03a12d1bc5fd63296",
+   "a5f4e2a78bef004317bcb30fa896e93c4dbfde1d8b70bd1710b1a1d4c5b576b1",
+   "117fb4819a6aa9ae9034076e11aef673e1c126b72b227dfb24f53be953bef1ba"
+  ],
+  "sample_ids": [
+   "smp-ada954650f5829a4",
+   "smp-d507ddb37962f889",
+   "smp-371a7b91e79b7d20",
+   "smp-b6e2c716629967f9",
+   "smp-1643a73ee04c981b",
+   "smp-8db164ff7638b3b3",
+   "smp-4582946796b89ff7",
+   "smp-d80f5f695e3b5335"
+  ],
+  "span_ids": [
+   [
+    "shd-web-cbe3b83c7531:wiki-676:348-604"
+   ],
+   [
+    "shd-web-cbe3b83c7531:wiki-676:860-1116"
+   ],
+   [
+    "shd-web-a2ee8f28af06:wiki-640:902-1158"
+   ],
+   [
+    "shd-web-5ebcd30893bc:wiki-764:427-683"
+   ],
+   [
+    "shd-code-f0938aa339ce:py-shutil._get_gid:0-111",
+    "shd-code-586a8e0d717f:py-genericpath.islink:0-94",
+    "shd-code-f0938aa339ce:py-tokenize.any:0-24",
+    "shd-code-f0938aa339ce:py-operator.abs:0-23"
+   ],
+   [
+    "shd-code-586a8e0d717f:py-genericpath.isdir:0-88",
+    "shd-code-586a8e0d717f:py-genericpath.lexists:0-79",
+    "shd-code-edac680fb95b:py-urllib.parse._decode_args:0-74"
+   ],
+   [
+    "shd-code-586a8e0d717f:py-functools._ge_from_gt:0-108",
+    "shd-code-edac680fb95b:py-urllib.parse.splitquery:0-95",
+    "shd-code-f0938aa339ce:py-operator.is_not:0-25",
+    "shd-code-f0938aa339ce:py-operator.gt:0-23"
+   ],
+   [
+    "shd-stem-f6f3cda43690:wiki-621:310-566"
+   ]
+  ],
+  "step": 22
+ },
+ "optimizer_sha256": "cb3bc5481bc45746fd66b4177305f48afd314cb1ab8d66981a9cf5a4d9272e4a",
+ "parent_checkpoint_id": "main@s00014",
+ "run_id": "run-42eaa5adc22e",
+ "schedule_sha256": "7e47c8c70aa4ace85eed8196b509b5d8a4b4d60f429c20ca7f8d60d8c2652478",
+ "shard_registry_sha256": "a4d475fe5b1a582a1590fa50dbd386e310e2673e840975f93c9acdce98b31aab",
+ "step": 21,
+ "tokenizer_id": "ff7f96354be799e2d7effb51dc6f89eefca399cc028d098d26cd04d361afa115",
+ "tokens_seen": 44032,
+ "validation_loss": {
+  "en": {
+   "loss": 6.953020527924771,
+   "n_loss_tokens": 437
+  },
+  "hi": {
+   "loss": 9.499874084953248,
+   "n_loss_tokens": 508
+  },
+  "te": {
+   "loss": 10.1797272166567,
+   "n_loss_tokens": 418
+  },
+  "ur": {
+   "loss": 11.054536687370152,
+   "n_loss_tokens": 361
+  }
+ }
+}

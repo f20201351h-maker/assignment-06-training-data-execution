@@ -1,0 +1,13 @@
+{
+ "config": "demo_config.json",
+ "config_sha256": "c2bdc43527df1b0df4d639748e6556a099c7985f5e6eb32be499350df2a35f4f",
+ "device": "cpu",
+ "machine": "AMD64",
+ "numpy": "2.4.4",
+ "platform": "Windows-11-10.0.26200-SP0",
+ "python": "3.14.4",
+ "pyyaml": "6.0.3",
+ "tokenizers": "0.23.1",
+ "torch": "2.14.0+cpu",
+ "torch_threads": 1
+}

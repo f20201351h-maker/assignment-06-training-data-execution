@@ -1,0 +1,130 @@
+{
+ "attempt": 1,
+ "branch": "fork-s14-a5-h1-indic16",
+ "checkpoint_id": "fork-s14-a5-h1-indic16@s00021",
+ "dataloader_state_sha256": "67c4737e4013e87f2801ecbe909dca6c776929d3a2c02f003f1363b9f245e333",
+ "files": {
+  "model.pt": "4f989e7a2ca1efc78bcf73c3a0fd8485d329f9593865f0215b026786a5cac47c",
+  "optimizer.pt": "494dc4fc6f3d564ee79cb7798dccfd5c1182f1ea4e539d5523b85fed1552a2b9",
+  "state.json": "1c46f5bc51461a7fdc3050c1fab6d59b719d8b414f8a3cd4327d027857ba7a6f"
+ },
+ "ledger_head_hash": "d5f0e5032db1133fb1fdcac284bfdb1773f830862795fde786a3664dbb42ea8f",
+ "ledger_offset": 21,
+ "model_sha256": "f8f81c70cd1f92fe4f21935034e6ffcd1aeee9728bd70ce3bde3ceaac9b7ca6d",
+ "next_batch": {
+  "batch_hash": "8f7510ff28aec032488449f7b470e16d0a4eb4b9425645a03a08bc5044f87bc1",
+  "batch_id": "bat-s00022-bb20ede5d6b8",
+  "batch_loss_mask_hash": "d57eb0b0ff2ad9a8653e03a0e46ed95571affb231d0c8d340c4c0967925c07b6",
+  "row_hashes": [
+   "e69781fd02d7ba94b5e3e9c9faeb2efd962b8e5fe388014f5e115be45dcb2769",
+   "44a51f8dd4102c7b7a22df5a69979fb139d3184272f0417120940cf8d778e55f",
+   "f52cde5687933a30f9811d4490dd926cb51b918229c154167c1e4752f14a8164",
+   "70659457f388cbe32d35eafc23a0cdd4d886d25fe27aae1316f8bc8d67e1ec27",
+   "a38afd593caf430ba1b3e427e5408b6650aa70910812a94d0e64f5ad1df5b03c",
+   "7262cb1da4aae373c389ffc4526b68226cae8a4ffb69976f70f47ebc768ca1b0",
+   "cf9185dba7d2a4b0e6441e113da780b8035441e2a55b987ba9a54ae7a77c83a0",
+   "1af141952ebf85e97e210d678ec79236d38b8039b89763edd1eff4df6f121574"
+  ],
+  "sample_ids": [
+   "smp-9c3d5e27f9497d30",
+   "smp-464bd11c32e0b72c",
+   "smp-e9923f76868ccad4",
+   "smp-8794bc987ccdac45",
+   "smp-976cfe24720df824",
+   "smp-d0c059d7900b7e6d",
+   "smp-fd805610ccd1302e",
+   "smp-2a2f36a52bf4433a"
+  ],
+  "span_ids": [
+   [
+    "shd-web-5ebcd30893bc:wiki-717:1366-1488",
+    "shd-web-a2ee8f28af06:wiki-640:0-134"
+   ],
+   [
+    "shd-web-73f3f654d068:wiki-824:911-1167"
+   ],
+   [
+    "shd-code-f0938aa339ce:py-shutil._get_gid:0-111",
+    "shd-code-586a8e0d717f:py-genericpath.islink:0-94",
+    "shd-code-f0938aa339ce:py-operator.rshift:0-26",
+    "shd-code-f0938aa339ce:py-operator.pow:0-25"
+   ],
+   [
+    "shd-code-edac680fb95b:py-urllib.parse.splituser:0-92",
+    "shd-code-586a8e0d717f:py-genericpath.isdir:0-88",
+    "shd-code-edac680fb95b:py-urllib.parse._decode_args:0-74"
+   ],
+   [
+    "shd-code-586a8e0d717f:py-functools._ge_from_gt:0-108",
+    "shd-code-edac680fb95b:py-urllib.parse.splitquery:0-95",
+    "shd-code-f0938aa339ce:py-operator.is_not:0-25",
+    "shd-code-f0938aa339ce:py-tokenize.any:0-24"
+   ],
+   [
+    "shd-stem-f6f3cda43690:wiki-621:182-438"
+   ],
+   [
+    "shd-indic-1c5a3826c73b:anudesh-d_4e68e4ff6fc72fcf:22-40",
+    "shd-indic-1c5a3826c73b:anudesh-d_065791c161c3b5ee:0-21",
+    "shd-indic-1c5a3826c73b:anudesh-d_3fe9d8e35b84a3c4:0-24",
+    "shd-indic-1c5a3826c73b:anudesh-d_08e3afefcc2098db:0-37",
+    "shd-indic-1c5a3826c73b:anudesh-d_f45e391bcfdefafc:0-26",
+    "shd-indic-1c5a3826c73b:anudesh-d_682c326b9098ee70:0-21",
+    "shd-indic-1c5a3826c73b:anudesh-d_d155c9429f3d04ae:0-27",
+    "shd-indic-1c5a3826c73b:anudesh-d_de6686d96e0b4689:0-45",
+    "shd-indic-1c5a3826c73b:anudesh-d_a2a6fa785fff1762:0-23",
+    "shd-indic-1c5a3826c73b:anudesh-d_d8d9f6bc009718d8:0-14"
+   ],
+   [
+    "shd-indic-97038a386ad4:anudesh-d_2fecbeff0fb3f30b:1-13",
+    "shd-indic-97038a386ad4:anudesh-d_b327f9cff102c2bf:0-13",
+    "shd-indic-97038a386ad4:anudesh-d_38a41eb17969fe11:0-12",
+    "shd-indic-97038a386ad4:anudesh-d_bfb571472de71ee2:0-9",
+    "shd-indic-97038a386ad4:anudesh-d_ee0e3b5fb86ab76e:0-9",
+    "shd-indic-97038a386ad4:anudesh-d_7f83e96c3d10d523:0-13",
+    "shd-indic-97038a386ad4:anudesh-d_1c7b658c54f9fbb5:0-19",
+    "shd-indic-97038a386ad4:anudesh-d_65307d025e8a8609:0-11",
+    "shd-indic-97038a386ad4:anudesh-d_9f53aaf1ba3958c2:0-8",
+    "shd-indic-97038a386ad4:anudesh-d_b74b40201644a5fe:0-11",
+    "shd-indic-97038a386ad4:anudesh-d_b9eb23a3ad284ffe:0-11",
+    "shd-indic-97038a386ad4:anudesh-d_a9ad683b151acdb5:0-18",
+    "shd-indic-97038a386ad4:anudesh-d_4c36c3b2f6e72c9f:0-18",
+    "shd-indic-97038a386ad4:anudesh-d_2bb20190d3bf1566:0-9",
+    "shd-indic-97038a386ad4:anudesh-d_8dab35c37004e5e4:0-12",
+    "shd-indic-97038a386ad4:anudesh-d_e5683589220405ac:0-6",
+    "shd-indic-97038a386ad4:anudesh-d_c3c884a3722bc68a:0-10",
+    "shd-indic-97038a386ad4:anudesh-d_1641ae29b4585dfe:0-13",
+    "shd-indic-97038a386ad4:anudesh-d_846ea17d24537abe:0-18",
+    "shd-indic-97038a386ad4:anudesh-d_07f7842f556a6a46:0-15",
+    "shd-indic-97038a386ad4:anudesh-d_3403cac958df2a5c:0-9"
+   ]
+  ],
+  "step": 22
+ },
+ "optimizer_sha256": "f4e09d19a055e114233283e509ff82d1fb38999649e024ff650e37b1a55adc9d",
+ "parent_checkpoint_id": "main@s00014",
+ "run_id": "run-42eaa5adc22e",
+ "schedule_sha256": "768116f0f4769df33bff2356f28d51e377aa4e9739e2ef3ad0fddab260de4f26",
+ "shard_registry_sha256": "a4d475fe5b1a582a1590fa50dbd386e310e2673e840975f93c9acdce98b31aab",
+ "step": 21,
+ "tokenizer_id": "ff7f96354be799e2d7effb51dc6f89eefca399cc028d098d26cd04d361afa115",
+ "tokens_seen": 44032,
+ "validation_loss": {
+  "en": {
+   "loss": 6.971194199620996,
+   "n_loss_tokens": 437
+  },
+  "hi": {
+   "loss": 9.298062061700294,
+   "n_loss_tokens": 508
+  },
+  "te": {
+   "loss": 9.804623252467104,
+   "n_loss_tokens": 418
+  },
+  "ur": {
+   "loss": 10.079488400277008,
+   "n_loss_tokens": 361
+  }
+ }
+}

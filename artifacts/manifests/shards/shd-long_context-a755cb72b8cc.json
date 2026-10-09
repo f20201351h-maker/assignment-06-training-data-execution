@@ -1,0 +1,149 @@
+{
+ "a2_tokenizer_sha256": "45aa8369f867472f8686b48025354fbfc0d9b53d6f7573d021aaaac815179dc4",
+ "a4_admitted": false,
+ "a5_tier": [
+  "complete_document",
+  "repo_or_long_file"
+ ],
+ "capability_lane": "long_context",
+ "cleaning_lineage": [
+  "8695c30a1e2160b644e3db725aae9c3be94005ad5d113f504dde0c1da0b36985"
+ ],
+ "contamination_status": "clean",
+ "content_hash": "a755cb72b8ccb470e3b77ea3670182817a64a75534ac8fedcd391af89b26da18",
+ "created_by": "tdes.build",
+ "dedup_status": "exact_dedup_passed",
+ "doc_index": [
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "0cb56fe8371eef2375581dcbccd69a88c55c821f9e1cf66fd9bb3c0585223d02",
+   "doc_id": "py-urllib.parse.quote_from_bytes",
+   "language": "python",
+   "length": 519,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 519,
+   "offset": 0,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/parse.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "aaf65e2e087e6326a31b6c2917d3d2a7a71a13c12211a8ea2500f3f5240e9ee6",
+   "doc_id": "py-uuid._parse_mac",
+   "language": "python",
+   "length": 481,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 481,
+   "offset": 519,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/uuid.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "983510287d295a5c4f28d8149b1880a221b67addd0f3a8cb62dba2587288144d",
+   "doc_id": "py-uuid.getnode",
+   "language": "python",
+   "length": 261,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 261,
+   "offset": 1000,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/uuid.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "c6a2019d0932d48abff405f880584be2871327ecae970a14babfd34272b2cb1d",
+   "doc_id": "py-uuid.uuid4",
+   "language": "python",
+   "length": 141,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 141,
+   "offset": 1261,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/uuid.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "5a13624c0c11bb256cd0f6c2f48968ebe534dbc83666ba544fd1b5f9d2841898",
+   "doc_id": "wiki-316",
+   "language": "en",
+   "length": 764,
+   "license": "cc-by-sa-4.0",
+   "n_trainable_tokens": 764,
+   "offset": 1402,
+   "pii_status": "clean",
+   "script": "Latn",
+   "source_id": "a2/wikimedia-20231101-en"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "302f2cb56c64af757dbd2686f809088dda8ae08547877bffa091c7410be8095a",
+   "doc_id": "wiki-332",
+   "language": "en",
+   "length": 803,
+   "license": "cc-by-sa-4.0",
+   "n_trainable_tokens": 803,
+   "offset": 2166,
+   "pii_status": "clean",
+   "script": "Latn",
+   "source_id": "a2/wikimedia-20231101-en"
+  }
+ ],
+ "document_ids": [
+  "py-urllib.parse.quote_from_bytes",
+  "py-uuid._parse_mac",
+  "py-uuid.getnode",
+  "py-uuid.uuid4",
+  "wiki-316",
+  "wiki-332"
+ ],
+ "eval_overlap_status": "none",
+ "files": {
+  "loss_eligible.bin": {
+   "dtype": "u1",
+   "sha256": "02ae14ae1b8e68faeb37b9c7dc5ff876bc4dedcc700a61c8666bcc6084688199"
+  },
+  "tokens.bin": {
+   "dtype": "<u2",
+   "sha256": "799c5de04052e7d43d271589b2f54d6512c78a8a002860a9651b44a1a4472790"
+  }
+ },
+ "format": "tdes-shard/2",
+ "lane": "long_context",
+ "languages": [
+  "en",
+  "python"
+ ],
+ "licenses": [
+  "cc-by-sa-4.0",
+  "psf-2.0"
+ ],
+ "n_docs": 6,
+ "never_train": false,
+ "parent_shard_ids": [],
+ "pii_status": "clean (exempt public source code inside)",
+ "pool": "reserve",
+ "provenance": [
+  "a2:wikipedia",
+  "fixture:stdlib"
+ ],
+ "scripts": [
+  "Latn"
+ ],
+ "shard_id": "shd-long_context-a755cb72b8cc",
+ "source_ids": [
+  "a2/wikimedia-20231101-en",
+  "cpython-lib/parse.py",
+  "cpython-lib/uuid.py"
+ ],
+ "split": "train",
+ "subpool": "all",
+ "token_count": 2969,
+ "tokenizer_id": "ff7f96354be799e2d7effb51dc6f89eefca399cc028d098d26cd04d361afa115",
+ "trainable_token_count": 2969,
+ "transform_id": "8695c30a1e2160b644e3db725aae9c3be94005ad5d113f504dde0c1da0b36985"
+}

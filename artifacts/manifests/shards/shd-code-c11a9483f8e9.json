@@ -1,0 +1,191 @@
+{
+ "a2_tokenizer_sha256": "45aa8369f867472f8686b48025354fbfc0d9b53d6f7573d021aaaac815179dc4",
+ "a4_admitted": false,
+ "a5_tier": [
+  "n/a"
+ ],
+ "capability_lane": "code",
+ "cleaning_lineage": [
+  "8695c30a1e2160b644e3db725aae9c3be94005ad5d113f504dde0c1da0b36985"
+ ],
+ "contamination_status": "clean",
+ "content_hash": "c11a9483f8e9626d572bc174fe20b52cbd1285f321ee27a42b5a1fd781da3dac",
+ "created_by": "tdes.build",
+ "dedup_status": "exact_dedup_passed",
+ "doc_index": [
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "41b66fcd3c7a1e13514bc1540678f23771c01c215a8fb5c652505f34a944b770",
+   "doc_id": "py-colorsys._v",
+   "language": "python",
+   "length": 112,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 112,
+   "offset": 0,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/colorsys.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "72e0e863ace000375887098d3eafc74c326bd906e877f930a4c3005f501163dd",
+   "doc_id": "py-genericpath.getctime",
+   "language": "python",
+   "length": 56,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 56,
+   "offset": 112,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/genericpath.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "9e9fe3c464326c6d91488b4d99fdf4ca946e99ce236e84a09f4a914f38ccab4f",
+   "doc_id": "py-genericpath.getsize",
+   "language": "python",
+   "length": 50,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 50,
+   "offset": 168,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/genericpath.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "aadbf39537c496669dce9ce164707faa5f19d66643fd2697daf51fe1e61764fc",
+   "doc_id": "py-linecache._getlines_from_code",
+   "language": "python",
+   "length": 94,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 94,
+   "offset": 218,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/linecache.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "54f1b80a20433baf668ab0fa48971578ac6ead6dd646477a91d1a67f5876d11e",
+   "doc_id": "py-linecache._source_unavailable",
+   "language": "python",
+   "length": 112,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 112,
+   "offset": 312,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/linecache.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "04aa99f218a71d96ed8b48ec5d312c488cac399fe52e4d4c2b4ec5057de288cf",
+   "doc_id": "py-operator.setitem",
+   "language": "python",
+   "length": 28,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 28,
+   "offset": 424,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/operator.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "b0ade2f0fbac9da908ed6f599d2b76749edfba7034105724b83f17b61d091b69",
+   "doc_id": "py-shutil._islink",
+   "language": "python",
+   "length": 57,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 57,
+   "offset": 452,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/shutil.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "d6dbd00f53734111d05e58edcf0d6ffe8629ae676c6c9e6f8c68e62a05785774",
+   "doc_id": "py-tempfile._gettempdir",
+   "language": "python",
+   "length": 112,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 112,
+   "offset": 509,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/tempfile.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "157ba0880ff1c2bb35ca011fabb33ba398752fc2908abb445b64f7d1a88155f1",
+   "doc_id": "py-urllib.parse.splitattr",
+   "language": "python",
+   "length": 92,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 92,
+   "offset": 621,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/parse.py"
+  }
+ ],
+ "document_ids": [
+  "py-colorsys._v",
+  "py-genericpath.getctime",
+  "py-genericpath.getsize",
+  "py-linecache._getlines_from_code",
+  "py-linecache._source_unavailable",
+  "py-operator.setitem",
+  "py-shutil._islink",
+  "py-tempfile._gettempdir",
+  "py-urllib.parse.splitattr"
+ ],
+ "eval_overlap_status": "none",
+ "files": {
+  "loss_eligible.bin": {
+   "dtype": "u1",
+   "sha256": "be8f60b0e4616fbb4eba8d0da1629a6e9bc5fb6969b5e85c7f6bab855e6a59cd"
+  },
+  "tokens.bin": {
+   "dtype": "<u2",
+   "sha256": "2ed8354cc84bc90fa99dc9a2cdd1af55ba13b9d314a176b91b5c49bcfd8fac8c"
+  }
+ },
+ "format": "tdes-shard/2",
+ "lane": "code",
+ "languages": [
+  "python"
+ ],
+ "licenses": [
+  "psf-2.0"
+ ],
+ "n_docs": 9,
+ "never_train": false,
+ "parent_shard_ids": [],
+ "pii_status": "exempt_public_source_code",
+ "pool": "reserve",
+ "provenance": [
+  "fixture:stdlib"
+ ],
+ "scripts": [
+  "Latn"
+ ],
+ "shard_id": "shd-code-c11a9483f8e9",
+ "source_ids": [
+  "cpython-lib/colorsys.py",
+  "cpython-lib/genericpath.py",
+  "cpython-lib/linecache.py",
+  "cpython-lib/operator.py",
+  "cpython-lib/parse.py",
+  "cpython-lib/shutil.py",
+  "cpython-lib/tempfile.py"
+ ],
+ "split": "train",
+ "subpool": "all",
+ "token_count": 713,
+ "tokenizer_id": "ff7f96354be799e2d7effb51dc6f89eefca399cc028d098d26cd04d361afa115",
+ "trainable_token_count": 713,
+ "transform_id": "8695c30a1e2160b644e3db725aae9c3be94005ad5d113f504dde0c1da0b36985"
+}

@@ -1,0 +1,256 @@
+{
+ "a2_tokenizer_sha256": "45aa8369f867472f8686b48025354fbfc0d9b53d6f7573d021aaaac815179dc4",
+ "a4_admitted": false,
+ "a5_tier": [
+  "repo_or_long_file"
+ ],
+ "capability_lane": "long_context",
+ "cleaning_lineage": [
+  "8695c30a1e2160b644e3db725aae9c3be94005ad5d113f504dde0c1da0b36985"
+ ],
+ "contamination_status": "clean",
+ "content_hash": "4d0643b5d91d7092a45115ebb8981c16bf42d2828fafe255412ed2e8f915a33e",
+ "created_by": "tdes.build",
+ "dedup_status": "exact_dedup_passed",
+ "doc_index": [
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "33b686b0b995412d86cce7e2fb3e4f4e3e326ff636eaf6b3ade521f10753b32e",
+   "doc_id": "py-urllib.parse.urlparse",
+   "language": "python",
+   "length": 447,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 447,
+   "offset": 0,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/parse.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "fb51f6ee00d543a3da4ea3f9c74b8b0c629156c7ca399b8f0ebafc8aef78f300",
+   "doc_id": "py-urllib.parse.urlsplit",
+   "language": "python",
+   "length": 427,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 427,
+   "offset": 447,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/parse.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "b4647c23e415d6c9bce68c68749760a8d93eb2df9fb6e74acd3f4289d43b0fa2",
+   "doc_id": "py-urllib.parse.urlunparse",
+   "language": "python",
+   "length": 282,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 282,
+   "offset": 874,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/parse.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "2c111421052fddb853381af074a6ea23be1f46c2bed0024d39c8b39d8d4ac84c",
+   "doc_id": "py-urllib.parse.urlunsplit",
+   "language": "python",
+   "length": 291,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 291,
+   "offset": 1156,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/parse.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "30b0f8aff8d934c195ec97c7554c8464e7fa4debd6938192dc9929aca80ce1d2",
+   "doc_id": "py-uuid._arp_getnode",
+   "language": "python",
+   "length": 390,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 390,
+   "offset": 1447,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/uuid.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "51d0b9a814b8d2898007355368b2afef0ad12a909d4cba05b85b2cc0882a9b79",
+   "doc_id": "py-uuid._find_mac_near_keyword",
+   "language": "python",
+   "length": 494,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 494,
+   "offset": 1837,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/uuid.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "42417de058ad7fdab593d60ee955a5d4c0b3aea01287676ff2c0f677aebbfdfe",
+   "doc_id": "py-uuid._find_mac_under_heading",
+   "language": "python",
+   "length": 345,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 345,
+   "offset": 2331,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/uuid.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "ebc9b9256fae0f24fa44d3d840469de24523e6a896a2ba43be6c9314153e233a",
+   "doc_id": "py-uuid._get_command_stdout",
+   "language": "python",
+   "length": 449,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 449,
+   "offset": 2676,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/uuid.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "a1d806b242c1a030a4b36e06937acdb88e49ea79b167f36458fc8da69f467a98",
+   "doc_id": "py-uuid._ifconfig_getnode",
+   "language": "python",
+   "length": 191,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 191,
+   "offset": 3125,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/uuid.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "4db4b5b532de9108e50a8d2ee6173c22a56c87f01b277495b907021d11d2173a",
+   "doc_id": "py-uuid._random_getnode",
+   "language": "python",
+   "length": 356,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 356,
+   "offset": 3316,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/uuid.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "0884d3e8a496cdeb1170354ae3781a8a352ea6d09dcb9525cf7538bd8da4810d",
+   "doc_id": "py-uuid.main",
+   "language": "python",
+   "length": 836,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 836,
+   "offset": 3672,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/uuid.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "4b1c3725c0ba1f0d8c5b23b35e3e75a42cd0b96abb9bc5c7dafa987bdfff862e",
+   "doc_id": "py-uuid.uuid1",
+   "language": "python",
+   "length": 742,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 742,
+   "offset": 4508,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/uuid.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "3e48dd2973211484b878e5f53760698844abad63234ee7d5ee58e51e43f8e196",
+   "doc_id": "py-uuid.uuid3",
+   "language": "python",
+   "length": 229,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 229,
+   "offset": 5250,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/uuid.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "f51dccfa3272281f342ce846092d1e32cc08aa6fef1e63610647ed66cbac557e",
+   "doc_id": "py-uuid.uuid5",
+   "language": "python",
+   "length": 234,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 234,
+   "offset": 5479,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/uuid.py"
+  }
+ ],
+ "document_ids": [
+  "py-urllib.parse.urlparse",
+  "py-urllib.parse.urlsplit",
+  "py-urllib.parse.urlunparse",
+  "py-urllib.parse.urlunsplit",
+  "py-uuid._arp_getnode",
+  "py-uuid._find_mac_near_keyword",
+  "py-uuid._find_mac_under_heading",
+  "py-uuid._get_command_stdout",
+  "py-uuid._ifconfig_getnode",
+  "py-uuid._random_getnode",
+  "py-uuid.main",
+  "py-uuid.uuid1",
+  "py-uuid.uuid3",
+  "py-uuid.uuid5"
+ ],
+ "eval_overlap_status": "none",
+ "files": {
+  "loss_eligible.bin": {
+   "dtype": "u1",
+   "sha256": "ff35478eddad558dd86d522ebb163c619630796d5579ee9a777da171149cb8d7"
+  },
+  "tokens.bin": {
+   "dtype": "<u2",
+   "sha256": "2ba4e1ae130b0db016cc45f623275a36de63557a0df772bce76b6fb05024a67f"
+  }
+ },
+ "format": "tdes-shard/2",
+ "lane": "long_context",
+ "languages": [
+  "python"
+ ],
+ "licenses": [
+  "psf-2.0"
+ ],
+ "n_docs": 14,
+ "never_train": false,
+ "parent_shard_ids": [],
+ "pii_status": "exempt_public_source_code",
+ "pool": "main",
+ "provenance": [
+  "fixture:stdlib"
+ ],
+ "scripts": [
+  "Latn"
+ ],
+ "shard_id": "shd-long_context-4d0643b5d91d",
+ "source_ids": [
+  "cpython-lib/parse.py",
+  "cpython-lib/uuid.py"
+ ],
+ "split": "train",
+ "subpool": "all",
+ "token_count": 5713,
+ "tokenizer_id": "ff7f96354be799e2d7effb51dc6f89eefca399cc028d098d26cd04d361afa115",
+ "trainable_token_count": 5713,
+ "transform_id": "8695c30a1e2160b644e3db725aae9c3be94005ad5d113f504dde0c1da0b36985"
+}

@@ -1,0 +1,152 @@
+{
+ "attempt": 1,
+ "branch": "main",
+ "checkpoint_id": "main@s00014",
+ "dataloader_state_sha256": "3e1b276fea686c3d3e3c2d26ff0d60b7d949593d4615025ec8ab4dfa35483c27",
+ "files": {
+  "model.pt": "c21a04db010391a000cd437c68ac16ad67cd83f082d93f93933a28f8d54f804a",
+  "optimizer.pt": "48ff89e33c859ada472613b53568dd44a5012a9f8bce6f56f625241a12e64149",
+  "state.json": "9bca2cc1774e37ab5899b94e8b0fa31dfbb0148a013776f6cd8027ef9c4cbbf6"
+ },
+ "ledger_head_hash": "a3eb07bcf08d6e558dd739a6fa657f4878f59057c30662d667020cc232553a0c",
+ "ledger_offset": 14,
+ "model_sha256": "602d8c118818517efa91d92eea4d03d8a5376b7c163a9e1ec92d42090ed03d2d",
+ "next_batch": {
+  "batch_hash": "ba688acc94205c47f2af2d4f3348df3fcb2df99fb21c24e80d560938a9b98a71",
+  "batch_id": "bat-s00015-2a370230bcd8",
+  "batch_loss_mask_hash": "1733baa333067c900ffe2583a3f26b8fda11dbf706b9586a2950409fa66c22bc",
+  "row_hashes": [
+   "6726beb85026f008c3daf53383c6bab9732ff34e69053326e4bada8e6e36247b",
+   "ec2e4d3c86e9a8006caf71dab3a39d25cd7bc7b759d16f6fbd6cb7fee14bf009",
+   "0dba18454df9fae4bf37cd143c47577446e9654a9f8bee9d3e8497afbfa73a60",
+   "3b348554b821ce04958ac2c4acd81fcbda6fcb8246c1d5035ab96258f405308d",
+   "51c422888a6796a80a97ceaeef9578e5816cb4dda06b157c369753696e6c5256",
+   "6fd449104f47b0cf50912e959282270d45b9e14918b7a2a3b857851463d8c4cc",
+   "c2f1aedc3bc13e3497c4698b7e440a7bbe853bbe8d3601af3988260212002a7e",
+   "f7790c5ad494a7aacb4ef1cc3dde90278a2d5ab41c13b7873ec310ca8fd21c63",
+   "8775a64a4a730604438337e498a5d547f09a2a3117f66ce6ce2aa9d9d7cd1450",
+   "e0e202c0c6e6b9dbcdc73d5e032db5ab0330be4392d85b95c95a805f6e46ebc9",
+   "0bef0235100000b8c6b5f795a055dd4b7d515e743fcbc869c9624089b0e75296",
+   "d2680fbac11adf21e693360344b11fbfc0ab39e5973cd05e57f2a63683cf59d4",
+   "dd2eb555a916804bf67f67d77ad01cba2d5e7dc12b3890894bc9565ce403a79e",
+   "2236082edd8acd7ac7bd35c672882d6bcde17f78786a105f934cd247c642e478",
+   "bab7f7f8ea28a6e40cb9fac4142d54a0dbd60dd320bd4954c6e6fb137e7b82e1",
+   "69fe309bde32d784894f081854817ba7ed307b9c175687ba0323ade3896f7b50"
+  ],
+  "sample_ids": [
+   "smp-53f28da34b41de6f",
+   "smp-bee4400355b316ba",
+   "smp-875db8a3bd758f4c",
+   "smp-89ee4b1b2be9f5ea",
+   "smp-4d87adff80fc8035",
+   "smp-64a478f87a49a9bd",
+   "smp-732a009d795193f9",
+   "smp-af1cb4967090d474",
+   "smp-bf9872349c6daac9",
+   "smp-6f94d5201dca3487",
+   "smp-2c6f6795a50bcf52",
+   "smp-f4e1683213a9e870",
+   "smp-15ca101f014429d9",
+   "smp-7e98d5227091904a",
+   "smp-09ba7f3f364146b0",
+   "smp-13f8b8064e121c93"
+  ],
+  "span_ids": [
+   [
+    "shd-web-5ebcd30893bc:wiki-738:73-201"
+   ],
+   [
+    "shd-web-913ef6376c2f:wiki-680:1432-1479",
+    "shd-web-cec4ee3ff604:wiki-594:0-81"
+   ],
+   [
+    "shd-web-cec4ee3ff604:wiki-594:1233-1288",
+    "shd-web-5ebcd30893bc:wiki-738:0-73"
+   ],
+   [
+    "shd-web-cec4ee3ff604:wiki-594:465-593"
+   ],
+   [
+    "shd-web-5ebcd30893bc:wiki-738:201-329"
+   ],
+   [
+    "shd-web-5ebcd30893bc:wiki-738:713-841"
+   ],
+   [
+    "shd-web-cec4ee3ff604:wiki-594:81-209"
+   ],
+   [
+    "shd-web-5ebcd30893bc:wiki-738:585-713"
+   ],
+   [
+    "shd-web-cec4ee3ff604:wiki-594:1105-1233"
+   ],
+   [
+    "shd-code-edac680fb95b:py-urllib.parse.splitnport:0-102",
+    "shd-code-f0938aa339ce:py-operator.sub:0-20"
+   ],
+   [
+    "shd-code-edac680fb95b:py-urllib.parse.splittype:0-92",
+    "shd-code-f0938aa339ce:py-operator.index:0-35"
+   ],
+   [
+    "shd-code-f0938aa339ce:py-locale.localize:0-64",
+    "shd-code-f0938aa339ce:py-stat.S_ISCHR:0-62"
+   ],
+   [
+    "shd-code-f0938aa339ce:py-quopri.encodestring:0-127"
+   ],
+   [
+    "shd-stem-f6f3cda43690:wiki-655:561-642",
+    "shd-stem-021245f96655:wiki-777:0-47"
+   ],
+   [
+    "shd-indic-97038a386ad4:anudesh-d_59ac48c1c254dbcf:0-14",
+    "shd-indic-97038a386ad4:anudesh-d_e5683589220405ac:0-6",
+    "shd-indic-97038a386ad4:anudesh-d_a48b2ee37a31f631:0-9",
+    "shd-indic-97038a386ad4:anudesh-d_73a6a0128a4c6925:0-17",
+    "shd-indic-97038a386ad4:anudesh-d_22ee415c5391e2f1:0-17",
+    "shd-indic-97038a386ad4:anudesh-d_029f5df978f2a9c0:0-18",
+    "shd-indic-97038a386ad4:anudesh-d_ec491a66137eeb62:0-7",
+    "shd-indic-97038a386ad4:anudesh-d_92e1836f2b259e78:0-11",
+    "shd-indic-97038a386ad4:anudesh-d_f67b4ea303ae9740:0-16",
+    "shd-indic-97038a386ad4:anudesh-d_846ea17d24537abe:0-13"
+   ],
+   [
+    "shd-indic-1c5a3826c73b:anudesh-d_d5be5e7e811f921e:12-29",
+    "shd-indic-1c5a3826c73b:anudesh-d_f149fbb32466ffe2:0-24",
+    "shd-indic-1c5a3826c73b:anudesh-d_4a5ad9ef2f06af7a:0-25",
+    "shd-indic-1c5a3826c73b:anudesh-d_a93edbea548a725a:0-25",
+    "shd-indic-1c5a3826c73b:anudesh-d_b258c6ac4db486e4:0-30",
+    "shd-indic-1c5a3826c73b:anudesh-d_d4255ea6b5cc3263:0-7"
+   ]
+  ],
+  "step": 15
+ },
+ "optimizer_sha256": "21a575ecb9a3aa5c0763e94637a66c1d19ed06da67fe657e1869570ee6d39357",
+ "parent_checkpoint_id": "main@s00007",
+ "run_id": "run-42eaa5adc22e",
+ "schedule_sha256": "7e47c8c70aa4ace85eed8196b509b5d8a4b4d60f429c20ca7f8d60d8c2652478",
+ "shard_registry_sha256": "a4d475fe5b1a582a1590fa50dbd386e310e2673e840975f93c9acdce98b31aab",
+ "step": 14,
+ "tokenizer_id": "ff7f96354be799e2d7effb51dc6f89eefca399cc028d098d26cd04d361afa115",
+ "tokens_seen": 28672,
+ "validation_loss": {
+  "en": {
+   "loss": 7.249194950479119,
+   "n_loss_tokens": 437
+  },
+  "hi": {
+   "loss": 9.078162486158957,
+   "n_loss_tokens": 508
+  },
+  "te": {
+   "loss": 9.643711217852871,
+   "n_loss_tokens": 418
+  },
+  "ur": {
+   "loss": 10.319514478012465,
+   "n_loss_tokens": 361
+  }
+ }
+}

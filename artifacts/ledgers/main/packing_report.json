@@ -1,0 +1,1047 @@
+{
+ "examples": {
+  "best_fit_whole_files": {
+   "lane": "code",
+   "last_real_token_attends_to": [
+    0,
+    113
+   ],
+   "last_real_token_segment_span": [
+    0,
+    113
+   ],
+   "padding_positions": 14,
+   "row_len": 128,
+   "sample_id": "smp-577628314cc8f858",
+   "segments": [
+    {
+     "context_only_positions": 1,
+     "doc_id": "py-heapq.heappop",
+     "first_position_ids": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "loss_positions": 113,
+     "segment": 1,
+     "span": [
+      0,
+      114
+     ]
+    }
+   ],
+   "step": 1,
+   "tokens_preview": [
+    [
+     "def",
+     1,
+     0,
+     1
+    ],
+    [
+     "he",
+     1,
+     1,
+     1
+    ],
+    [
+     "a",
+     1,
+     2,
+     1
+    ],
+    [
+     "pp",
+     1,
+     3,
+     1
+    ],
+    [
+     "op",
+     1,
+     4,
+     1
+    ],
+    [
+     "(",
+     1,
+     5,
+     1
+    ],
+    [
+     "he",
+     1,
+     6,
+     1
+    ],
+    [
+     "ap",
+     1,
+     7,
+     1
+    ],
+    [
+     "):",
+     1,
+     8,
+     1
+    ],
+    [
+     "\"",
+     1,
+     9,
+     1
+    ],
+    [
+     "\"",
+     1,
+     10,
+     1
+    ],
+    [
+     "\"",
+     1,
+     11,
+     1
+    ],
+    [
+     "P",
+     1,
+     12,
+     1
+    ],
+    [
+     "op",
+     1,
+     13,
+     1
+    ],
+    [
+     "the",
+     1,
+     14,
+     1
+    ],
+    [
+     "sm",
+     1,
+     15,
+     1
+    ],
+    [
+     "alle",
+     1,
+     16,
+     1
+    ],
+    [
+     "st",
+     1,
+     17,
+     1
+    ],
+    [
+     "it",
+     1,
+     18,
+     1
+    ],
+    [
+     "em",
+     1,
+     19,
+     1
+    ],
+    [
+     "off",
+     1,
+     20,
+     1
+    ],
+    [
+     "the",
+     1,
+     21,
+     1
+    ],
+    [
+     "he",
+     1,
+     22,
+     1
+    ],
+    [
+     "ap",
+     1,
+     23,
+     1
+    ]
+   ]
+  },
+  "concat_chop": {
+   "lane": "web",
+   "last_real_token_attends_to": [
+    0,
+    127
+   ],
+   "last_real_token_segment_span": [
+    0,
+    127
+   ],
+   "padding_positions": 0,
+   "row_len": 128,
+   "sample_id": "smp-94bfed03c175916a",
+   "segments": [
+    {
+     "context_only_positions": 1,
+     "doc_id": "wiki-662",
+     "first_position_ids": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "loss_positions": 127,
+     "segment": 1,
+     "span": [
+      768,
+      896
+     ]
+    }
+   ],
+   "step": 1,
+   "tokens_preview": [
+    [
+     "ill",
+     1,
+     0,
+     1
+    ],
+    [
+     "ing",
+     1,
+     1,
+     1
+    ],
+    [
+     "a",
+     1,
+     2,
+     1
+    ],
+    [
+     "national",
+     1,
+     3,
+     1
+    ],
+    [
+     "go",
+     1,
+     4,
+     1
+    ],
+    [
+     "al",
+     1,
+     5,
+     1
+    ],
+    [
+     "prop",
+     1,
+     6,
+     1
+    ],
+    [
+     "os",
+     1,
+     7,
+     1
+    ],
+    [
+     "ed",
+     1,
+     8,
+     1
+    ],
+    [
+     "in",
+     1,
+     9,
+     1
+    ],
+    [
+     "196",
+     1,
+     10,
+     1
+    ],
+    [
+     "1",
+     1,
+     11,
+     1
+    ],
+    [
+     "by",
+     1,
+     12,
+     1
+    ],
+    [
+     "P",
+     1,
+     13,
+     1
+    ],
+    [
+     "res",
+     1,
+     14,
+     1
+    ],
+    [
+     "ident",
+     1,
+     15,
+     1
+    ],
+    [
+     "J",
+     1,
+     16,
+     1
+    ],
+    [
+     "o",
+     1,
+     17,
+     1
+    ],
+    [
+     "h",
+     1,
+     18,
+     1
+    ],
+    [
+     "n",
+     1,
+     19,
+     1
+    ],
+    [
+     "F",
+     1,
+     20,
+     1
+    ],
+    [
+     ".",
+     1,
+     21,
+     1
+    ],
+    [
+     "K",
+     1,
+     22,
+     1
+    ],
+    [
+     "enn",
+     1,
+     23,
+     1
+    ]
+   ]
+  },
+  "long_doc_best_fit": {
+   "lane": "long_context",
+   "last_real_token_attends_to": [
+    543,
+    689
+   ],
+   "last_real_token_segment_span": [
+    543,
+    689
+   ],
+   "padding_positions": 334,
+   "row_len": 1024,
+   "sample_id": "smp-3ba02d0de6d11c06",
+   "segments": [
+    {
+     "context_only_positions": 1,
+     "doc_id": "py-statistics._mean_stdev",
+     "first_position_ids": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "loss_positions": 199,
+     "segment": 1,
+     "span": [
+      0,
+      200
+     ]
+    },
+    {
+     "context_only_positions": 1,
+     "doc_id": "py-urllib.parse.unwrap",
+     "first_position_ids": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "loss_positions": 179,
+     "segment": 2,
+     "span": [
+      0,
+      180
+     ]
+    },
+    {
+     "context_only_positions": 1,
+     "doc_id": "py-statistics.median_high",
+     "first_position_ids": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "loss_positions": 162,
+     "segment": 3,
+     "span": [
+      0,
+      163
+     ]
+    },
+    {
+     "context_only_positions": 1,
+     "doc_id": "py-statistics._integer_sqrt_of_frac_rto",
+     "first_position_ids": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "loss_positions": 146,
+     "segment": 4,
+     "span": [
+      0,
+      147
+     ]
+    }
+   ],
+   "step": 34,
+   "tokens_preview": [
+    [
+     "def",
+     1,
+     0,
+     1
+    ],
+    [
+     "",
+     1,
+     1,
+     1
+    ],
+    [
+     "_",
+     1,
+     2,
+     1
+    ],
+    [
+     "m",
+     1,
+     3,
+     1
+    ],
+    [
+     "ean",
+     1,
+     4,
+     1
+    ],
+    [
+     "_",
+     1,
+     5,
+     1
+    ],
+    [
+     "st",
+     1,
+     6,
+     1
+    ],
+    [
+     "d",
+     1,
+     7,
+     1
+    ],
+    [
+     "e",
+     1,
+     8,
+     1
+    ],
+    [
+     "v",
+     1,
+     9,
+     1
+    ],
+    [
+     "(",
+     1,
+     10,
+     1
+    ],
+    [
+     "d",
+     1,
+     11,
+     1
+    ],
+    [
+     "ata",
+     1,
+     12,
+     1
+    ],
+    [
+     "):",
+     1,
+     13,
+     1
+    ],
+    [
+     "\"",
+     1,
+     14,
+     1
+    ],
+    [
+     "\"",
+     1,
+     15,
+     1
+    ],
+    [
+     "\"",
+     1,
+     16,
+     1
+    ],
+    [
+     "I",
+     1,
+     17,
+     1
+    ],
+    [
+     "n",
+     1,
+     18,
+     1
+    ],
+    [
+     "one",
+     1,
+     19,
+     1
+    ],
+    [
+     "p",
+     1,
+     20,
+     1
+    ],
+    [
+     "as",
+     1,
+     21,
+     1
+    ],
+    [
+     "s,",
+     1,
+     22,
+     1
+    ],
+    [
+     "comp",
+     1,
+     23,
+     1
+    ]
+   ]
+  },
+  "structure_preserving_best_fit": {
+   "lane": "agentic",
+   "last_real_token_attends_to": [
+    0,
+    899
+   ],
+   "last_real_token_segment_span": [
+    0,
+    899
+   ],
+   "padding_positions": 124,
+   "row_len": 1024,
+   "sample_id": "smp-2b7d417d9ff9e86c",
+   "segments": [
+    {
+     "context_only_positions": 604,
+     "doc_id": "glaive-d_59ca1dd45b7c3def",
+     "first_position_ids": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "loss_positions": 296,
+     "segment": 1,
+     "span": [
+      0,
+      900
+     ]
+    }
+   ],
+   "step": 21,
+   "tokens_preview": [
+    [
+     "<|system|>",
+     1,
+     0,
+     0
+    ],
+    [
+     "Y",
+     1,
+     1,
+     0
+    ],
+    [
+     "ou",
+     1,
+     2,
+     0
+    ],
+    [
+     "are",
+     1,
+     3,
+     0
+    ],
+    [
+     "a",
+     1,
+     4,
+     0
+    ],
+    [
+     "hel",
+     1,
+     5,
+     0
+    ],
+    [
+     "p",
+     1,
+     6,
+     0
+    ],
+    [
+     "f",
+     1,
+     7,
+     0
+    ],
+    [
+     "ul",
+     1,
+     8,
+     0
+    ],
+    [
+     "ass",
+     1,
+     9,
+     0
+    ],
+    [
+     "ist",
+     1,
+     10,
+     0
+    ],
+    [
+     "ant",
+     1,
+     11,
+     0
+    ],
+    [
+     "with",
+     1,
+     12,
+     0
+    ],
+    [
+     "access",
+     1,
+     13,
+     0
+    ],
+    [
+     "to",
+     1,
+     14,
+     0
+    ],
+    [
+     "the",
+     1,
+     15,
+     0
+    ],
+    [
+     "following",
+     1,
+     16,
+     0
+    ],
+    [
+     "fun",
+     1,
+     17,
+     0
+    ],
+    [
+     "ction",
+     1,
+     18,
+     0
+    ],
+    [
+     "s.",
+     1,
+     19,
+     0
+    ],
+    [
+     "U",
+     1,
+     20,
+     0
+    ],
+    [
+     "se",
+     1,
+     21,
+     0
+    ],
+    [
+     "them",
+     1,
+     22,
+     0
+    ],
+    [
+     "",
+     1,
+     23,
+     0
+    ]
+   ]
+  },
+  "whole_trace_next_fit": {
+   "lane": "reasoning",
+   "last_real_token_attends_to": [
+    49,
+    94
+   ],
+   "last_real_token_segment_span": [
+    49,
+    94
+   ],
+   "padding_positions": 33,
+   "row_len": 128,
+   "sample_id": "smp-af32de9ad33d4a42",
+   "segments": [
+    {
+     "context_only_positions": 1,
+     "doc_id": "rs-low-011",
+     "first_position_ids": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "loss_positions": 48,
+     "segment": 1,
+     "span": [
+      0,
+      49
+     ]
+    },
+    {
+     "context_only_positions": 1,
+     "doc_id": "rs-low-065",
+     "first_position_ids": [
+      0,
+      1,
+      2,
+      3,
+      4
+     ],
+     "loss_positions": 45,
+     "segment": 2,
+     "span": [
+      0,
+      46
+     ]
+    }
+   ],
+   "step": 9,
+   "tokens_preview": [
+    [
+     "",
+     1,
+     0,
+     1
+    ],
+    [
+     "Q",
+     1,
+     1,
+     1
+    ],
+    [
+     "u",
+     1,
+     2,
+     1
+    ],
+    [
+     "est",
+     1,
+     3,
+     1
+    ],
+    [
+     "ion",
+     1,
+     4,
+     1
+    ],
+    [
+     ":",
+     1,
+     5,
+     1
+    ],
+    [
+     "what",
+     1,
+     6,
+     1
+    ],
+    [
+     "is",
+     1,
+     7,
+     1
+    ],
+    [
+     "9",
+     1,
+     8,
+     1
+    ],
+    [
+     "8",
+     1,
+     9,
+     1
+    ],
+    [
+     "divided",
+     1,
+     10,
+     1
+    ],
+    [
+     "by",
+     1,
+     11,
+     1
+    ],
+    [
+     "16",
+     1,
+     12,
+     1
+    ],
+    [
+     "?",
+     1,
+     13,
+     1
+    ],
+    [
+     "T",
+     1,
+     14,
+     1
+    ],
+    [
+     "ra",
+     1,
+     15,
+     1
+    ],
+    [
+     "ce",
+     1,
+     16,
+     1
+    ],
+    [
+     ":",
+     1,
+     17,
+     1
+    ],
+    [
+     "16",
+     1,
+     18,
+     1
+    ],
+    [
+     "",
+     1,
+     19,
+     1
+    ],
+    [
+     "x",
+     1,
+     20,
+     1
+    ],
+    [
+     "6",
+     1,
+     21,
+     1
+    ],
+    [
+     "=",
+     1,
+     22,
+     1
+    ],
+    [
+     "9",
+     1,
+     23,
+     1
+    ]
+   ]
+  }
+ },
+ "policies": {
+  "best_fit_whole_files@128": {
+   "loss": 7034,
+   "loss_bearing_fraction": 0.9314088983050848,
+   "pad_only_utilization_same_docs": 0.5413379854368932,
+   "positions": 7552,
+   "real": 7137,
+   "rows": 59,
+   "utilization": 0.9450476694915254
+  },
+  "best_fit_whole_files@256": {
+   "loss": 15268,
+   "loss_bearing_fraction": 0.9466765873015873,
+   "pad_only_utilization_same_docs": 0.259874597639485,
+   "positions": 16128,
+   "real": 15501,
+   "rows": 63,
+   "utilization": 0.9611235119047619
+  },
+  "concat_chop@128": {
+   "loss": 28762,
+   "loss_bearing_fraction": 0.9855400219298246,
+   "pad_only_utilization_same_docs": 0.7112980769230769,
+   "positions": 29184,
+   "real": 29184,
+   "rows": 228,
+   "utilization": 1.0
+  },
+  "concat_chop@256": {
+   "loss": 31406,
+   "loss_bearing_fraction": 0.9893523185483871,
+   "pad_only_utilization_same_docs": 0.5384226008557457,
+   "positions": 31744,
+   "real": 31744,
+   "rows": 124,
+   "utilization": 1.0
+  },
+  "long_doc_best_fit@1024": {
+   "loss": 3641,
+   "loss_bearing_fraction": 0.888916015625,
+   "pad_only_utilization_same_docs": 0.32421875,
+   "positions": 4096,
+   "real": 3652,
+   "rows": 4,
+   "utilization": 0.8916015625
+  },
+  "structure_preserving_best_fit@1024": {
+   "loss": 824,
+   "loss_bearing_fraction": 0.2682291666666667,
+   "pad_only_utilization_same_docs": 0.645751953125,
+   "positions": 3072,
+   "real": 2645,
+   "rows": 3,
+   "utilization": 0.8610026041666666
+  },
+  "whole_trace_next_fit@128": {
+   "loss": 93,
+   "loss_bearing_fraction": 0.7265625,
+   "pad_only_utilization_same_docs": 0.37109375,
+   "positions": 128,
+   "real": 95,
+   "rows": 1,
+   "utilization": 0.7421875
+  },
+  "whole_trace_next_fit@256": {
+   "loss": 1164,
+   "loss_bearing_fraction": 0.909375,
+   "pad_only_utilization_same_docs": 0.35366586538461536,
+   "positions": 1280,
+   "real": 1177,
+   "rows": 5,
+   "utilization": 0.91953125
+  }
+ },
+ "rows_checked": 487
+}

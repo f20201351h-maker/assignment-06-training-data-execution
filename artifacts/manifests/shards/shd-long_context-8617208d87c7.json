@@ -1,0 +1,298 @@
+{
+ "a2_tokenizer_sha256": "45aa8369f867472f8686b48025354fbfc0d9b53d6f7573d021aaaac815179dc4",
+ "a4_admitted": false,
+ "a5_tier": [
+  "repo_or_long_file"
+ ],
+ "capability_lane": "long_context",
+ "cleaning_lineage": [
+  "8695c30a1e2160b644e3db725aae9c3be94005ad5d113f504dde0c1da0b36985"
+ ],
+ "contamination_status": "clean",
+ "content_hash": "8617208d87c73cd76636b3bf508637f9d637cb868bf9a2f8bb128f47c412ed70",
+ "created_by": "tdes.build",
+ "dedup_status": "exact_dedup_passed",
+ "doc_index": [
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "509b7cd4d34dc0ffdd2b1d56719e498c961eda4f93275551d16a9f0d285b4311",
+   "doc_id": "py-base64._85encode",
+   "language": "python",
+   "length": 340,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 340,
+   "offset": 0,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/base64.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "1072c0f72b6e4e174d22ffec3bca07fdab2c12414efd1b9494447ed7c7064c35",
+   "doc_id": "py-base64._b32encode",
+   "language": "python",
+   "length": 526,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 526,
+   "offset": 340,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/base64.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "ff58263a286a13a1ed158ba3ab772f37fa3200201dde3ffb06a230cae5588fe6",
+   "doc_id": "py-base64._bytes_from_decode_data",
+   "language": "python",
+   "length": 196,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 196,
+   "offset": 866,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/base64.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "20453ae93326e14b6241c656198521e8698bed387b8b164173e912ad7ce20255",
+   "doc_id": "py-base64._input_type_check",
+   "language": "python",
+   "length": 247,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 247,
+   "offset": 1062,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/base64.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "3dc4b9a2d8dd47ca076cca4bbdea2141bfa1a6c2096a3b43cff02474e19f775f",
+   "doc_id": "py-base64.a85decode",
+   "language": "python",
+   "length": 925,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 925,
+   "offset": 1309,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/base64.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "83c556b387a95a2368d3a72eec92c13667bf9cbd1c5f62e951ce13fa29377d84",
+   "doc_id": "py-base64.a85encode",
+   "language": "python",
+   "length": 631,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 631,
+   "offset": 2234,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/base64.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "534f360a586b84c9e6cd3883b6c92edcd83458b867aba90309a2b250e95fbfcb",
+   "doc_id": "py-base64.b16decode",
+   "language": "python",
+   "length": 274,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 274,
+   "offset": 2865,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/base64.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "720293b6e00ef9a935e8b10862ac1706335a42e530948f03f52b579e2c935283",
+   "doc_id": "py-base64.b64decode",
+   "language": "python",
+   "length": 449,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 449,
+   "offset": 3139,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/base64.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "8f88bde5ae20925a78e7842c8fdcf0a50961684d9211113091808838c0164704",
+   "doc_id": "py-base64.b64encode",
+   "language": "python",
+   "length": 212,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 212,
+   "offset": 3588,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/base64.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "c9b94bfafea5f0701239cb7456e33e7db5002c15bc80e5434206825462646ee1",
+   "doc_id": "py-base64.b85decode",
+   "language": "python",
+   "length": 521,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 521,
+   "offset": 3800,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/base64.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "6079ea04fde4014c15f58ba30d73a93ba3e1c8ac69c0067f458abc191dac857f",
+   "doc_id": "py-base64.b85encode",
+   "language": "python",
+   "length": 252,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 252,
+   "offset": 4321,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/base64.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "a5309b46847b52f0dcc4275a1e257bf4a66898c2c54cc8b0ca7059a37235e014",
+   "doc_id": "py-base64.encode",
+   "language": "python",
+   "length": 134,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 134,
+   "offset": 4573,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/base64.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "2c7e42d65fb098da2af2d2ee0d764d2df65979daf6c638e96a0bac4f6fb62095",
+   "doc_id": "py-base64.main",
+   "language": "python",
+   "length": 424,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 424,
+   "offset": 4707,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/base64.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "f30a5ec6fad642359bc49cd95b3c68f7bd37be672631883278cd028ede6ef642",
+   "doc_id": "py-base64.standard_b64decode",
+   "language": "python",
+   "length": 151,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 151,
+   "offset": 5131,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/base64.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "45bfd68b2914c2eb0e356fd70879c25a11c8b61cc9dfc4f89d6531c65b029b21",
+   "doc_id": "py-base64.urlsafe_b64encode",
+   "language": "python",
+   "length": 144,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 144,
+   "offset": 5282,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/base64.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "c9283eba83acb4d8dc280e981efb9bb7ae20bcf0f4c818a56e060bbcacb7a38b",
+   "doc_id": "py-base64.z85decode",
+   "language": "python",
+   "length": 170,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 170,
+   "offset": 5426,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/base64.py"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "28c3a69aeb945585d89f453ca5dbbbde77ba800aeb8919a8a543cd1f4a514058",
+   "doc_id": "py-bisect.bisect_left",
+   "language": "python",
+   "length": 395,
+   "license": "psf-2.0",
+   "n_trainable_tokens": 395,
+   "offset": 5596,
+   "pii_status": "exempt_public_source_code",
+   "script": "Latn",
+   "source_id": "cpython-lib/bisect.py"
+  }
+ ],
+ "document_ids": [
+  "py-base64._85encode",
+  "py-base64._b32encode",
+  "py-base64._bytes_from_decode_data",
+  "py-base64._input_type_check",
+  "py-base64.a85decode",
+  "py-base64.a85encode",
+  "py-base64.b16decode",
+  "py-base64.b64decode",
+  "py-base64.b64encode",
+  "py-base64.b85decode",
+  "py-base64.b85encode",
+  "py-base64.encode",
+  "py-base64.main",
+  "py-base64.standard_b64decode",
+  "py-base64.urlsafe_b64encode",
+  "py-base64.z85decode",
+  "py-bisect.bisect_left"
+ ],
+ "eval_overlap_status": "none",
+ "files": {
+  "loss_eligible.bin": {
+   "dtype": "u1",
+   "sha256": "4eaaae89fc7781397a5f5d683be98a57fd04da384aa3ad7acad1c7e85cc34fee"
+  },
+  "tokens.bin": {
+   "dtype": "<u2",
+   "sha256": "ab8438223fba8cdecae62d73f17fc29132079579723fdbf2b0ddaa8cb6bf9325"
+  }
+ },
+ "format": "tdes-shard/2",
+ "lane": "long_context",
+ "languages": [
+  "python"
+ ],
+ "licenses": [
+  "psf-2.0"
+ ],
+ "n_docs": 17,
+ "never_train": false,
+ "parent_shard_ids": [],
+ "pii_status": "exempt_public_source_code",
+ "pool": "main",
+ "provenance": [
+  "fixture:stdlib"
+ ],
+ "scripts": [
+  "Latn"
+ ],
+ "shard_id": "shd-long_context-8617208d87c7",
+ "source_ids": [
+  "cpython-lib/base64.py",
+  "cpython-lib/bisect.py"
+ ],
+ "split": "train",
+ "subpool": "all",
+ "token_count": 5991,
+ "tokenizer_id": "ff7f96354be799e2d7effb51dc6f89eefca399cc028d098d26cd04d361afa115",
+ "trainable_token_count": 5991,
+ "transform_id": "8695c30a1e2160b644e3db725aae9c3be94005ad5d113f504dde0c1da0b36985"
+}

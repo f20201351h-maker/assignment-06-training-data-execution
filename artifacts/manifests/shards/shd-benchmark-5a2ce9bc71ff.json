@@ -1,0 +1,289 @@
+{
+ "a2_tokenizer_sha256": "45aa8369f867472f8686b48025354fbfc0d9b53d6f7573d021aaaac815179dc4",
+ "a4_admitted": false,
+ "a5_tier": [
+  "n/a"
+ ],
+ "capability_lane": "benchmark",
+ "cleaning_lineage": [
+  "8695c30a1e2160b644e3db725aae9c3be94005ad5d113f504dde0c1da0b36985"
+ ],
+ "contamination_status": "is_eval_data",
+ "content_hash": "5a2ce9bc71ff4f45286c4aa258cd715a0036839712f93e99c6e5b4e85ab28884",
+ "created_by": "tdes.build",
+ "dedup_status": "n/a_eval",
+ "doc_index": [
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "1e8dd3c9337352bf4970c06365e75a8ab270237cd45e6ca5e15116c1ddcd1b51",
+   "doc_id": "test-gsm8k-test-0",
+   "language": "en",
+   "length": 167,
+   "license": "mit",
+   "n_trainable_tokens": 167,
+   "offset": 0,
+   "pii_status": null,
+   "script": null,
+   "source_id": "a4-eval/gsm8k"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "c447d5323dfee7b184f44d3b0e8c247494d86b7dfd3b062e28d06e50e6d97fd7",
+   "doc_id": "test-gsm8k-test-1",
+   "language": "en",
+   "length": 106,
+   "license": "mit",
+   "n_trainable_tokens": 106,
+   "offset": 167,
+   "pii_status": null,
+   "script": null,
+   "source_id": "a4-eval/gsm8k"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "6c19da159bbf7b9cc487c009662022bc7c4fa313b2cc847abc5144c13a054ade",
+   "doc_id": "test-gsm8k-test-2",
+   "language": "en",
+   "length": 212,
+   "license": "mit",
+   "n_trainable_tokens": 212,
+   "offset": 273,
+   "pii_status": null,
+   "script": null,
+   "source_id": "a4-eval/gsm8k"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "41048616102d91594392427668a922234e008f056e6977476675f51a2cf692e8",
+   "doc_id": "test-gsm8k-test-3",
+   "language": "en",
+   "length": 101,
+   "license": "mit",
+   "n_trainable_tokens": 101,
+   "offset": 485,
+   "pii_status": null,
+   "script": null,
+   "source_id": "a4-eval/gsm8k"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "4c5a47eb98b601dad4973ba72d16d52b749e7a90173f091368347938efe0c358",
+   "doc_id": "test-gsm8k-test-4",
+   "language": "en",
+   "length": 292,
+   "license": "mit",
+   "n_trainable_tokens": 292,
+   "offset": 586,
+   "pii_status": null,
+   "script": null,
+   "source_id": "a4-eval/gsm8k"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "d14b087b398199c5237f3c1130010fca0f536b047d5b3c7db9ece91ebbd8e426",
+   "doc_id": "test-gsm8k-test-5",
+   "language": "en",
+   "length": 276,
+   "license": "mit",
+   "n_trainable_tokens": 276,
+   "offset": 878,
+   "pii_status": null,
+   "script": null,
+   "source_id": "a4-eval/gsm8k"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "3a07555bd3225b58c503cfdb9b00ccd1aeb14f0935e02b40950a94a8a0044e39",
+   "doc_id": "test-humaneval-HumanEval_0",
+   "language": "en",
+   "length": 233,
+   "license": "mit",
+   "n_trainable_tokens": 233,
+   "offset": 1154,
+   "pii_status": null,
+   "script": null,
+   "source_id": "a4-eval/humaneval"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "e9654b78ec3c9348861b4245a98c2f0079ea78ab3e8daef1c25622466431348e",
+   "doc_id": "test-humaneval-HumanEval_1",
+   "language": "en",
+   "length": 332,
+   "license": "mit",
+   "n_trainable_tokens": 332,
+   "offset": 1387,
+   "pii_status": null,
+   "script": null,
+   "source_id": "a4-eval/humaneval"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "211d93464cf762f827939c75d4c5dce9ff356c4433c9d8352471f0e313e98890",
+   "doc_id": "test-humaneval-HumanEval_2",
+   "language": "en",
+   "length": 119,
+   "license": "mit",
+   "n_trainable_tokens": 119,
+   "offset": 1719,
+   "pii_status": null,
+   "script": null,
+   "source_id": "a4-eval/humaneval"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "bb8b0c4057b54ea86b8105e2b632288049d27e6a020d2fe6a048b46980f2f44a",
+   "doc_id": "test-math500-test_algebra_2584.json",
+   "language": "en",
+   "length": 199,
+   "license": "mit",
+   "n_trainable_tokens": 199,
+   "offset": 1838,
+   "pii_status": null,
+   "script": null,
+   "source_id": "a4-eval/math500"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "e9489af85635402a7d0d7e101601531eb430191e21ff3020eba14290cc84b627",
+   "doc_id": "test-math500-test_intermediate_algebra_1994.json",
+   "language": "en",
+   "length": 642,
+   "license": "mit",
+   "n_trainable_tokens": 642,
+   "offset": 2037,
+   "pii_status": null,
+   "script": null,
+   "source_id": "a4-eval/math500"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "f7598111ea4aec81d2958e42fae050ddb3d4e801454d0f56fadce32c3db5a7a8",
+   "doc_id": "test-math500-test_precalculus_807.json",
+   "language": "en",
+   "length": 316,
+   "license": "mit",
+   "n_trainable_tokens": 316,
+   "offset": 2679,
+   "pii_status": null,
+   "script": null,
+   "source_id": "a4-eval/math500"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "ada7c8c4ab5bcf55b3e54bb4c6125e68d72d1fa83599dae373a3b84e7754c94c",
+   "doc_id": "test-mmlu-abstract_algebra-0",
+   "language": "en",
+   "length": 48,
+   "license": "mit",
+   "n_trainable_tokens": 48,
+   "offset": 2995,
+   "pii_status": null,
+   "script": null,
+   "source_id": "a4-eval/mmlu"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "ece4de97e5a974f4f38c97319ba2787b210a3b05f95406dfb5d3ed9314ae6cc2",
+   "doc_id": "test-mmlu-abstract_algebra-1",
+   "language": "en",
+   "length": 40,
+   "license": "mit",
+   "n_trainable_tokens": 40,
+   "offset": 3043,
+   "pii_status": null,
+   "script": null,
+   "source_id": "a4-eval/mmlu"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "de84db14b98069911f74e468d23a2b73fef1f64d737f636a14c976868b3f8614",
+   "doc_id": "test-mmlu-abstract_algebra-2",
+   "language": "en",
+   "length": 67,
+   "license": "mit",
+   "n_trainable_tokens": 67,
+   "offset": 3083,
+   "pii_status": null,
+   "script": null,
+   "source_id": "a4-eval/mmlu"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "fd6bf492dd27ee5839f86d7d1bbb1385941b90eb597f9d656a69730648330de3",
+   "doc_id": "test-mmlu-abstract_algebra-3",
+   "language": "en",
+   "length": 92,
+   "license": "mit",
+   "n_trainable_tokens": 92,
+   "offset": 3150,
+   "pii_status": null,
+   "script": null,
+   "source_id": "a4-eval/mmlu"
+  }
+ ],
+ "document_ids": [
+  "test-gsm8k-test-0",
+  "test-gsm8k-test-1",
+  "test-gsm8k-test-2",
+  "test-gsm8k-test-3",
+  "test-gsm8k-test-4",
+  "test-gsm8k-test-5",
+  "test-humaneval-HumanEval_0",
+  "test-humaneval-HumanEval_1",
+  "test-humaneval-HumanEval_2",
+  "test-math500-test_algebra_2584.json",
+  "test-math500-test_intermediate_algebra_1994.json",
+  "test-math500-test_precalculus_807.json",
+  "test-mmlu-abstract_algebra-0",
+  "test-mmlu-abstract_algebra-1",
+  "test-mmlu-abstract_algebra-2",
+  "test-mmlu-abstract_algebra-3"
+ ],
+ "eval_overlap_status": "registered_test_shard",
+ "files": {
+  "loss_eligible.bin": {
+   "dtype": "u1",
+   "sha256": "5f21c225d16c944313fa9f0de77b8e2e8c670046c900ba73c72cd11fe53dd083"
+  },
+  "tokens.bin": {
+   "dtype": "<u2",
+   "sha256": "e6760739642cff34ec068bf03d068be09774f85265d4f6ac26c47c9e96e1ef7f"
+  }
+ },
+ "format": "tdes-shard/2",
+ "lane": "benchmark",
+ "languages": [
+  "en"
+ ],
+ "licenses": [
+  "mit"
+ ],
+ "n_docs": 16,
+ "never_train": true,
+ "parent_shard_ids": [],
+ "pii_status": "n/a",
+ "pool": "eval",
+ "provenance": [
+  "a4-eval/gsm8k",
+  "a4-eval/humaneval",
+  "a4-eval/math500",
+  "a4-eval/mmlu"
+ ],
+ "scripts": [
+  "n/a"
+ ],
+ "shard_id": "shd-benchmark-5a2ce9bc71ff",
+ "source_ids": [
+  "a4-eval/gsm8k",
+  "a4-eval/humaneval",
+  "a4-eval/math500",
+  "a4-eval/mmlu"
+ ],
+ "split": "test",
+ "subpool": "all",
+ "token_count": 3242,
+ "tokenizer_id": "ff7f96354be799e2d7effb51dc6f89eefca399cc028d098d26cd04d361afa115",
+ "trainable_token_count": 3242,
+ "transform_id": "8695c30a1e2160b644e3db725aae9c3be94005ad5d113f504dde0c1da0b36985"
+}

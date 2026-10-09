@@ -1,0 +1,91 @@
+# V5 mixture and curriculum, machine-readable. All token figures in billions (B).
+# Shares are percentages of TRAINED tokens (tokens seen by the model), not of the candidate pool.
+# check_mixture.py reads this file, asserts that everything reconciles, and prints the supply table.
+
+budget:
+  total: 4000            # planning budget; the course range is 2.4T to 4T
+  main_run: 3840         # 96%
+  anneal: 120            # 3%
+  post_training_cap: 40  # 1% ceiling for SFT / reasoning training / preference; not allocated here
+
+lanes: [web, code, stem, indic, reasoning, agentic, long_context]
+
+# Main run stages. `span` is the fraction of main-run tokens; `mix` is % of tokens inside the stage.
+stages:
+  S1_foundation:
+    span: 0.20
+    seq_len: 4096
+    mix: {web: 70, code: 14, stem: 6, indic: 10, reasoning: 0, agentic: 0, long_context: 0}
+  S2_broaden:
+    span: 0.30
+    seq_len: 4096
+    mix: {web: 55.5, code: 26, stem: 8, indic: 10, reasoning: 0.5, agentic: 0, long_context: 0}
+  S3_reasoning_code:
+    span: 0.30
+    seq_len: 8192
+    mix: {web: 42.5, code: 34, stem: 12, indic: 10, reasoning: 1, agentic: 0.5, long_context: 0}
+  S4_long_context:
+    span: 0.20
+    seq_len: "8192 base; long_context lane in 32768 batches with a 65536-131072 tail"
+    mix: {web: 31.5, code: 28, stem: 9, indic: 10, reasoning: 2, agentic: 1.5, long_context: 18}
+
+anneal_mix: {web: 22, code: 23, stem: 12, indic: 20, reasoning: 8, agentic: 5, long_context: 10}
+
+# Lanes served through the always-on channel. The selector never scores them, so share == floor.
+protected: [indic, reasoning, agentic]
+
+# Mixture changes are linear ramps centred on each stage boundary, never a hard step.
+transition_ramp_tokens: 30   # hypothesis; V4 used ~3B at ~0.5T trained
+
+# Selector keep-fraction per lane (trained / candidates). 1.0 means static filtering only.
+selector_keep: {web: 0.40, code: 1.0, stem: 1.0}
+
+# Indic lane, main run: tokens by provenance tier. Must sum to the Indic main-run tokens.
+indic_main_tiers:
+  A_verified_native:   160
+  B_unverified_native:  88
+  C_translated:        116
+  D_synthetic:          20
+
+indic_anneal:
+  A_reserved_fresh: 10
+  A_replay_top:     10
+  D_synthetic_verified: 4
+
+# Unique supply per pool. `kind`: course = Session 5 inventory, verified = dataset card or paper,
+# estimate = my estimate. `reserve` is held out of the main run for the anneal and post-training.
+pools:
+  web:                {unique: 5000, reserve: 26.4, kind: verified,
+                       note: "DCLM-Baseline 3.7-4T + FineWeb-Edu 1.3T, overlapping Common Crawl; FineWeb 18.5T behind it"}
+  code:               {unique: 775,  reserve: 27.6, kind: verified,
+                       note: "Stack v2 train-full: 775B (StarCoder2 paper) vs ~900B (dataset card)"}
+  code_high:          {unique: 900,  reserve: 27.6, kind: verified, note: "same pool, dataset-card figure"}
+  stem:               {unique: 146,  reserve: 14.4, kind: course,
+                       note: "peS2o 42B + proof-pile-2 55B + V4 D4 49B; overlaps not removed"}
+  long_context:       {unique: 100,  reserve: 12,   kind: course,
+                       note: "repo-packed code ~60B (carved out of the code pool) + public-domain books ~40B"}
+  indic_A:            {unique: 51.5, reserve: 10,   kind: verified,
+                       note: "Sangraha Verified 64.3B minus 12.8B English"}
+  indic_B:            {unique: 35,   reserve: 0,    kind: estimate,
+                       note: "Sangraha Unverified 24.3B + IndicCorp v2 20.9B, minus assumed overlap"}
+  indic_C:            {unique: 162.7, reserve: 0,   kind: verified,
+                       note: "Sangraha Synthetic: ~90B IndicTrans2-translated Wikimedia + ~72B romanised"}
+  indic_D:            {unique: 0.04, reserve: 0,    kind: verified,
+                       note: "Anudesh, cleaned in Assignment 4 (35.9M tokens); the rest must be generated"}
+  reasoning:          {unique: 7,    reserve: 4,    kind: course,
+                       note: "open traces; cards state no token counts; rows overlap"}
+  agentic_tierA:      {unique: 2,    reserve: 2,    kind: estimate,
+                       note: "executed and outcome-verified trajectories; plausible range 1-3B"}
+  agentic_multistep:  {unique: 10,   reserve: 0,    kind: estimate,
+                       note: "other multi-step trajectories; order-of-magnitude estimate from row counts"}
+  agentic_oneshot:    {unique: 0.25, reserve: 0.25, kind: verified,
+                       note: "Glaive, xLAM, ToolACE, Hermes, ToolBench function-calling sets"}
+
+max_passes: 4   # Session 3 repetition rule; Muennighoff et al. 2023
+
+# Reasoning traces by length band: share of SAMPLES, and a nominal mean trace length in tokens.
+reasoning_bands:
+  low:    {sample_share: 40, mean_tokens: 40}
+  medium: {sample_share: 35, mean_tokens: 300}
+  high:   {sample_share: 20, mean_tokens: 2000}
+  ultra:  {sample_share: 5,  mean_tokens: 12000}

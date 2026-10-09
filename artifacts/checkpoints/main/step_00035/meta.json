@@ -1,0 +1,125 @@
+{
+ "attempt": 2,
+ "branch": "main",
+ "checkpoint_id": "main@s00035",
+ "dataloader_state_sha256": "b792d1e3b09a1f396941b6fb1d392f128bf4621769905d435768851527641363",
+ "files": {
+  "model.pt": "57d653ecc75dbb56363b3bdafa56768d7adce48f28942a60e98eac637e18337b",
+  "optimizer.pt": "e95f891fa2bb9799c2026d056b0125a349d9a0521ff44260266d6ba72cfd48d6",
+  "state.json": "cd9852d97032f3e8ea886d64173cf3e1f128f5c520acddcfc6e6de3726d68d2b"
+ },
+ "ledger_head_hash": "f406d2313a62a2716b833d85fb672f5afeec9ba0e10bbc1976b2cc62ce7009cb",
+ "ledger_offset": 35,
+ "model_sha256": "1952a9a46389b7bc83ff4ee576ed985c05c1124f10e5936ae49d1dcf7eda18ac",
+ "next_batch": {
+  "batch_hash": "eded97b78345db207b3f4641906a55487b97677490a7829a0a8505ecbf5e47ef",
+  "batch_id": "bat-s00036-faa31a6f658b",
+  "batch_loss_mask_hash": "d06f3d4ab51aa986ce9174345dc918b1b7f8997d310963d72f25bb3bdc1a7dc4",
+  "row_hashes": [
+   "348bd318e756a4fce71a28a96aa4c79367b3f2cd0cb2990ce3f374866c3f2ae7",
+   "157cbbd026e9dba79e4764e84c066440217e453e4d96fcd0555abb8c7f45f04a",
+   "dc15154d275bae7e71af2cd74ea2d6859b0fa3848770b9cb732d82eba77c2fe1",
+   "9d566506c1889fba9dddab9c6f7d603845ccca6a9eb56c92304d7d82fe1cecaa",
+   "528e5301b14b01b3895ffc8469afb3be6540b8ab36780794179ec30fcdab8108",
+   "5ceffc72ee15bccaebf9a42a47fbcd4fe25692b255aef8ff9a296b44833707f7",
+   "30bd979402bebd8ca46d45a97737793cd425764723715c0f92f0290dba084ad3",
+   "91ef39c414fceb8f68fb73a5832c85e7fb52455429e1e1756276460c696efa90",
+   "428192dd0555b9bab20efe3a27d390a96493d552d861224a3aecf4e3265a2cfe"
+  ],
+  "sample_ids": [
+   "smp-1631c90849bdd1d5",
+   "smp-2a9ebe4b1226c6e8",
+   "smp-e1e7df063da3b4af",
+   "smp-31cef1be46c794f4",
+   "smp-f5764583c16b6b1e",
+   "smp-9fe9b29d355630d0",
+   "smp-6776114fb6dd533e",
+   "smp-120a345144a1b969",
+   "smp-71d16a22c59ba8c7"
+  ],
+  "span_ids": [
+   [
+    "shd-web-d2b45e38f797:wiki-303:186-442"
+   ],
+   [
+    "shd-web-d2b45e38f797:wiki-303:442-698"
+   ],
+   [
+    "shd-web-5ebcd30893bc:wiki-764:1289-1359",
+    "shd-web-d2b45e38f797:wiki-303:0-186"
+   ],
+   [
+    "shd-code-586a8e0d717f:py-gettext._error:0-70",
+    "shd-code-586a8e0d717f:py-genericpath.samestat:0-69",
+    "shd-code-f0938aa339ce:py-statistics._isfinite:0-68",
+    "shd-code-f0938aa339ce:py-stat.S_ISWHT:0-41"
+   ],
+   [
+    "shd-code-586a8e0d717f:py-functools._gt_from_ge:0-109",
+    "shd-code-f0938aa339ce:py-statistics.rectangular_kernel:0-108",
+    "shd-code-f0938aa339ce:py-linecache.clearcache:0-32"
+   ],
+   [
+    "shd-code-f0938aa339ce:py-operator.iconcat:0-102",
+    "shd-code-edac680fb95b:py-urllib.parse._splitvalue:0-90",
+    "shd-code-586a8e0d717f:py-gettext.pgettext:0-37",
+    "shd-code-f0938aa339ce:py-operator.ixor:0-27"
+   ],
+   [
+    "shd-stem-f6f3cda43690:wiki-634:39-295"
+   ],
+   [
+    "shd-indic-97038a386ad4:anudesh-d_a9ad683b151acdb5:0-18",
+    "shd-indic-97038a386ad4:anudesh-d_4c36c3b2f6e72c9f:0-18",
+    "shd-indic-97038a386ad4:anudesh-d_2bb20190d3bf1566:0-9",
+    "shd-indic-97038a386ad4:anudesh-d_8dab35c37004e5e4:0-12",
+    "shd-indic-97038a386ad4:anudesh-d_e5683589220405ac:0-6",
+    "shd-indic-97038a386ad4:anudesh-d_c3c884a3722bc68a:0-10",
+    "shd-indic-97038a386ad4:anudesh-d_1641ae29b4585dfe:0-13",
+    "shd-indic-97038a386ad4:anudesh-d_846ea17d24537abe:0-18",
+    "shd-indic-97038a386ad4:anudesh-d_07f7842f556a6a46:0-15",
+    "shd-indic-97038a386ad4:anudesh-d_3403cac958df2a5c:0-14",
+    "shd-indic-97038a386ad4:anudesh-d_01c95e048397166f:0-13",
+    "shd-indic-97038a386ad4:anudesh-d_eb00285c7aaed8a4:0-19",
+    "shd-indic-97038a386ad4:anudesh-d_818285bfc5a6ec4a:0-15",
+    "shd-indic-97038a386ad4:anudesh-d_d54d6681f8badbae:0-15",
+    "shd-indic-97038a386ad4:anudesh-d_921f5630a21e0f77:0-20",
+    "shd-indic-97038a386ad4:anudesh-d_b61232d918b2ef31:0-13",
+    "shd-indic-97038a386ad4:anudesh-d_cf2543d4c25ea889:0-19",
+    "shd-indic-97038a386ad4:anudesh-d_8b0793dd0688f054:0-9"
+   ],
+   [
+    "shd-long_context-c465094c973f:py-urllib.parse._unquote_impl:0-373",
+    "shd-long_context-533b06d816b1:py-tempfile._mkstemp_inner:0-358",
+    "shd-long_context-e95fad95b1d1:py-posixpath.join:0-246"
+   ]
+  ],
+  "step": 36
+ },
+ "optimizer_sha256": "dd4f1b71dbef7b2b49ce0c87b060b500600cad763845358713b4ff02cc8220d5",
+ "parent_checkpoint_id": "main@s00028",
+ "run_id": "run-42eaa5adc22e",
+ "schedule_sha256": "7e47c8c70aa4ace85eed8196b509b5d8a4b4d60f429c20ca7f8d60d8c2652478",
+ "shard_registry_sha256": "a4d475fe5b1a582a1590fa50dbd386e310e2673e840975f93c9acdce98b31aab",
+ "step": 35,
+ "tokenizer_id": "ff7f96354be799e2d7effb51dc6f89eefca399cc028d098d26cd04d361afa115",
+ "tokens_seen": 74752,
+ "validation_loss": {
+  "en": {
+   "loss": 6.938900037542906,
+   "n_loss_tokens": 437
+  },
+  "hi": {
+   "loss": 8.602180541031004,
+   "n_loss_tokens": 508
+  },
+  "te": {
+   "loss": 9.062634919819079,
+   "n_loss_tokens": 418
+  },
+  "ur": {
+   "loss": 9.793183810162743,
+   "n_loss_tokens": 361
+  }
+ }
+}

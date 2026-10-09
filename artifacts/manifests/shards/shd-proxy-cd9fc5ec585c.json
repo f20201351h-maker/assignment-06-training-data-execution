@@ -1,0 +1,115 @@
+{
+ "a2_tokenizer_sha256": "45aa8369f867472f8686b48025354fbfc0d9b53d6f7573d021aaaac815179dc4",
+ "a4_admitted": false,
+ "a5_tier": [
+  "n/a"
+ ],
+ "capability_lane": "proxy",
+ "cleaning_lineage": [
+  "8695c30a1e2160b644e3db725aae9c3be94005ad5d113f504dde0c1da0b36985"
+ ],
+ "contamination_status": "is_eval_data",
+ "content_hash": "cd9fc5ec585c3500dc15ceb946c5cd19ba3699d1902fc48d8d1e434d6c24462a",
+ "created_by": "tdes.build",
+ "dedup_status": "n/a_eval",
+ "doc_index": [
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "8ad9c0d63780d82f8423663a4123b6a056908098f82591edfb6493c99e348743",
+   "doc_id": "proxy-en-03",
+   "language": "en",
+   "length": 136,
+   "license": "cc-by-sa-4.0",
+   "n_trainable_tokens": 136,
+   "offset": 0,
+   "pii_status": null,
+   "script": null,
+   "source_id": "a2-heldout/en"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "4d4e6a4cd2caf4be8fedc776e2121084bb5404e8cef4d6ef7afb6c3303692046",
+   "doc_id": "proxy-en-04",
+   "language": "en",
+   "length": 201,
+   "license": "cc-by-sa-4.0",
+   "n_trainable_tokens": 201,
+   "offset": 136,
+   "pii_status": null,
+   "script": null,
+   "source_id": "a2-heldout/en"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "73f8b10fa8adacb14385335309cee965da5515b35ade386b38cdb102d174989c",
+   "doc_id": "proxy-en-05",
+   "language": "en",
+   "length": 99,
+   "license": "cc-by-sa-4.0",
+   "n_trainable_tokens": 99,
+   "offset": 337,
+   "pii_status": null,
+   "script": null,
+   "source_id": "a2-heldout/en"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "e9de4309c55a199c685229a9b57c960334dc5c265295bde38e576f8f37cc6654",
+   "doc_id": "proxy-en-06",
+   "language": "en",
+   "length": 156,
+   "license": "cc-by-sa-4.0",
+   "n_trainable_tokens": 156,
+   "offset": 436,
+   "pii_status": null,
+   "script": null,
+   "source_id": "a2-heldout/en"
+  }
+ ],
+ "document_ids": [
+  "proxy-en-03",
+  "proxy-en-04",
+  "proxy-en-05",
+  "proxy-en-06"
+ ],
+ "eval_overlap_status": "registered_proxy_shard",
+ "files": {
+  "loss_eligible.bin": {
+   "dtype": "u1",
+   "sha256": "624c87c7573ce9af3afd882f7227f619c2e57a502db4de5720e9965ef4c83b1e"
+  },
+  "tokens.bin": {
+   "dtype": "<u2",
+   "sha256": "c1f48ab7128ec41987f22b166820f7f21ce7bc6b2ec0222062aac387dd11518e"
+  }
+ },
+ "format": "tdes-shard/2",
+ "lane": "proxy",
+ "languages": [
+  "en"
+ ],
+ "licenses": [
+  "cc-by-sa-4.0"
+ ],
+ "n_docs": 4,
+ "never_train": true,
+ "parent_shard_ids": [],
+ "pii_status": "n/a",
+ "pool": "eval",
+ "provenance": [
+  "a2-heldout/en"
+ ],
+ "scripts": [
+  "n/a"
+ ],
+ "shard_id": "shd-proxy-cd9fc5ec585c",
+ "source_ids": [
+  "a2-heldout/en"
+ ],
+ "split": "proxy",
+ "subpool": "all",
+ "token_count": 592,
+ "tokenizer_id": "ff7f96354be799e2d7effb51dc6f89eefca399cc028d098d26cd04d361afa115",
+ "trainable_token_count": 592,
+ "transform_id": "8695c30a1e2160b644e3db725aae9c3be94005ad5d113f504dde0c1da0b36985"
+}

@@ -1,0 +1,91 @@
+{
+ "files": {
+  "a2/final_config.json": {
+   "licence": "see upstream",
+   "selection": "byte copy",
+   "sha256": "292e35e540906c17fffd17a55497bc6748bae06cdf764babd886a18e867cad39",
+   "source": "india-bpe-tokenizer/tokenizer/final_config.json",
+   "source_sha256": "292e35e540906c17fffd17a55497bc6748bae06cdf764babd886a18e867cad39"
+  },
+  "a2/tokenizer.json": {
+   "licence": "see upstream",
+   "selection": "byte copy",
+   "sha256": "45aa8369f867472f8686b48025354fbfc0d9b53d6f7573d021aaaac815179dc4",
+   "source": "india-bpe-tokenizer/tokenizer/tokenizer.json",
+   "source_sha256": "45aa8369f867472f8686b48025354fbfc0d9b53d6f7573d021aaaac815179dc4"
+  },
+  "a4/manifest.json": {
+   "licence": "see upstream",
+   "selection": "byte copy",
+   "sha256": "34d18b52a255d33460c721719187002d3fd656a069969fb709b128f06dce4709",
+   "source": "chat-data-cleaning/artifacts/manifest.json",
+   "source_sha256": "34d18b52a255d33460c721719187002d3fd656a069969fb709b128f06dce4709"
+  },
+  "a4/sources.json": {
+   "licence": "see upstream",
+   "selection": "byte copy",
+   "sha256": "dad8371ba2bcdbc728061c195c1d653769e48f6397d74f92a1c5b03f2441b7aa",
+   "source": "chat-data-cleaning/artifacts/sources.json",
+   "source_sha256": "dad8371ba2bcdbc728061c195c1d653769e48f6397d74f92a1c5b03f2441b7aa"
+  },
+  "a5/mixture.yaml": {
+   "licence": "see upstream",
+   "selection": "byte copy",
+   "sha256": "5b8dccaaff55dd6c4608f36943fe70f259b04267493dd280aabe79f71b2a9b3e",
+   "source": "pretraining-data-mixture/mixture.yaml",
+   "source_sha256": "5b8dccaaff55dd6c4608f36943fe70f259b04267493dd280aabe79f71b2a9b3e"
+  },
+  "corpus/agentic_glaive.jsonl": {
+   "count": 52,
+   "licence": "apache-2.0",
+   "selection": "first 36 conversations with >=2 tool calls and first 16 with exactly 1, in A4 file order, whose rendered length under the A2 tokenizer is <= 1000 tokens",
+   "sha256": "a86641367468c2c2c70131b22a8c1c4aed964e95fa73b74b75d79db59de5e321",
+   "source": "chat-data-cleaning/data/clean/glaive.jsonl (A4 shard_68191df5e149)"
+  },
+  "corpus/code_stdlib.jsonl": {
+   "count": 516,
+   "licence": "psf-2.0",
+   "selection": "every top-level public function with 12..1000 A2 tokens",
+   "sha256": "0bcc12f579f878a18723398bf10628d2fc2636ddd96258dcd25e444ea64a36c2",
+   "source": "CPython 3.14.4 Lib/ (operator, urllib.parse, genericpath, functools, gettext, stat, shutil, calendar, glob, locale, base64, heapq, posixpath, tempfile, uuid, pprint, linecache, tokenize, colorsys, bisect, textwrap, fnmatch, statistics, shlex, string, html, difflib, quopri)"
+  },
+  "corpus/indic_anudesh_prompts.jsonl": {
+   "count": 390,
+   "licence": "cc-by-4.0 (AI4Bharat indic-align; attribution required)",
+   "selection": "first user prompt of the first N conversations per A4 user-language tag (hi:110, te:110, mr:110, ur:2, hi-Latn:40, kn:6, ta:6, bn:6); responses NOT copied (Llama-2 output licence). kn/ta/bn are included on purpose: A4 admitted them but the A2 tokenizer cannot encode their scripts",
+   "sha256": "f8abf50509a8e31901efb6c862223a9d65ea512eba05ff50b6fbab413ee00726",
+   "source": "chat-data-cleaning/data/clean/anudesh.jsonl (A4 shard_6aefac17acda)"
+  },
+  "corpus/reasoning_synthetic.jsonl": {
+   "count": 140,
+   "licence": "cc0-1.0 (self-generated fixture)",
+   "selection": "70 short division traces + 70 multi-step budget traces",
+   "sha256": "97f1a16a5ab547c96305a7b821182c2c6ed97d24d919a428bca2e18ba8b7f933",
+   "source": "tools/prepare_inputs.py generator (hash-seeded)"
+  },
+  "corpus/wikipedia_en.jsonl": {
+   "count": 70,
+   "licence": "cc-by-sa-4.0",
+   "selection": "web: 44 general articles (>=1200 tokens, not lists/disambiguation; chosen by stable hash), leading whole paragraphs up to ~1500 tokens; stem: listed science/math titles, up to ~700 tokens; long_context: listed short articles, complete",
+   "sha256": "3ef5ecf731819239846d4271bd95629bd65318dcbe832a62c7999ca4494fd060",
+   "source": "india-bpe-tokenizer/data/raw/external/en.train.jsonl.gz (HF wikimedia/wikipedia 20231101.en, as fetched by A2)",
+   "source_sha256": "3d31eff8bbe2c0a612f55af2facdf3de63b66912499dca30885523176d4babc3"
+  },
+  "eval/heldout.jsonl": {
+   "count": 16,
+   "licence": "cc-by-sa-4.0",
+   "selection": "first 3 paragraphs per language with >=40 words, <=250 A2 tokens and no <unk> -> validation; 4 more English paragraphs from other articles -> OPUS proxy",
+   "sha256": "a68ccd5c3ee4e8f76c304086f031499903c2fdf2c7eb163b52edf078e6725573",
+   "source": "india-bpe-tokenizer/data/raw/external/{en,hi,te,ur}.heldout.jsonl.gz (A2 held-out text)"
+  },
+  "eval/test_items.jsonl": {
+   "count": 16,
+   "licence": "mit",
+   "selection": "gsm8k test 0-5, humaneval 0-2, mmlu test 0-3, math500 first 3",
+   "sha256": "91591b1b688628c3998b6a0e5783bc0ca4dc4b290f695190f243958910458a1f",
+   "source": "chat-data-cleaning/data/eval/* (the eval sets A4 decontaminated against)"
+  }
+ },
+ "note": "Written by tools/prepare_inputs.py at development time. run_demo.py reads only inputs/.",
+ "python": "3.14.4"
+}

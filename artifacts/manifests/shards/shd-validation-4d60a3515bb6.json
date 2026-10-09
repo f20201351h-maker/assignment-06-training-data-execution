@@ -1,0 +1,236 @@
+{
+ "a2_tokenizer_sha256": "45aa8369f867472f8686b48025354fbfc0d9b53d6f7573d021aaaac815179dc4",
+ "a4_admitted": false,
+ "a5_tier": [
+  "n/a"
+ ],
+ "capability_lane": "validation",
+ "cleaning_lineage": [
+  "8695c30a1e2160b644e3db725aae9c3be94005ad5d113f504dde0c1da0b36985"
+ ],
+ "contamination_status": "is_eval_data",
+ "content_hash": "4d60a3515bb61b68b8dbb4261e300549692f1ff98cc6b1aeb2130a101d4c3788",
+ "created_by": "tdes.build",
+ "dedup_status": "n/a_eval",
+ "doc_index": [
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "07f3519162b518bd6eb298df21f07f44ef5fc2f7b6270a12ca9dd9e7ee21f1ff",
+   "doc_id": "validation-en-00",
+   "language": "en",
+   "length": 85,
+   "license": "cc-by-sa-4.0",
+   "n_trainable_tokens": 85,
+   "offset": 0,
+   "pii_status": null,
+   "script": null,
+   "source_id": "a2-heldout/en"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "7f86d9aa5633c7c5091b9ba30c830a68324a857c08c219e87a159749512d9ed7",
+   "doc_id": "validation-en-01",
+   "language": "en",
+   "length": 234,
+   "license": "cc-by-sa-4.0",
+   "n_trainable_tokens": 234,
+   "offset": 85,
+   "pii_status": null,
+   "script": null,
+   "source_id": "a2-heldout/en"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "cea8fc38eba84e42cd3c7c7a0462ea0800b9307c9147ffcc2d6c8be19ed331d7",
+   "doc_id": "validation-en-02",
+   "language": "en",
+   "length": 121,
+   "license": "cc-by-sa-4.0",
+   "n_trainable_tokens": 121,
+   "offset": 319,
+   "pii_status": null,
+   "script": null,
+   "source_id": "a2-heldout/en"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "5d8713319115719886ad5d14fde8c847879945949e27144ce8c5f2c5f138724a",
+   "doc_id": "validation-hi-07",
+   "language": "hi",
+   "length": 235,
+   "license": "cc-by-sa-4.0",
+   "n_trainable_tokens": 235,
+   "offset": 440,
+   "pii_status": null,
+   "script": null,
+   "source_id": "a2-heldout/hi"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "407773ef2b5f228c0bbd3d912f05f602a948af0a0854133890f8d1213f8a1a5c",
+   "doc_id": "validation-hi-08",
+   "language": "hi",
+   "length": 168,
+   "license": "cc-by-sa-4.0",
+   "n_trainable_tokens": 168,
+   "offset": 675,
+   "pii_status": null,
+   "script": null,
+   "source_id": "a2-heldout/hi"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "c8fa47004b0f9cbb879dda8e19ec03c6f0883422869ae4bda73e8a1902997941",
+   "doc_id": "validation-hi-09",
+   "language": "hi",
+   "length": 108,
+   "license": "cc-by-sa-4.0",
+   "n_trainable_tokens": 108,
+   "offset": 843,
+   "pii_status": null,
+   "script": null,
+   "source_id": "a2-heldout/hi"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "bd2e085f3fc4d51e49d2c47e8d759d4a64b2e86a82d3a58f38b11a0dadf2d8a8",
+   "doc_id": "validation-te-10",
+   "language": "te",
+   "length": 145,
+   "license": "cc-by-sa-4.0",
+   "n_trainable_tokens": 145,
+   "offset": 951,
+   "pii_status": null,
+   "script": null,
+   "source_id": "a2-heldout/te"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "36ad352f2f674ed528f8dcb4e89a0bb784f4355e6e9581b6e0565cc2dc88ce6d",
+   "doc_id": "validation-te-11",
+   "language": "te",
+   "length": 113,
+   "license": "cc-by-sa-4.0",
+   "n_trainable_tokens": 113,
+   "offset": 1096,
+   "pii_status": null,
+   "script": null,
+   "source_id": "a2-heldout/te"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "70591a8970b223c9ac425e83f3c7c21918c2cbe9222ea6d4a50ea43ae7fd7e55",
+   "doc_id": "validation-te-12",
+   "language": "te",
+   "length": 163,
+   "license": "cc-by-sa-4.0",
+   "n_trainable_tokens": 163,
+   "offset": 1209,
+   "pii_status": null,
+   "script": null,
+   "source_id": "a2-heldout/te"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "8633adc2da2c2c9d956a31b9ceec4bcf1ea8d38320265a3cfa79c5c8899ddd0a",
+   "doc_id": "validation-ur-13",
+   "language": "ur",
+   "length": 112,
+   "license": "cc-by-sa-4.0",
+   "n_trainable_tokens": 112,
+   "offset": 1372,
+   "pii_status": null,
+   "script": null,
+   "source_id": "a2-heldout/ur"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "7feb7070fddf329effca34851a110c72d451794e78f12a251d51535da4dd8e91",
+   "doc_id": "validation-ur-14",
+   "language": "ur",
+   "length": 89,
+   "license": "cc-by-sa-4.0",
+   "n_trainable_tokens": 89,
+   "offset": 1484,
+   "pii_status": null,
+   "script": null,
+   "source_id": "a2-heldout/ur"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "d3a62a294e1ad6a38a4104be21486d0ffcc1714317718350eddb64cc2bf2373d",
+   "doc_id": "validation-ur-15",
+   "language": "ur",
+   "length": 163,
+   "license": "cc-by-sa-4.0",
+   "n_trainable_tokens": 163,
+   "offset": 1573,
+   "pii_status": null,
+   "script": null,
+   "source_id": "a2-heldout/ur"
+  }
+ ],
+ "document_ids": [
+  "validation-en-00",
+  "validation-en-01",
+  "validation-en-02",
+  "validation-hi-07",
+  "validation-hi-08",
+  "validation-hi-09",
+  "validation-te-10",
+  "validation-te-11",
+  "validation-te-12",
+  "validation-ur-13",
+  "validation-ur-14",
+  "validation-ur-15"
+ ],
+ "eval_overlap_status": "registered_validation_shard",
+ "files": {
+  "loss_eligible.bin": {
+   "dtype": "u1",
+   "sha256": "91bc8ab516e643baf097508ab5d5239f9d788f2af820789fc224e0770b24aace"
+  },
+  "tokens.bin": {
+   "dtype": "<u2",
+   "sha256": "08f3166f996a89580a8b7a25f48b8461be3a7c2bed3852529a7fb9377e01b73b"
+  }
+ },
+ "format": "tdes-shard/2",
+ "lane": "validation",
+ "languages": [
+  "en",
+  "hi",
+  "te",
+  "ur"
+ ],
+ "licenses": [
+  "cc-by-sa-4.0"
+ ],
+ "n_docs": 12,
+ "never_train": true,
+ "parent_shard_ids": [],
+ "pii_status": "n/a",
+ "pool": "eval",
+ "provenance": [
+  "a2-heldout/en",
+  "a2-heldout/hi",
+  "a2-heldout/te",
+  "a2-heldout/ur"
+ ],
+ "scripts": [
+  "n/a"
+ ],
+ "shard_id": "shd-validation-4d60a3515bb6",
+ "source_ids": [
+  "a2-heldout/en",
+  "a2-heldout/hi",
+  "a2-heldout/te",
+  "a2-heldout/ur"
+ ],
+ "split": "validation",
+ "subpool": "all",
+ "token_count": 1736,
+ "tokenizer_id": "ff7f96354be799e2d7effb51dc6f89eefca399cc028d098d26cd04d361afa115",
+ "trainable_token_count": 1736,
+ "transform_id": "8695c30a1e2160b644e3db725aae9c3be94005ad5d113f504dde0c1da0b36985"
+}

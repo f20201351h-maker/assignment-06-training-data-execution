@@ -1,0 +1,157 @@
+{
+ "a2_tokenizer_sha256": "45aa8369f867472f8686b48025354fbfc0d9b53d6f7573d021aaaac815179dc4",
+ "a4_admitted": false,
+ "a5_tier": [
+  "n/a"
+ ],
+ "capability_lane": "stem",
+ "cleaning_lineage": [
+  "8695c30a1e2160b644e3db725aae9c3be94005ad5d113f504dde0c1da0b36985"
+ ],
+ "contamination_status": "clean",
+ "content_hash": "021245f96655e03f7f83acec93e71a454a11bb1659e5f28ddb4acbbea65dd3b3",
+ "created_by": "tdes.build",
+ "dedup_status": "exact_dedup_passed",
+ "doc_index": [
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "2c61586b2d1d7a7f36b82892e0d30ac9e8f9201cde0853be307a6e3c37866bf8",
+   "doc_id": "wiki-666",
+   "language": "en",
+   "length": 692,
+   "license": "cc-by-sa-4.0",
+   "n_trainable_tokens": 692,
+   "offset": 0,
+   "pii_status": "clean",
+   "script": "Latn",
+   "source_id": "a2/wikimedia-20231101-en"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "e2bf6c4a98140a775a571ece26d9edca76ea33f955c7448ae13bf1579ba15c8a",
+   "doc_id": "wiki-673",
+   "language": "en",
+   "length": 674,
+   "license": "cc-by-sa-4.0",
+   "n_trainable_tokens": 674,
+   "offset": 692,
+   "pii_status": "clean",
+   "script": "Latn",
+   "source_id": "a2/wikimedia-20231101-en"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "43f5d13a8f1094bdd5b467bd52d6fbe838a0dc635eebe2a71db2d6429c06c2ac",
+   "doc_id": "wiki-674",
+   "language": "en",
+   "length": 554,
+   "license": "cc-by-sa-4.0",
+   "n_trainable_tokens": 554,
+   "offset": 1366,
+   "pii_status": "clean",
+   "script": "Latn",
+   "source_id": "a2/wikimedia-20231101-en"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "7d957254a161f8c53a7a70371043109e32e6d177b330905d0e08d09c52c8c3f0",
+   "doc_id": "wiki-748",
+   "language": "en",
+   "length": 535,
+   "license": "cc-by-sa-4.0",
+   "n_trainable_tokens": 535,
+   "offset": 1920,
+   "pii_status": "clean",
+   "script": "Latn",
+   "source_id": "a2/wikimedia-20231101-en"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "cee171ac3e74bade49834b573666e3f6867e255bc0b976842481fed269aa683b",
+   "doc_id": "wiki-772",
+   "language": "en",
+   "length": 660,
+   "license": "cc-by-sa-4.0",
+   "n_trainable_tokens": 660,
+   "offset": 2455,
+   "pii_status": "clean",
+   "script": "Latn",
+   "source_id": "a2/wikimedia-20231101-en"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "26184207a90657e56dba531fa3c86bf663e261419a60ab008f9dd629fe4bae24",
+   "doc_id": "wiki-775",
+   "language": "en",
+   "length": 643,
+   "license": "cc-by-sa-4.0",
+   "n_trainable_tokens": 643,
+   "offset": 3115,
+   "pii_status": "clean",
+   "script": "Latn",
+   "source_id": "a2/wikimedia-20231101-en"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "4e2e32db0a0789f54e7650a69044b82676a6581badb07d3585ec606a88c9a11a",
+   "doc_id": "wiki-777",
+   "language": "en",
+   "length": 633,
+   "license": "cc-by-sa-4.0",
+   "n_trainable_tokens": 633,
+   "offset": 3758,
+   "pii_status": "clean",
+   "script": "Latn",
+   "source_id": "a2/wikimedia-20231101-en"
+  }
+ ],
+ "document_ids": [
+  "wiki-666",
+  "wiki-673",
+  "wiki-674",
+  "wiki-748",
+  "wiki-772",
+  "wiki-775",
+  "wiki-777"
+ ],
+ "eval_overlap_status": "none",
+ "files": {
+  "loss_eligible.bin": {
+   "dtype": "u1",
+   "sha256": "ca9765cde57e2e0de35d6fa0a07f9fa96f3e891225770bf88fd96a2fb53ee7b3"
+  },
+  "tokens.bin": {
+   "dtype": "<u2",
+   "sha256": "5b20f565af1a8907e4572df45c959520f28f986a3b13e8b9281cc11a4c70a8dc"
+  }
+ },
+ "format": "tdes-shard/2",
+ "lane": "stem",
+ "languages": [
+  "en"
+ ],
+ "licenses": [
+  "cc-by-sa-4.0"
+ ],
+ "n_docs": 7,
+ "never_train": false,
+ "parent_shard_ids": [],
+ "pii_status": "clean",
+ "pool": "main",
+ "provenance": [
+  "a2:wikipedia"
+ ],
+ "scripts": [
+  "Latn"
+ ],
+ "shard_id": "shd-stem-021245f96655",
+ "source_ids": [
+  "a2/wikimedia-20231101-en"
+ ],
+ "split": "train",
+ "subpool": "all",
+ "token_count": 4391,
+ "tokenizer_id": "ff7f96354be799e2d7effb51dc6f89eefca399cc028d098d26cd04d361afa115",
+ "trainable_token_count": 4391,
+ "transform_id": "8695c30a1e2160b644e3db725aae9c3be94005ad5d113f504dde0c1da0b36985"
+}

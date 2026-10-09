@@ -1,0 +1,51 @@
+{
+ "a2_file": "inputs/a2/tokenizer.json",
+ "a2_file_sha256": "45aa8369f867472f8686b48025354fbfc0d9b53d6f7573d021aaaac815179dc4",
+ "a2_published_sha256": "45aa8369f867472f8686b48025354fbfc0d9b53d6f7573d021aaaac815179dc4",
+ "determinism_probe": {
+  "decoded": "भारत एक देश है। Hello world",
+  "ids": [
+   1893,
+   2112,
+   2803,
+   1906,
+   1950,
+   1935,
+   2505,
+   2929
+  ],
+  "normalized": "भारत एक देश है। Hello world",
+  "text": "भारत एक देश है। Hello  world"
+ },
+ "frozen": true,
+ "pinned": {
+  "a2_sha256": "45aa8369f867472f8686b48025354fbfc0d9b53d6f7573d021aaaac815179dc4",
+  "path": "inputs/a2/tokenizer.json",
+  "tokenizer_id": "ff7f96354be799e2d7effb51dc6f89eefca399cc028d098d26cd04d361afa115"
+ },
+ "spec": {
+  "a2_tokenizer_sha256": "45aa8369f867472f8686b48025354fbfc0d9b53d6f7573d021aaaac815179dc4",
+  "a2_vocab_size": 10000,
+  "adapter": "tdes-a2-adapter/1",
+  "control_tokens": {
+   "<|assistant|>": 10004,
+   "<|eos|>": 10001,
+   "<|pad|>": 10000,
+   "<|system|>": 10002,
+   "<|tool_call|>": 10005,
+   "<|tool|>": 10006,
+   "<|user|>": 10003
+  },
+  "rendering": {
+   "messages": "per message <|role|> + encode(content); an assistant tool call is <|tool_call|> + encode(canonical JSON of the call); only assistant and tool_call tokens are loss-eligible; a final <|eos|> is loss-eligible",
+   "plain": "encode(text) + [<|eos|>]; every token and the EOS are loss-eligible"
+  },
+  "trainable_roles": [
+   "assistant",
+   "tool_call"
+  ]
+ },
+ "tokenizer_id": "ff7f96354be799e2d7effb51dc6f89eefca399cc028d098d26cd04d361afa115",
+ "unicodedata_version": "16.0.0",
+ "vocab_size": 10007
+}

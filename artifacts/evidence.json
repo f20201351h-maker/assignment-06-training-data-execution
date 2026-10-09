@@ -1,0 +1,1462 @@
+{
+ "generated_at": "2026-10-09T05:32:05",
+ "generator": "tdes/verify.py",
+ "key_facts": {
+  "checkpoints": [
+   {
+    "head": "7d7d6f7aa1444121",
+    "id": "main@s00007",
+    "next": "bat-s00008-c8fc6b86ea27",
+    "offset": 7
+   },
+   {
+    "head": "a3eb07bcf08d6e55",
+    "id": "main@s00014",
+    "next": "bat-s00015-2a370230bcd8",
+    "offset": 14
+   },
+   {
+    "head": "f587a4029bd954ac",
+    "id": "main@s00021",
+    "next": "bat-s00022-79a360fdcba8",
+    "offset": 21
+   },
+   {
+    "head": "d6c93b84f35ba2d5",
+    "id": "main@s00028",
+    "next": "bat-s00029-38e71de9eec7",
+    "offset": 28
+   },
+   {
+    "head": "f406d2313a62a271",
+    "id": "main@s00035",
+    "next": "bat-s00036-faa31a6f658b",
+    "offset": 35
+   },
+   {
+    "head": "a5a87e8420af0889",
+    "id": "main@s00042",
+    "next": null,
+    "offset": 42
+   }
+  ],
+  "crash": {
+   "checkpoint": "main@s00028",
+   "crash_step": 31,
+   "exit_code": 137,
+   "expected_hash": "f4755740a8d70844d693f7a70783bad9456807ce49ae957155623fd3f4d1810e",
+   "expected_next_batch": "bat-s00029-38e71de9eec7",
+   "ledger_offset": 28,
+   "orphaned": [
+    29,
+    30
+   ],
+   "resume_latency_s": 3.0723980000038864,
+   "resumed_batch": "bat-s00029-38e71de9eec7",
+   "resumed_hash": "f4755740a8d70844d693f7a70783bad9456807ce49ae957155623fd3f4d1810e",
+   "samples": [
+    "smp-86954859fbb24f63",
+    "smp-98a0f8f0be73c03e",
+    "smp-7ab29df7335e4171",
+    "smp-31a5f7e041f59b7e",
+    "smp-fb71b4324f9ce9a8",
+    "smp-2238762f58121d1f",
+    "smp-152dfc00454072a7",
+    "smp-35958174e4e5dceb"
+   ],
+   "torn_tail_bytes": 6260
+  },
+  "firewall": {
+   "batch_gate_step": 5,
+   "candidate_gate_step": 3,
+   "compile_blocked": [
+    "shd-benchmark-5a2ce9bc71ff",
+    "shd-validation-4d60a3515bb6"
+   ],
+   "fixture_sha256": "1e8dd3c9337352bf4970c06365e75a8ab270237cd45e6ca5e15116c1ddcd1b51",
+   "ingress_drill": {
+    "a4_admitted": false,
+    "decision": "dropped",
+    "doc_id": "wiki-12-DRILL-contaminated",
+    "drill": "ingress_contaminated_document",
+    "lane_hint": "web",
+    "language": "en",
+    "pii_redactions": 0,
+    "reasons": [
+     "eval_contamination:71_shared_word_ngrams"
+    ],
+    "script": "Latn",
+    "source": "a2:wikipedia",
+    "unk_rate": 0.0
+   }
+  },
+  "fork": {
+   "branch": "fork-s14-a5-h1-indic16",
+   "first_fork_batch": "bat-s00015-8ccd2f03ddc2",
+   "first_fork_step": 15,
+   "indic_share_pct": {
+    "S2_broaden": 17.71,
+    "S3_reasoning_code": 20.0
+   },
+   "main_batch_same_step": "bat-s00015-2a370230bcd8",
+   "parent": "main@s00014",
+   "parent_head": "a3eb07bcf08d6e558dd739a6fa657f4878f59057c30662d667020cc232553a0c",
+   "parent_offset": 14
+  },
+  "learning": {
+   "first_last_step_loss": [
+    9.21370703792572,
+    6.746629626460739
+   ],
+   "mean_loss_by_lane_phase": {
+    "agentic/anneal": 6.786043299161471,
+    "agentic/late": 6.808552401406424,
+    "agentic/mid": 6.792462424651997,
+    "code/anneal": 5.801730657516316,
+    "code/early": 8.007803518391686,
+    "code/late": 5.915630633247039,
+    "code/mid": 6.348024213255652,
+    "indic/anneal": 7.780275224394588,
+    "indic/early": 8.855595767920745,
+    "indic/late": 7.8433675353621926,
+    "indic/mid": 8.363326048608554,
+    "long_context/anneal": 6.434584154582001,
+    "long_context/late": 6.187373150404312,
+    "reasoning/anneal": 7.038183871616941,
+    "reasoning/early": 8.048140161780902,
+    "reasoning/late": 7.053726252023276,
+    "reasoning/mid": 7.453335555326274,
+    "stem/anneal": 6.869880498624315,
+    "stem/early": 8.325992699678954,
+    "stem/late": 7.1147467131051245,
+    "stem/mid": 7.257192219167516,
+    "web/anneal": 7.284632952774272,
+    "web/early": 8.417132282436574,
+    "web/late": 7.0966085328086566,
+    "web/mid": 7.059899716537883
+   },
+   "samples": 1126,
+   "token_lines": 88192,
+   "validation_by_checkpoint": {
+    "7": {
+     "en": 8.1579,
+     "hi": 8.9625,
+     "te": 9.2388,
+     "ur": 9.4847
+    },
+    "14": {
+     "en": 7.2492,
+     "hi": 9.0782,
+     "te": 9.6437,
+     "ur": 10.3195
+    },
+    "21": {
+     "en": 6.953,
+     "hi": 9.4999,
+     "te": 10.1797,
+     "ur": 11.0545
+    },
+    "28": {
+     "en": 6.9715,
+     "hi": 8.9362,
+     "te": 9.4346,
+     "ur": 9.1217
+    },
+    "35": {
+     "en": 6.9389,
+     "hi": 8.6022,
+     "te": 9.0626,
+     "ur": 9.7932
+    },
+    "42": {
+     "en": 6.9937,
+     "hi": 8.4227,
+     "te": 8.7906,
+     "ur": 9.4529
+    }
+   }
+  },
+  "mixture": {
+   "band_substitutions": [
+    {
+     "band": "high",
+     "lane": "reasoning",
+     "pool": "main",
+     "served_by": "medium",
+     "step": 21
+    },
+    {
+     "band": "high",
+     "lane": "reasoning",
+     "pool": "main",
+     "served_by": "medium",
+     "step": 33
+    },
+    {
+     "band": "high",
+     "lane": "reasoning",
+     "pool": "main",
+     "served_by": "medium",
+     "step": 37
+    },
+    {
+     "band": "high",
+     "lane": "reasoning",
+     "pool": "reserve",
+     "served_by": "medium",
+     "step": 41
+    },
+    {
+     "band": "ultra",
+     "lane": "reasoning",
+     "pool": "reserve",
+     "served_by": "medium",
+     "step": 41
+    },
+    {
+     "band": "high",
+     "lane": "reasoning",
+     "pool": "reserve",
+     "served_by": "medium",
+     "step": 42
+    },
+    {
+     "band": "ultra",
+     "lane": "reasoning",
+     "pool": "reserve",
+     "served_by": "medium",
+     "step": 42
+    }
+   ],
+   "floor_rounding": "protected lanes round up against consumed positions",
+   "run_actual_pct": {
+    "agentic": 3.2967032967032965,
+    "code": 25.412087912087912,
+    "indic": 10.851648351648352,
+    "long_context": 4.395604395604396,
+    "reasoning": 1.510989010989011,
+    "stem": 8.37912087912088,
+    "web": 46.15384615384615
+   },
+   "run_planned_pct": {
+    "agentic": 0.7370155909041677,
+    "code": 26.308117827623185,
+    "indic": 10.537226671893547,
+    "long_context": 4.513131608873269,
+    "reasoning": 1.2810843114182673,
+    "stem": 9.171437224691399,
+    "web": 47.45198676459616
+   },
+   "scaling_notes": {
+    "agentic_rows": "A5 notes trajectories do not fit the base window; at demo scale agentic rows use the long-row microbatch (whole trajectories, never split)",
+    "anneal_share_of_steps_used": 0.047619047619047616,
+    "anneal_share_of_trained_planned": 0.030303030303030304,
+    "anneal_steps_exact": 1.25,
+    "anneal_steps_used": 2,
+    "long_row_len": "A5 32768-token long-context batches / 32 = 1024",
+    "ramp_steps_exact": 0.3125,
+    "ramp_steps_used": 2,
+    "seq_len_divisor": 32,
+    "stage_steps": {
+     "S1_foundation": 8,
+     "S2_broaden": 12,
+     "S3_reasoning_code": 12,
+     "S4_long_context": 8,
+     "anneal": 2
+    }
+   },
+   "stage_shares": {
+    "S1_foundation": {
+     "agentic": {
+      "a5_stage_pct": 0,
+      "actual_pct": 0.0,
+      "actual_positions": 0,
+      "planned_pct_incl_ramps": 0.0
+     },
+     "code": {
+      "a5_stage_pct": 14,
+      "actual_pct": 14.062,
+      "actual_positions": 2304,
+      "planned_pct_incl_ramps": 14.5
+     },
+     "indic": {
+      "a5_stage_pct": 10,
+      "actual_pct": 10.156,
+      "actual_positions": 1664,
+      "planned_pct_incl_ramps": 10.0
+     },
+     "long_context": {
+      "a5_stage_pct": 0,
+      "actual_pct": 0.0,
+      "actual_positions": 0,
+      "planned_pct_incl_ramps": 0.0
+     },
+     "reasoning": {
+      "a5_stage_pct": 0,
+      "actual_pct": 0.0,
+      "actual_positions": 0,
+      "planned_pct_incl_ramps": 0.021
+     },
+     "stem": {
+      "a5_stage_pct": 6,
+      "actual_pct": 6.25,
+      "actual_positions": 1024,
+      "planned_pct_incl_ramps": 6.083
+     },
+     "web": {
+      "a5_stage_pct": 70,
+      "actual_pct": 69.531,
+      "actual_positions": 11392,
+      "planned_pct_incl_ramps": 69.396
+     }
+    },
+    "S2_broaden": {
+     "agentic": {
+      "a5_stage_pct": 0,
+      "actual_pct": 0.0,
+      "actual_positions": 0,
+      "planned_pct_incl_ramps": 0.014
+     },
+     "code": {
+      "a5_stage_pct": 26,
+      "actual_pct": 25.521,
+      "actual_positions": 6272,
+      "planned_pct_incl_ramps": 25.889
+     },
+     "indic": {
+      "a5_stage_pct": 10,
+      "actual_pct": 10.417,
+      "actual_positions": 2560,
+      "planned_pct_incl_ramps": 10.0
+     },
+     "long_context": {
+      "a5_stage_pct": 0,
+      "actual_pct": 0.0,
+      "actual_positions": 0,
+      "planned_pct_incl_ramps": 0.0
+     },
+     "reasoning": {
+      "a5_stage_pct": 0.5,
+      "actual_pct": 0.521,
+      "actual_positions": 128,
+      "planned_pct_incl_ramps": 0.5
+     },
+     "stem": {
+      "a5_stage_pct": 8,
+      "actual_pct": 7.812,
+      "actual_positions": 1920,
+      "planned_pct_incl_ramps": 8.056
+     },
+     "web": {
+      "a5_stage_pct": 55.5,
+      "actual_pct": 55.729,
+      "actual_positions": 13696,
+      "planned_pct_incl_ramps": 55.541
+     }
+    },
+    "S3_reasoning_code": {
+     "agentic": {
+      "a5_stage_pct": 0.5,
+      "actual_pct": 4.0,
+      "actual_positions": 1024,
+      "planned_pct_incl_ramps": 0.516
+     },
+     "code": {
+      "a5_stage_pct": 34,
+      "actual_pct": 33.0,
+      "actual_positions": 8448,
+      "planned_pct_incl_ramps": 33.602
+     },
+     "indic": {
+      "a5_stage_pct": 10,
+      "actual_pct": 10.0,
+      "actual_positions": 2560,
+      "planned_pct_incl_ramps": 10.0
+     },
+     "long_context": {
+      "a5_stage_pct": 0,
+      "actual_pct": 0.0,
+      "actual_positions": 0,
+      "planned_pct_incl_ramps": 0.531
+     },
+     "reasoning": {
+      "a5_stage_pct": 1,
+      "actual_pct": 1.0,
+      "actual_positions": 256,
+      "planned_pct_incl_ramps": 1.016
+     },
+     "stem": {
+      "a5_stage_pct": 12,
+      "actual_pct": 11.0,
+      "actual_positions": 2816,
+      "planned_pct_incl_ramps": 11.801
+     },
+     "web": {
+      "a5_stage_pct": 42.5,
+      "actual_pct": 41.0,
+      "actual_positions": 10496,
+      "planned_pct_incl_ramps": 42.534
+     }
+    },
+    "S4_long_context": {
+     "agentic": {
+      "a5_stage_pct": 1.5,
+      "actual_pct": 5.0,
+      "actual_positions": 1024,
+      "planned_pct_incl_ramps": 1.606
+     },
+     "code": {
+      "a5_stage_pct": 28,
+      "actual_pct": 27.5,
+      "actual_positions": 5632,
+      "planned_pct_incl_ramps": 28.028
+     },
+     "indic": {
+      "a5_stage_pct": 10,
+      "actual_pct": 10.0,
+      "actual_positions": 2048,
+      "planned_pct_incl_ramps": 10.414
+     },
+     "long_context": {
+      "a5_stage_pct": 18,
+      "actual_pct": 15.0,
+      "actual_positions": 3072,
+      "planned_pct_incl_ramps": 16.966
+     },
+     "reasoning": {
+      "a5_stage_pct": 2,
+      "actual_pct": 2.5,
+      "actual_positions": 512,
+      "planned_pct_incl_ramps": 2.209
+     },
+     "stem": {
+      "a5_stage_pct": 9,
+      "actual_pct": 8.75,
+      "actual_positions": 1792,
+      "planned_pct_incl_ramps": 9.241
+     },
+     "web": {
+      "a5_stage_pct": 31.5,
+      "actual_pct": 31.25,
+      "actual_positions": 6400,
+      "planned_pct_incl_ramps": 31.537
+     }
+    },
+    "anneal": {
+     "agentic": {
+      "a5_stage_pct": 5,
+      "actual_pct": 16.667,
+      "actual_positions": 1024,
+      "planned_pct_incl_ramps": 4.411
+     },
+     "code": {
+      "a5_stage_pct": 23,
+      "actual_pct": 16.667,
+      "actual_positions": 1024,
+      "planned_pct_incl_ramps": 23.841
+     },
+     "indic": {
+      "a5_stage_pct": 20,
+      "actual_pct": 20.833,
+      "actual_positions": 1280,
+      "planned_pct_incl_ramps": 18.318
+     },
+     "long_context": {
+      "a5_stage_pct": 10,
+      "actual_pct": 16.667,
+      "actual_positions": 1024,
+      "planned_pct_incl_ramps": 11.345
+     },
+     "reasoning": {
+      "a5_stage_pct": 8,
+      "actual_pct": 8.333,
+      "actual_positions": 512,
+      "planned_pct_incl_ramps": 6.991
+     },
+     "stem": {
+      "a5_stage_pct": 12,
+      "actual_pct": 4.167,
+      "actual_positions": 256,
+      "planned_pct_incl_ramps": 11.496
+     },
+     "web": {
+      "a5_stage_pct": 22,
+      "actual_pct": 16.667,
+      "actual_positions": 1024,
+      "planned_pct_incl_ramps": 23.597
+     }
+    }
+   },
+   "subpools": {
+    "indic/S1_foundation": {
+     "B0_B1": 7,
+     "B2_B3": 5,
+     "B4_B5": 1
+    },
+    "indic/S2_broaden": {
+     "B0_B1": 5,
+     "B2_B3": 9,
+     "B4_B5": 4
+    },
+    "indic/S3_reasoning_code": {
+     "B0_B1": 2,
+     "B2_B3": 5,
+     "B4_B5": 3
+    },
+    "indic/S4_long_context": {
+     "B0_B1": 1,
+     "B2_B3": 4,
+     "B4_B5": 3
+    },
+    "indic/anneal": {
+     "B2_B3": 2,
+     "B4_B5": 3
+    },
+    "reasoning/S2_broaden": {
+     "low": 1
+    },
+    "reasoning/S3_reasoning_code": {
+     "medium": 1
+    },
+    "reasoning/S4_long_context": {
+     "low": 1,
+     "medium": 1
+    },
+    "reasoning/anneal": {
+     "medium": 2
+    }
+   }
+  },
+  "opus": {
+   "by_reason": {
+    "accepted:keep_1.0_static_filter_only": 158,
+    "accepted:opus_selected": 253,
+    "accepted:protected_floor_override": 55,
+    "accepted:selector_bypass_long_context": 3,
+    "accepted:selector_off_anneal": 18,
+    "deferred:marginal_utility": 126,
+    "rejected:defer_expired": 16,
+    "rejected:eval_firewall": 2,
+    "rejected:low_proxy_utility": 253,
+    "rejected:stage_mismatch": 6
+   },
+   "counts": {
+    "accepted": 487,
+    "deferred": 126,
+    "protected_floor_override": 55,
+    "rejected": 277
+   },
+   "overrides_by_lane": {
+    "agentic": 2,
+    "indic": 49,
+    "reasoning": 4
+   }
+  },
+  "packing": {
+   "best_fit_whole_files@128": {
+    "loss": 7034,
+    "loss_bearing_fraction": 0.9314088983050848,
+    "pad_only_utilization_same_docs": 0.5413379854368932,
+    "positions": 7552,
+    "real": 7137,
+    "rows": 59,
+    "utilization": 0.9450476694915254
+   },
+   "best_fit_whole_files@256": {
+    "loss": 15268,
+    "loss_bearing_fraction": 0.9466765873015873,
+    "pad_only_utilization_same_docs": 0.259874597639485,
+    "positions": 16128,
+    "real": 15501,
+    "rows": 63,
+    "utilization": 0.9611235119047619
+   },
+   "concat_chop@128": {
+    "loss": 28762,
+    "loss_bearing_fraction": 0.9855400219298246,
+    "pad_only_utilization_same_docs": 0.7112980769230769,
+    "positions": 29184,
+    "real": 29184,
+    "rows": 228,
+    "utilization": 1.0
+   },
+   "concat_chop@256": {
+    "loss": 31406,
+    "loss_bearing_fraction": 0.9893523185483871,
+    "pad_only_utilization_same_docs": 0.5384226008557457,
+    "positions": 31744,
+    "real": 31744,
+    "rows": 124,
+    "utilization": 1.0
+   },
+   "long_doc_best_fit@1024": {
+    "loss": 3641,
+    "loss_bearing_fraction": 0.888916015625,
+    "pad_only_utilization_same_docs": 0.32421875,
+    "positions": 4096,
+    "real": 3652,
+    "rows": 4,
+    "utilization": 0.8916015625
+   },
+   "structure_preserving_best_fit@1024": {
+    "loss": 824,
+    "loss_bearing_fraction": 0.2682291666666667,
+    "pad_only_utilization_same_docs": 0.645751953125,
+    "positions": 3072,
+    "real": 2645,
+    "rows": 3,
+    "utilization": 0.8610026041666666
+   },
+   "whole_trace_next_fit@128": {
+    "loss": 93,
+    "loss_bearing_fraction": 0.7265625,
+    "pad_only_utilization_same_docs": 0.37109375,
+    "positions": 128,
+    "real": 95,
+    "rows": 1,
+    "utilization": 0.7421875
+   },
+   "whole_trace_next_fit@256": {
+    "loss": 1164,
+    "loss_bearing_fraction": 0.909375,
+    "pad_only_utilization_same_docs": 0.35366586538461536,
+    "positions": 1280,
+    "real": 1177,
+    "rows": 5,
+    "utilization": 0.91953125
+   }
+  },
+  "performance": {
+   "headline": {
+    "accepted_real_tokens_per_s": 2092.4510180720513,
+    "context_only_fraction": 0.03158267513736264,
+    "loss_bearing_fraction": 0.9464285714285714,
+    "opus_acceptance_rate": 0.5521541950113379,
+    "packing_utilization": 0.9780112465659341,
+    "padding_fraction": 0.021988753434065922,
+    "raw_token_positions_per_s": 2139.495865123454,
+    "useful_loss_bearing_tokens_per_s": 2024.8800152061265,
+    "useful_loss_bearing_tokens_per_s_end_to_end": 1765.743482068432,
+    "web_selector_acceptance_rate": 0.3904320987654321
+   },
+   "latency": {
+    "replay_latency_s": 9.950826599997527,
+    "replay_steps": 7,
+    "resume_latency_definition": "resume process start (imports included) -> first resumed step committed",
+    "resume_latency_s": 3.0723980000038864,
+    "shard_read": {
+     "definition": "ShardStore.arrays(): manifest hash check, read both arrays, recompute the content hash",
+     "max_s": 0.004021200002171099,
+     "mean_s": 0.0013560979595593158,
+     "p50_s": 0.0011998999980278313,
+     "shards": 49
+    }
+   },
+   "opus_by_lane": {
+    "agentic": {
+     "accepted": 3,
+     "decisions": 3,
+     "deferred": 0,
+     "protected_floor_override": 2,
+     "rejected": 0,
+     "rejection_rate": 0.0
+    },
+    "code": {
+     "accepted": 122,
+     "decisions": 122,
+     "deferred": 0,
+     "protected_floor_override": 0,
+     "rejected": 0,
+     "rejection_rate": 0.0
+    },
+    "indic": {
+     "accepted": 54,
+     "decisions": 54,
+     "deferred": 0,
+     "protected_floor_override": 49,
+     "rejected": 0,
+     "rejection_rate": 0.0
+    },
+    "long_context": {
+     "accepted": 4,
+     "decisions": 4,
+     "deferred": 0,
+     "protected_floor_override": 0,
+     "rejected": 0,
+     "rejection_rate": 0.0
+    },
+    "reasoning": {
+     "accepted": 6,
+     "decisions": 6,
+     "deferred": 0,
+     "protected_floor_override": 4,
+     "rejected": 0,
+     "rejection_rate": 0.0
+    },
+    "stem": {
+     "accepted": 41,
+     "decisions": 41,
+     "deferred": 0,
+     "protected_floor_override": 0,
+     "rejected": 0,
+     "rejection_rate": 0.0
+    },
+    "web": {
+     "accepted": 257,
+     "decisions": 660,
+     "deferred": 126,
+     "protected_floor_override": 0,
+     "rejected": 277,
+     "rejection_rate": 0.4196969696969697
+    }
+   }
+  },
+  "replay": {
+   "batch_ids": [
+    "bat-s00008-c8fc6b86ea27",
+    "bat-s00009-3adfcfeef789",
+    "bat-s00010-d9ed1e19838e",
+    "bat-s00011-39c8b374bbc4",
+    "bat-s00012-6bf063ee9b3e",
+    "bat-s00013-946e2545bd9b",
+    "bat-s00014-c53340a92aa2"
+   ],
+   "cross_check_replan": true,
+   "fingerprint": "1c168a1bbdbde860a6e95d5a6659c488d2f4937df342d2d135334271cbd506f0",
+   "from": "main@s00007",
+   "interval": [
+    8,
+    14
+   ],
+   "replay_latency_s": 9.950826599997527
+  },
+  "tokenizer": {
+   "a2_sha256": "45aa8369f867472f8686b48025354fbfc0d9b53d6f7573d021aaaac815179dc4",
+   "a2_vocab": 10000,
+   "control_tokens": {
+    "<|assistant|>": 10004,
+    "<|eos|>": 10001,
+    "<|pad|>": 10000,
+    "<|system|>": 10002,
+    "<|tool_call|>": 10005,
+    "<|tool|>": 10006,
+    "<|user|>": 10003
+   },
+   "tokenizer_id": "ff7f96354be799e2d7effb51dc6f89eefca399cc028d098d26cd04d361afa115"
+  },
+  "upstream": [
+   {
+    "artifact": "inputs/a2/tokenizer.json",
+    "discrepancy": null,
+    "resolution": null,
+    "result": true,
+    "upstream": "A2"
+   },
+   {
+    "artifact": "special tokens",
+    "discrepancy": "A2 ships only <unk> ({'special': 1, 'characters': 365, 'akshara': 1406, 'learned': 8228}); packing needs EOS, PAD and role markers",
+    "resolution": "control-token block appended after the A2 vocabulary (ids 10000+), never produced from text; it is part of tokenizer_id",
+    "result": false,
+    "upstream": "A2"
+   },
+   {
+    "artifact": "normalizer",
+    "discrepancy": "A2 collapses every whitespace run to one space (built for prose fertility), so code loses line breaks and indentation",
+    "resolution": "kept A2's mapping unchanged (changing it would be a different tokenizer); code structure is preserved by whole-function packing; flagged for a code-aware A2 revision",
+    "result": false,
+    "upstream": "A2"
+   },
+   {
+    "artifact": "language coverage",
+    "discrepancy": "A4 admitted 15 languages; A2 was trained for en/hi/te/ur",
+    "resolution": "A6 ingress gate drops documents above the unk threshold and logs them",
+    "result": false,
+    "upstream": "A2 x A4"
+   },
+   {
+    "artifact": "inputs/a4/manifest.json",
+    "discrepancy": null,
+    "resolution": null,
+    "result": true,
+    "upstream": "A4"
+   },
+   {
+    "artifact": "Anudesh licence",
+    "discrepancy": "A4 notes the Anudesh responses are Llama-2-70B-Chat outputs whose licence restricts training other models; A4 did not publish them",
+    "resolution": "only the human-written user prompts (CC-BY-4.0) are vendored; they form the Indic lane",
+    "result": true,
+    "upstream": "A4"
+   },
+   {
+    "artifact": "token counts",
+    "discrepancy": "A4 counted with Qwen/Qwen3-0.6B; A6 recounts every document with A2",
+    "resolution": "manifests and the schedule use A2 token counts only",
+    "result": false,
+    "upstream": "A4"
+   },
+   {
+    "artifact": "lane supply",
+    "discrepancy": "A4 cleaned two SFT shards (Glaive, Anudesh); A5 needs web, code, stem, reasoning, long-context too",
+    "resolution": "A2 Wikipedia text (web, stem, long-context), CPython stdlib functions (code) and generated traces (reasoning), each labelled in its manifest provenance; they pass the A6 ingress gate but are marked a4_admitted=false",
+    "result": false,
+    "upstream": "A4 x A5"
+   },
+   {
+    "artifact": "inputs/a5/mixture.yaml",
+    "discrepancy": null,
+    "resolution": null,
+    "result": true,
+    "upstream": "A5"
+   },
+   {
+    "artifact": "Indic tiers",
+    "discrepancy": "A5 plans 41.7% Tier A verified native; A4 supplied only Anudesh, which A5 classes as Tier D",
+    "resolution": "the lane keeps its protected 10% share (A5: Indic is fixed by the floor) and is served from Tier D; the tier split is reported, not faked",
+    "result": false,
+    "upstream": "A5 x A4"
+   },
+   {
+    "artifact": "agentic tiers",
+    "discrepancy": null,
+    "resolution": "main run uses Glaive conversations with >=2 tool calls (multistep pool); the anneal uses the one-shot Glaive pool, which A5 reserves in full",
+    "result": false,
+    "upstream": "A5 x A4"
+   },
+   {
+    "artifact": "reasoning length bands",
+    "discrepancy": null,
+    "resolution": "a band without supply is served by the nearest band that has it, and each substitution is listed",
+    "result": false,
+    "upstream": "A5"
+   }
+  ]
+ },
+ "overall": "PASS",
+ "requirements": [
+  {
+   "checks": [
+    {
+     "detail": "45aa8369f867472f / 45aa8369f867472f / 45aa8369f867472f",
+     "name": "A2 tokenizer.json sha256 == pinned == the hash A2 published",
+     "pass": true
+    },
+    {
+     "detail": "ff7f96354be799e2",
+     "name": "adapter tokenizer_id recomputed from its spec == pinned",
+     "pass": true
+    },
+    {
+     "detail": "control ids 10000..10006",
+     "name": "spec binds the A2 file hash and the control-token block (ids after the A2 vocabulary)",
+     "pass": true
+    },
+    {
+     "detail": "52 manifests",
+     "name": "every shard manifest carries the pinned tokenizer_id and A2 hash",
+     "pass": true
+    },
+    {
+     "detail": "92 records",
+     "name": "every consumption-ledger record (main, reference, fork) carries the pinned tokenizer_id",
+     "pass": true
+    },
+    {
+     "detail": "8 ids",
+     "name": "deterministic encode: the recorded probe re-encodes to the same ids in this process",
+     "pass": true
+    },
+    {
+     "detail": "949 plain-text training documents: encode(decode(ids)) == ids for 949",
+     "name": "A2 round trip is stable on stored shard tokens (decode -> encode gives the same ids)",
+     "pass": true
+    },
+    {
+     "detail": "1072 training documents re-encoded from inputs/ with the raw A2 tokenizer; 0 differ; 1 skipped (text changed by PII redaction)",
+     "name": "every unredacted training document re-encoded independently from the vendored raw text reproduces its stored shard tokens exactly",
+     "pass": true
+    },
+    {
+     "detail": "variant 1c31b4445ed91075 refused: registry tokenizer id differs from the pinned tokenizer",
+     "name": "a tokenizer that differs only in its control block (EOS/PAD swapped) is refused by the real shard store",
+     "pass": true
+    }
+   ],
+   "evidence_label": "Manifest record",
+   "files": [
+    "manifests/tokenizer_manifest.json",
+    "manifests/shards/*.json",
+    "upstream_contracts.json"
+   ],
+   "id": "R01",
+   "name": "Frozen tokenizer and content hashes",
+   "result": "PASS",
+   "table_name": "Tokenizer integrity"
+  },
+  {
+   "checks": [
+    {
+     "detail": "52 shards, mismatches []",
+     "name": "content hash recomputed from tokens.bin + loss_eligible.bin + tokenizer_id + transform == manifest == registry == shard id suffix",
+     "pass": true
+    },
+    {
+     "detail": "a4d475fe5b1a582a",
+     "name": "registry hash recomputes",
+     "pass": true
+    },
+    {
+     "detail": "a4d475fe5b1a582a == a4d475fe5b1a582a",
+     "name": "same inputs + tokenizer + config built twice from scratch give identical shard ids (the second build's registry hash equals the registry on disk)",
+     "pass": true
+    },
+    {
+     "detail": "own recomputation changes the hash; the real ShardStore rejected the tampered copy: True; the real writer refused a rewrite: True",
+     "name": "a tampered copy of a shard fails validation under its old identity, and a rewrite is refused (own recomputation + the real store and writer on a temporary copy)",
+     "pass": true
+    },
+    {
+     "detail": "shard_id, source_ids, document_ids, tokenizer_id, token_count, languages, scripts, capability_lane, licenses, provenance, cleaning_lineage, dedup_status, contamination_status, eval_overlap_status, content_hash, parent_shard_ids, pii_status, never_train",
+     "name": "manifests carry every required provenance field",
+     "pass": true
+    },
+    {
+     "detail": "9 A4-derived shards; parents ['shard_68191df5e149', 'shard_6aefac17acda']",
+     "name": "shards built from A4-admitted records name the A4 shard as parent and inherit its cleaning lineage",
+     "pass": true
+    },
+    {
+     "detail": "{\"a2_tokenizer_coverage\": 92, \"eval_contamination\": 1, \"exact_duplicate_of\": 3}",
+     "name": "the ingress gate actually dropped documents (A2 coverage, exact duplicates, eval contamination)",
+     "pass": true
+    },
+    {
+     "detail": "593 training documents decoded and scanned; 480 public-source-code documents exempt by policy",
+     "name": "no e-mail address survives in any PII-screened training document",
+     "pass": true
+    }
+   ],
+   "evidence_label": "Recomputed shard hashes",
+   "files": [
+    "shards/",
+    "manifests/shard_registry.json",
+    "manifests/manifest_validation.json"
+   ],
+   "id": "R10",
+   "name": "Immutable tokenized shards with manifests",
+   "result": "PASS",
+   "table_name": "Shards, manifests & immutability"
+  },
+  {
+   "checks": [
+    {
+     "detail": "blocked splits ['test', 'validation']; 49 sources left, all train",
+     "name": "compile time: the misconfigured web source list lost its test AND validation shards",
+     "pass": true
+    },
+    {
+     "detail": "wiki-12-DRILL-contaminated: ['eval_contamination:71_shared_word_ngrams']",
+     "name": "ingress: a web document carrying a registered test item was dropped for eval contamination",
+     "pass": true
+    },
+    {
+     "detail": "2 events, 2 rejected/eval_firewall decisions",
+     "name": "candidate gate: injected test and validation candidates were blocked before scoring (step 3) and recorded as rejected OPUS candidates",
+     "pass": true
+    },
+    {
+     "detail": "re-run now: validation row refused, a real training row accepted",
+     "name": "the real batch gate, re-run by the verifier, refuses a validation row and accepts a training row",
+     "pass": true
+    },
+    {
+     "detail": "event at step 5",
+     "name": "batch gate: a validation row placed in the loss-bearing batch was rejected (step 5) and the step trained only on train shards",
+     "pass": true
+    },
+    {
+     "detail": "2529 consumed spans scanned, 0 with eval n-grams",
+     "name": "no consumed span (main, reference, fork) comes from a non-train shard or shares a word n-gram with any raw eval/validation/proxy item (fingerprints rebuilt from inputs/eval, not from the registry)",
+     "pass": true
+    },
+    {
+     "detail": "planted test span detected: non-train shard shd-benchmark-5a2ce9bc71ff at step 1",
+     "name": "negative control: a test span planted into a copy of a ledger row is detected",
+     "pass": true
+    },
+    {
+     "detail": "occurrences: []",
+     "name": "the injected eval fixture (gsm8k/test-0, sha256 1e8dd3c93373) never appears in any loss-bearing consumption entry",
+     "pass": true
+    },
+    {
+     "detail": "48 logged reads ({'proxy_read': 42, 'eval_read': 6})",
+     "name": "validation was read for evaluation only, with gradients disabled, and every read is logged",
+     "pass": true
+    }
+   ],
+   "evidence_label": "Blocked-shard event",
+   "files": [
+    "ledgers/build/firewall_events.jsonl",
+    "ledgers/main/firewall_events.jsonl",
+    "manifests/eval_registry.json",
+    "manifests/admission_report.json"
+   ],
+   "id": "R02",
+   "name": "Evaluation and validation firewalls",
+   "result": "PASS",
+   "table_name": "Evaluation firewall"
+  },
+  {
+   "checks": [
+    {
+     "detail": "487 rows, 0 mismatches []",
+     "name": "every consumed row rebuilt by an independent loop-based packer from its ledger spans reproduces the ledger's row, loss-mask, position and attention hashes",
+     "pass": true
+    },
+    {
+     "detail": "violations: []",
+     "name": "semantic rules hold on every row: positions reset per segment, no loss across a boundary, inert padding, full concat rows, whole documents for whole-document policies, no loss on user/system/tool tokens",
+     "pass": true
+    },
+    {
+     "detail": "best_fit_whole_files: [0, 113]; concat_chop: [0, 127]; long_doc_best_fit: [543, 689]; structure_preserving_best_fit: [0, 899]; whole_trace_next_fit: [49, 94]",
+     "name": "attention is causal and block-diagonal: the last real token of each example row attends exactly to its own segment",
+     "pass": true
+    },
+    {
+     "detail": "824 loss of 2645 real positions",
+     "name": "agentic rows are trained with context-only turns (fewer loss positions than real tokens)",
+     "pass": true
+    },
+    {
+     "detail": "shifted span / no position reset / cut trajectory detected: [True, True, True]",
+     "name": "negative controls: a shifted span, missing position resets and a cut trajectory are all detected",
+     "pass": true
+    },
+    {
+     "detail": "8 policy/row-length groups",
+     "name": "per-policy utilization recomputed from the ledger equals performance.json",
+     "pass": true
+    }
+   ],
+   "evidence_label": "Packed-batch report",
+   "files": [
+    "ledgers/main/packing_report.json",
+    "ledgers/main/consumption_ledger.jsonl"
+   ],
+   "id": "R03",
+   "name": "Packing policies, loss masks, attention masks and position ids",
+   "result": "PASS",
+   "table_name": "Packing correctness"
+  },
+  {
+   "checks": [
+    {
+     "detail": "S1_foundation 1-8; S2_broaden 9-20; S3_reasoning_code 21-32; S4_long_context 33-40; anneal 41-42",
+     "name": "stage boundaries recomputed from A5 spans match the compiled plan",
+     "pass": true
+    },
+    {
+     "detail": "ramp width 2 steps; mismatching steps []",
+     "name": "per-step effective mixture (stage mix, linear ramps centred on boundaries) recomputed from mixture.yaml equals the compiled schedule",
+     "pass": true
+    },
+    {
+     "detail": "42 steps; mismatches []",
+     "name": "rows actually consumed per lane at every step == the compiled quotas (OPUS never moves a slot across lanes)",
+     "pass": true
+    },
+    {
+     "detail": "violations []",
+     "name": "protected floors (indic, reasoning, agentic = their A5 stage share): the stage-cumulative share of consumed token positions is at or above the floor after every step",
+     "pass": true
+    },
+    {
+     "detail": "55 overrides, lanes {'indic': 49, 'reasoning': 4, 'agentic': 2}",
+     "name": "the floor override actually executed: protected rows OPUS would have rejected were trained",
+     "pass": true
+    },
+    {
+     "detail": "every step checked; largest |actual - target| in positions per lane {'web': 262, 'code': 229, 'stem': 303, 'indic': 389, 'reasoning': 269, 'agentic': 1017, 'long_context': 499}; violations []",
+     "name": "rounding is bounded at every step: each lane's consumed positions stay within whole-row rounding of its A5 target (recomputed here from mixture.yaml); stage-level deviations are listed in mixture_report.json",
+     "pass": true
+    },
+    {
+     "detail": "two web rows relabelled as code, and one long-context row relabelled as web, are both caught",
+     "name": "negative control: a two-row lane drift and a lost long-context row are not explained by rounding",
+     "pass": true
+    },
+    {
+     "detail": "steps with the next stage's window: [19, 20]",
+     "name": "the window moves before the mixture ramp (A5: never at the same step): base window 256 starts before S3",
+     "pass": true
+    },
+    {
+     "detail": "[]",
+     "name": "anneal reserves (A5 section 7) are first seen in the anneal, and the anneal draws those lanes from them",
+     "pass": true
+    },
+    {
+     "detail": "{\"indic/S1_foundation\": {\"B0_B1\": 7, \"B2_B3\": 5, \"B4_B5\": 1}, \"indic/S2_broaden\": {\"B2_B3\": 9, \"B0_B1\": 5, \"B4_B5\": 4}, \"indic/S3_reasoning_code\": {\"B2_B3\": 5, \"B4_B5\": 3, \"B0_B1\": 2}, \"indic/S4_long_context\": {\"B2_B3\": 4, \"B4_B5\": 3, \"B0_B1\": 1}, \"indic/anneal\": {\"B4_B5\": 3, \"B2_B3\": 2}, \"reasoning/S2_broaden\": {\"low\": 1}, \"reasoning/S3_reasoning_code\": {\"medium\": 1}, \"reasoning/S4_long_context\": {\"medium\": 1, \"low\": 1}, \"reasoning/anneal\": {\"medium\": 2}}",
+     "name": "sub-pools execute: Indic difficulty bands shift harder over stages and reasoning uses only A5-gated bands (substitutions listed in the schedule)",
+     "pass": true
+    }
+   ],
+   "evidence_label": "Planned versus actual shares",
+   "files": [
+    "manifests/mixture_schedule.json",
+    "ledgers/main/mixture_report.json",
+    "inputs/a5/mixture.yaml"
+   ],
+   "id": "R04",
+   "name": "Curriculum stages, lane weights and protected floors",
+   "result": "PASS",
+   "table_name": "Mixture compliance"
+  },
+  {
+   "checks": [
+    {
+     "detail": "{\"accepted\": 487, \"deferred\": 126, \"rejected\": 277, \"protected_floor_override\": 55}",
+     "name": "all four outcomes occur: accepted, rejected, deferred, protected-floor override",
+     "pass": true
+    },
+    {
+     "detail": "890 decisions, 0 disagree []",
+     "name": "every decision re-derived from the recorded scores with the documented A5 rule (own implementation)",
+     "pass": true
+    },
+    {
+     "detail": "a flipped selection and a fake override are both caught",
+     "name": "negative control: a flipped selection and a forged override fail re-derivation",
+     "pass": true
+    },
+    {
+     "detail": "487 rows, 487 accepted decisions",
+     "name": "every trained row points to exactly one accepted decision with the same candidate, and every accepted decision is trained exactly once",
+     "pass": true
+    },
+    {
+     "detail": "",
+     "name": "each decision names the model that scored it (= the model before that step in the ledger) and the proxy",
+     "pass": true
+    },
+    {
+     "detail": "94 deferred candidates; 94 re-scored; lost []",
+     "name": "deferred data does not disappear: every deferral is re-scored later, ends rejected with a reason, or is still queued in the final checkpoint",
+     "pass": true
+    }
+   ],
+   "evidence_label": "Candidate decision records",
+   "files": [
+    "ledgers/main/opus_decisions.jsonl"
+   ],
+   "id": "R05",
+   "name": "OPUS acceptance, rejection, deferral and protected-floor override",
+   "result": "PASS",
+   "table_name": "OPUS audit trail"
+  },
+  {
+   "checks": [
+    {
+     "detail": "exit 137, torn tail 6260 bytes",
+     "name": "the training process really died (exit code) while writing the crash step's ledger record",
+     "pass": true
+    },
+    {
+     "detail": "orphaned steps [29, 30]",
+     "name": "the forensic copy keeps the torn tail and the steps no checkpoint covered",
+     "pass": true
+    },
+    {
+     "detail": "declared bat-s00029-38e71de9eec7 / f4755740a8d70844; resumed bat-s00029-38e71de9eec7 / f4755740a8d70844",
+     "name": "first resumed batch (step 29) == the next batch declared in checkpoint main@s00028 (batch id, hash, sample ids, spans, row hashes)",
+     "pass": true
+    },
+    {
+     "detail": "pre-crash bat-s00029-38e71de9eec7",
+     "name": "first resumed batch == the batch the dead process had already committed for that step",
+     "pass": true
+    },
+    {
+     "detail": "42 steps; differing from the uninterrupted run: []; sample multisets equal: True",
+     "name": "no skip, no repeat: the recovered ledger has every step exactly once, and batch ids, hashes and the model after every step equal the uninterrupted reference run",
+     "pass": true
+    },
+    {
+     "detail": "a skipped and a repeated batch are both caught",
+     "name": "negative control: a skipped batch and a repeated batch both fail",
+     "pass": true
+    },
+    {
+     "detail": "d6c93b84f35ba2d5",
+     "name": "the recovery verified checkpoint <-> ledger agreement before trimming (head hash at the offset)",
+     "pass": true
+    }
+   ],
+   "evidence_label": "Expected and resumed batch ids",
+   "files": [
+    "ledgers/crash_report.json",
+    "ledgers/main/recovery_report.json",
+    "ledgers/main/crash_forensics/"
+   ],
+   "id": "R06",
+   "name": "Crash recovery without skipped or repeated batches",
+   "result": "PASS",
+   "table_name": "Crash recovery"
+  },
+  {
+   "checks": [
+    {
+     "detail": "7 records",
+     "name": "replay ledger hash chain verifies",
+     "pass": true
+    },
+    {
+     "detail": "7 steps compared field by field with the main ledger; mismatches []",
+     "name": "replayed steps 8-14: batch ids, token spans, row hashes, batch and loss-mask hashes, per-token loss digest (recomputed from the main CSV), step loss and model hash equal the original",
+     "pass": true
+    },
+    {
+     "detail": "1c168a1bbdbde860 == 1c168a1bbdbde860",
+     "name": "stream fingerprint (rolling sha256 over ordered batch id + hash) of the interval: original == replay",
+     "pass": true
+    },
+    {
+     "detail": "602d8c118818517e",
+     "name": "after the replay the model and optimizer equal checkpoint main@s00014",
+     "pass": true
+    },
+    {
+     "detail": "an altered span and a missing step are both caught",
+     "name": "negative control: an altered span and a missing replay step both fail",
+     "pass": true
+    }
+   ],
+   "evidence_label": "Original and replay hashes",
+   "files": [
+    "ledgers/replay-main-s7-s14/consumption_ledger.jsonl",
+    "ledgers/replay-main-s7-s14/replay_report.json"
+   ],
+   "id": "R07",
+   "name": "Replay of the same historical data stream",
+   "result": "PASS",
+   "table_name": "Replay"
+  },
+  {
+   "checks": [
+    {
+     "detail": "42 steps, mismatches []",
+     "name": "each consumption record's learning_trace_sha256 equals the hash of that step's token lines (the two ledgers are bound)",
+     "pass": true
+    },
+    {
+     "detail": "88192 token lines; mismatching steps []",
+     "name": "one token line per loss-bearing position of every step (no more, no less)",
+     "pass": true
+    },
+    {
+     "detail": "88192 token lines looked up in their shard at doc_offset; 0 wrong",
+     "name": "every token line points at the right token in its shard (shard, doc, offset -> token id) and its ppl = exp(loss)",
+     "pass": true
+    },
+    {
+     "detail": "1126 samples, 0 mismatches",
+     "name": "sample-level loss sums equal the sum of their token lines",
+     "pass": true
+    },
+    {
+     "detail": "a faked token loss breaks the bound hash",
+     "name": "negative control: a faked token loss is detected",
+     "pass": true
+    },
+    {
+     "detail": "step loss 9.214 -> 6.747; validation en 8.158 -> 6.994",
+     "name": "loss is produced by execution (falls over training) and validation loss is tracked per language",
+     "pass": true
+    }
+   ],
+   "evidence_label": "Loss linked to source data",
+   "files": [
+    "ledgers/main/learning_tokens.csv",
+    "ledgers/main/learning_samples.jsonl",
+    "ledgers/learning_shards.json",
+    "ledgers/main/eval_checkpoints.jsonl"
+   ],
+   "id": "R08",
+   "name": "Training consumption and learning ledgers, token-level loss",
+   "result": "PASS",
+   "table_name": "Learning trace"
+  },
+  {
+   "checks": [
+    {
+     "detail": "42 / 42 / 8 records",
+     "name": "main, reference and fork ledgers verify end to end (hash chain, offsets)",
+     "pass": true
+    },
+    {
+     "detail": "",
+     "name": "every record names run, branch, step, checkpoint, rank, microbatches, packed samples, shards, spans, loss-mask hash, attention/position policy, lane, stage, tokenizer, dataloader version, OPUS decision",
+     "pass": true
+    }
+   ],
+   "evidence_label": "Hash-chained ledger",
+   "files": [
+    "ledgers/main/consumption_ledger.jsonl"
+   ],
+   "id": "R11",
+   "name": "Consumption ledger integrity",
+   "result": "PASS",
+   "table_name": "Consumption ledger integrity"
+  },
+  {
+   "checks": [
+    {
+     "detail": "[[\"main@s00007\", true], [\"main@s00014\", true], [\"main@s00021\", true], [\"main@s00028\", true], [\"main@s00035\", true], [\"main@s00042\", true]]",
+     "name": "every checkpoint: offset == step, head hash == the ledger record at that offset, files hash, and its declared next batch is the batch the ledger shows next",
+     "pass": true
+    },
+    {
+     "detail": "9 streams",
+     "name": "the checkpoint's data state is explicit (per-stream pass/index/offset, deferral queue) and hashes to meta",
+     "pass": true
+    }
+   ],
+   "evidence_label": "Checkpoint meta vs ledger",
+   "files": [
+    "checkpoints/main/*/meta.json"
+   ],
+   "id": "R12",
+   "name": "Checkpoints tied to ledger offsets",
+   "result": "PASS",
+   "table_name": "Checkpoint / ledger binding"
+  },
+  {
+   "checks": [
+    {
+     "detail": "main@s00014 offset 14",
+     "name": "the fork's ledger chains from the parent checkpoint's ledger head (genesis = parent head at the offset)",
+     "pass": true
+    },
+    {
+     "detail": "fork-s14-a5-h1-indic16",
+     "name": "new branch identity, inherited model/optimizer/data state equal the parent checkpoint",
+     "pass": true
+    },
+    {
+     "detail": "first divergent step 15; 8/8 fork steps differ",
+     "name": "common history before the fork is the parent's; after it the stream diverges by design",
+     "pass": true
+    },
+    {
+     "detail": "{\"S2_broaden\": \"17.71% (floor 16%)\", \"S3_reasoning_code\": \"20.00% (floor 16%)\"}",
+     "name": "the fork executes its own A5 arm (H1: 16% Indic where overridden) under the same floor rule",
+     "pass": true
+    }
+   ],
+   "evidence_label": "Fork point and divergence",
+   "files": [
+    "ledgers/fork-s14-a5-h1-indic16/fork_point.json",
+    "ledgers/fork-s14-a5-h1-indic16/consumption_ledger.jsonl",
+    "ledgers/fork-s14-a5-h1-indic16/fork_schedule.json"
+   ],
+   "id": "R13",
+   "name": "Forking from an earlier checkpoint",
+   "result": "PASS",
+   "table_name": "Fork"
+  },
+  {
+   "checks": [
+    {
+     "detail": "recomputed 6 metrics from raw step timings and the ledger; mismatches {}",
+     "name": "headline metrics recompute from performance_steps.jsonl and the consumption ledger",
+     "pass": true
+    },
+    {
+     "detail": "an inflated throughput number is caught",
+     "name": "negative control: an inflated throughput number fails",
+     "pass": true
+    },
+    {
+     "detail": "util 0.9780, loss-bearing 0.9464, useful tok/s 2024.9",
+     "name": "useful loss-bearing tokens/s, accepted tokens/s, utilization, padding and context-only shares are reported with formulas; GPU metrics are null with a reason, not zero",
+     "pass": true
+    },
+    {
+     "detail": "best_fit_whole_files@128: 0.945 vs pad-only 0.541; best_fit_whole_files@256: 0.961 vs pad-only 0.260; concat_chop@128: 1.000 vs pad-only 0.711; concat_chop@256: 1.000 vs pad-only 0.538; long_doc_best_fit@1024: 0.892 vs pad-only 0.324; structure_preserving_best_fit@1024: 0.861 vs pad-only 0.646; whole_trace_next_fit@128: 0.742 vs pad-only 0.371; whole_trace_next_fit@256: 0.920 vs pad-only 0.354",
+     "name": "pad-only counterfactual on the same consumed documents is computed for every policy",
+     "pass": true
+    }
+   ],
+   "evidence_label": "Performance report",
+   "files": [
+    "performance.json",
+    "ledgers/main/performance_steps.jsonl"
+   ],
+   "id": "R09",
+   "name": "Packing utilization and useful loss-bearing tokens per second",
+   "result": "PASS",
+   "table_name": "Throughput"
+  },
+  {
+   "checks": [
+    {
+     "detail": "12 files",
+     "name": "every vendored input still hashes to its PROVENANCE.json entry",
+     "pass": true
+    },
+    {
+     "detail": "23 files scanned; hits []",
+     "name": "runtime code never refers to the upstream assignment folders (only tools/prepare_inputs.py does)",
+     "pass": true
+    },
+    {
+     "detail": "",
+     "name": "no Llama-2-generated Anudesh response is vendored (prompts only)",
+     "pass": true
+    },
+    {
+     "detail": "12 entries; 8 discrepancies",
+     "name": "the contract record lists each discrepancy with a resolution",
+     "pass": true
+    }
+   ],
+   "evidence_label": "Contract audit",
+   "files": [
+    "upstream_contracts.json",
+    "inputs/PROVENANCE.json"
+   ],
+   "id": "R14",
+   "name": "Upstream A2 / A4 / A5 contracts reconciled",
+   "result": "PASS",
+   "table_name": "Upstream contracts"
+  },
+  {
+   "checks": [
+    {
+     "detail": "shards created@761, manifests validated@1804, evaluation data blocked@2030, mixture compiled@2596, batches packed@3412, OPUS decisions recorded@3637, checkpoint saved@4641, crash simulated@7086, run resumed@7359, historical stream replayed@15058, branch forked@15488, audit completed@17223, performance measured@17528",
+     "name": "run.log contains the full event sequence in order",
+     "pass": true
+    },
+    {
+     "detail": "[PASS] tokenizer_hash_verified; [PASS] eval_shard_blocked; [PASS] checkpoint_saved; [PASS] resume_next_batch_matched; [PASS] replay_hash_matched",
+     "name": "the required PASS events are in run.log and no phase wrote a FAIL",
+     "pass": true
+    },
+    {
+     "detail": "run.log, manifests, ledgers, checkpoints, performance.json",
+     "name": "the required artifact structure exists",
+     "pass": true
+    }
+   ],
+   "evidence_label": "run.log event sequence",
+   "files": [
+    "run.log"
+   ],
+   "id": "R15",
+   "name": "End-to-end execution",
+   "result": "PASS",
+   "table_name": "End-to-end execution"
+  }
+ ]
+}

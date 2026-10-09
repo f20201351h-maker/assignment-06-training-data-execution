@@ -1,0 +1,181 @@
+{
+ "agentic_pools": {
+  "agentic_multistep": {
+   "kind": "estimate",
+   "note": "other multi-step trajectories; order-of-magnitude estimate from row counts",
+   "reserve": 0,
+   "unique": 10
+  },
+  "agentic_oneshot": {
+   "kind": "verified",
+   "note": "Glaive, xLAM, ToolACE, Hermes, ToolBench function-calling sets",
+   "reserve": 0.25,
+   "unique": 0.25
+  },
+  "agentic_tierA": {
+   "kind": "estimate",
+   "note": "executed and outcome-verified trajectories; plausible range 1-3B",
+   "reserve": 2,
+   "unique": 2
+  }
+ },
+ "indic_anneal": {
+  "A_replay_top": 10,
+  "A_reserved_fresh": 10,
+  "D_synthetic_verified": 4
+ },
+ "indic_main_tiers": {
+  "A_verified_native": 160,
+  "B_unverified_native": 88,
+  "C_translated": 116,
+  "D_synthetic": 20
+ },
+ "lanes": [
+  "web",
+  "code",
+  "stem",
+  "indic",
+  "reasoning",
+  "agentic",
+  "long_context"
+ ],
+ "long_row_len": 1024,
+ "max_passes": 4,
+ "microbatch_positions": 1024,
+ "plan_sha256": "e26e8f4d71de7ded022d1d66b329a4f5403404231e92d5c237efb2c4ed1f0cc7",
+ "protected": [
+  "indic",
+  "reasoning",
+  "agentic"
+ ],
+ "ramp_steps": 2,
+ "regular_positions_per_step": 2048,
+ "reserve_fraction": {
+  "code": 0.03561290322580645,
+  "long_context": 0.12,
+  "reasoning": 0.5714285714285714,
+  "stem": 0.09863013698630137,
+  "web": 0.00528
+ },
+ "scaling_notes": {
+  "agentic_rows": "A5 notes trajectories do not fit the base window; at demo scale agentic rows use the long-row microbatch (whole trajectories, never split)",
+  "anneal_share_of_steps_used": 0.047619047619047616,
+  "anneal_share_of_trained_planned": 0.030303030303030304,
+  "anneal_steps_exact": 1.25,
+  "anneal_steps_used": 2,
+  "long_row_len": "A5 32768-token long-context batches / 32 = 1024",
+  "ramp_steps_exact": 0.3125,
+  "ramp_steps_used": 2,
+  "seq_len_divisor": 32,
+  "stage_steps": {
+   "S1_foundation": 8,
+   "S2_broaden": 12,
+   "S3_reasoning_code": 12,
+   "S4_long_context": 8,
+   "anneal": 2
+  }
+ },
+ "selector_bypass": [
+  "long_context"
+ ],
+ "selector_keep": {
+  "code": 1.0,
+  "stem": 1.0,
+  "web": 0.4
+ },
+ "source": "inputs/a5/mixture.yaml",
+ "source_sha256": "5b8dccaaff55dd6c4608f36943fe70f259b04267493dd280aabe79f71b2a9b3e",
+ "stages": [
+  {
+   "a5_seq_len": 4096,
+   "a5_span": 0.2,
+   "mix": {
+    "agentic": 0.0,
+    "code": 14.0,
+    "indic": 10.0,
+    "long_context": 0.0,
+    "reasoning": 0.0,
+    "stem": 6.0,
+    "web": 70.0
+   },
+   "n_steps": 8,
+   "name": "S1_foundation",
+   "seq_len": 128,
+   "step_end": 8,
+   "step_start": 1
+  },
+  {
+   "a5_seq_len": 4096,
+   "a5_span": 0.3,
+   "mix": {
+    "agentic": 0.0,
+    "code": 26.0,
+    "indic": 10.0,
+    "long_context": 0.0,
+    "reasoning": 0.5,
+    "stem": 8.0,
+    "web": 55.5
+   },
+   "n_steps": 12,
+   "name": "S2_broaden",
+   "seq_len": 128,
+   "step_end": 20,
+   "step_start": 9
+  },
+  {
+   "a5_seq_len": 8192,
+   "a5_span": 0.3,
+   "mix": {
+    "agentic": 0.5,
+    "code": 34.0,
+    "indic": 10.0,
+    "long_context": 0.0,
+    "reasoning": 1.0,
+    "stem": 12.0,
+    "web": 42.5
+   },
+   "n_steps": 12,
+   "name": "S3_reasoning_code",
+   "seq_len": 256,
+   "step_end": 32,
+   "step_start": 21
+  },
+  {
+   "a5_seq_len": 8192,
+   "a5_span": 0.2,
+   "mix": {
+    "agentic": 1.5,
+    "code": 28.0,
+    "indic": 10.0,
+    "long_context": 18.0,
+    "reasoning": 2.0,
+    "stem": 9.0,
+    "web": 31.5
+   },
+   "n_steps": 8,
+   "name": "S4_long_context",
+   "seq_len": 256,
+   "step_end": 40,
+   "step_start": 33
+  },
+  {
+   "a5_seq_len": 8192,
+   "a5_span": null,
+   "mix": {
+    "agentic": 5.0,
+    "code": 23.0,
+    "indic": 20.0,
+    "long_context": 10.0,
+    "reasoning": 8.0,
+    "stem": 12.0,
+    "web": 22.0
+   },
+   "n_steps": 2,
+   "name": "anneal",
+   "seq_len": 256,
+   "step_end": 42,
+   "step_start": 41
+  }
+ ],
+ "total_steps": 42
+}

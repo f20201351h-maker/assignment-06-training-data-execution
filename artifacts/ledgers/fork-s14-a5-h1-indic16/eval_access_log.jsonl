@@ -1,0 +1,9 @@
+{"branch": "fork-s14-a5-h1-indic16", "event": "proxy_read", "grad_enabled": false, "purpose": "opus_proxy_direction", "shard_id": "shd-proxy-cd9fc5ec585c", "step": 15}
+{"branch": "fork-s14-a5-h1-indic16", "event": "proxy_read", "grad_enabled": false, "purpose": "opus_proxy_direction", "shard_id": "shd-proxy-cd9fc5ec585c", "step": 16}
+{"branch": "fork-s14-a5-h1-indic16", "event": "proxy_read", "grad_enabled": false, "purpose": "opus_proxy_direction", "shard_id": "shd-proxy-cd9fc5ec585c", "step": 17}
+{"branch": "fork-s14-a5-h1-indic16", "event": "proxy_read", "grad_enabled": false, "purpose": "opus_proxy_direction", "shard_id": "shd-proxy-cd9fc5ec585c", "step": 18}
+{"branch": "fork-s14-a5-h1-indic16", "event": "proxy_read", "grad_enabled": false, "purpose": "opus_proxy_direction", "shard_id": "shd-proxy-cd9fc5ec585c", "step": 19}
+{"branch": "fork-s14-a5-h1-indic16", "event": "proxy_read", "grad_enabled": false, "purpose": "opus_proxy_direction", "shard_id": "shd-proxy-cd9fc5ec585c", "step": 20}
+{"branch": "fork-s14-a5-h1-indic16", "event": "proxy_read", "grad_enabled": false, "purpose": "opus_proxy_direction", "shard_id": "shd-proxy-cd9fc5ec585c", "step": 21}
+{"branch": "fork-s14-a5-h1-indic16", "event": "eval_read", "grad_enabled": false, "purpose": "checkpoint_validation_loss", "shard_id": "shd-validation-4d60a3515bb6", "step": 21}
+{"branch": "fork-s14-a5-h1-indic16", "event": "proxy_read", "grad_enabled": false, "purpose": "opus_proxy_direction", "shard_id": "shd-proxy-cd9fc5ec585c", "step": 22}

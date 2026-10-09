@@ -1,0 +1,69 @@
+{
+  "sources": [
+    {
+      "shard": "glaive",
+      "repo": "glaiveai/glaive-function-calling-v2",
+      "revision": "e7f4b6456019f5d8bcb991ef0dd67d8ff23221ac",
+      "file": "glaive-function-calling-v2.json",
+      "license": "apache-2.0",
+      "contributor": "Glaive AI (synthetic generation; generator model not stated on card)",
+      "terms_note": "Card is empty; generating model unknown.",
+      "local_path": "data/raw/glaive-function-calling-v2.json",
+      "sha256": "e9b5d671812b5ca2fbd7b625a37d5c99a19576c37252cdc806defe256aea6dad",
+      "bytes": 271190065
+    },
+    {
+      "shard": "anudesh",
+      "repo": "ai4bharat/indic-align",
+      "revision": "032b6a9070e7f85f1a38e0506419f4590a20455a",
+      "file": "indicalign-instruct/anudesh/anudesh1.parquet",
+      "license": "cc-by-4.0",
+      "contributor": "AI4Bharat (crowd-sourced prompts; responses from Llama-2-70B-Chat per card)",
+      "terms_note": "CC-BY-4.0 needs attribution. Responses are Llama-2-70B-Chat outputs; the Llama 2 licence restricts using outputs to improve other LLMs.",
+      "local_path": "data/raw/anudesh1.parquet",
+      "sha256": "153bb2773a8b29c9e43445a0c99529bc6dd8d0a2f9a9b2c9ae7237d827738c16",
+      "bytes": 42210629
+    }
+  ],
+  "eval_sets": [
+    {
+      "name": "gsm8k",
+      "repo": "openai/gsm8k",
+      "revision": "740312add88f781978c0658806c59bc2815b9866",
+      "file": "main/test-00000-of-00001.parquet",
+      "license": "mit",
+      "sha256": "ee7b8da9e381df27b9e3f7758a159ab2bdaa4dbaa910546cbbc47e0cb44e4f59"
+    },
+    {
+      "name": "math500",
+      "repo": "HuggingFaceH4/MATH-500",
+      "revision": "6e4ed1a2a79af7d8630a6b768ec859cb5af4d3be",
+      "file": "test.jsonl",
+      "license": "mit (MATH)",
+      "sha256": "35dc41080a3680858b27fa7e0533d2d547825316fc5dafe5d316f4ccc5a06132"
+    },
+    {
+      "name": "humaneval",
+      "repo": "openai/openai_humaneval",
+      "revision": "7dce6050a7d6d172f3cc5c32aa97f52fa1a2e544",
+      "file": "openai_humaneval/test-00000-of-00001.parquet",
+      "license": "mit",
+      "sha256": "2f2871a15fbc95b6c683043359f4ed8e144c5a1c4f24f25f66bc51f598dfcfb6"
+    },
+    {
+      "name": "mmlu",
+      "repo": "cais/mmlu",
+      "revision": "c30699e8356da336a370243923dbaf21066bb9fe",
+      "file": "all/test-00000-of-00001.parquet",
+      "license": "mit",
+      "sha256": "74a41822ce7d3def56e1682f958469c04642a5336a5ce912fa375fdb90fb25d7"
+    }
+  ],
+  "eval_sets_not_used": [
+    {
+      "name": "MILU",
+      "repo": "ai4bharat/MILU",
+      "reason": "gated (requires accepting terms); not downloaded"
+    }
+  ]
+}

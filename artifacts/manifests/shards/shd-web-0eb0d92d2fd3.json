@@ -1,0 +1,87 @@
+{
+ "a2_tokenizer_sha256": "45aa8369f867472f8686b48025354fbfc0d9b53d6f7573d021aaaac815179dc4",
+ "a4_admitted": false,
+ "a5_tier": [
+  "n/a"
+ ],
+ "capability_lane": "web",
+ "cleaning_lineage": [
+  "8695c30a1e2160b644e3db725aae9c3be94005ad5d113f504dde0c1da0b36985"
+ ],
+ "contamination_status": "clean",
+ "content_hash": "0eb0d92d2fd3a19926e88300ef1b151584bfac8a48a9323a9e9d951e8378f811",
+ "created_by": "tdes.build",
+ "dedup_status": "exact_dedup_passed",
+ "doc_index": [
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "fe94dc178ad945d2c1660810ff9347f7dacefa9eaa4c16688a7ec4bed956134d",
+   "doc_id": "wiki-825",
+   "language": "en",
+   "length": 1476,
+   "license": "cc-by-sa-4.0",
+   "n_trainable_tokens": 1476,
+   "offset": 0,
+   "pii_status": "clean",
+   "script": "Latn",
+   "source_id": "a2/wikimedia-20231101-en"
+  },
+  {
+   "a4_record_id": null,
+   "doc_content_sha256": "b1e40655390ed02ff94a82c7464374052d162dcc268dcdb4a5379e020ebcd61c",
+   "doc_id": "wiki-844",
+   "language": "en",
+   "length": 1316,
+   "license": "cc-by-sa-4.0",
+   "n_trainable_tokens": 1316,
+   "offset": 1476,
+   "pii_status": "clean",
+   "script": "Latn",
+   "source_id": "a2/wikimedia-20231101-en"
+  }
+ ],
+ "document_ids": [
+  "wiki-825",
+  "wiki-844"
+ ],
+ "eval_overlap_status": "none",
+ "files": {
+  "loss_eligible.bin": {
+   "dtype": "u1",
+   "sha256": "4bc951f336697e43e7aa8cf3304acce60802a276d6d1c74467627fc4bc9f0afe"
+  },
+  "tokens.bin": {
+   "dtype": "<u2",
+   "sha256": "2a74409ce564670f09d1aac68691c2be74c373dcc2f5ae445e2ba5e449f98698"
+  }
+ },
+ "format": "tdes-shard/2",
+ "lane": "web",
+ "languages": [
+  "en"
+ ],
+ "licenses": [
+  "cc-by-sa-4.0"
+ ],
+ "n_docs": 2,
+ "never_train": false,
+ "parent_shard_ids": [],
+ "pii_status": "clean",
+ "pool": "main",
+ "provenance": [
+  "a2:wikipedia"
+ ],
+ "scripts": [
+  "Latn"
+ ],
+ "shard_id": "shd-web-0eb0d92d2fd3",
+ "source_ids": [
+  "a2/wikimedia-20231101-en"
+ ],
+ "split": "train",
+ "subpool": "all",
+ "token_count": 2792,
+ "tokenizer_id": "ff7f96354be799e2d7effb51dc6f89eefca399cc028d098d26cd04d361afa115",
+ "trainable_token_count": 2792,
+ "transform_id": "8695c30a1e2160b644e3db725aae9c3be94005ad5d113f504dde0c1da0b36985"
+}

@@ -1,0 +1,351 @@
+{
+ "band_substitutions": [
+  {
+   "band": "high",
+   "lane": "reasoning",
+   "pool": "main",
+   "served_by": "medium",
+   "step": 21
+  },
+  {
+   "band": "high",
+   "lane": "reasoning",
+   "pool": "main",
+   "served_by": "medium",
+   "step": 33
+  },
+  {
+   "band": "high",
+   "lane": "reasoning",
+   "pool": "main",
+   "served_by": "medium",
+   "step": 37
+  },
+  {
+   "band": "high",
+   "lane": "reasoning",
+   "pool": "reserve",
+   "served_by": "medium",
+   "step": 41
+  },
+  {
+   "band": "ultra",
+   "lane": "reasoning",
+   "pool": "reserve",
+   "served_by": "medium",
+   "step": 41
+  },
+  {
+   "band": "high",
+   "lane": "reasoning",
+   "pool": "reserve",
+   "served_by": "medium",
+   "step": 42
+  },
+  {
+   "band": "ultra",
+   "lane": "reasoning",
+   "pool": "reserve",
+   "served_by": "medium",
+   "step": 42
+  }
+ ],
+ "floor_rounding": "protected lanes round up against consumed positions",
+ "run_actual_pct": {
+  "agentic": 3.2967032967032965,
+  "code": 25.412087912087912,
+  "indic": 10.851648351648352,
+  "long_context": 4.395604395604396,
+  "reasoning": 1.510989010989011,
+  "stem": 8.37912087912088,
+  "web": 46.15384615384615
+ },
+ "run_planned_pct": {
+  "agentic": 0.7370155909041677,
+  "code": 26.308117827623185,
+  "indic": 10.537226671893547,
+  "long_context": 4.513131608873269,
+  "reasoning": 1.2810843114182673,
+  "stem": 9.171437224691399,
+  "web": 47.45198676459616
+ },
+ "scaling_notes": {
+  "agentic_rows": "A5 notes trajectories do not fit the base window; at demo scale agentic rows use the long-row microbatch (whole trajectories, never split)",
+  "anneal_share_of_steps_used": 0.047619047619047616,
+  "anneal_share_of_trained_planned": 0.030303030303030304,
+  "anneal_steps_exact": 1.25,
+  "anneal_steps_used": 2,
+  "long_row_len": "A5 32768-token long-context batches / 32 = 1024",
+  "ramp_steps_exact": 0.3125,
+  "ramp_steps_used": 2,
+  "seq_len_divisor": 32,
+  "stage_steps": {
+   "S1_foundation": 8,
+   "S2_broaden": 12,
+   "S3_reasoning_code": 12,
+   "S4_long_context": 8,
+   "anneal": 2
+  }
+ },
+ "stage_shares": {
+  "S1_foundation": {
+   "agentic": {
+    "a5_stage_pct": 0,
+    "actual_pct": 0.0,
+    "actual_positions": 0,
+    "planned_pct_incl_ramps": 0.0
+   },
+   "code": {
+    "a5_stage_pct": 14,
+    "actual_pct": 14.062,
+    "actual_positions": 2304,
+    "planned_pct_incl_ramps": 14.5
+   },
+   "indic": {
+    "a5_stage_pct": 10,
+    "actual_pct": 10.156,
+    "actual_positions": 1664,
+    "planned_pct_incl_ramps": 10.0
+   },
+   "long_context": {
+    "a5_stage_pct": 0,
+    "actual_pct": 0.0,
+    "actual_positions": 0,
+    "planned_pct_incl_ramps": 0.0
+   },
+   "reasoning": {
+    "a5_stage_pct": 0,
+    "actual_pct": 0.0,
+    "actual_positions": 0,
+    "planned_pct_incl_ramps": 0.021
+   },
+   "stem": {
+    "a5_stage_pct": 6,
+    "actual_pct": 6.25,
+    "actual_positions": 1024,
+    "planned_pct_incl_ramps": 6.083
+   },
+   "web": {
+    "a5_stage_pct": 70,
+    "actual_pct": 69.531,
+    "actual_positions": 11392,
+    "planned_pct_incl_ramps": 69.396
+   }
+  },
+  "S2_broaden": {
+   "agentic": {
+    "a5_stage_pct": 0,
+    "actual_pct": 0.0,
+    "actual_positions": 0,
+    "planned_pct_incl_ramps": 0.014
+   },
+   "code": {
+    "a5_stage_pct": 26,
+    "actual_pct": 25.521,
+    "actual_positions": 6272,
+    "planned_pct_incl_ramps": 25.889
+   },
+   "indic": {
+    "a5_stage_pct": 10,
+    "actual_pct": 10.417,
+    "actual_positions": 2560,
+    "planned_pct_incl_ramps": 10.0
+   },
+   "long_context": {
+    "a5_stage_pct": 0,
+    "actual_pct": 0.0,
+    "actual_positions": 0,
+    "planned_pct_incl_ramps": 0.0
+   },
+   "reasoning": {
+    "a5_stage_pct": 0.5,
+    "actual_pct": 0.521,
+    "actual_positions": 128,
+    "planned_pct_incl_ramps": 0.5
+   },
+   "stem": {
+    "a5_stage_pct": 8,
+    "actual_pct": 7.812,
+    "actual_positions": 1920,
+    "planned_pct_incl_ramps": 8.056
+   },
+   "web": {
+    "a5_stage_pct": 55.5,
+    "actual_pct": 55.729,
+    "actual_positions": 13696,
+    "planned_pct_incl_ramps": 55.541
+   }
+  },
+  "S3_reasoning_code": {
+   "agentic": {
+    "a5_stage_pct": 0.5,
+    "actual_pct": 4.0,
+    "actual_positions": 1024,
+    "planned_pct_incl_ramps": 0.516
+   },
+   "code": {
+    "a5_stage_pct": 34,
+    "actual_pct": 33.0,
+    "actual_positions": 8448,
+    "planned_pct_incl_ramps": 33.602
+   },
+   "indic": {
+    "a5_stage_pct": 10,
+    "actual_pct": 10.0,
+    "actual_positions": 2560,
+    "planned_pct_incl_ramps": 10.0
+   },
+   "long_context": {
+    "a5_stage_pct": 0,
+    "actual_pct": 0.0,
+    "actual_positions": 0,
+    "planned_pct_incl_ramps": 0.531
+   },
+   "reasoning": {
+    "a5_stage_pct": 1,
+    "actual_pct": 1.0,
+    "actual_positions": 256,
+    "planned_pct_incl_ramps": 1.016
+   },
+   "stem": {
+    "a5_stage_pct": 12,
+    "actual_pct": 11.0,
+    "actual_positions": 2816,
+    "planned_pct_incl_ramps": 11.801
+   },
+   "web": {
+    "a5_stage_pct": 42.5,
+    "actual_pct": 41.0,
+    "actual_positions": 10496,
+    "planned_pct_incl_ramps": 42.534
+   }
+  },
+  "S4_long_context": {
+   "agentic": {
+    "a5_stage_pct": 1.5,
+    "actual_pct": 5.0,
+    "actual_positions": 1024,
+    "planned_pct_incl_ramps": 1.606
+   },
+   "code": {
+    "a5_stage_pct": 28,
+    "actual_pct": 27.5,
+    "actual_positions": 5632,
+    "planned_pct_incl_ramps": 28.028
+   },
+   "indic": {
+    "a5_stage_pct": 10,
+    "actual_pct": 10.0,
+    "actual_positions": 2048,
+    "planned_pct_incl_ramps": 10.414
+   },
+   "long_context": {
+    "a5_stage_pct": 18,
+    "actual_pct": 15.0,
+    "actual_positions": 3072,
+    "planned_pct_incl_ramps": 16.966
+   },
+   "reasoning": {
+    "a5_stage_pct": 2,
+    "actual_pct": 2.5,
+    "actual_positions": 512,
+    "planned_pct_incl_ramps": 2.209
+   },
+   "stem": {
+    "a5_stage_pct": 9,
+    "actual_pct": 8.75,
+    "actual_positions": 1792,
+    "planned_pct_incl_ramps": 9.241
+   },
+   "web": {
+    "a5_stage_pct": 31.5,
+    "actual_pct": 31.25,
+    "actual_positions": 6400,
+    "planned_pct_incl_ramps": 31.537
+   }
+  },
+  "anneal": {
+   "agentic": {
+    "a5_stage_pct": 5,
+    "actual_pct": 16.667,
+    "actual_positions": 1024,
+    "planned_pct_incl_ramps": 4.411
+   },
+   "code": {
+    "a5_stage_pct": 23,
+    "actual_pct": 16.667,
+    "actual_positions": 1024,
+    "planned_pct_incl_ramps": 23.841
+   },
+   "indic": {
+    "a5_stage_pct": 20,
+    "actual_pct": 20.833,
+    "actual_positions": 1280,
+    "planned_pct_incl_ramps": 18.318
+   },
+   "long_context": {
+    "a5_stage_pct": 10,
+    "actual_pct": 16.667,
+    "actual_positions": 1024,
+    "planned_pct_incl_ramps": 11.345
+   },
+   "reasoning": {
+    "a5_stage_pct": 8,
+    "actual_pct": 8.333,
+    "actual_positions": 512,
+    "planned_pct_incl_ramps": 6.991
+   },
+   "stem": {
+    "a5_stage_pct": 12,
+    "actual_pct": 4.167,
+    "actual_positions": 256,
+    "planned_pct_incl_ramps": 11.496
+   },
+   "web": {
+    "a5_stage_pct": 22,
+    "actual_pct": 16.667,
+    "actual_positions": 1024,
+    "planned_pct_incl_ramps": 23.597
+   }
+  }
+ },
+ "subpools": {
+  "indic/S1_foundation": {
+   "B0_B1": 7,
+   "B2_B3": 5,
+   "B4_B5": 1
+  },
+  "indic/S2_broaden": {
+   "B0_B1": 5,
+   "B2_B3": 9,
+   "B4_B5": 4
+  },
+  "indic/S3_reasoning_code": {
+   "B0_B1": 2,
+   "B2_B3": 5,
+   "B4_B5": 3
+  },
+  "indic/S4_long_context": {
+   "B0_B1": 1,
+   "B2_B3": 4,
+   "B4_B5": 3
+  },
+  "indic/anneal": {
+   "B2_B3": 2,
+   "B4_B5": 3
+  },
+  "reasoning/S2_broaden": {
+   "low": 1
+  },
+  "reasoning/S3_reasoning_code": {
+   "medium": 1
+  },
+  "reasoning/S4_long_context": {
+   "low": 1,
+   "medium": 1
+  },
+  "reasoning/anneal": {
+   "medium": 2
+  }
+ }
+}

@@ -1,0 +1,6 @@
+* text=auto eol=lf
+*.bin binary
+*.pt binary
+# hashed byte-for-byte (tokenizer, vendored corpus, generated evidence): never convert line endings
+inputs/** -text
+artifacts/** -text

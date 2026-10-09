@@ -1,0 +1,1 @@
+{"branch": "fork-s14-a5-h1-indic16", "grad_enabled": false, "step": 21, "validation_loss": {"en": {"loss": 6.971194199620996, "n_loss_tokens": 437}, "hi": {"loss": 9.298062061700294, "n_loss_tokens": 508}, "te": {"loss": 9.804623252467104, "n_loss_tokens": 418}, "ur": {"loss": 10.079488400277008, "n_loss_tokens": 361}}}
